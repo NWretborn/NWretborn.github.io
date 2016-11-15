@@ -1,6 +1,3 @@
-<?php
-	session_start();
-?>
 <!DOCTYPE html>
 <html>
 <style>
@@ -10,6 +7,7 @@
 		background-size:cover;
 	}
 </style>
+
 <script type="text/javascript">
 	function changePic(element, imageName) {
     	element.setAttribute('src', imageName);
@@ -33,10 +31,12 @@
 	}
 	
 </script>
+
+
 <head>
 <meta http-equiv="Content-Language" content="sv">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>WiFinder - Signup</title>
+<title>WiFinder</title>
 <style type="text/css">
 	#c{	text-align: center;	}
 	#l{	text-align: left;	}
@@ -55,7 +55,7 @@
 		background-color: #10454e;
 		border:0px solid #29afc4;
 		border-radius:20px;
-		font-size: 1.5vw;
+		font-size: 1vw;
 	}
 	.center{
 		
@@ -67,26 +67,35 @@
 		left: 70%;
 		transform: translate(-50%, 0);
 	}
+	p{
+		color: #10454e;
+		text-align: left;
+		font-size: 90%;
+	}
+	p.subtext{
+		font-size: 80%;
+		text-align: right;
+	}
 	div{
 		font-size:1.5vw;
 		position: fixed;
 	}
 	.box{
-		height: 35vh;
+		height: 70vh;
 		color: #79969a;
 		font-family: monospace;
 		background-color: black;
-		width: 40vw;
+		width: 30vw;
 		border: 2px solid #10454e;
 		border-radius:10px;
 		padding: 20px;
 	}
 	.tb4:hover{
-		border:2px solid #29afc4;
+		border:1px solid #29afc4;
 		border-radius: 20px;
 	}
 	input:focus {
-		border: 2px solid #29afc4;
+		border: 1px solid #29afc4;
 		border-radius: 20px;
 		outline: none;
 	}
@@ -102,50 +111,30 @@
 
 <body>
 
+	
 
 	<div class="center box">
-			<div style="top: 12%; left: 8%">
-				Username
-			</div>
-			<div class="hCenter" style="top: 12%">
-				<input id="c" type="text" name="Fname" class="tb5">
-			</div>
-			<br/>
-			<div style="top: 32%; left: 8%;">
-				Password
-			</div>
-			<div class="hCenter" style="top: 32%">
-				<input id="c" type="password" name="Fname" class="tb5">
-			</div>
-			<br/>
-			<div style="top: 52%; left: 8%;">
-				Repeat password
-			</div>
-			<div class="hCenter" style="top: 52%">
-				<input id="c" type="password" name="Fname" class="tb5">
-			</div>
-			<br/>
-			<div style="top: 72%; left: 8%;">
-				E-mail
-			</div>
-			<div class="hCenter" style="top: 72%">
-				<input type="text" name="Fname" id="c" font="monospace" class="tb5">
-			</div>
-			<br/><br/>
-			<div class="center" style="top:100.5%">
-			<form action="confirmed.php" method="get">
-				<input type="submit" value="Register!" name="register" class="tb4">
-				</form>
-			</div>
+		<span style="color: #29afc4;">WiFinder</span> is a user-driven website for finding free wifi networks(cafés, libraries etc) with the help of google maps.<br/>
+		Networks are rated by users, submitted by users and the top rated review displayed first when viewing a network.<br/>
+		The site also includes a download feature for offline usage which may come in handy if you're out traveling.
+		<br/><br/><br/>
+		<p>
+		Site created by
+		</p>
+		<p class="subtext">
+		Jakob Norell<br/>norjak-3@ltu.student.se
+		<br/><br/>
+		Niclas Vretborn<br/>nicvre-3@student.ltu.se
+		</p>
 	</div>
-	
+
 	<img src="logo_gray.png" class="logo" 
 		onmouseover="changePic(this, 'logo_blue.png'); larger(this);" 
 		onmouseout="changePic(this, 'logo_gray.png'); smaller(this);"
 		onclick="location.href='index.php';"
 	>
 
-	</body>
+</body>
 </html>
 
 

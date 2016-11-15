@@ -1,11 +1,4 @@
 <!--API key: AIzaSyB8X7FBSBxL3hUTo5HoOnYrX5MDzvGEIQA -->
-
-
-
-<?php
-	session_start();
-?>
-
 <!DOCTYPE html>
 <html>
 <style>
@@ -76,8 +69,3 @@
 
 
 </html>
-
-<!--	align="right"
-	width="50%"
-	height="100%"
-	frameborder="0" style="0"-->

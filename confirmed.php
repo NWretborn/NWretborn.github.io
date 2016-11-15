@@ -1,14 +1,6 @@
-<?php
-	session_start();
-?>
+
 
 <!DOCTYPE html>
-<html>
-<style>
-</style><?php
-	session_start();
-?>
-
 <html>
 <style>
 	body{
@@ -120,10 +112,6 @@
 </head>
 
 <body>
-
-	<?php
-		include('/afs/ltu.se/systemdata/www/students/nicvre-3/functions.php');
-	?>
 
 	<div class="center box">
 		<span style="color: #29afc4;">Thank you!</span> An activation mail has been sent to you 
