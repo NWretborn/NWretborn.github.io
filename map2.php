@@ -1,8 +1,41 @@
-<!DOCTYPE html >
-  <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <title>PHP/MySQL & Google Maps Example</title>
+<!DOCTYPE html>
+<html>
+<style>
+	body{
+		background-color: black;
+		/* background-image: url("index_background.png"); */
+		background-size:cover;
+	}
+	.logo{
+		position: fixed;
+		height:15vh;
+		left:8%;
+		bottom:8vw;
+		transform: translate(-50%, 50%);
+	}
+</style>
+<script type="text/javascript">
+	function changePic(element, imageName) {
+    	element.setAttribute('src', imageName);
+	}
+	
+	function larger(element){
+		var style = window.getComputedStyle(element),
+		h = parseFloat(style.height),
+		vH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0); // MOBILE SCALING!!!
+		h = (h*1.2)/vH*100;
+		element.style.height = h + 'vh';
+	}
+	
+	
+	function smaller(element){
+		var style = window.getComputedStyle(element),
+		h = parseFloat(style.height),
+		vH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0); // MOBILE SCALING!!!
+		h = (h/1.2)/vH*100;
+		element.style.height = h + 'vh';
+	}
+</script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ"
             type="text/javascript"></script>
     <script type="text/javascript">
