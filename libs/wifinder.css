@@ -69,7 +69,7 @@
 		background: url(../img/logo_blue.png) no-repeat;
 		background-position: center; 
 		background-size: contain;
-		width: 12vw; 
+		width: 9vw; 
 		height: 15vh; 
 		left:10vw;
 		bottom:11vh;
@@ -81,6 +81,7 @@
 		background-position: center; 
 		background-size: contain;
 		height:18vh;
+		width: 10.8vw;
 	}
 
 	p{
