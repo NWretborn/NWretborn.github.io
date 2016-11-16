@@ -82,11 +82,11 @@
   <body onload="load()">
     <div id="map" style="width: 50%; height: 100%"></div>
     
-	<img src="logo_gray.png" class="logo" 
+	<!--<img src="logo_gray.png" class="logo" 
 		onmouseover="changePic(this, 'logo_blue.png'); larger(this);" 
 		onmouseout="changePic(this, 'logo_gray.png'); smaller(this);"
 		onclick="location.href='index.php';"
->
+>-->
   </body>
 
 </html>
