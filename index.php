@@ -48,7 +48,7 @@
 	
 
 
-	<span class="logo" onclick="location.href=about.php"> </span>
+	<span class="logo" onclick="location.href='about.php'"> </span>
 	<span class="cache" style="background: url(img/logo_about_gray.png)"></span>
 	
 </body>
