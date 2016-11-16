@@ -36,7 +36,7 @@
 <head>
 <meta http-equiv="Content-Language" content="sv">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>WiFinder</title>
+<title>About WiFinder</title>
 <style type="text/css">
 	#c{	text-align: center;	}
 	#l{	text-align: left;	}
