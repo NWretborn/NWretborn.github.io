@@ -3,7 +3,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <title>PHP/MySQL & Google Maps Example</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8X7FBSBxL3hUTo5HoOnYrX5MDzvGEIQA"
             type="text/javascript"></script>
     <script type="text/javascript">
     //<![CDATA[
