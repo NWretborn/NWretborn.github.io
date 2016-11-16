@@ -39,7 +39,7 @@
 		</p>
 	</div>
 
-	<span class='logo' onclick="location.href='about.php';"></span>
+	<span class='logo' onclick="location.href='index.php';"></span>
 
 </body>
 </html>
