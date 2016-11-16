@@ -37,7 +37,7 @@
 		element.style.height = h + 'vh';
 	}
 	
-	function downloadUrl(url,callback) {
+	function downloadUrl(phpsqlajax_genxml3.php,callback) {
  		var request = window.ActiveXObject ?
      		new ActiveXObject('Microsoft.XMLHTTP') :
      		new XMLHttpRequest;
@@ -49,7 +49,7 @@
    				}
  	};
 
-	request.open('GET', url, true);
+	request.open('GET', phpsqlajax_genxml3.php, true);
  	request.send(null);
 	}
 	
