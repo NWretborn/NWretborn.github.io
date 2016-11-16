@@ -80,7 +80,26 @@
   </head>
 
   <body onload="load()">
-    <div id="map" style="width: 500px; height: 300px"></div>
+    <div id="map" style="width: 50%; height: 100%"></div>
+    <iframe
+	style="position: absolute;
+	display: block;
+	margin-left: 49.5%;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 50%;
+	height: 99%;
+	border: 1;"
+
+ 	 src="https://www.google.com/maps/embed/v1/search?key=AIzaSyB8X7FBSBxL3hUTo5HoOnYrX5MDzvGEIQA&q=record+stores+in+Seattle">
+	
+	</iframe>
+	<img src="logo_gray.png" class="logo" 
+		onmouseover="changePic(this, 'logo_blue.png'); larger(this);" 
+		onmouseout="changePic(this, 'logo_gray.png'); smaller(this);"
+		onclick="location.href='index.php';"
+>
   </body>
 
 </html>
