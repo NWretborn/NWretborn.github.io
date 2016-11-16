@@ -81,6 +81,15 @@
     bindInfoWindow(marker, map, infoWindow, html);
   }
 });
+				     
+				     var customIcons = {
+  restaurant: {
+    icon: 'http://labs.google.com/ridefinder/images/mm_20_blue.png'
+  },
+  bar: {
+    icon: 'http://labs.google.com/ridefinder/images/mm_20_red.png'
+  }
+};
 
 	<iframe
 	style="position: absolute;
