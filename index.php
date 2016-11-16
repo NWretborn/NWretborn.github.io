@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="Content-Language" content="sv">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>WiFinder - Signup</title>
+<title>WiFinder</title>
 <style type="text/css">
 	#c{	text-align: center;	}
 	#l{	text-align: left;	}
@@ -102,7 +102,7 @@
 
 	<div class="center box">
 			<div style="top: 12%; left: 8%">
-				Username1
+				Username
 			</div>
 			<div class="hCenter" style="top: 12%">
 				<input id="c" type="text" name="Fname" class="tb5">
