@@ -102,7 +102,7 @@
 
 	<div class="center box">
 			<div style="top: 12%; left: 8%">
-				Usernamez
+				Username
 			</div>
 			<div class="hCenter" style="top: 12%">
 				<input id="c" type="text" name="Fname" class="tb5">
