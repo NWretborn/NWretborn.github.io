@@ -1,0 +1,3 @@
+login as wretborn
+cd /usr/webhosting/WiFinder
+sudo git pull origin master
