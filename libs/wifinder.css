@@ -63,19 +63,6 @@
 		outline: none;
 	}
 	
-	/*
-	.logo{
-		position:fixed;
-		width: 12vw; 
-		height: 15vh; 
-		left:8vw;
-		bottom:8vh;
-		transform: translate(-50%, 50%);		
-	}
-	*/
-
-
-
 	.logo{
 		position:fixed;
 		display: block;
@@ -84,10 +71,11 @@
 		background-size: contain;
 		width: 15vw; 
 		height: 15vh; 
-		left:8vw;
-		bottom:8vh;
+		left:10vw;
+		bottom:11vh;
 		transform: translate(-50%, 50%);		
 	}
+
 	.logo:hover{
 		background: url(../img/logo_about_gray.png) no-repeat;		
 		background-position: center; 
