@@ -9,10 +9,6 @@
 	
 </head>
 
-
-
-<script src="libs/std.js"></script>
-
 <body>
 
 
