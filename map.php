@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>WiFinder</title>
+  <title>WiFinder test</title>
   <link rel="stylesheet" type="text/css" href="libs/wifinder.css">
 </head>
 
