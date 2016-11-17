@@ -9,8 +9,8 @@ var customIcons = {
 
   function load() {
     var map = new google.maps.Map(document.getElementById("map"), {
-      center: new google.maps.LatLng(65.618080, 65.620117),
-      zoom: 13,
+      center: new google.maps.LatLng(65.618080, 22.140047),
+      zoom: 5,
       mapTypeId: 'roadmap'
     });
     var infoWindow = new google.maps.InfoWindow;
