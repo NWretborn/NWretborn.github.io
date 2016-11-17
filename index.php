@@ -26,11 +26,13 @@
 			<input type="password" name="password" class="right" style="top:calc(var(--FONT_HEIGHT)*3); width:50%;">
 			
 			<form action="map.php" method="get">
-				<input type="submit" value="Log in" name="register" class="right" style="top:calc(var(--FONT_HEIGHT)*6);">
+				<input type="submit" value="Log in" name="register" 
+				class="right" 
+				style="top:calc(var(--FONT_HEIGHT)*6); right:0; left:80%; ">
 			</form>
 
 			<form action="map.php" method="get">
-				<input type="submit" value="Continue as guest" name="register" style="top:calc(var(--FONT_HEIGHT)*6); left:48%;">
+				<input type="submit" value="Continue as guest" name="register" style="top:calc(var(--FONT_HEIGHT)*6); left:50%; right:25%;">
 			</form>
 		</span>
 

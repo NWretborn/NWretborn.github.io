@@ -7,6 +7,12 @@
 
 ---------------------------------------------------------------
 
+			  HOW TO GET BORDERS ON OUTSIDE
+
+	box-shadow: 0 0 0 0.2vh #29afc4;
+
+---------------------------------------------------------------
+
 <style type="text/css">
 	#c{	text-align: center;	}
 	#l{	text-align: left;	}
