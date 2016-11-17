@@ -3,7 +3,7 @@ var customIcons = {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
     },
     bar: {
-      icon: 'http://213.113.7.224/img/logo_blue.png'
+      icon: 'http://213.113.7.224/img/logo_blue50px.png'
     }
   };
 
