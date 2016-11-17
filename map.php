@@ -13,7 +13,7 @@
 
 
 <body onload="load()">
-  <div id="map" style="border: 1 px solid white; width: 1000px; height: 1000px;"></div>
+  <div id="map" style="border: 10 vw solid white; width: 1000px; height: 1000px;"></div>
   
 <img src="logo_gray.png" class="logo" 
 	onmouseover="changePic(this, 'logo_blue.png'); larger(this);" 
