@@ -1,9 +1,9 @@
 var customIcons = {
     restaurant: {
-      icon: 'http://labs.google.com/ridefinder/images/mm_20_blue.png'
+      icon: 'http://213.113.7.224/img/logo_green.png'
     },
     bar: {
-      icon: 'http://labs.google.com/ridefinder/images/mm_20_red.png'
+      icon: 'http://213.113.7.224/img/logo_blue.png'
     }
   };
 
