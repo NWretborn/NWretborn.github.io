@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>WiFinder test</title>
+  <title>WiFinder</title>
   <link rel="stylesheet" type="text/css" href="libs/wifinder.css">
 </head>
 
@@ -13,7 +13,7 @@
 
 
 <body onload="load()">
-  <div id="map" style="width: 70%; height: 1000px;"></div>
+  <div id="map" style="width: 70%; height: 100%; left:30%;"></div>
   
 <img src="logo_gray.png" class="logo" 
 	onmouseover="changePic(this, 'logo_blue.png'); larger(this);" 
