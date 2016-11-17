@@ -1,7 +1,0 @@
-1. identiska filer
-2. sudo git add <file> i directory
-3. kör pull.php
-
-
-
-NOTE TO SELF: ÄNDRA INTE I SERVERHELVETET
