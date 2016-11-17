@@ -1,8 +1,8 @@
 var customIcons = {
-    restaurant: {
+    open: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
     },
-    bar: {
+    closed: {
       icon: 'http://213.113.7.224/img/logo_blue50px.png'
     }
   };
