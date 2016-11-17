@@ -1,16 +1,16 @@
 var customIcons = {
-    restaurant: {
-      icon: 'http://labs.google.com/ridefinder/images/mm_20_blue.png'
+    open: {
+      icon: 'http://213.113.7.224/img/logo_green50px.png'
     },
-    bar: {
-      icon: 'http://labs.google.com/ridefinder/images/mm_20_red.png'
+    closed: {
+      icon: 'http://213.113.7.224/img/logo_blue50px.png'
     }
   };
 
   function load() {
     var map = new google.maps.Map(document.getElementById("map"), {
-      center: new google.maps.LatLng(47.6145, -122.3418),
-      zoom: 13,
+      center: new google.maps.LatLng(65.618080, 22.140047),
+      zoom: 10,
       mapTypeId: 'roadmap'
     });
     var infoWindow = new google.maps.InfoWindow;

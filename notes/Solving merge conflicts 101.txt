@@ -1,0 +1,7 @@
+1. cd /usr/webhosting/Wifinder
+2. sudo git fetch origin
+3. sudo git reset --hard origin/master
+
+
+
+NOTE TO SELF: ÄNDRA INTE I SERVERHELVETET
