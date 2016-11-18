@@ -15,30 +15,30 @@
 	<div class="box center">
 		<span class="text_box">
 
-			<span class="left text" style="top:calc(var(--FONT_HEIGHT)*2);">
+			<span class="left text" style="top:calc(var(--FONT_HEIGHT)*1.4);">
 				Username
 			</span>
 			<input type="text" name="username"
-			style="top:calc(var(--FONT_HEIGHT)*2); width:65%; right:0;">
+			style="top:calc(var(--FONT_HEIGHT)*1.4); width:65%; right:0;">
 
-			<span class="left text" style="top:calc(var(--FONT_HEIGHT)*4);">
+			<span class="left text" style="top:calc(var(--FONT_HEIGHT)*3.7);">
 				Password
 			</span>
 			<input type="password" name="password" 
-			style="top:calc(var(--FONT_HEIGHT)*4); width:65%; right:0;">
+			style="top:calc(var(--FONT_HEIGHT)*3.7); width:65%; right:0;">
 			
 			<form action="map.php" method="get">
 				<input type="submit" value="Log in" name="register" 
-				style="top:calc(var(--FONT_HEIGHT)*7); width:20%; right:0; ">
+				style="top:calc(var(--FONT_HEIGHT)*6.5); width:20%; right:0; ">
 			</form>
 
 			<form action="map.php" method="get">
-				<input type="submit" value="Continue as guest" name="register" style="top:calc(var(--FONT_HEIGHT)*7); left:35%; width:40%;">
+				<input type="submit" value="Continue as guest" name="register" style="top:calc(var(--FONT_HEIGHT)*6.5); left:35%; width:35%;">
 			</form>
 		</span>
 
 		<form action="signup.php" method="get">
-			<input type="submit" value="Sign up" name="register" class="hCenter centerpoint" style="position:absolute; top:100%;" >
+			<input type="submit" value="Sign up" name="register" class="hCenter centerpoint" style="position:absolute; top:98%;" >
 		</form>
 	</div>	
 	
