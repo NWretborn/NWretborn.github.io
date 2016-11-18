@@ -1,5 +1,5 @@
 :root{
-	--FONT_HEIGHT: 1.5vw;
+	--FONT_HEIGHT: calc(1.5vw + 0.5vh);
 }
 
 body{
@@ -80,9 +80,11 @@ p.subtext{
 
 .text{
 	position:absolute;
+	margin-top: 1vh;
 }
 
 input{
+	margin-top: 1vh;
 	position:absolute;
 	text-align: center;
 	font-size:var(--FONT_HEIGHT);
