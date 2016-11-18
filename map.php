@@ -15,11 +15,8 @@
 <body onload="load()">
   <div id="map" style="width: 70%; height: 950px; left:30%"></div>
   
-<img src="logo_gray.png" class="logo" 
-	onmouseover="changePic(this, 'logo_blue.png'); larger(this);" 
-	onmouseout="changePic(this, 'logo_gray.png'); smaller(this);"
-	onclick="location.href='index.php';"
->
+	<span class="logo2" onclick="location.href='index.php'"> </span>
+	<span class="cache" style="background: url(img/logo_blue.png)"></span>
 </body>
 
 </html>
