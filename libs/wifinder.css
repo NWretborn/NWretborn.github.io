@@ -47,9 +47,31 @@ body{
 	bottom:calc(5vh + 4vw);
 	transform: translate(-50%, 50%);		
 }
+.logo2{
+	position:fixed;
+	display: block;
+	background: url(../img/logo_grey.png) no-repeat;
+	background-position: center; 
+	background-size: contain;
+	width: 9vw; 
+	min-width: 9vh;
+	height: 15vh; 
+	min-height: 15vw;
+	left:calc(6vw + 3vh);
+	bottom:calc(5vh + 4vw);
+	transform: translate(-50%, 50%);		
+}
 
 .logo:hover{
 	background: url(../img/logo_about_gray.png) no-repeat;		
+	background-position: center; 
+	background-size: contain;
+	height:18vh;
+	width: 10.8vw;
+}
+
+.logo2:hover{
+	background: url(../img/logo_blue.png) no-repeat;		
 	background-position: center; 
 	background-size: contain;
 	height:18vh;
