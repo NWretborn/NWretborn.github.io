@@ -1,5 +1,5 @@
 :root{
-	--FONT_HEIGHT: 3vh;
+	--FONT_HEIGHT: 1.5vw;
 }
 
 body{
@@ -35,6 +35,7 @@ body{
 .box{
 	position:fixed;
 	height: 40vh;
+	min-height: calc(var(--FONT_HEIGHT)*12);
 	width: 70vw;
 	color: #79969a;
 	background-color: black;
@@ -47,7 +48,6 @@ body{
 	position:absolute;
 	font-size: var(--FONT_HEIGHT);
 	font-family: monospace;
-	position:absolute; 
 	width: 80%; 
 	height: 80%;
 	top:10%;  
@@ -91,6 +91,8 @@ input{
 	/*margin: 0.25vh 0.25vh 0.25vh 0.25vh;*/
 	border: 0vh solid transparent;
 	border-radius:4vh;
+	box-sizing:border-box;
+    -moz-box-sizing:border-box;
 }
 
 input[type="text"]:focus, 
@@ -99,13 +101,15 @@ input[type="submit"]:hover {
 	position:absolute;
 	font-size:var(--FONT_HEIGHT);
 	text-align: center;
-	/*margin: 0 0 0 0;*/
 	padding: 0.5vh;
 	border: 0vh solid #29afc4;
 	border-style: outset;
 	border-radius:4vh;
 	outline: none;
 	box-shadow: 0 0 0 0.2vh #29afc4;
+	box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    word-wrap: break-word;
 }
 /*
 form{
@@ -143,7 +147,7 @@ form{
 }
 
 .right{
-	right:0%;
+	right:0;
 }
 
 .centerpoint{

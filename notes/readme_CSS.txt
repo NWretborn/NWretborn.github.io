@@ -5,11 +5,19 @@
 	position: fixed		(relative to viewport)
 	position: static	(html position)
 
----------------------------------------------------------------
+------------------about borders--------------------------------
 
 			  HOW TO GET BORDERS ON OUTSIDE
 
 	box-shadow: 0 0 0 0.2vh #29afc4;
+
+------------------about text-----------------------------------
+
+	base text-height on window width 
+		=> never too small boxes
+	base box-height on text-height 
+		=> never too small horizontal boxes
+
 
 ---------------------------------------------------------------
 
