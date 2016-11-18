@@ -15,25 +15,25 @@
 	<div class="box center">
 		<span class="text_box">
 
-			<span class="left text" style="top:calc(var(--FONT_HEIGHT)*1);">
+			<span class="left text" style="top:calc(var(--FONT_HEIGHT)*1+1vh);">
 				Username
 			</span>
 			<input type="text" name="username"
-			style="top:calc(var(--FONT_HEIGHT)*1); width:50%; right:0;">
+			style="top:calc(var(--FONT_HEIGHT)*1+1vh); width:50%; right:0;">
 
-			<span class="left text" style="top:calc(var(--FONT_HEIGHT)*3);">
+			<span class="left text" style="top:calc(var(--FONT_HEIGHT)*3+1vh);">
 				Password
 			</span>
 			<input type="password" name="password" 
-			style="top:calc(var(--FONT_HEIGHT)*3); width:50%; right:0;">
+			style="top:calc(var(--FONT_HEIGHT)*3+1vh); width:50%; right:0;">
 			
 			<form action="map.php" method="get">
 				<input type="submit" value="Log in" name="register" 
-				style="top:calc(var(--FONT_HEIGHT)*6); width:15%; right:0; ">
+				style="top:calc(var(--FONT_HEIGHT)*6+1vh); width:15%; right:0; ">
 			</form>
 
 			<form action="map.php" method="get">
-				<input type="submit" value="Continue as guest" name="register" style="top:calc(var(--FONT_HEIGHT)*6); left:50%; width:30%;">
+				<input type="submit" value="Continue as guest" name="register" style="top:calc(var(--FONT_HEIGHT)*6+1vh); left:50%; width:30%;">
 			</form>
 		</span>
 
