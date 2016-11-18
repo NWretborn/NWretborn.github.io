@@ -50,7 +50,7 @@ body{
 .logo2{
 	position:fixed;
 	display: block;
-	background: url(../img/logo_grey.png) no-repeat;
+	background: url(../img/logo_gray.png) no-repeat;
 	background-position: center; 
 	background-size: contain;
 	width: 9vw; 
