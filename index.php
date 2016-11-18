@@ -19,21 +19,22 @@
 				Username
 			</span>
 			<input type="text" name="username"
-			style="top:calc(var(--FONT_HEIGHT)*1.4); width:65%; right:0;">
+			style="top:calc(var(--FONT_HEIGHT)*1.4); width:65%; right:0.2vh;">
 
 			<span class="left text" style="top:calc(var(--FONT_HEIGHT)*3.7);">
 				Password
 			</span>
 			<input type="password" name="password" 
-			style="top:calc(var(--FONT_HEIGHT)*3.7); width:65%; right:0;">
+			style="top:calc(var(--FONT_HEIGHT)*3.7); width:65%; right:0.2vh;">
 			
 			<form action="map.php" method="get">
 				<input type="submit" value="Log in" name="register" 
-				style="top:calc(var(--FONT_HEIGHT)*6.5); width:20%; right:0; ">
+				style="top:calc(var(--FONT_HEIGHT)*6.5); width:20%; right:0.2vh; ">
 			</form>
 
 			<form action="map.php" method="get">
-				<input type="submit" value="Continue as guest" name="register" style="top:calc(var(--FONT_HEIGHT)*6.5); left:35%; width:35%;">
+				<input 	type="submit" value="Continue as guest" name="register" 
+						style="top:calc(var(--FONT_HEIGHT)*6.5); left:35%; width:35%; min-width:calc(var(--FONT_HEIGHT)*15/2);">
 			</form>
 		</span>
 

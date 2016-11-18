@@ -1,5 +1,6 @@
 :root{
-	--FONT_HEIGHT: calc(1.3vw + 0.7vh);
+	--SCALE_FONT: 0.8;
+	--FONT_HEIGHT: calc( var(--SCALE_FONT)*(1.3vw + 0.7vh));
 }
 
 body{
@@ -10,7 +11,7 @@ body{
 }
 
 
-/* webkil-scrollbar acts globally on any overflow with scroll */
+/* webkil-scrollbar acts globally here on any overflow with scroll */
 
 ::-webkit-scrollbar {
     width: 1vw;
@@ -55,7 +56,7 @@ body{
 	width: 10.8vw;
 }
 
-.box{
+.box, .about_box{
 	position:fixed;
 	height: calc(var(--FONT_HEIGHT)*15);
 	width: calc(var(--FONT_HEIGHT)*35);	/* 15 letters width = half height? */
@@ -66,56 +67,26 @@ body{
 	background-color: black;
 	border: 0.3vh solid #10454e;
 	border-radius: calc(2vw + 2vh);
-	/*padding: 1vh;*/
 	box-sizing:border-box;	
 	-moz-box-sizing:border-box;	
+}
+
+.about_box {
+	/* if specifics for about_box */
 }
 
 .text_box{
 	position:absolute;
 	font-size: var(--FONT_HEIGHT);
 	font-family: monospace;
-	width: 85%; 
+	width: 80%; 
 	height: 80%;
 	top:10%;  
 	left:10%; 
-	padding-right: 2vw;
 	box-sizing:border-box;	
 	-moz-box-sizing:border-box;	
 	overflow: auto;
 }
-
-.about_box {
-	position:fixed;
-	height: calc(var(--FONT_HEIGHT)*15);
-	width: calc(var(--FONT_HEIGHT)*35);	/* 15 letters width = half height? */
-	max-height: 100%;
-	min-height: calc(var(--FONT_HEIGHT)*10);
-	max-width: 100%;
-	color: #79969a;
-	background-color: black;
-	border: 0.3vh solid #10454e;
-	border-radius: calc(2vw + 2vh);
-	/*padding: 1vh;*/
-	box-sizing:border-box;	
-	-moz-box-sizing:border-box;	
-}
-
-
-
-/*
-.about_box::-webkit-scrollbar-track 
-{
- box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
- border-radius:10px;
-}
-.about_box::-webkit-scrollbar-thumb
-{
- background-color: #10454e;
- border-radius:10px;
-}
-*/
-
 
 /*
 		TEXT CLASSES
@@ -130,7 +101,6 @@ p{
 }
 
 p.subtext{
-	font-size: var(--FONT_HEIGHT);
 	text-align: right;
 }
 
@@ -142,29 +112,23 @@ p.subtext{
 }
 
 input{
-	margin-top: 1vh;
 	position:absolute;
-	text-align: center;
 	font-size:var(--FONT_HEIGHT);
+	margin-top: calc(0.3*var(--FONT_HEIGHT));	/* align vertically with text */
+	text-align: center;
 	background-color: #10454e;
 	padding: 0.5vh;						
 	border-radius: calc(2vw + 2vh);
-	border: 0vh solid transparent;
-	box-sizing:border-box;				/* correct width */
-    -moz-box-sizing:border-box;			/* mozilla support */
-    min-width: calc(var(--FONT_HEIGHT)*15/2);	/* 15 letters width = half height? */
+	border: 0vh;								/* hide radius-border */
+	
+	box-sizing:border-box;						/* correct width */
+    -moz-box-sizing:border-box;					/* mozilla support */
 }
 
 input[type="text"]:focus, 
 input[type="password"]:focus,
 input[type="submit"]:hover {
-	position:absolute;
-	font-size:var(--FONT_HEIGHT);
-	text-align: center;
-	padding: 0.5vh;
-	box-shadow: 0 0 0 0.2vh #29afc4;	/* actual border */
-	border-radius:calc(2vw + 2vh);
-	border: 0vh;						/* hide radius-border */
+	box-shadow: 0 0 0 0.2vh #29afc4;	/* actual border */						
 	outline: none;
 	box-sizing:border-box;				/* correct width */
     -moz-box-sizing:border-box;			/* mozilla support */
