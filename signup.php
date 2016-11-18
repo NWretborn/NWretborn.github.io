@@ -34,6 +34,7 @@
 	
 </script>
 <head>
+<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
 <meta http-equiv="Content-Language" content="sv">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <title>WiFinder - Signup</title>
