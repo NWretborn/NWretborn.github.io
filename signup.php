@@ -65,7 +65,7 @@
 		transform: translate(-50%, -50%);
 	}
 	.hCenter{
-		left: 60%;
+		left: 50%;
 		transform: translate(-50%, 0);
 	}
 	div{
