@@ -11,8 +11,8 @@
 </head>
 
 <body>
-	<span class="about_box center" style="height: 80%; padding-right: 2vw;">
-		<span class="center text_box">
+	<span class="about_box center" style="height: 80%;">
+		<span class="center text_box" style="padding-right:2vw;">
 			<span style="color: #29afc4;">WiFinder</span> is a user-driven website for finding free wifi networks(coffee shops, libraries etc) with the help of google maps.<br/>
 			Networks are rated by users, submitted by users and the top rated review displayed first when viewing a network.<br/>
 			The site also includes a download feature for offline usage which may come in handy if you're out traveling.
