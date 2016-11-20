@@ -133,7 +133,7 @@
 				<input type="text" name="Fname" id="c" font="monospace" class="tb5">
 			</div>
 			<br/><br/>
-			<div class="center" style="top:100.5%">
+			<div class="center" style="top:80%">
 			<form action="confirmed.php" method="get">
 				<input type="submit" value="Register!" name="register" class="tb4">
 				</form>
