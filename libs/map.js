@@ -2,7 +2,7 @@
         var geocoder = new google.maps.Geocoder();
         geocoder.geocode({
           "location": latLng
-        },
+        }),
         function mystery(results, status) {
           if (status == google.maps.GeocoderStatus.OK)
             document.getElementById("address").innerHTML = results[0].formatted_address;
