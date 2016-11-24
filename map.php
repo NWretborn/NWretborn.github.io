@@ -7,7 +7,7 @@
 </head>
 
 <script src="libs/std.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&sensor=true"
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ"
         type="text/javascript"></script>
 <script src="libs/map.js"></script>
 
