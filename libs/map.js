@@ -1,13 +1,13 @@
-        function writeAddressName(latLng) {
+function writeAddressName(latLng) {
                 var geocoder = new google.maps.Geocoder();
                 geocoder.geocode({
                 "location": latLng
                 },
-        function geolocationSuccess(position) {
+function geolocationSuccess(position) {
                 var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
                 // Write the formatted address
                 writeAddressName(userLatLng);
-        function(results, status) {
+function(results, status) {
                 if (status == google.maps.GeocoderStatus.OK)
                 document.getElementById("address").innerHTML = results[0].formatted_address;
           else
