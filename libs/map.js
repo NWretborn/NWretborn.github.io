@@ -7,30 +7,6 @@ var customIcons = {
     }
   };
 
-    function writeAddressName(latLng) {
-        var geocoder = new google.maps.Geocoder();
-        geocoder.geocode({
-          "location": latLng
-        },
-        function(results, status) {
-          if (status == google.maps.GeocoderStatus.OK)
-            document.getElementById("address").innerHTML = results[0].formatted_address;
-          else
-            document.getElementById("error").innerHTML += "Unable to retrieve your address" + "<br />";
-        });
-      }
-
-      function geolocationSuccess(position) {
-        var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-        // Write the formatted address
-        writeAddressName(userLatLng);
-
-        var myOptions = {
-          zoom : 16,
-          center : userLatLng,
-          mapTypeId : google.maps.MapTypeId.ROADMAP
-        };
-
   function load() {
     var map = new google.maps.Map(document.getElementById("map"), {
       center: new google.maps.LatLng(65.618080, 22.140047),
@@ -318,7 +294,31 @@ var customIcons = {
     request.send(null);
   }
 
-  function doNothing() {}
+    function writeAddressName(latLng) {
+        var geocoder = new google.maps.Geocoder();
+        geocoder.geocode({
+          "location": latLng
+        },
+        function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK)
+            document.getElementById("address").innerHTML = results[0].formatted_address;
+          else
+            document.getElementById("error").innerHTML += "Unable to retrieve your address" + "<br />";
+        });
+      }
+
+      function geolocationSuccess(position) {
+        var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+        // Write the formatted address
+        writeAddressName(userLatLng);
+
+        var myOptions = {
+          zoom : 16,
+          center : userLatLng,
+          mapTypeId : google.maps.MapTypeId.ROADMAP
+        };
+
+  
       // Draw a circle around the user position to have an idea of the current localization accuracy
         var circle = new google.maps.Circle({
           center: userLatLng,
@@ -351,3 +351,5 @@ var customIcons = {
       }
 
       window.onload = geolocateUser;
+
+    function doNothing() {}
