@@ -11,8 +11,6 @@
         type="text/javascript"></script>
 <script src="libs/map.js"></script>
 
-<script src="https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ"
-	type="text/javascript"></script>
 <body onload="load()">
   <div id="map" style="width: 70%; height: 950px; left:30%"></div>
   
