@@ -3,7 +3,7 @@
         geocoder.geocode({
           "location": latLng
         },
-        function(results, status) {
+        function mystery(results, status) {
           if (status == google.maps.GeocoderStatus.OK)
             document.getElementById("address").innerHTML = results[0].formatted_address;
           else
