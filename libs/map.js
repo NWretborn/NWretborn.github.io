@@ -16,12 +16,6 @@ function writeAddressName(latLng) {
         // Write the formatted address
         writeAddressName(userLatLng);
 
-        var myOptions = {
-          zoom : 16,
-          center : userLatLng,
-          mapTypeId : google.maps.MapTypeId.ROADMAP
-        };
-
 var customIcons = {
     open: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
