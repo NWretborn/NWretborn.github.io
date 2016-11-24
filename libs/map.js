@@ -15,7 +15,7 @@
         var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
         // Write the formatted address
         writeAddressName(userLatLng);
-
+      }
 function load() {
     var map = new google.maps.Map(document.getElementById("map"), {
       center: new google.maps.LatLng(65.618080, 22.140047),
