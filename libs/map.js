@@ -1,31 +1,4 @@
-function writeAddressName(latLng) {
-        var geocoder = new google.maps.Geocoder();
-        geocoder.geocode({
-          "location": latLng
-        },
-        function(results, status) {
-          if (status == google.maps.GeocoderStatus.OK)
-            document.getElementById("address").innerHTML = results[0].formatted_address;
-          else
-            document.getElementById("error").innerHTML += "Unable to retrieve your address" + "<br />";
-        });
-      }
-
-      function geolocationSuccess(position) {
-        var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-        // Write the formatted address
-        writeAddressName(userLatLng);
-
-var customIcons = {
-    open: {
-      icon: 'http://213.113.7.224/img/logo_green50px.png'
-    },
-    closed: {
-      icon: 'http://213.113.7.224/img/logo_blue50px.png'
-    }
-  };
-
-  function load() {
+function load() {
     var map = new google.maps.Map(document.getElementById("map"), {
       center: new google.maps.LatLng(65.618080, 22.140047),
       zoom: 10,
@@ -264,6 +237,35 @@ var customIcons = {
   }
 ]
     });
+
+function writeAddressName(latLng) {
+        var geocoder = new google.maps.Geocoder();
+        geocoder.geocode({
+          "location": latLng
+        },
+        function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK)
+            document.getElementById("address").innerHTML = results[0].formatted_address;
+          else
+            document.getElementById("error").innerHTML += "Unable to retrieve your address" + "<br />";
+        });
+      }
+
+      function geolocationSuccess(position) {
+        var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+        // Write the formatted address
+        writeAddressName(userLatLng);
+
+var customIcons = {
+    open: {
+      icon: 'http://213.113.7.224/img/logo_green50px.png'
+    },
+    closed: {
+      icon: 'http://213.113.7.224/img/logo_blue50px.png'
+    }
+  };
+
+  
     var infoWindow = new google.maps.InfoWindow;
 
     // Change this depending on the name of your PHP file
