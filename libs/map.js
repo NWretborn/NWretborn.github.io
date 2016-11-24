@@ -1,3 +1,16 @@
+function writeAddressName(latLng) {
+        var geocoder = new google.maps.Geocoder();
+        geocoder.geocode({
+          "location": latLng
+        },
+        function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK)
+            document.getElementById("address").innerHTML = results[0].formatted_address;
+          else
+            document.getElementById("error").innerHTML += "Unable to retrieve your address" + "<br />";
+        });
+      }
+
 function load() {
     var map = new google.maps.Map(document.getElementById("map"), {
       center: new google.maps.LatLng(65.618080, 22.140047),
@@ -238,18 +251,7 @@ function load() {
 ]
     });
 
-function writeAddressName(latLng) {
-        var geocoder = new google.maps.Geocoder();
-        geocoder.geocode({
-          "location": latLng
-        },
-        function(results, status) {
-          if (status == google.maps.GeocoderStatus.OK)
-            document.getElementById("address").innerHTML = results[0].formatted_address;
-          else
-            document.getElementById("error").innerHTML += "Unable to retrieve your address" + "<br />";
-        });
-      }
+
 
       function geolocationSuccess(position) {
         var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
