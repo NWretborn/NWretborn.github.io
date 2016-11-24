@@ -1,22 +1,13 @@
- function writeAddressName(latLng) {
-        var geocoder = new google.maps.Geocoder();
-        geocoder.geocode({
-          "location": latLng
-        });
-        function mystery(results, status) {
-          if (status == google.maps.GeocoderStatus.OK)
-            document.getElementById("address").innerHTML = results[0].formatted_address;
-          else
-            document.getElementById("error").innerHTML += "Unable to retrieve your address" + "<br />";
-        });
-      };
+var customIcons = {
+    open: {
+      icon: 'http://213.113.7.224/img/logo_green50px.png'
+    },
+    closed: {
+      icon: 'http://213.113.7.224/img/logo_blue50px.png'
+    }
+  };
 
-      function geolocationSuccess(position) {
-        var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-        // Write the formatted address
-        writeAddressName(userLatLng);
-      }
-function load() {
+  function load() {
     var map = new google.maps.Map(document.getElementById("map"), {
       center: new google.maps.LatLng(65.618080, 22.140047),
       zoom: 10,
@@ -255,21 +246,6 @@ function load() {
   }
 ]
     });
-
-
-
-      
-
-var customIcons = {
-    open: {
-      icon: 'http://213.113.7.224/img/logo_green50px.png'
-    },
-    closed: {
-      icon: 'http://213.113.7.224/img/logo_blue50px.png'
-    }
-  };
-
-  
     var infoWindow = new google.maps.InfoWindow;
 
     // Change this depending on the name of your PHP file
@@ -318,40 +294,4 @@ var customIcons = {
     request.send(null);
   }
 
-    
-
-  
-      // Draw a circle around the user position to have an idea of the current localization accuracy
-        var circle = new google.maps.Circle({
-          center: userLatLng,
-          radius: position.coords.accuracy,
-          map: mapObject,
-          fillColor: '#0000FF',
-          fillOpacity: 0.5,
-          strokeColor: '#0000FF',
-          strokeOpacity: 1.0
-        });
-        mapObject.fitBounds(circle.getBounds());
-      }
-
-      function geolocationError(positionError) {
-        document.getElementById("error").innerHTML += "Error: " + positionError.message + "<br />";
-      }
-
-      function geolocateUser() {
-        // If the browser supports the Geolocation API
-        if (navigator.geolocation)
-        {
-          var positionOptions = {
-            enableHighAccuracy: true,
-            timeout: 10 * 1000 // 10 seconds
-          };
-          navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationError, positionOptions);
-        }
-        else
-          document.getElementById("error").innerHTML += "Your browser doesn't support the Geolocation API";
-      }
-
-      window.onload = geolocateUser;
-
-    function doNothing() {}
+function doNothing() {}
