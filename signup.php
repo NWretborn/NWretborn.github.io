@@ -109,32 +109,32 @@
 				Username
 			</div>
 			<div class="hCenter" style="top: 12%">
-				<input id="c" type="text" name="Fname" class="tb5">
+				<input id="c" type="text" name="name" class="tb5">
 			</div>
 			<br/>
 			<div style="top: 32%; left: 8%;">
 				Password
 			</div>
 			<div class="hCenter" style="top: 32%">
-				<input id="c" type="password" name="Fname" class="tb5">
+				<input id="c" type="password" name="password" class="tb5">
 			</div>
 			<br/>
 			<div style="top: 52%; left: 8%;">
 				Repeat password
 			</div>
 			<div class="hCenter" style="top: 52%">
-				<input id="c" type="password" name="Fname" class="tb5">
+				<input id="c" type="password" name="password" class="tb5">
 			</div>
 			<br/>
 			<div style="top: 72%; left: 8%;">
 				E-mail
 			</div>
 			<div class="hCenter" style="top: 72%">
-				<input type="text" name="Fname" id="c" font="monospace" class="tb5">
+				<input type="text" name="mail" id="c" font="monospace" class="tb5">
 			</div>
 			<br/><br/>
 			<div class="center" style="top:91%">
-			<form action="confirmed.php" method="get">
+			<form action="api.php/user" method="post">
 				<input type="submit" value="Register" name="register" class="tb4">
 				</form>
 			</div>
