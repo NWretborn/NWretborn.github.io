@@ -105,7 +105,7 @@
 
 
 	<div class="center box">
-		<form action="http://213.113.7.224/api.php?action=POST" method="POST">
+		<form action="http://213.113.7.224/api.php" method="POST">
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
