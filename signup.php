@@ -136,7 +136,7 @@
 			<br/><br/>
 			<div class="center" style="top:91%">
 			
-				<input type="submit" value="Register" name="http://213.113.7.224/api.php" class="tb4">
+				<input type="submit" value="Register" action="http://213.113.7.224/api.php" class="tb4">
 				</form>
 			</div>
 	</div>
