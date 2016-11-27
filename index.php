@@ -13,17 +13,17 @@
 
 
 	<div class="box center">
-		<span class="text_box">
+		<div class="text_box">
 
-			<span class="left text" style="top:calc(var(--FONT_HEIGHT)*1.4);">
+			<div class="left text" style="top:calc(var(--FONT_HEIGHT)*1.4);">
 				Username
-			</span>
+			</div>
 			<input type="text" name="username"
 			style="top:calc(var(--FONT_HEIGHT)*1.4); width:65%; right:0.2vh;">
 
-			<span class="left text" style="top:calc(var(--FONT_HEIGHT)*3.7);">
+			<div class="left text" style="top:calc(var(--FONT_HEIGHT)*3.7);">
 				Password
-			</span>
+			</div>
 			<input type="password" name="password" 
 			style="top:calc(var(--FONT_HEIGHT)*3.7); width:65%; right:0.2vh;">
 			
@@ -36,7 +36,7 @@
 				<input 	type="submit" value="Continue as guest" name="register" 
 						style="top:calc(var(--FONT_HEIGHT)*6.5); left:35%; width:35%; min-width:calc(var(--FONT_HEIGHT)*15/2);">
 			</form>
-		</span>
+		</div>
 
 		<form action="signup.php" method="get">
 			<input type="submit" value="Sign up" name="register" class="hCenter centerpoint" style="position:absolute; top:98%;" >
@@ -44,8 +44,8 @@
 	</div>	
 	
 
-	<span class="logo" onclick="location.href='about.php'"> </span>
-	<span class="cache" style="background: url(img/logo_about_gray.png)"></span>
+	<div class="logo" onclick="location.href='about.php'"> </div>
+	<div class="cache" style="background: url(img/logo_about_gray.png)"></div>
 
 	
 </body>
