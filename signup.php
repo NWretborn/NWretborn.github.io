@@ -105,7 +105,7 @@
 
 
 	<div class="center box">
-		<form action="http://213.113.7.224/confirmed.php" method="http://213.113.7.224/api.php?method=POST/usr">
+		<form action="http://213.113.7.224/confirmed.php" method="POST">
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
@@ -136,7 +136,7 @@
 			<br/><br/>
 			<div class="center" style="top:91%">
 			
-				<input type="submit" value="Register" name="register" class="tb4">
+				<input type="submit" value="http://213.113.7.224/api.php" name="register" class="tb4">
 				</form>
 			</div>
 	</div>
