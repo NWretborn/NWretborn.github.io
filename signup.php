@@ -105,7 +105,7 @@
 
 
 	<div class="center box">
-		<form action="localhost/confirmed.php" method="http://213.113.7.224/api.php/usr?method=POST">
+		<form action="http://213.113.7.224/confirmed.php" method="http://213.113.7.224/api.php/usr?method=POST">
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
