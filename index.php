@@ -6,7 +6,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<title>WiFinder</title>
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
-	
+
+	<style>
+		:root{
+			--ROWNR: 1.4;
+		}
+
+		
+	</style>
+
 </head>
 
 <body>
@@ -15,7 +23,7 @@
 	<div class="box center">
 		<div class="text_box">
 
-			<div class="left text" style="top:calc(var(--FONT_HEIGHT)*1.4);">
+			<div class="left text" style="top:calc(var(--FONT_HEIGHT)*var(--ROWNR));">
 				Username
 			</div>
 			<input type="text" name="username"
@@ -44,7 +52,7 @@
 	</div>	
 	
 
-	<div class="logo" onclick="location.href='about.php'"> </div>
+	<div id="logo" onclick="location.href='about.php'"> </div>
 	<div class="cache" style="background: url(img/logo_about_gray.png)"></div>
 
 	
