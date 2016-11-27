@@ -7,14 +7,6 @@
 	<title>WiFinder</title>
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
 
-	<style>
-		:root{
-			--ROWNR: 1.4;
-		}
-
-		
-	</style>
-
 </head>
 
 <body>
@@ -23,7 +15,7 @@
 	<div class="box center">
 		<div class="text_box">
 
-			<div class="left text" style="top:calc(var(--FONT_HEIGHT)*var(--ROWNR));">
+			<div class="left text" style="top:calc(var(--FONT_HEIGHT)*1.4);">
 				Username
 			</div>
 			<input type="text" name="username"
