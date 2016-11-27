@@ -134,7 +134,7 @@
 			</div>
 			<br/><br/>
 			<div class="center" style="top:91%">
-			<form action="api.php/user" method="post">
+			<form action="confirmed.php" method="post">
 				<input type="submit" value="Register" name="register" class="tb4">
 				</form>
 			</div>
