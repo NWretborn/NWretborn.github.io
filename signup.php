@@ -1,5 +1,5 @@
 <?php
-	include 'api.php';
+	require 'api.php';
 ?>
 <!DOCTYPE html>
 <html>
