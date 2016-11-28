@@ -4,6 +4,8 @@ require("phpsqlajax_dbinfo.php");
 
 // get the HTTP method, path and body of the request
 $method = $_SERVER['REQUEST_METHOD'];
+$pi = (isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : '');
+$path = explode("/", substr($pi,1));
 $request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 $input = json_decode(file_get_contents('php://input'),true);
  
