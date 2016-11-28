@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include 'index.php';
+	require 'index.php';
 ?>
 <!DOCTYPE html>
 <html>
