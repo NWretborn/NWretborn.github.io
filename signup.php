@@ -2,7 +2,8 @@
 	
 	error_reporting(E_ALL);
 	ini_set('display_errors', 'On');
-	require_once "api.php";
+	require "phpsqlajax_dbinfo.php";
+	require "api.php";
 	
 ?>
 <!DOCTYPE html>
