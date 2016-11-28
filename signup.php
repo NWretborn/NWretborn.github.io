@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	require 'index.php';
+	require 'api.php';
 ?>
 <!DOCTYPE html>
 <html>
