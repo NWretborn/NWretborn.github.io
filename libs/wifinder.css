@@ -60,7 +60,7 @@ body{
 	min-width: 9vh;
 	height: 15vh; 
 	min-height: 15vw;
-	left:calc(10vw + 3vh);
+	left:calc(4vw + 3vh);
 	bottom:calc(5vh + 4vw);
 	transform: translate(-50%, 50%);
 }
