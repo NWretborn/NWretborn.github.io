@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	include 'api.php';
 ?>
 <!DOCTYPE html>
 <html>
