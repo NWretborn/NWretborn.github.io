@@ -2,7 +2,6 @@
  
 require("phpsqlajax_dbinfo.php");
 
-session_start();
 
 // get the HTTP method, path and body of the request
 $method = $_SERVER['REQUEST_METHOD'];
