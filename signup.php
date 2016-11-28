@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include 'api.php';
+	include 'index.php';
 ?>
 <!DOCTYPE html>
 <html>
