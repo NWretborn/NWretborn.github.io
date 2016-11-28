@@ -1,5 +1,6 @@
 <?php
-	session_start(api.php);
+	session_start();
+	require api.php;
 	error_reporting(E_ALL);
 	ini_set('display_errors', 'On');
 	
