@@ -33,14 +33,10 @@ body{
 		BASE COMPONENT CLASSES
 */
 
-
 /* Default logo */
 #logo{
 	position:fixed;
 	display: block;
-	background: url(../img/logo_blue.png) no-repeat;
-	background-position: center;
-	background-size: contain;
 	width: 9vw;
 	min-width: 9vh;
 	height: 15vh;
@@ -50,26 +46,21 @@ body{
 	transform: translate(-50%, 50%);
 }
 #logo:hover{
+	height:18vh;
+	width: 10.8vw;
+}
+/* index logo */
+#logo.index{
+	background: url(../img/logo_blue.png) no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+#logo.index:hover{
 	background: url(../img/logo_about_gray.png) no-repeat;
 	background-position: center;
 	background-size: contain;
-	height:18vh;
-	width: 10.8vw;
 }
-
-#logo.git{
-	background: url(../img/logo_git.png) no-repeat;
-	background-position: center;
-	background-size: contain;
-}
-#logo.git:hover{
-	height:18vh;
-	width: 10.8vw;
-}
-
-
-
-/* about.php logo */
+/* about logo */
 #logo.about{
 	background: url(../img/logo_gray.png) no-repeat;
 	background-position: center;
@@ -77,6 +68,12 @@ body{
 }
 #logo.about:hover{
 	background: url(../img/logo_blue.png) no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+/* git logo */
+#logo.git{
+	background: url(../img/logo_git.png) no-repeat;
 	background-position: center;
 	background-size: contain;
 }
