@@ -46,9 +46,11 @@
 			</form>
 		</div>
 
-		<form action="signup.php" method="get">
-			<input type="submit" value ="sign up" name="register" class="hCenter centerpoint" style="position:absolute; top:98%;" >
-		</form>
+		<!--<form action="signup.php" method="get">-->
+		<div onclick="location.href='signup.php'">
+			<input type="submit" value ="Sign up" name="register" class="hCenter centerpoint" style="position:absolute; top:98%;" >
+		</div>
+		<!--</form>-->
 	</div>	
 	
 
