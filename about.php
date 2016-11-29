@@ -26,9 +26,9 @@
 			Niclas Vretborn<br/>nicvre-3@student.ltu.se
 			</p>
 		</span>
+		<span id="logo" class="git" onclick="location.href='https://github.com/NWretborn/WiFinder'"> </span>
 	</span>
 	
-	<span id="logo.git" onclick="https://github.com/NWretborn/WiFinder"> </span>
 	<span id="logo" class="about" onclick="location.href='index.php'"> </span>
 	<span class="cache" style="background: url(img/logo_blue.png)"></span>
 
