@@ -7,14 +7,13 @@
 </head>
 
 <script src="libs/std.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ"
-        type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ" type="text/javascript"></script>
 <script src="libs/map.js"></script>
 
 <body onload="load()">
-  <div id="map" style="width: 70%; height: 950px; left:30%"></div>
-  
-	<span class="logo2" onclick="location.href='index.php'"> </span>
+	<div id="map" style="width: 70%; height: 950px; left:30%"></div>
+
+	<span class="logo" class="about" onclick="location.href='index.php'"> </span>
 	<span class="cache" style="background: url(img/logo_blue.png)"></span>
 </body>
 
