@@ -8,7 +8,7 @@ $row = $result->fetch_assoc();
 echo htmlentities($row['_message']);
 
 $method = $_SERVER['REQUEST_METHOD'];
-$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+$request = explode('/', trim($_SERVER['REQUEST_URI'],'/'));
 $input = json_decode(file_get_contents('php://input'),true);
 
 ?>
