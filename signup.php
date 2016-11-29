@@ -1,5 +1,10 @@
 <?php
-	session_start();
+	
+	error_reporting(E_ALL);
+	ini_set('display_errors', 'On');
+	require ("phpsqlajax_dbinfo.php");
+	require ("api2.php");
+	
 ?>
 <!DOCTYPE html>
 <html>
@@ -105,6 +110,7 @@
 
 
 	<div class="center box">
+		<form action="http://213.113.7.224/confirmed.php" method="POST">
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
@@ -134,8 +140,8 @@
 			</div>
 			<br/><br/>
 			<div class="center" style="top:91%">
-			<form action="confirmed.php" method="POST">
-				<input type="submit" value="Register" name="register" class="tb4">
+			
+				<input type="submit" value="Register" action="http://213.113.7.224/api.php?method=POST" class="tb4">
 				</form>
 			</div>
 	</div>
