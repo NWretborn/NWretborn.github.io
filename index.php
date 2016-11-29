@@ -47,7 +47,7 @@
 		</div>
 
 		<form action="signup.php" method="get">
-			<input type="submit" name="register" class="hCenter centerpoint" style="position:absolute; top:98%;" >
+			<input type="submit" value ="sign up" name="register" class="hCenter centerpoint" style="position:absolute; top:98%;" >
 		</form>
 	</div>	
 	
