@@ -102,7 +102,7 @@
 
 
 	<div class="center box">
-		<form action="http://213.113.7.224/confirmed.php" method="post api.php/user">
+		<form action="" method="post api.php/user">
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
