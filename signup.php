@@ -5,6 +5,7 @@
 	require_once("api2.php");
 	$api = new api2.php;
 	echo $_SERVER['PATH_INFO'];
+	echo "hej";
 	
 ?>
 <!DOCTYPE html>
