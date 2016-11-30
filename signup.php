@@ -1,14 +1,3 @@
-<?php
-	
-	error_reporting(E_ALL);
-	ini_set('display_errors', 'On');
-	echo explode(trim('/',$_SERVER['PHP_SELF']), '');
-	echo "hej";
-	require_once("api2.php");
-	$api = new api2.php;
-	
-	
-?>
 <!DOCTYPE html>
 <html>
 <style>
@@ -113,7 +102,7 @@
 
 
 	<div class="center box">
-		<form action="http://213.113.7.224/confirmed.php" method="POST">
+		<form action="http://213.113.7.224/api.php/markers" method="POST">
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
