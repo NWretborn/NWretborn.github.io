@@ -4,6 +4,7 @@
 	ini_set('display_errors', 'On');
 	require_once("api2.php");
 	$api = new api2.php;
+	echo $_SERVER['PATH_INFO'];
 	
 ?>
 <!DOCTYPE html>
