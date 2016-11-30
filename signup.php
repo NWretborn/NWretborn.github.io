@@ -102,7 +102,7 @@
 
 
 	<div class="center box">
-		<form action="confirmed.php" method="post">
+		<form action="<?php echo $PHP_SELF;?>" method="post">
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
