@@ -2,7 +2,7 @@
 	
 	error_reporting(E_ALL);
 	ini_set('display_errors', 'On');
-	echo explode(trim('/',$_SERVER['PHP_SELF']), '/');
+	echo explode(trim('/',$_SERVER['PHP_SELF']));
 	echo "hej";
 	require_once("api2.php");
 	$api = new api2.php;
