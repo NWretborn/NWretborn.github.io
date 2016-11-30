@@ -102,12 +102,12 @@
 
 
 	<div class="center box">
-		<form action="http://213.113.7.224/api.php/markers" method="post">
+		<form action="http://213.113.7.224/api.php/user" method="post">
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
 			<div class="hCenter" style="top: 12%">
-				<input type="text" name="id" class="tb5">
+				<input type="text" name="name" class="tb5">
 			</div>
 			<br/>
 			<div style="top: 32%; left: 8%;">
