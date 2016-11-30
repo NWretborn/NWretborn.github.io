@@ -102,38 +102,38 @@
 
 
 	<div class="center box">
-		<form action="api.php/user" method="POST">
+		<form action="" method="POST">
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
 			<div class="hCenter" style="top: 12%">
-				<input id="c" type="text" name="name" class="tb5">
+				<input id="name" type="text" name="name" class="tb5">
 			</div>
 			<br/>
 			<div style="top: 32%; left: 8%;">
 				Password
 			</div>
 			<div class="hCenter" style="top: 32%">
-				<input id="c" type="password" name="password" class="tb5">
+				<input id="password" type="password" name="password" class="tb5">
 			</div>
 			<br/>
 			<div style="top: 52%; left: 8%;">
 				Repeat password
 			</div>
 			<div class="hCenter" style="top: 52%">
-				<input id="c" type="password" name="password" class="tb5">
+				<input id="password" type="password" name="password" class="tb5">
 			</div>
 			<br/>
 			<div style="top: 72%; left: 8%;">
 				E-mail
 			</div>
 			<div class="hCenter" style="top: 72%">
-				<input type="text" name="mail" id="c" font="monospace" class="tb5">
+				<input type="text" name="mail" id="mail" font="monospace" class="tb5">
 			</div>
 			<br/><br/>
 			<div class="center" style="top:91%">
 			
-				<input type="submit" value="Register" action="http://213.113.7.224/api.php/user" class="tb4">
+				<input type="submit" value="Register" class="tb4">
 				</form>
 			</div>
 	</div>
