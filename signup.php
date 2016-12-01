@@ -108,6 +108,7 @@
 			</div>
 			<div class="hCenter" style="top: 12%">
 				<input type="text" name="id" class="tb5">
+				<!--
 			</div>
 			<br/>
 			<div style="top: 32%; left: 8%;">
@@ -132,7 +133,7 @@
 			</div>
 			<br/><br/>
 			<div class="center" style="top:91%">
-			
+			-->
 				<input type="submit" value="Register" class="tb4">
 				</form>
 			</div>
