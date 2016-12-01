@@ -102,10 +102,7 @@
 
 
 	<div class="center box">
-		<form action="<?php
-echo $request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-echo $table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
-?>" method="post api.php/user">
+		<form action="test.php" method="post api.php/user">
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
