@@ -102,7 +102,7 @@
 
 
 	<div class="center box">
-		<form action="test.php" method="post api.php/user">
+		<form action="" method="post api.php/user">
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
@@ -137,6 +137,12 @@
 				</form>
 			</div>
 	</div>
+	
+	<?php
+echo $request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+echo $request = explode('/', trim($_SERVER['PHP_USER'],'/'));
+echo $table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
+?>
 	
 	<span class="logo2" onclick="location.href='index.php'"> </span>
 	<span class="cache" style="background: url(img/logo_blue.png)"></span>
