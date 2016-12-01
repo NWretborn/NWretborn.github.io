@@ -102,13 +102,13 @@
 
 
 	<div class="center box">
-		<form action="http://213.113.7.224/api.php/user?post" method="post http://213.113.7.224/api.php/user">
-			<!--
+		<form action="" method="post http://213.113.7.224/api.php/user">
+		
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
 			<div class="hCenter" style="top: 12%">
-				<input type="text" name="id" class="tb5">
+				<input type="text" name="name" class="tb5">
 				
 			</div>
 			<br/>
@@ -123,7 +123,7 @@
 				Repeat password
 			</div>
 			<div class="hCenter" style="top: 52%">
-				<input type="password" name="password" class="tb5">
+				<input type="passwordrep" name="password" class="tb5">
 			</div>
 			<br/>
 			<div style="top: 72%; left: 8%;">
@@ -134,7 +134,7 @@
 			</div>
 			<br/><br/>
 			<div class="center" style="top:91%">
-			-->
+		
 				<input type="submit" value="Register" class="tb4">
 				</form>
 			</div>
