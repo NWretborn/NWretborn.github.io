@@ -102,7 +102,7 @@
 
 
 	<div class="center box">
-		<form action="api.php/user<?php echo $request = explode('/', trim($_SERVER['PATH_INFO'],'/')); ?>" method="post api.php/user">
+		<form action="api.php/user" method="post">
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
