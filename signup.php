@@ -107,7 +107,7 @@
 				Username
 			</div>
 			<div class="hCenter" style="top: 12%">
-				<input type="text" name="name" class="tb5">
+				<input type="text" name="id" class="tb5">
 			</div>
 			<br/>
 			<div style="top: 32%; left: 8%;">
