@@ -135,7 +135,7 @@
 			<br/><br/>
 			<div class="center" style="top:91%">
 		
-				<input type="submit" value="Register" class="tb4">
+				<input type="submit" value="Register" name="register" class="tb4">
 				</form>
 			</div>
 	</div>
