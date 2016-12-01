@@ -14,32 +14,24 @@ $input = json_decode(file_get_contents('php://input'),true);
 $link = mysqli_connect('localhost', $username, $password, $database);
 mysqli_set_charset($link,'utf8');
 
-if (!$link) { 
-		die('Could not connect: ' . mysql_error());  
-		echo $link->error;
-	}
 
-	if(isset($_GET['Message'])){
-		popup($_GET['Message']);
-	}
-
-	if(isset($_POST['register'])){
-		$stmt = $link->prepare('CALL add_user(?,?,?,?,?,?,?,?)');
-		$stmt->bind_param('ssssssss', 
-			$name, 	$password,  $mail
-			);
+if(isset($_POST['register'])){
+	$stmt = $link->prepare('CALL add_user(?,?,?,?,?,?,?,?)');
+	$stmt->bind_param('ssssssss', 
+		$name, 	$password,  $mail
+		);
 
 
-		$name 		= $_POST["name"];
-		$password 	= $_POST["password"];
-		$passwordrep= $_POST["passwordrep"];
-    $mail		= $_POST["mail"];
+	$name 		= $_POST["name"];
+	$password 	= $_POST["password"];
+	$passwordrep	= $_POST["passwordrep"];
+    	$mail		= $_POST["mail"];
 
         	if($name == "" 
 			or $mail == "" 
 			or $name == "" 
 			) { 
-        	header('Location: signup.php?Message='.urlencode('All fields must be filled!'));
+        		header('Location: signup.php?Message='.urlencode('All fields must be filled!'));
 		}
 		else if($password != $passwordrep){
 			header('Location: signup.php?Message='.urlencode('password missmatch'));
