@@ -138,11 +138,6 @@
 			</div>
 	</div>
 	
-	<?php
-echo explode('/', trim($_SERVER['PATH_INFO'],'/'));
-echo explode('/', trim($_SERVER['PHP_USER'],'/'));
-echo preg_replace('/[^a-z0-9_]+/i','',array_shift(explode('/', trim($_SERVER['PATH_INFO'],'/'));));
-?>
 	
 	<span class="logo2" onclick="location.href='index.php'"> </span>
 	<span class="cache" style="background: url(img/logo_blue.png)"></span>
