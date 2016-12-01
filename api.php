@@ -14,6 +14,54 @@ $input = json_decode(file_get_contents('php://input'),true);
 $link = mysqli_connect('localhost', $username, $password, $database);
 mysqli_set_charset($link,'utf8');
 
+if (!$link) { 
+		die('Could not connect: ' . mysql_error());  
+		echo $link->error;
+	}
+
+	if(isset($_GET['Message'])){
+		popup($_GET['Message']);
+	}
+
+	if(isset($_POST['register'])){
+		$stmt = $link->prepare('CALL add_user(?,?,?,?,?,?,?,?)');
+		$stmt->bind_param('ssssssss', 
+			$name, 	$password,  $mail
+			);
+
+
+		$name 		= $_POST["name"];
+		$password 	= $_POST["password"];
+		$passwordrep= $_POST["passwordrep"];
+    $mail		= $_POST["mail"];
+
+        	if($name == "" 
+			or $mail == "" 
+			or $name == "" 
+			) { 
+        	header('Location: signup.php?Message='.urlencode('All fields must be filled!'));
+		}
+		else if($password != $passwordrep){
+			header('Location: signup.php?Message='.urlencode('password missmatch'));
+		}
+		else{ 
+
+			$stmt->execute();
+			
+			#$sql = "CALL add_user('$username','$email', '$name','$address', $postalcode,'$country',$phone,'$password')"; 
+			#mysqli_query($conn,$sql);             
+			if($link->error){ 
+				header('Location: signup.php?Message='.urlencode($conn->error));
+			}       
+			else{ 
+				$_SESSION['A_C'] = "Account created!";
+				header('Location: index.php');
+			}
+
+			//this had to be closed last
+			$stmt->close();
+		}
+	}
 // retrieve the table and key from the path
 $table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
 $key = array_shift($request)+0;
