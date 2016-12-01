@@ -103,6 +103,7 @@
 
 	<div class="center box">
 		<form action="api.php/user" method="post">
+			<?php include "api.php";?>
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
@@ -140,7 +141,7 @@
 	
 	<span class="logo2" onclick="location.href='index.php'"> </span>
 	<span class="cache" style="background: url(img/logo_blue.png)"></span>
-	<?php include "api.php/user";?>
+	
 	</body>
 </html>
 
