@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php
-include("api.php");
-error_reporting(E_ERROR | E_PARSE);
-?>
+
 <style>
 	body{
 		background-color: black;
