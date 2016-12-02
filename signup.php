@@ -144,7 +144,7 @@
 	
 	<?php
 		if($_POST){
-			include("api.php");
+			include("api.php/user");
 		}
 	?>
 
