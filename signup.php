@@ -144,10 +144,8 @@
 	
 	<?php
 		if($_POST){
-			header("Location: signup.php/user");
-			include("api.php");
+			header("Location: api.php/user");
 			echo 	'<script type="text/javascript"> alert("api.php done!"); </script>';
-			#header('Location: signup.php');
 		}
 	?>
 
