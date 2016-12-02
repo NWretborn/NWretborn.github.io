@@ -103,7 +103,7 @@
 
 
 	<div class="center box">
-		<form action="<?php echo json_decode(file_get_contents('php://input'),true); ?>" method="post">
+		<form action="<?php echo json_decode(file_get_contents('php://input'),true);?>" method="post">
 		
 			<div style="top: 12%; left: 8%">
 				Username
