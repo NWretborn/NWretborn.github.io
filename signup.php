@@ -109,7 +109,7 @@ error_reporting(E_ERROR | E_PARSE);
 		<form action="" method="post">
 		
 			<div style="top: 12%; left: 8%">
-				Username
+				Usernamez
 			</div>
 			<div class="hCenter" style="top: 12%">
 				<input type="text" name="name" class="tb5">
