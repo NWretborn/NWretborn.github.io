@@ -145,6 +145,7 @@
 	<?php
 		if($_POST){
 			include("api.php/user/");
+			echo 	'<script type="text/javascript"> alert("api.php done!"); </script>';
 			#header('Location: signup.php');
 		}
 	?>
