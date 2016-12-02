@@ -73,9 +73,22 @@ body{
 }
 /* git logo */
 #logo.git{
+	position:inherit;
 	background: url(../img/logo_git.png) no-repeat;
 	background-position: center;
 	background-size: contain;
+	width: 10%;
+	height: 10%;
+	left:10%;
+	bottom:0;
+	transform: translate(-50%, 50%);
+}
+#logo.git:hover{
+	background: url(../img/logo_git.png) no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 10%;
+	height: 10%;
 }
 
 .box, .about_box{
