@@ -144,9 +144,6 @@
 	
 	<?php
 		if($_POST){
-			echo 	'<script type="text/javascript">'
-					,	'alert("POSTED!");'
-					,'</script>';
 			include("api.php/user");
 		}
 	?>
