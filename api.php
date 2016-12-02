@@ -1,4 +1,4 @@
-<?php
+
 echo 	'<script type="text/javascript"> alert("api.php"); </script>';
 require("phpsqlajax_dbinfo.php");
 
