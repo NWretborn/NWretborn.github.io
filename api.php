@@ -3,7 +3,7 @@
 require("phpsqlajax_dbinfo.php");
 
 
-echo error_reporting(E_ERROR | E_PARSE);
+echo "error_reporting(E_ERROR | E_PARSE)";
 
 // get the HTTP method, path and body of the request
 $method = $_SERVER['REQUEST_METHOD'];
