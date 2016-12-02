@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php
-require("api.php");
+include("api.php");
 error_reporting(E_ERROR | E_PARSE);
 ?>
 <style>
@@ -109,7 +109,7 @@ error_reporting(E_ERROR | E_PARSE);
 		<form action="" method="post">
 		
 			<div style="top: 12%; left: 8%">
-				Usernamez
+				Username
 			</div>
 			<div class="hCenter" style="top: 12%">
 				<input type="text" name="name" class="tb5">
