@@ -1,3 +1,4 @@
+<?php
 
 echo 	'<script type="text/javascript"> alert("api.php"); </script>';
 require("phpsqlajax_dbinfo.php");
@@ -111,3 +112,5 @@ if ($method == 'GET') {
 
 // close mysql connection
 mysqli_close($link);
+
+?>
