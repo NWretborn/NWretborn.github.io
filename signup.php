@@ -143,10 +143,10 @@
 	</div>
 	
 	<?php
-		if($_POST){
+		#if($_POST){
 			#header("Location: api.php/user/32");
-			echo 	'<script type="text/javascript"> alert("api.php done!"); </script>';
-		}
+			#echo 	'<script type="text/javascript"> alert("api.php done!"); </script>';
+		#}
 	?>
 
 	
