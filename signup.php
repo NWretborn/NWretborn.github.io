@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php include api.php ?>
+<?php include("api.php"); ?>
 <style>
 	body{
 		background-color: black;
