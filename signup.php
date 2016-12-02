@@ -145,7 +145,7 @@
 	<?php
 		if($_POST){
 			include("api.php");
-			echo 	'<script type="text/javascript">alert("'.$_SESSION['message'].'");</script>';
+			echo 	'<script type="text/javascript">alert("yoyo");</script>';
 		}
 	?>
 
