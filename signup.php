@@ -103,7 +103,7 @@
 
 
 	<div class="center box">
-		<form action="http://localhost/api.php/markers/1" method="delete">
+		<form action="api.php/markers/1" method="delete">
 		
 			<div style="top: 12%; left: 8%">
 				Username
