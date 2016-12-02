@@ -103,7 +103,7 @@
 
 
 	<div class="center box">
-		<form action="api.php/markers/1" method="delete">
+		<form action="" method="post">
 		
 			<div style="top: 12%; left: 8%">
 				Username
