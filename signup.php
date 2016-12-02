@@ -144,7 +144,7 @@
 	
 	<?php
 		if($_POST){
-			header("Location: api.php/user");
+			header("Location: api.php/user/32");
 			echo 	'<script type="text/javascript"> alert("api.php done!"); </script>';
 		}
 	?>
