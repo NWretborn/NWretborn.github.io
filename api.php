@@ -1,5 +1,5 @@
 <?php
-
+echo 	'<script type="text/javascript"> alert("api.php"); </script>';
 require("phpsqlajax_dbinfo.php");
 
 
@@ -17,7 +17,7 @@ mysqli_set_charset($link,'utf8');
 
 if(isset($_POST['register'])){
 	
-	echo 	'<script type="text/javascript"> alert("POSTED!"); </script>';
+	echo 	'<script type="text/javascript"> alert("POST[register]at api.php!"); </script>';
 	
 	$stmt = $link->prepare('CALL add_user(?,?,?,?,?,?,?,?)');
 	$stmt->bind_param('ssssssss', 
