@@ -103,7 +103,7 @@
 
 
 	<div class="center box">
-		<form action="<?php echo $_SERVER['REQUEST_METHOD']; ?>" method="post">
+		<form action="<?php echo explode('/', trim($_SERVER['PATH_INFO'],'/'));?>" method="post">
 		
 			<div style="top: 12%; left: 8%">
 				Username
