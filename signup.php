@@ -143,10 +143,10 @@
 	</div>
 	
 	<?php
-		if($_POST){
-			include("api.php");
-			echo 	'<script type="text/javascript">alert("yoyo");</script>';
-		}
+		#if($_POST){
+		#	include("api.php");
+		#	echo 	'<script type="text/javascript">alert("yoyo");</script>';
+		#}
 	?>
 
 	
