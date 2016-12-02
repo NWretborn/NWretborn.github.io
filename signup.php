@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<?php include api.php ?>
 <style>
 	body{
 		background-color: black;
@@ -102,7 +103,7 @@
 
 
 	<div class="center box">
-		<form action="" method="post http://213.113.7.224/api.php/user">
+		<form action="" method="post">
 		
 			<div style="top: 12%; left: 8%">
 				Username
@@ -123,7 +124,7 @@
 				Repeat password
 			</div>
 			<div class="hCenter" style="top: 52%">
-				<input type="passwordrep" name="password" class="tb5">
+				<input type="passwordrep" name="passwordrep" class="tb5">
 			</div>
 			<br/>
 			<div style="top: 72%; left: 8%;">
@@ -136,8 +137,9 @@
 			<div class="center" style="top:91%">
 		
 				<input type="submit" value="Register" name="register" class="tb4">
-				</form>
+				
 			</div>
+		</form>
 	</div>
 	
 	
