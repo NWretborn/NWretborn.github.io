@@ -3,7 +3,9 @@
 require("phpsqlajax_dbinfo.php");
 
 
-echo "error_reporting(E_ERROR | E_PARSE)";
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 // get the HTTP method, path and body of the request
 $method = $_SERVER['REQUEST_METHOD'];
