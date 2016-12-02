@@ -103,7 +103,7 @@
 
 
 	<div class="center box">
-		<form action="" method="post">
+		<form action="<?php echo $_SERVER['REQUEST_METHOD']; ?>" method="post">
 		
 			<div style="top: 12%; left: 8%">
 				Username
