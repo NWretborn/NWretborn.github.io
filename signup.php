@@ -10,9 +10,9 @@
 </style>
 <script type="text/javascript">
 	function changePic(element, imageName) {
-    	element.setAttribute('src', imageName);
+	    	element.setAttribute('src', imageName);
 	}
-	
+
 	function larger(element){
 		var style = window.getComputedStyle(element),
 		h = parseFloat(style.height),
@@ -20,8 +20,7 @@
 		h = (h*1.2)/vH*100;
 		element.style.height = h + 'vh';
 	}
-	
-	
+
 	function smaller(element){
 		var style = window.getComputedStyle(element),
 		h = parseFloat(style.height),
@@ -29,7 +28,7 @@
 		h = (h/1.2)/vH*100;
 		element.style.height = h + 'vh';
 	}
-	
+
 </script>
 <head>
 <link rel="stylesheet" type="text/css" href="libs/wifinder.css">
@@ -40,7 +39,7 @@
 	#c{	text-align: center;	}
 	#l{	text-align: left;	}
 	#r{	text-align: right;	}
-	
+
 	/* Rounded Corner */
 	.tb5 {
 		background-color: #10454e;
@@ -50,14 +49,14 @@
 		font-family: monospace;
 	}
 	.tb4 {
-		
+
 		background-color: #10454e;
 		border:0px solid #29afc4;
 		border-radius:20px;
 		font-size: 1.5vw;
 	}
 	.center{
-		
+
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
@@ -104,13 +103,13 @@
 
 	<div class="center box">
 		<form action="<?php echo $_SERVER['PATH_INFO'];?>" method="post">
-		
+
 			<div style="top: 12%; left: 8%">
 				Username
 			</div>
 			<div class="hCenter" style="top: 12%">
 				<input type="text" name="name" class="tb5">
-				
+
 			</div>
 			<br/>
 			<div style="top: 32%; left: 8%;">
@@ -135,13 +134,13 @@
 			</div>
 			<br/><br/>
 			<div class="center" style="top:91%">
-		
+
 				<input type="submit" value="Register" name="register" class="tb4">
-				
+
 			</div>
 		</form>
 	</div>
-	
+
 	<?php
 		#if($_POST){
 		#	include("api.php");
@@ -149,13 +148,11 @@
 		#}
 	?>
 
-	
+
 	<span class="logo2" onclick="location.href='index.php'"> </span>
 	<span class="cache" style="background: url(img/logo_blue.png)"></span>
-	
+
 	</body>
 
 
 </html>
-
-
