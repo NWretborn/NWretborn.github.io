@@ -124,7 +124,7 @@
 				Repeat password
 			</div>
 			<div class="hCenter" style="top: 52%">
-				<input type="passwordrep" name="passwordrep" class="tb5">
+				<input type="password" name="passwordrep" class="tb5">
 			</div>
 			<br/>
 			<div style="top: 72%; left: 8%;">
