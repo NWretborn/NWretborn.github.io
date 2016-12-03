@@ -1,0 +1,27 @@
+curl_init()
+
+	initializes a new session and return a cURL handle
+
+curl_setopt()
+
+	sets option on cURL handle
+
+curl_exec()
+
+	execute cURL session
+	OBS: should be called after curl_init() and curl_setopt()
+
+
+------cURL options--------------------------------
+
+CURLOPT_POST
+
+	normal HTML POST
+
+CURLOPT_POSTFIELDS
+
+	the full data to POST
+
+CURLOPT_PUT
+
+	normal HTTP file PUT
