@@ -28,7 +28,7 @@
 		if ($value===null) return null;
 		return mysqli_real_escape_string($link,(string)$value);
 	},array_values($input));
-
+	echo $method;
 	// build the SET part of the SQL command
 	$set = '';
 	for ($i=0;$i<count($columns);$i++) {
@@ -43,7 +43,6 @@
 		case 'PUT':
 			echo $method;
 			$sql = "update `$table` set $set where id=$key"; break;
-			echo "<br/>POST!!!";
 		case 'POST':
 			$sql = "insert into `$table` set $set"; break;
 		case 'DELETE':
