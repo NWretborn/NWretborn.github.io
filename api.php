@@ -41,6 +41,7 @@
 			$sql = "select * from `$table`".($key?" WHERE id=$key":''); break;
 		case 'PUT':
 			$sql = "update `$table` set $set where id=$key"; break;
+			echo "<br/>POST!!!";
 		case 'POST':
 			$sql = "insert into `$table` set $set"; break;
 		case 'DELETE':
