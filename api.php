@@ -41,10 +41,10 @@
 		case 'GET':
 			$sql = "select * from `$table`".($key?" WHERE id=$key":''); break;echo $method;
 		case 'PUT':
-			echo $method;
 			$sql = "update `$table` set $set where id=$key"; break;
 		case 'POST':
-			$sql = "insert into `$table` set $set"; break;echo $method;
+			echo $method;
+			$sql = "insert into `$table` set $set"; break;
 		case 'DELETE':
 			$sql = "delete from `$table` where id=$key"; break;
 	}
