@@ -35,9 +35,10 @@
 		$set.=($i>0?',':'').'`'.$columns[$i].'`=';
 		$set.=($values[$i]===null?'NULL':'"'.$values[$i].'"');
 	}
-	echo $method;
+	
 	// create SQL based on HTTP method
 	switch ($method) {
+		echo $method;
 		case 'GET':
 			$sql = "select * from `$table`".($key?" WHERE id=$key":''); break;
 		case 'PUT':
