@@ -2,16 +2,16 @@
 
 	require("phpsqlajax_dbinfo.php");
 
-	ini_set('display_errors', 1);
-	ini_set('display_startup_errors', 1);
-	error_reporting(E_ALL);
+	#ini_set('display_errors', 1);
+	#ini_set('display_startup_errors', 1);
+	#error_reporting(E_ALL);
 
 	// get the HTTP method, path and body of the request
 	$method = $_SERVER['REQUEST_METHOD'];
 
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	$input = json_decode(file_get_contents('php://input'),true);
-	echo $input;
+	echo "Input is:".$input;
 
 	// connect to the mysql database
 	$link = mysqli_connect('localhost', $username, $password, $database);
@@ -21,7 +21,7 @@
 
 	// retrieve the table and key from the path
 	$table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
-	echo $table;
+	
 	$key = array_shift($request)+0;
 
 	// escape the columns and values from the input object
@@ -37,7 +37,7 @@
 		$set.=($i>0?',':'').'`'.$columns[$i].'`=';
 		$set.=($values[$i]===null?'NULL':'"'.$values[$i].'"');
 	}
-	echo $set;
+	
 	// create SQL based on HTTP method
 	switch ($method) {
 		case 'GET':
@@ -45,7 +45,6 @@
 		case 'PUT':
 			$sql = "update `$table` set $set where id=$key"; break;
 		case 'POST':
-			echo $method;
 			$sql = "insert into `$table` set $set"; break;
 		case 'DELETE':
 			$sql = "delete from `$table` where id=$key"; break;
@@ -62,13 +61,12 @@
 
 	// print results, insert id or affected row count
 	if ($method == 'GET') {
-		echo "GET!!!!!!!!!<br/>";
-	if (!$key) echo '[';
+		if (!$key) echo '[';
 		for ($i=0;$i<mysqli_num_rows($result);$i++) {
 			echo ($i>0?',':'').json_encode(mysqli_fetch_object($result));
 		}
-	if (!$key)
-		echo ']';
+		if (!$key)
+			echo ']';
 	} elseif ($method == 'POST') {
 		echo "POST!!!!!!!!!<br/>";
 		echo '{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}';
