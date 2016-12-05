@@ -9,6 +9,7 @@
 	$method = $_SERVER['REQUEST_METHOD'];
 
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+	echo "php://input".file_get_contents('php://input');
 	$input = json_decode(file_get_contents('php://input'),true);
 	echo "Input is:".$input;
 
