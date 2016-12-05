@@ -28,14 +28,14 @@
 		if ($value===null) return null;
 		return mysqli_real_escape_string($link,(string)$value);
 	},array_values($input));
-	echo $method;
+	
 	// build the SET part of the SQL command
 	$set = '';
 	for ($i=0;$i<count($columns);$i++) {
 		$set.=($i>0?',':'').'`'.$columns[$i].'`=';
 		$set.=($values[$i]===null?'NULL':'"'.$values[$i].'"');
 	}
-
+	echo $method;
 	// create SQL based on HTTP method
 	switch ($method) {
 		case 'GET':
