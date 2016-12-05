@@ -38,14 +38,13 @@
 	
 	// create SQL based on HTTP method
 	switch ($method) {
-		echo $method;
 		case 'GET':
-			$sql = "select * from `$table`".($key?" WHERE id=$key":''); break;
+			$sql = "select * from `$table`".($key?" WHERE id=$key":''); break;echo $method;
 		case 'PUT':
 			echo $method;
 			$sql = "update `$table` set $set where id=$key"; break;
 		case 'POST':
-			$sql = "insert into `$table` set $set"; break;
+			$sql = "insert into `$table` set $set"; break;echo $method;
 		case 'DELETE':
 			$sql = "delete from `$table` where id=$key"; break;
 	}
