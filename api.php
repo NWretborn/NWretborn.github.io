@@ -45,6 +45,7 @@
 		case 'PUT':
 			$sql = "update `$table` set $set where id=$key"; break;
 		case 'POST':
+			echo "bajs";
 			echo $table;
 			echo $set;
 			$sql = "insert into `$table` set $set"; break;
