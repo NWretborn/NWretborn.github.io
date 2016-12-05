@@ -20,6 +20,7 @@
 
 	// retrieve the table and key from the path
 	$table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
+	echo $table;
 	$key = array_shift($request)+0;
 
 	// escape the columns and values from the input object
