@@ -29,7 +29,7 @@
 		element.style.height = h + 'vh';
 	}
 	function form_post(formname){
-		var formData = JSON.stringify(formname).serializeArray());
+		var formData = JSON.stringify(formname).serializeArray();
 		xhttp.open("POST", "api.php", true);	// true:asynchronous
 		xhttp.send(formData);
 	}
