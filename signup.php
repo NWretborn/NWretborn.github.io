@@ -12,8 +12,8 @@
 <script type="text/javascript">
 	
 	function postForm(path, formName){
-		
-		alert($(formName).serialize());
+		alert(formName);
+		//alert($(formName).serialize());
 		//var formData = JSON.stringify($("#myForm").serializeArray());
 	}
 	
