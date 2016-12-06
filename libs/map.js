@@ -249,15 +249,6 @@ var customIcons = {
       
     var infoWindow = new google.maps.InfoWindow;
 
-    // Create the search box and link it to the UI element.
-    var input = document.getElementById('pac-input');
-    var searchBox = new google.maps.places.SearchBox(input);
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-
-    // Bias the SearchBox results towards current map's viewport.
-    map.addListener('bounds_changed', function() {
-    searchBox.setBounds(map.getBounds());
-    });
            
     // Change this depending on the name of your PHP file
     downloadUrl("phpsqlajax_genxml3.php", function(data) {
@@ -313,4 +304,12 @@ var customIcons = {
     request.send(null);
   }
 
-function doNothing() {}
+function doNothing() { // Create the search box and link it to the UI element.
+    var input = document.getElementById('pac-input');
+    var searchBox = new google.maps.places.SearchBox(input);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+    // Bias the SearchBox results towards current map's viewport.
+    map.addListener('bounds_changed', function() {
+    searchBox.setBounds(map.getBounds());
+    });}
