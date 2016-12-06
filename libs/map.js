@@ -298,6 +298,12 @@ var customIcons = {
               console.log("Returned place contains no geometry");
               return;
             }
+           if (place.geometry.viewport) {
+              // Only geocodes have viewport.
+              bounds.union(place.geometry.viewport);
+            } else {
+              bounds.extend(place.geometry.location);
+            }
             var icon = {
               url: place.icon,
               size: new google.maps.Size(71, 71),
@@ -307,12 +313,7 @@ var customIcons = {
             } }
                         
                         )
-        if (place.geometry.viewport) {
-              // Only geocodes have viewport.
-              bounds.union(place.geometry.viewport);
-            } else {
-              bounds.extend(place.geometry.location);
-            }
+        
 
   map.fitBounds(bounds);
 
