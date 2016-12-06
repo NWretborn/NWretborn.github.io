@@ -28,7 +28,8 @@
 		h = (h/1.2)/vH*100;
 		element.style.height = h + 'vh';
 	}
-	function form_post(formname){
+	function post_form(formname){
+		alert("form_post");
 		var formData = JSON.stringify(formname).serializeArray();
 		xhttp.open("POST", "api.php", true);	// true:asynchronous
 		xhttp.send(formData);
