@@ -9,30 +9,35 @@
 	}
 </style>
 <script type="text/javascript">
-	function changePic(element, imageName) {
-	    	element.setAttribute('src', imageName);
+	
+	function postForm(path, formName){
+		
+		alert(document.forms[formName].serializeArray());
+		//var formData = JSON.stringify($("#myForm").serializeArray());
 	}
+	
+	function post(path, params, method) {
+		method = method || "post"; // Set method to post by default if not specified.
 
-	function larger(element){
-		var style = window.getComputedStyle(element),
-		h = parseFloat(style.height),
-		vH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0); // MOBILE SCALING!!!
-		h = (h*1.2)/vH*100;
-		element.style.height = h + 'vh';
-	}
+		// The rest of this code assumes you are not using a library.
+		// It can be made less wordy if you use one.
+		var form = document.createElement("form");
+		form.setAttribute("method", method);
+		form.setAttribute("action", path);
 
-	function smaller(element){
-		var style = window.getComputedStyle(element),
-		h = parseFloat(style.height),
-		vH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0); // MOBILE SCALING!!!
-		h = (h/1.2)/vH*100;
-		element.style.height = h + 'vh';
-	}
-	function post_form(formname){
-		alert("form_post");
-		var formData = JSON.stringify(formname).serializeArray();
-		xhttp.open("POST", "api.php", true);	// true:asynchronous
-		xhttp.send(formData);
+		for(var key in params) {
+		if(params.hasOwnProperty(key)) {
+				var hiddenField = document.createElement("input");
+				hiddenField.setAttribute("type", "hidden");
+				hiddenField.setAttribute("name", key);
+				hiddenField.setAttribute("value", params[key]);
+
+				form.appendChild(hiddenField);
+			}
+		}
+
+		document.body.appendChild(form);
+		form.submit();
 	}
 </script>
 <head>
@@ -107,7 +112,7 @@
 
 
 	<div class="center box">
-		<form onsubmit="post_form()" name="registerform">
+		<form onsubmit="postForm(registerform)" name="registerform">
 
 			<div style="top: 12%; left: 8%">
 				Username
