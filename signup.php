@@ -21,9 +21,11 @@
 		
 		alert(path + "\n" + formName + "\n" + formData);
 		
+		var arr = [];
 		for(var x in formData){
-			alert(x);
+			arr.push(x);
 		}
+		alert(arr);
 		
 		//post(path, formData);
 		
