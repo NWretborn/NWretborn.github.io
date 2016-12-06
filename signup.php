@@ -8,7 +8,7 @@
 		background-size:cover;
 	}
 </style>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 	
 	function postForm(path, formName){
