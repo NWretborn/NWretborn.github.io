@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!-- http://stackoverflow.com/questions/15792655/add-marker-to-google-map-on-click -->
 <head>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     	<meta charset="utf-8">
