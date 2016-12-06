@@ -282,13 +282,6 @@ var customIcons = {
     searchBox.setBounds(map.getBounds());
     });
     
-    // For each place, get the icon, name and location.
-          var bounds = new google.maps.LatLngBounds();
-          places.forEach(function(place) {
-            if (!place.geometry) {
-              console.log("Returned place contains no geometry");
-              return;
-            }
 
 
   function bindInfoWindow(marker, map, infoWindow, html) {
