@@ -14,10 +14,12 @@
 	function postForm(path, formName){
 		//alert(formName);
 		//alert($(formName).serialize());
-		var formData = JSON.stringify($(formName).serialize());
+		//var formData = JSON.stringify($(formName).serialize());
+		var formData = $(formName);
+		alert(formData);
 		
-		$.post(path, formData, (function () {alert("$.post works")}));
-		alert("after $.post");
+		//$.post(path, formData, (function () {alert("$.post works")}));
+		//alert("after $.post");
 		
 		//alert(formData);
 		//var xhttp = new XMLHttpRequest();
@@ -35,7 +37,7 @@
 		form.setAttribute("action", path);
 
 		for(var key in params) {
-		if(params.hasOwnProperty(key)) {
+			if(params.hasOwnProperty(key)) {
 				var hiddenField = document.createElement("input");
 				hiddenField.setAttribute("type", "hidden");
 				hiddenField.setAttribute("name", key);
