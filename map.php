@@ -11,6 +11,7 @@
 <script src="libs/map.js"></script>
 
 <body onload="load()">
+	<input id="pac-input" class="controls" type="text" placeholder="Search Box">
 	<div id="map" style="width: 70%; height: 950px; left:30%"></div>
 
 	<span class="logo" class="about" onclick="location.href='index.php'"> </span>
