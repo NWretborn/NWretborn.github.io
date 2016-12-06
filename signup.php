@@ -50,7 +50,6 @@
 		}
 
 		document.body.appendChild(form);
-		alert(form);
 		form.submit();
 	}
 </script>
