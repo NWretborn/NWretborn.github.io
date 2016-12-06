@@ -301,7 +301,7 @@ var customIcons = {
 
           if (places.length == 0) {
             return;
-          }
+          });
 
     google.maps.event.addListener(marker, 'click', function() {
       infoWindow.setContent(html);
