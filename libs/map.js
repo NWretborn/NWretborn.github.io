@@ -291,6 +291,7 @@ var customIcons = {
           };
            // For each place, get the icon, name and location.
           var bounds = new google.maps.LatLngBounds();
+           bound.extend(myLatlng);
            
           places.forEach(function(place) {
             if (!place.geometry) {
