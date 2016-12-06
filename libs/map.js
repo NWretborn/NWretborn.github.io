@@ -308,9 +308,10 @@ var customIcons = {
     });
           
           
- map.fitBounds(bounds);
+
         bindInfoWindow(marker, map, infoWindow, html);
       }
+         map.fitBounds(bounds);
     });
       
   }
