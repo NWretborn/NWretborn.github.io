@@ -16,7 +16,7 @@
 		//alert($(formName).serialize());
 		var formData = JSON.stringify($(formName).serialize());
 		
-		$.post("api.php", formData, (function () {alert("$.post works")}));
+		$.post(path, formData, (function () {alert("$.post works")}));
 		alert("after $.post");
 		
 		//alert(formData);
