@@ -32,6 +32,12 @@ body{
 /*
 		BASE COMPONENT CLASSES
 */
+
+#map {
+        height: 100%;
+      }
+
+
 .controls {
         margin-top: 10px;
         border: 1px solid transparent;
