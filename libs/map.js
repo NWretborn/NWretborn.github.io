@@ -303,9 +303,9 @@ var customIcons = {
               anchor: new google.maps.Point(17, 34),
               scaledSize: new google.maps.Size(25, 25)
             } })
-   
+   map.fitBounds(bounds);
 
-    }map.fitBounds(bounds););
+    });
           
           
 
