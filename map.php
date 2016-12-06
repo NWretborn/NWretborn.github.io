@@ -14,8 +14,8 @@
 	
 	<script src="libs/map.js"></script>
 	<script src="libs/std.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places&callback=load" type="text/javascript"></script>
-	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places&callback=load"async defer></script>
+	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places&callback=load" type="text/javascript"async defer></script>-->
 	<span class="logo" class="about" onclick="location.href='index.php'"> </span>
 	<span class="cache" style="background: url(img/logo_blue.png)"></span>
 </body>
