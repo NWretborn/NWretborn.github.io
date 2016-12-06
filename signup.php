@@ -15,7 +15,7 @@
 		//alert(formName);
 		//alert($(formName).serialize());
 		var formData = JSON.stringify($(formName).serialize());
-		alert(formData);
+		//alert(formData);
 		var xhttp = new XMLHttpRequest();
 		xhttp.open("POST", "http://localhost/api.php", true);
 		xhttp.send(formData);
