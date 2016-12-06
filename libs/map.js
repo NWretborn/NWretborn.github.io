@@ -291,6 +291,7 @@ var customIcons = {
           };
            // For each place, get the icon, name and location.
           var bounds = new google.maps.LatLngBounds();
+           map.fitBounds(bounds);
           places.forEach(function(place) {
             if (!place.geometry) {
               console.log("Returned place contains no geometry");
@@ -313,7 +314,7 @@ var customIcons = {
       }
         
     });
-       map.fitBounds(bounds);
+       
   }
 
 
