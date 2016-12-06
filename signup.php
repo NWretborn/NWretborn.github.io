@@ -17,7 +17,7 @@
 		var formData = JSON.stringify($(formName).serialize());
 		alert(formData);
 		var xhttp = new XMLHttpRequest();
-		xhttp.open("POST", "api.php", true);
+		xhttp.open("POST", "php://input", true);
 		xhttp.send(formData);
 	}
 	
