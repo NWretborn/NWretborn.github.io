@@ -14,7 +14,7 @@
 	function postForm(path, formName){
 		//alert(formName);
 		//alert($(formName).serialize());
-		var formData = JSON.stringify($(formName).serializeArray());
+		var formData = JSON.stringify($(formName).serialize());
 		alert(formData);
 		xhttp.open("POST", "api.php", true);
 		xhttp.sent(formData);
