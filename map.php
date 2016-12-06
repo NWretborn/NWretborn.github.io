@@ -7,7 +7,7 @@
 </head>
 
 <script src="libs/std.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places&callback=load" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places&callback=initAutocomplete" type="text/javascript"></script>
 <script src="libs/map.js"></script>
 
 <body onload="load()">
