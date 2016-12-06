@@ -296,12 +296,12 @@ var customIcons = {
   function bindInfoWindow(marker, map, infoWindow, html) {
       // Listen for the event fired when the user selects a prediction and retrieve
         // more details for that place.
-        searchBox.addListener('places_changed', function() {
-          var places = searchBox.getPlaces();
+    searchBox.addListener('places_changed', function() {
+        var places = searchBox.getPlaces();
 
-          if (places.length == 0) {
+        if (places.length == 0) {
             return;
-          });
+          }});
 
     google.maps.event.addListener(marker, 'click', function() {
       infoWindow.setContent(html);
