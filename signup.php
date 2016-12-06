@@ -13,7 +13,7 @@
 	
 	function postForm(path, formName){
 		
-		alert( JSON.stringify( $("#registerform").serializeArray() ) );
+		alert( $("#registerform").serialize );
 		//var formData = JSON.stringify($("#myForm").serializeArray());
 	}
 	
