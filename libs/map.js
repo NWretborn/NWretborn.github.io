@@ -257,13 +257,6 @@ var customIcons = {
     });
     var infoWindow = new google.maps.InfoWindow;
 
-    searchBox.addListener('places_changed', function() {
-        var places = searchBox.getPlaces();
-
-        if (places.length == 0) {
-            return;
-          }
-
            
     // Change this depending on the name of your PHP file
     downloadUrl("phpsqlajax_genxml3.php", function(data) {
