@@ -13,7 +13,7 @@
 	
 	function postForm(path, formName){
 		
-		alert($("#registerform").serialize());
+		alert($(formName).serialize());
 		//var formData = JSON.stringify($("#myForm").serializeArray());
 	}
 	
@@ -113,7 +113,7 @@
 
 
 	<div class="center box">
-		<form onsubmit='postForm("registerform")' id="registerform" method='post'>
+		<form onsubmit='postForm("#registerform")' id="registerform" method='post'>
 
 			<div style="top: 12%; left: 8%">
 				Username
