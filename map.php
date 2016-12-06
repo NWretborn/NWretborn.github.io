@@ -10,7 +10,7 @@
 
 <body onload="load()">
 	<input id="pac-input" class="controls" type="text" placeholder="Search Box">
-	<div id="map"></div>
+	<div id="map" style="width: 70%; height: 950px; left:30%"></div>
 	
 	<script src="libs/map.js"></script>
 	<script src="libs/std.js"></script>
