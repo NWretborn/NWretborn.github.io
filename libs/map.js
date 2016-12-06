@@ -305,7 +305,7 @@ var customIcons = {
               scaledSize: new google.maps.Size(25, 25)
             } }
                         map.fitBounds(bounds);
-                        )
+                        );
   
 
     });
