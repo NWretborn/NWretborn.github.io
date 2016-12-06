@@ -16,6 +16,8 @@
 		
 		var formData = JSON.stringify($(formName).serializeArray());
 		
+		formData = $.parseJSON('[' + formData + ']');
+		
 		alert(path + "\n" + formName + "\n" + formData);
 		
 		var arr = [];
