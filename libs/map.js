@@ -311,9 +311,9 @@ var customIcons = {
 
         bindInfoWindow(marker, map, infoWindow, html);
       }
-         map.fitBounds(bounds);
+        
     });
-      
+       map.fitBounds(bounds);
   }
 
 
