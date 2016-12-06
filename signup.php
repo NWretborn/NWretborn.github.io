@@ -28,7 +28,11 @@
 		h = (h/1.2)/vH*100;
 		element.style.height = h + 'vh';
 	}
-
+	function form_post(formname){
+		var formData = JSON.stringify(formname).serializeArray());
+		xhttp.open("POST", "api.php", true);	// true:asynchronous
+		xhttp.send(formData);
+	}
 </script>
 <head>
 <link rel="stylesheet" type="text/css" href="libs/wifinder.css">
@@ -102,7 +106,7 @@
 
 
 	<div class="center box">
-		<form enctype="application/json" action="http://213.113.7.224/api.php/user" method="post">
+		<form onsubmit="post_form()" name="registerform">
 
 			<div style="top: 12%; left: 8%">
 				Username
