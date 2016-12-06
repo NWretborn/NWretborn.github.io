@@ -248,6 +248,16 @@ var customIcons = {
     });
     var infoWindow = new google.maps.InfoWindow;
 
+      
+       function initAutocomplete() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -33.8688, lng: 151.2195},
+          zoom: 13,
+          mapTypeId: 'roadmap'
+        });
+
+           
+           
     // Change this depending on the name of your PHP file
     downloadUrl("phpsqlajax_genxml3.php", function(data) {
       var xml = data.responseXML;
