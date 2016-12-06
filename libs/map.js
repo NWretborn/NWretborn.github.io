@@ -280,7 +280,8 @@ var customIcons = {
           map: map,
           position: point,
           icon: icon.icon
-           // Listen for the event fired when the user selects a prediction and retrieve
+        });
+         // Listen for the event fired when the user selects a prediction and retrieve
         // more details for that place.
     searchBox.addListener('places_changed', function() {
         var places = searchBox.getPlaces();
@@ -288,9 +289,6 @@ var customIcons = {
         if (places.length == 0) {
             return;
           }});
-
-        });
-        
         bindInfoWindow(marker, map, infoWindow, html);
       }
     });
