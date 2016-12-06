@@ -113,7 +113,7 @@
 
 
 	<div class="center box">
-		<form onsubmit="postForm(registerform)" name="registerform">
+		<form onsubmit="postForm('registerform')" name="registerform">
 
 			<div style="top: 12%; left: 8%">
 				Username
