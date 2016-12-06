@@ -21,8 +21,8 @@
 		alert(path + "\n" + formName + "\n" + formData);
 		
 		var arr = [];
-		for(var x in formData){
-			arr.push(x);
+		for(var i in formData){
+			arr.push(formData[i]);
 		}
 		alert(arr);
 		
