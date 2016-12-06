@@ -15,10 +15,13 @@
 		//alert(formName);
 		//alert($(formName).serialize());
 		var formData = JSON.stringify($(formName).serialize());
+		
+		$.post("api.php", formData);
+		
 		//alert(formData);
-		var xhttp = new XMLHttpRequest();
-		xhttp.open("POST", "http://localhost/api.php", true);
-		xhttp.send(formData);
+		//var xhttp = new XMLHttpRequest();
+		//xhttp.open("POST", "http://localhost/api.php", true);
+		//xhttp.send(formData);
 	}
 	
 	function post(path, params, method) {
