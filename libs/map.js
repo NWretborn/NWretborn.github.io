@@ -291,7 +291,7 @@ var customIcons = {
           };
            // For each place, get the icon, name and location.
           var bounds = new google.maps.LatLngBounds();
-           bound.extend(myLatlng);
+          
            
           places.forEach(function(place) {
             if (!place.geometry) {
@@ -307,6 +307,13 @@ var customIcons = {
             } }
                         
                         )
+        if (place.geometry.viewport) {
+              // Only geocodes have viewport.
+              bounds.union(place.geometry.viewport);
+            } else {
+              bounds.extend(place.geometry.location);
+            }
+
   map.fitBounds(bounds);
 
     });
