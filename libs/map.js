@@ -7,12 +7,12 @@ var customIcons = {
     }
   };
 
-  function load() {
+function load() {
      
-    var map = new google.maps.Map(document.getElementById("map"), {
-      center: new google.maps.LatLng(65.618080, 22.140047),
-      zoom: 10,
-      styles:
+	var map = new google.maps.Map(document.getElementById("map"), {
+	center: new google.maps.LatLng(65.618080, 22.140047),
+	zoom: 10,
+	styles:
       [
   {
     "elementType": "geometry",
@@ -246,108 +246,97 @@ var customIcons = {
     ]
   }
 ]
-    });
+});
     
       
-      // Create the search box and link it to the UI element.
-        var input = document.getElementById('pac-input');
-        var searchBox = new google.maps.places.SearchBox(input);
-        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+	// Create the search box and link it to the UI element.
+	var input = document.getElementById('pac-input');
+	var searchBox = new google.maps.places.SearchBox(input);
+	map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
-        // Bias the SearchBox results towards current map's viewport.
-        map.addListener('bounds_changed', function() {
-          searchBox.setBounds(map.getBounds());
-        });
+	// Bias the SearchBox results towards current map's viewport.
+	map.addListener('bounds_changed', function() {
+		searchBox.setBounds(map.getBounds());
+	});
 
-    var infoWindow = new google.maps.InfoWindow;
+	var infoWindow = new google.maps.InfoWindow;
 
            
     // Change this depending on the name of your PHP file
     downloadUrl("phpsqlajax_genxml3.php", function(data) {
     
-      var xml = data.responseXML;
-      var markers = xml.documentElement.getElementsByTagName("marker");
-      for (var i = 0; i < markers.length; i++) {
-        var name = markers[i].getAttribute("name");
-        var address = markers[i].getAttribute("address");
-        var type = markers[i].getAttribute("type");
-        var point = new google.maps.LatLng(
+		var xml = data.responseXML;
+		var markers = xml.documentElement.getElementsByTagName("marker");
+		
+		for (var i = 0; i < markers.length; i++) {
+			var name = markers[i].getAttribute("name");
+			var address = markers[i].getAttribute("address");
+			var type = markers[i].getAttribute("type");
+			var point = new google.maps.LatLng(
             parseFloat(markers[i].getAttribute("lat")),
             parseFloat(markers[i].getAttribute("lng")));
-        var html = "<b>" + name + "</b> <br/>" + address;
-        var icon = customIcons[type] || {};
-        var marker = new google.maps.Marker({
-          map: map,
-          position: point,
-          icon: icon.icon
-        });
-         // Listen for the event fired when the user selects a prediction and retrieve
-        // more details for that place.
+			var html = "<b>" + name + "</b> <br/>" + address;
+			var icon = customIcons[type] || {};
+			var marker = new google.maps.Marker({
+			map: map,
+			position: point,
+			icon: icon.icon
+		});
+	// Listen for the event fired when the user selects a prediction and retrieve
+	// more details for that place.
     searchBox.addListener('places_changed', function() {
-        var places = searchBox.getPlaces();
+		var places = searchBox.getPlaces();
 
         if (places.length == 0) {
             return;
-          };
-           // For each place, get the icon, name and location.
-          var bounds = new google.maps.LatLngBounds();
+		};
+	// For each place, get the icon, name and location.
+	var bounds = new google.maps.LatLngBounds();
           
            
-          places.forEach(function(place) {
-            if (!place.geometry) {
-              console.log("Returned place contains no geometry");
-              return;
-            }
-           if (place.geometry.viewport) {
-              // Only geocodes have viewport.
-              bounds.union(place.geometry.viewport);
-            } else {
-              bounds.extend(place.geometry.location);
-            }
-            var icon = {
-              url: place.icon,
-              size: new google.maps.Size(71, 71),
-              origin: new google.maps.Point(0, 0),
-              anchor: new google.maps.Point(17, 34),
-              scaledSize: new google.maps.Size(25, 25)
-            } }
-                        
-                        )
-        
-
-  map.fitBounds(bounds);
-
-    });
+	places.forEach(function(place) {
+	if (!place.geometry) {
+		console.log("Returned place contains no geometry");
+		return;
+	}
+	if (place.geometry.viewport) {
+		// Only geocodes have viewport.
+		bounds.union(place.geometry.viewport);
+        } 
+	else {
+        bounds.extend(place.geometry.location);
+		}
+	var icon = {
+		url: place.icon,
+		size: new google.maps.Size(71, 71),
+		origin: new google.maps.Point(0, 0),
+		anchor: new google.maps.Point(17, 34),
+		scaledSize: new google.maps.Size(25, 25)
+	} 
+})
+	map.fitBounds(bounds);
+});
           
           
 
-        bindInfoWindow(marker, map, infoWindow, html);
-      }
-        
-    });
-       
-  }
+	bindInfoWindow(marker, map, infoWindow, html);
+}});}
 
+	function bindInfoWindow(marker, map, infoWindow, html) {
+		google.maps.event.addListener(marker, 'click', function() {
+		infoWindow.setContent(html);
+		infoWindow.open(map, marker);         
+	});
+}
 
-    
-  
-
-
-  function bindInfoWindow(marker, map, infoWindow, html) {
-    google.maps.event.addListener(marker, 'click', function() {
-      infoWindow.setContent(html);
-      infoWindow.open(map, marker);         
-    });
-  }
-
-  function downloadUrl(url, callback) {
-    var request = window.ActiveXObject ?
+	function downloadUrl(url, callback) {
+		var request = window.ActiveXObject ?
         new ActiveXObject('Microsoft.XMLHTTP') :
         new XMLHttpRequest;
 
     request.onreadystatechange = function() {
       if (request.readyState == 4) {
-        request.onreadystatechange = doNothing;
+		request.onreadystatechange = doNothing;
         callback(request, request.status);
       }
     };
