@@ -17,7 +17,7 @@
 		var formData = JSON.stringify($(formName).serialize());
 		
 		$.post(path, formData, (function () {alert("$.post works")}));
-		//alert("after $.post");
+		alert("after $.post");
 		
 		//alert(formData);
 		//var xhttp = new XMLHttpRequest();
