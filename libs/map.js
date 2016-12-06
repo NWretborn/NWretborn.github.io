@@ -255,7 +255,7 @@ var customIcons = {
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
     // Bias the SearchBox results towards current map's viewport.
-    google.maps.addListener('bounds_changed', function() {
+    map.addListener('bounds_changed', function() {
     searchBox.setBounds(map.getBounds());
     });
            
@@ -264,6 +264,15 @@ var customIcons = {
     
       var xml = data.responseXML;
       var markers = xml.documentElement.getElementsByTagName("marker");
+         // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener('places_changed', function() {
+          var places = searchBox.getPlaces();
+
+          if (places.length == 0) {
+            return;
+          }
+
       for (var i = 0; i < markers.length; i++) {
         var name = markers[i].getAttribute("name");
         var address = markers[i].getAttribute("address");
