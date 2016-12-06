@@ -14,7 +14,7 @@
 	function postForm(path, formName){
 		//alert(formName);
 		//alert($(formName).serialize());
-		var formData = JSON.stringify($(formName).serialize());
+		var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
 		
 		//var formData = $(formName).serializeArray();
 		
