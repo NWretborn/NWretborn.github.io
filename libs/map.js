@@ -392,8 +392,7 @@ function geolocate() {
                 animation: google.maps.Animation.DROP,
                 map: map
             });
-	document.write(pos);
-            //map.setCenter(pos);
+            map.setCenter(pos);
         });
     }
 }
