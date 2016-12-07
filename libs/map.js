@@ -252,10 +252,10 @@ function load() {
 
     // Set CSS for the control button
     var controlUI = document.createElement('div');
-    controlUI.style.backgroundColor = '#444';
+    controlUI.style.backgroundColor = '#10454e';
     controlUI.style.borderStyle = 'solid';
     controlUI.style.borderWidth = '1px';
-    controlUI.style.borderColor = 'blue';
+    controlUI.style.borderColor = '#29afc4';
     controlUI.style.backgroundImage = "url(http://213.113.7.224/img/gps_icon.png)";
     controlUI.style.height = '24px';
     controlUI.style.width = '24px';
