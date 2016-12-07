@@ -15,7 +15,7 @@
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
 		
 		
-		var origData =$(formName).serialize();
+		var origData =$(formName).serializeArray();
 		var formData = JSON.stringify(origData);
 		
 		//alert(window.location.pathname);
