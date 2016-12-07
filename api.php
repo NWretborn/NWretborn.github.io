@@ -2,7 +2,6 @@
 	require("phpsqlajax_dbinfo.php");
 	#ini_set('display_errors', 1);
 	#ini_set('display_startup_errors', 1);
-	error_reporting(E_ALL, 3, "./scrap.log");
 
 	// get the HTTP method, path and body of the request
 	$method = $_SERVER['REQUEST_METHOD'];
@@ -41,17 +40,20 @@
 	
 	// create SQL based on HTTP method
 	switch ($method) {
-		error_log("switch method", 3, "./scrap.log");
 		case 'GET':
+			error_log("inside GET case...", 3, "./scrap.log");
 			$sql = "select * from `$table`".($key?" WHERE id=$key":''); break;echo $method;
 		case 'PUT':
+			error_log("inside PUT case...", 3, "./scrap.log");
 			$sql = "update `$table` set $set where id=$key"; break;
 		case 'POST':
+			error_log("inside POST case...", 3, "./scrap.log");
 			//echo "<br/>Table is:",$table;
 			//echo "<br/>Set is:",$set;
 			$sql = "insert into `$table` set $set"; break;
 			error_log("sql query>>".$sql."<<built\n", 3, "./scrap.log");
 		case 'DELETE':
+			error_log("inside DELETE case...", 3, "./scrap.log");
 			$sql = "delete from `$table` where id=$key"; break;
 	}
 
