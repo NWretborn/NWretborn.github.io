@@ -11,6 +11,7 @@
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	echo "<br/>php://input: ".file_get_contents('php://input');
 	$input = json_decode(file_get_contents('php://input'),true); //DETTA ÄR PROBLEMET!
+	error_log("api.php received: ".$input."\n", 3, "./scrap.log");
 	echo "<br/>Input is: ".$input;
 
 	// connect to the mysql database
