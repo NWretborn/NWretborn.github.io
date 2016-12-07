@@ -66,6 +66,7 @@ body{
 
       .pac-container {
         font-family: monospace;
+	background-color: #10454e;
       }
 
       #type-selector {
