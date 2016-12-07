@@ -259,10 +259,8 @@ function load() {
     controlUI.style.backgroundImage = "url(http://213.113.7.224/img/gps_icon.png)";
     controlUI.style.height = '24px';
     controlUI.style.width = '24px';
-    controlUI.style.marginTop = '5px';
+    controlUI.style.marginTop = '90%';
     controlUI.style.cursor = 'pointer';
-    controlUI.style.textAlign = 'center';
-    controlUI.title = 'Click to center map on your location';
     controlDiv.appendChild(controlUI);
 
 
