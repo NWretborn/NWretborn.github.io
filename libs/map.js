@@ -251,7 +251,7 @@ function load() {
 	function GeolocationControl(controlDiv, map) {
 
     // Set CSS for the control button
-    var controlUI = document.createElement('div23');
+    var controlUI = document.createElement('div');
     controlUI.style.backgroundColor = '#10454e';
     controlUI.style.borderStyle = 'solid';
     controlUI.style.borderWidth = '1px';
@@ -259,9 +259,10 @@ function load() {
     controlUI.style.backgroundImage = "url(http://213.113.7.224/img/gps_icon.png)";
     controlUI.style.height = '24px';
     controlUI.style.width = '24px';
-    controlUI.style.marginTop = '75%';
-	controlUI.style.marginLeft = '75%';
     controlUI.style.cursor = 'pointer';
+	controlUI.style.left:calc(6vw + 3vh);
+	controlUI.style.bottom:calc(5vh + 4vw);
+	controlUI.style.transform: translate(-50%, 50%);
     controlDiv.appendChild(controlUI);
 
 
