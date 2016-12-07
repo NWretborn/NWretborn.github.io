@@ -35,8 +35,8 @@
 	for ($i=0;$i<count($columns);$i++) {
 		$set.=($i>0?',':'').'`'.$columns[$i].'`=';
 		$set.=($values[$i]===null?'NULL':'"'.$values[$i].'"');
-		error_log("\tcolumn: ".implode($columns[$i]), 3, "./scrap.log");
-		error_log("\tvalue: ".implode($values[$i])."\n", 3, "./scrap.log");
+		error_log("\tcolumn: ".implode("|", $columns[$i]), 3, "./scrap.log");
+		error_log("\tvalue: ".implode("|", $values[$i])."\n", 3, "./scrap.log");
 	}
 	
 	// create SQL based on HTTP method
