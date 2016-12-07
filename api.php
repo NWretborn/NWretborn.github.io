@@ -50,7 +50,7 @@
 			//echo "<br/>Table is:",$table;
 			//echo "<br/>Set is:",$set;
 			$sql = "insert into `$table` set $set";
-			error_log("sql query ".$sql." built\n", 3, "./scrap.log");
+			error_log("sql query: ".$sql."\n", 3, "./scrap.log");
 			break;
 		case 'DELETE':
 			$sql = "delete from `$table` where id=$key"; 
