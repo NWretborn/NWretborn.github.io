@@ -61,9 +61,11 @@
 
 	// excecute SQL statement
 	$result = mysqli_query($link,$sql);
+	$errors = mysqli_error($link);
 
-	error_log("SQL result: ".$result, 3, "./scrap.log");
-
+	if($errors){
+		error_log("SQL ERROR: ".$errors."\n", 3, "./scrap.log");
+	}
 
 	// die if SQL statement failed
 	if (!$result) {
