@@ -1,6 +1,6 @@
 <?php
-	function log(message){
-		error_log(message, 3, "./scrap.log");
+	function log($message){
+		error_log($message, 3, "./scrap.log");
 	}
 	require("phpsqlajax_dbinfo.php");
 	#ini_set('display_errors', 1);
