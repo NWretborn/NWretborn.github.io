@@ -272,7 +272,7 @@ function load() {
     controlText.style.paddingLeft = '10px';
     controlText.style.paddingRight = '10px';
     controlText.style.marginTop = '8px';
-    controlText.innerHTML = 'Center map on your location';
+    //controlText.innerHTML = 'Center map on your location';
     controlUI.appendChild(controlText);
 
     // Setup the click event listeners to geolocate user
