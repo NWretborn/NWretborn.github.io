@@ -260,7 +260,7 @@ function load() {
     controlUI.style.height = '24px';
     controlUI.style.width = '24px';
     controlUI.style.cursor = 'pointer';
-
+	controlUI.style.marginTop = '50%';
     controlDiv.appendChild(controlUI);
 
 
@@ -293,7 +293,7 @@ function geolocate() {
 	// Create the DIV to hold the control and call the constructor passing in this DIV
 	var geolocationDiv = document.createElement('div');
 	var geolocationControl = new GeolocationControl(geolocationDiv, map);
-
+	
 	map.controls[google.maps.ControlPosition.TOP_CENTER].push(geolocationDiv);
 	
 	// Create the search box and link it to the UI element.
