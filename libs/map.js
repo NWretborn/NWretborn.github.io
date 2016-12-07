@@ -254,12 +254,12 @@ function load() {
     var controlUI = document.createElement('div');
     controlUI.style.backgroundColor = '#444';
     controlUI.style.borderStyle = 'solid';
-    controlUI.style.borderWidth = '0px';
-    controlUI.style.borderColor = 'white';
+    controlUI.style.borderWidth = '1px';
+    controlUI.style.borderColor = 'blue';
     controlUI.style.backgroundImage = "url(http://213.113.7.224/img/gps_icon.png)";
     controlUI.style.height = '24px';
     controlUI.style.width = '24px';
-    controlUI.style.marginTop = '90%';
+    controlUI.style.marginTop = '10%';
     controlUI.style.cursor = 'pointer';
     controlDiv.appendChild(controlUI);
 
