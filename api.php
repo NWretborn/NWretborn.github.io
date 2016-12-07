@@ -10,7 +10,9 @@
 
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	//echo "<br/>php://input: ".file_get_contents('php://input');
-	$input = json_decode(file_get_contents('php://input'),true); //DETTA ÄR PROBLEMET!
+	$input = json_decode(file_get_contents('php://input'),true);
+	
+	error_log("input: ".$input, 3, "./scrap.log");
 
 	// connect to the mysql database
 	$link = mysqli_connect($localhost, $username, $password, $database);
