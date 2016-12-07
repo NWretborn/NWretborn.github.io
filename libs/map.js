@@ -10,7 +10,8 @@ var customIcons = {
 function load() {
      
 	var map = new google.maps.Map(document.getElementById("map"), {
-	center: new google.maps.LatLng(65.618080, 22.140047),
+//	center: new google.maps.LatLng(65.618080, 22.140047),
+	center: new google.maps.LatLng(pos),
 	zoom: 10,
 	styles:
       [
