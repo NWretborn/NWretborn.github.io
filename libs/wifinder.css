@@ -80,6 +80,7 @@ body{
         font-family: monospace;
         font-size: 13px;
         font-weight: 300;
+	      background-color: #10454e;
       }
       #target {
         width: 345px;
