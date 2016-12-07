@@ -47,7 +47,7 @@
 		
 		for(var i = 0; i < jsonOUT.length; i++) {
 			var obj = JSON.stringify(jsonOUT[i]);
-			alert(obj);
+			alert("hej");
 		}
 		
 		/*
