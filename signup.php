@@ -44,13 +44,9 @@
 		var rep = jsonOUT['passwordrep'];
 
 		//alert( "password: " + pass +"\n"+ "repeat: " +  rep );
+		jsonOUT = {jsonOUT.name, jsonOUT.password, jsonOUT.mail};
 
-		console.log(jsonOUT.password);
-
-		for(var i = 0; i < jsonOUT.length; i++) {
-			var obj = JSON.stringify(jsonOUT[i]);
-
-		}
+		console.log(jsonOUT);
 
 		/*
 		if( pass == rep){
