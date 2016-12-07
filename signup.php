@@ -35,7 +35,7 @@
 		
 		var jsonSTR = JSON.stringify(jsonOUT);
 		
-		if(jsonOUT['password'] != jsonOUT['password']){
+		if(jsonOUT['password'] !== jsonOUT['password']){
 			alert("password mismatch!");
 		}
 		else{
