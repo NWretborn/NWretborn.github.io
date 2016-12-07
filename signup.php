@@ -32,7 +32,7 @@
 		
 		$.ajax({
 			type: "POST",
-			url: "appface.php",
+			url: "/appface.php",
 			data: formData,
 			success: function(){},
 			dataType: "json",
