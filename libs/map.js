@@ -386,7 +386,7 @@ function geolocate() {
             var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
             // Center map
-	center: new google.maps.LatLng(65.618080, 22.140047),
+	map.center: new google.maps.LatLng(65.618080, 22.140047),
           //  map.setCenter(pos);
         });
     }
