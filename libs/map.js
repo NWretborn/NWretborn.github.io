@@ -4,10 +4,7 @@ var customIcons = {
     },
     closed: {
       icon: 'http://213.113.7.224/img/logo_blue50px.png'
-    },
-	user: {
-		icon: 'http://213.113.7.224/img/user_icon.png'
-	}
+    }
   };
 
 function load() {
@@ -315,7 +312,7 @@ function geolocate() {
     	marker = new google.maps.Marker({
         position: new google.maps.LatLng(0, 0),
         animation: google.maps.Animation.DROP,
-	icon: user,
+	icon: 'http://213.113.7.224/img/user_icon.png',
         visible: false,
         map: map
 	});
