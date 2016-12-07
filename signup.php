@@ -14,15 +14,18 @@
 	function postForm(path, formName){
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
 		
-		var formData = JSON.stringify($(formName).serializeArray());
+		
+		var formData =$(formName).serializeArray();
+		var lookData = formData;
+		formData = JSON.stringify(formData);
 		
 		//formData = $.parseJSON('[' + formData + ']');
 		
 		// alert(path + "\n" + formName + "\n" + formData);
 		
 		var arr = [];
-		for(var i in formData){
-			arr.push(formData[i]);
+		for(var i in lookData){
+			arr.push(lookData[i]);
 		}
 		alert(arr);
 		
