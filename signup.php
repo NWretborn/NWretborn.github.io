@@ -28,25 +28,13 @@
 		return o;
 	};
 
-	/*
-	function removeElement(array, name){
 
-	}
-	*/
-
+	// post the submission form to API via ajax in json format
 	function postForm(path, formID){
-		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
-
 		var jsonOUT =$(formID).serializeObject();
-
 
 		var pass = jsonOUT['password'];
 		var rep = jsonOUT['passwordrep'];
-
-		//alert( "password: " + pass +"\n"+ "repeat: " +  rep );
-		// jsonOUT = {jsonOUT[0], jsonOUT[1], jsonOUT[2]};
-		// console.log(jsonOUT);
-
 
 		if( pass == rep){
 			delete jsonOUT['passwordrep'];
@@ -64,7 +52,6 @@
 		else{
 			alert("password mismatch!");
 		}
-
 	}
 </script>
 <head>
