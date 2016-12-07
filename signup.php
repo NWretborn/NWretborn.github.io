@@ -40,7 +40,7 @@
 		//for(var i in showData){
 		//	arr.push(showData[i]);
 		//}
-		alert($(formName) + "\n" + formData + "\n" + jsonOUT + "\n" + newData);
+		alert($(formID) + "\n" + formData + "\n" + jsonOUT + "\n" + newData);
 		//alert(formData + "\n\n" + formData[0] + "\n" + formData[0][0]);
 		$.ajax({
 			type: "POST",
