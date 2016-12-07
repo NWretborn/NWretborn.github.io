@@ -13,7 +13,7 @@
 	$input = json_decode(file_get_contents('php://input'),true); //DETTA ÄR PROBLEMET!
 
 	// connect to the mysql database
-	$link = mysqli_connect('localhost', $username, $password, $database);
+	$link = mysqli_connect($localhost, $username, $password, $database);
 	mysqli_set_charset($link,'utf8');
 
 	// retrieve the table and key from the path
@@ -70,13 +70,16 @@
 	if ($method == 'GET') {
 		if (!$key) echo '[';
 		for ($i=0;$i<mysqli_num_rows($result);$i++) {
+			error_log($i>0?',':'').json_encode(mysqli_fetch_object($result), 3, "./scrap.log");
 			echo ($i>0?',':'').json_encode(mysqli_fetch_object($result));
 		}
 		if (!$key)
 			echo ']';
 	} elseif ($method == 'POST') {
+		error_log('{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}', 3, "./scrap.log");
 		echo '{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}';
 	} else {
+		error_log("affected_rows:".mysqli_affected_rows($link), 3, "./scrap.log");
 		echo mysqli_affected_rows($link);
 	}
 
