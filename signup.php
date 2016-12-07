@@ -31,7 +31,7 @@
 		
 		$.ajax({
 			type: "POST",
-			url: "appface.php",
+			url: "http://213.113.7.224/appface.php",
 			data: formData,
 			success: function(){},
 			dataType: "json",
