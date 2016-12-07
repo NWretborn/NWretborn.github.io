@@ -29,7 +29,7 @@
 		//	arr.push(showData[i]);
 		//}
 		alert($(formName) + "\n" + origData + "\n" + formData);
-		
+		alert(formData[0] + "\n" + formData[0][0]);
 		$.ajax({
 			type: "POST",
 			url: "./"+path,			// "/" would refer to root, it seems
