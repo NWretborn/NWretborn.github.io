@@ -165,7 +165,7 @@
 				Username
 			</div>
 			<div class="hCenter" style="top: 12%">
-				<input value="bread" type="text" name="name" class="tb5">
+				<input type="text" name="name" class="tb5" value="bread">
 
 			</div>
 			<br/>
