@@ -11,12 +11,24 @@
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 	
-	function postForm(path, formName){
+	function postForm(path, formID){
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
 		
+		var formData =$(formID).serializeArray();
 		
-		var origData =$(formName).serializeArray();
-		var formData = JSON.stringify(origData);
+		var jsonOUT = {}; 
+		$.each(formData, function() {
+			if (jsonOUT[$(formID).name] !== undefined) {
+				if (!jsonOUT[$(formID).name].push) {
+					jsonOUT[$(formID).name] = [jsonOUT[$(formID).name]];
+				}
+				jsonOUT[$(formID).name].push($(formID).value || '');
+			} else {
+				jsonOUT[$(formID).name] = $(formID).value || '';
+			}
+		});
+		
+		var newData = JSON.stringify(jsonOUT);
 		
 		//alert(window.location.pathname);
 		//formData = $.parseJSON('[' + formData + ']');
@@ -28,7 +40,7 @@
 		//for(var i in showData){
 		//	arr.push(showData[i]);
 		//}
-		alert($(formName) + "\n" + origData + "\n" + formData);
+		alert($(formName) + "\n" + formData + "\n" + jsonOUT + "\n" + newData);
 		//alert(formData + "\n\n" + formData[0] + "\n" + formData[0][0]);
 		$.ajax({
 			type: "POST",
