@@ -39,7 +39,7 @@
 		$.ajax({
 			type: "POST",
 			url: "./"+path,			// "/" would refer to root, it seems
-			data: formData,
+			data: jsonSTR,
 			success: function(){alert("success?");},
 			dataType: "json",
 			contentType : "application/json"
