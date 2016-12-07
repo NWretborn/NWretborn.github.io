@@ -388,8 +388,8 @@ function geolocate() {
                 animation: google.maps.Animation.DROP,
                 map: map
             });
-
-            map.setCenter(pos);
+	document.write(pos);
+            //map.setCenter(pos);
         });
     }
 }
