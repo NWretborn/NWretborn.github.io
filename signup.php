@@ -43,7 +43,7 @@
 		
 		for(var i = 0; i < jsonOUT.length; i++) {
 			var obj = jsonOUT[i];
-			console.log(obj);
+			console.log(obj.value);
 		}
 		
 		
