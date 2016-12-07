@@ -259,21 +259,6 @@ function load() {
 		searchBox.setBounds(map.getBounds());
 	});
 
-	var infoWindow = new google.maps.InfoWindow;
-	function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    alert("Geolocation is not supported by this browser.");
-  }
-}
-function showPosition(position) {
-  var lat = position.coords.latitude;
-  var lng = position.coords.longitude;
-  map.setCenter(new google.maps.LatLng(lat, lng));
-}
-
-           
     // Change this depending on the name of your PHP file
     downloadUrl("phpsqlajax_genxml3.php", function(data) {
     
