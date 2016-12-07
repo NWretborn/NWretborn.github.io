@@ -347,7 +347,7 @@ function load() {
 
 }
 
-	function GeolocationControl(controlDiv, map) {
+function GeolocationControl(controlDiv, map) {
 
     // Set CSS for the control button
     var controlUI = document.createElement('div');
@@ -385,15 +385,12 @@ function geolocate() {
 
             var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
-            // Create a marker and center map on user location
-            marker = new google.maps.Marker({
-                position: pos,
-                draggable: true,
-                animation: google.maps.Animation.DROP,
-                map: map
-            });
-		map.setCenter(new google.maps.LatLng(pos));
-//            map.setCenter(pos);
+            // Set marker position and visibility
+            marker.setPosition(pos);
+            marker.setVisible(true);
+            
+            // Center map
+            map.setCenter(pos);
         });
     }
 }
