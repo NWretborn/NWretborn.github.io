@@ -16,7 +16,7 @@
 		
 		
 		var formData =$(formName).serializeArray();
-		var lookData = formData;
+		var origData = formData;
 		formData = JSON.stringify(formData);
 		
 		//alert(window.location.pathname);
@@ -25,8 +25,9 @@
 		// alert(path + "\n" + formName + "\n" + formData);
 		
 		var arr = [];
-		for(var i in lookData){
-			arr.push(lookData[i]);
+		var showData = formData;
+		for(var i in showData){
+			arr.push(showData[i]);
 		}
 		alert(arr);
 		
