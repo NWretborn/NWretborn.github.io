@@ -1,5 +1,7 @@
 <?php
-
+	function log(message){
+		error_log(message, 3, "./scrap.log");
+	}
 	require("phpsqlajax_dbinfo.php");
 	#ini_set('display_errors', 1);
 	#ini_set('display_startup_errors', 1);
@@ -7,18 +9,17 @@
 
 	// get the HTTP method, path and body of the request
 	$method = $_SERVER['REQUEST_METHOD'];
+	
+	log("api.php logging...");
+	log($method);
 
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-	echo "<br/>php://input: ".file_get_contents('php://input');
+	//echo "<br/>php://input: ".file_get_contents('php://input');
 	$input = json_decode(file_get_contents('php://input'),true); //DETTA ÄR PROBLEMET!
-	error_log("api.php received: ".$input[0]."\n", 3, "./scrap.log");
-	echo "<br/>Input is: ".$input;
 
 	// connect to the mysql database
 	$link = mysqli_connect('localhost', $username, $password, $database);
 	mysqli_set_charset($link,'utf8');
-
-
 
 	// retrieve the table and key from the path
 	$table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
@@ -46,8 +47,8 @@
 		case 'PUT':
 			$sql = "update `$table` set $set where id=$key"; break;
 		case 'POST':
-			echo "<br/>Table is:",$table;
-			echo "<br/>Set is:",$set;
+			//echo "<br/>Table is:",$table;
+			//echo "<br/>Set is:",$set;
 			$sql = "insert into `$table` set $set"; break;
 		case 'DELETE':
 			$sql = "delete from `$table` where id=$key"; break;
