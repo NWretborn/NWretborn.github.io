@@ -28,7 +28,11 @@
 		return o;
 	};
 	
-
+	/*
+	function removeElement(array, name){
+	
+	}
+	*/
 	
 	function postForm(path, formID){
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
@@ -43,11 +47,12 @@
 		
 		for(var i = 0; i < jsonOUT.length; i++) {
 			var obj = jsonOUT[i];
-			console.log(obj.value);
+			alert(obj.value);
 		}
 		
-		
+		/*
 		if( pass == rep){
+			jsonOUT = removeElement(jsonOUT, "passwordrep");
 			$.ajax({
 				type: "POST",
 				url: "./"+path,
@@ -61,6 +66,7 @@
 		else{
 			alert("password mismatch!");
 		}
+		*/
 	}
 </script>
 <head>
