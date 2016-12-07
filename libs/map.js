@@ -11,7 +11,7 @@ function load() {
      
 	var map = new google.maps.Map(document.getElementById("map"), {
 	center: new google.maps.LatLng(65.618080, 122.140047),
-	zoom: 10,
+	zoom: 15,
 	styles:
       [
   {
