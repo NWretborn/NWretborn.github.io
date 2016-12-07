@@ -254,7 +254,7 @@ function load() {
     var controlUI = document.createElement('div');
     controlUI.style.backgroundColor = '#444';
     controlUI.style.borderStyle = 'solid';
-    controlUI.style.borderWidth = '1px';
+    controlUI.style.borderWidth = '0px';
     controlUI.style.borderColor = 'white';
     controlUI.style.backgroundImage = "url(http://213.113.7.224/img/gps_icon.png)";
     controlUI.style.height = '28px';
@@ -263,6 +263,17 @@ function load() {
     controlUI.style.textAlign = 'center';
     controlUI.title = 'Click to center map on your location';
     controlDiv.appendChild(controlUI);
+
+  // Set CSS for the control text
+    var controlText = document.createElement('div');
+    controlText.style.fontFamily = 'Arial,sans-serif';
+    controlText.style.fontSize = '10px';
+    controlText.style.color = 'white';
+    controlText.style.paddingLeft = '10px';
+    controlText.style.paddingRight = '10px';
+    controlText.style.marginTop = '8px';
+    //controlText.innerHTML = 'Center map on your location';
+    controlUI.appendChild(controlText);
 
   
 
