@@ -28,7 +28,7 @@
 		//for(var i in showData){
 		//	arr.push(showData[i]);
 		//}
-		alert(origData);
+		alert($(formname) + "\n" + origData + "\n" + formData);
 		
 		$.ajax({
 			type: "POST",
