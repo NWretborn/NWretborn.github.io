@@ -34,7 +34,7 @@
 		var jsonOUT =$(formID).serializeObject();
 		var jsonSTR = JSON.stringify(jsonOUT);
 		
-		alert($(formID) + "\n" + formData + "\n" + jsonOUT + "\n" + newData);
+		alert($(formID) + "\n" + jsonOUT + "\n" + jsonSTR);
 
 		$.ajax({
 			type: "POST",
