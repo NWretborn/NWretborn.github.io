@@ -282,15 +282,17 @@ function load() {
 			position: point,
 			icon: icon.icon
 		});
-			
+	//Eventlistener for adding marker to map on click
 	google.maps.event.addListener(map, 'click', function(event) {
    		placeMarker(event.latLng);
 	});
 
 	function placeMarker(location) {
     		var marker = new google.maps.Marker({
+		document.write(location);
         	position: location, 
-        	map: map
+        	map: map,
+		icon: icon.icon
     		});
 	}
 			
