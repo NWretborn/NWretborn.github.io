@@ -44,12 +44,12 @@
 		var rep = jsonOUT['passwordrep'];
 
 		//alert( "password: " + pass +"\n"+ "repeat: " +  rep );
-		jsonOUT = {jsonOUT[0], jsonOUT[1], jsonOUT[2]};
-		console.log(jsonOUT);
+		// jsonOUT = {jsonOUT[0], jsonOUT[1], jsonOUT[2]};
+		// console.log(jsonOUT);
 
-		/*
+
 		if( pass == rep){
-			jsonOUT = removeElement(jsonOUT, "passwordrep");
+			delete jsonOUT['passwordrep'];
 			$.ajax({
 				type: "POST",
 				url: "./"+path,
@@ -63,7 +63,7 @@
 		else{
 			alert("password mismatch!");
 		}
-		*/
+
 	}
 </script>
 <head>
