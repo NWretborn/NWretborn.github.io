@@ -28,12 +28,7 @@
 		return o;
 	};
 	
-	// remove all elements of json-array with name
-	function removeJsonAttrs(json,attrs){
-		return JSON.parse(JSON.stringify(json,function(k,v){
-			return attrs.indexOf(k)!==-1 ? undefined: v;
-		}
-	));}
+
 	
 	function postForm(path, formID){
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
@@ -45,7 +40,13 @@
 		var rep = jsonOUT['passwordrep'];
 		
 		//alert( "password: " + pass +"\n"+ "repeat: " +  rep );
-			
+		
+		for(var i = 0; i < jsonOUT.length; i++) {
+			var obj = jsonOUT[i];
+			console.log(obj);
+		}
+		
+		
 		if( pass == rep){
 			jsonOUT = removeJsonAttrs(jsonOUT, ['passwordrep']);
 			$.ajax({
