@@ -264,16 +264,7 @@ function load() {
     controlUI.title = 'Click to center map on your location';
     controlDiv.appendChild(controlUI);
 
-    // Set CSS for the control text
-    var controlText = document.createElement('div');
-    controlText.style.fontFamily = 'Arial,sans-serif';
-    controlText.style.fontSize = '10px';
-    controlText.style.color = 'white';
-    controlText.style.paddingLeft = '10px';
-    controlText.style.paddingRight = '10px';
-    controlText.style.marginTop = '8px';
-    //controlText.innerHTML = 'Center map on your location';
-    controlUI.appendChild(controlText);
+  
 
     // Setup the click event listeners to geolocate user
     google.maps.event.addDomListener(controlUI, 'click', geolocate);
