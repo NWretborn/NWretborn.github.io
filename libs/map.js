@@ -260,9 +260,9 @@ function load() {
     controlUI.style.height = '24px';
     controlUI.style.width = '24px';
     controlUI.style.cursor = 'pointer';
-	controlUI.style.left:calc(6vw + 3vh);
-	controlUI.style.bottom:calc(5vh + 4vw);
-	controlUI.style.transform: translate(-50%, 50%);
+	controlUI.style.left = 'calc(6vw + 3vh)';
+	controlUI.style.bottom = 'calc(5vh + 4vw)';
+	controlUI.style.transform = 'translate(-50%, 50%)';
     controlDiv.appendChild(controlUI);
 
 
