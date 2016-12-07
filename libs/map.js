@@ -282,9 +282,21 @@ function load() {
 			position: point,
 			icon: icon.icon
 		});
+			
+	google.maps.event.addListener(map, 'click', function(event) {
+   		placeMarker(event.latLng);
+	});
+
+	function placeMarker(location) {
+    		var marker = new google.maps.Marker({
+        	position: location, 
+        	map: map
+    		});
+	}
+			
 	// Listen for the event fired when the user selects a prediction and retrieve
 	// more details for that place.
-    searchBox.addListener('places_changed', function() {
+	searchBox.addListener('places_changed', function() {
 		var places = searchBox.getPlaces();
 
         if (places.length == 0) {
