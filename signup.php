@@ -14,34 +14,28 @@
 	function postForm(path, formID){
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
 		
-		var formData =$(formID);
-		
-		var jsonOUT = {}; 
-		$.each(formData, function() {
-			if (jsonOUT[$(formID).name] !== undefined) {
-				if (!jsonOUT[$(formID).name].push) {
-					jsonOUT[$(formID).name] = [jsonOUT[$(formID).name]];
+		// WE TAKE NO CREDIT FOR THIS FUNCTION
+		$.fn.serializeObject = function() {
+			var o = {};
+			var a = this.serializeArray();
+			$.each(a, function() {
+				if (o[this.name]) {
+					if (!o[this.name].push) {
+						o[this.name] = [o[this.name]];
+					}
+					o[this.name].push(this.value || '');
+				} else {
+					o[this.name] = this.value || '';
 				}
-				jsonOUT[$(formID).name].push($(formID).value || '');
-			} else {
-				jsonOUT[$(formID).name] = $(formID).value || '';
-			}
-		});
+			});
+			return o;
+		};
 		
-		var newData = JSON.stringify(jsonOUT);
+		var jsonOUT =$(formID).serializeObject();
+		var jsonSTR = JSON.stringify(jsonOUT);
 		
-		//alert(window.location.pathname);
-		//formData = $.parseJSON('[' + formData + ']');
-		
-		// alert(path + "\n" + formName + "\n" + formData);
-		
-		//var arr = [];
-		//var showData = formData;
-		//for(var i in showData){
-		//	arr.push(showData[i]);
-		//}
 		alert($(formID) + "\n" + formData + "\n" + jsonOUT + "\n" + newData);
-		//alert(formData + "\n\n" + formData[0] + "\n" + formData[0][0]);
+
 		$.ajax({
 			type: "POST",
 			url: "./"+path,			// "/" would refer to root, it seems
@@ -50,16 +44,6 @@
 			dataType: "json",
 			contentType : "application/json"
 		});
-		
-		//post(path, formData);
-		
-		//$.post(path, formData, (function () {alert("$.post works")}));
-		//alert("after $.post");
-		
-		//alert(formData);
-		//var xhttp = new XMLHttpRequest();
-		//xhttp.open("POST", "http://localhost/api.php", true);
-		//xhttp.send(formData);
 	}
 	
 	function post(path, params, method) {
