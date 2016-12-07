@@ -35,10 +35,7 @@
 		
 		var jsonSTR = JSON.stringify(jsonOUT);
 		
-		if(jsonOUT['password'] !== jsonOUT['password']){
-			alert("password mismatch!");
-		}
-		else{
+		if(jsonOUT['password'] === jsonOUT['password']){
 			$.ajax({
 				type: "POST",
 				url: "./"+path,
@@ -48,6 +45,9 @@
 				contentType : "application/json"
 			});
 			alert("registration sent!");
+		}
+		else{
+			alert("password mismatch!");
 		}
 	}
 </script>
