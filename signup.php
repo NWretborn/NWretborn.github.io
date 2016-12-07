@@ -31,7 +31,7 @@
 		
 		$.ajax({
 			type: "POST",
-			url: "index.php",
+			url: "api.php",
 			data: formData,
 			success: function(){},
 			dataType: "json",
