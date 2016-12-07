@@ -10,30 +10,31 @@
 </style>
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
+	
+	// WE TAKE NO CREDIT FOR THIS FUNCTION
+	$.fn.serializeObject = function() {
+		var o = {};
+		var a = this.serializeArray();
+		$.each(a, function() {
+			if (o[this.name]) {
+				if (!o[this.name].push) {
+					o[this.name] = [o[this.name]];
+				}
+				o[this.name].push(this.value || '');
+			} else {
+				o[this.name] = this.value || '';
+			}
+		});
+		return o;
+	};
+	
 	function postForm(path, formID){
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
-		
-		// WE TAKE NO CREDIT FOR THIS FUNCTION
-		$.fn.serializeObject = function() {
-			var o = {};
-			var a = this.serializeArray();
-			$.each(a, function() {
-				if (o[this.name]) {
-					if (!o[this.name].push) {
-						o[this.name] = [o[this.name]];
-					}
-					o[this.name].push(this.value || '');
-				} else {
-					o[this.name] = this.value || '';
-				}
-			});
-			return o;
-		};
 		
 		var jsonOUT =$(formID).serializeObject();
 		var jsonSTR = JSON.stringify(jsonOUT);
 		
-		alert($(formID) + "\n" + jsonOUT + "\n" + jsonSTR);
+		//alert($(formID) + "\n" + jsonOUT + "\n" + jsonSTR);
 
 		$.ajax({
 			type: "POST",
