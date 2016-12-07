@@ -41,21 +41,20 @@
 	// create SQL based on HTTP method
 	switch ($method) {
 		case 'GET':
-			error_log("inside GET case...", 3, "./scrap.log");
-			$sql = "select * from `$table`".($key?" WHERE id=$key":''); break;echo $method;
+			$sql = "select * from `$table`".($key?" WHERE id=$key":''); 
+			break;
 		case 'PUT':
-			error_log("inside PUT case...", 3, "./scrap.log");
-			$sql = "update `$table` set $set where id=$key"; break;
+			$sql = "update `$table` set $set where id=$key"; 
+			break;
 		case 'POST':
-			error_log("inside POST case...", 3, "./scrap.log");
 			//echo "<br/>Table is:",$table;
 			//echo "<br/>Set is:",$set;
-			$sql = "insert into `$table` set $set"; break;
+			$sql = "insert into `$table` set $set";
 			error_log("sql query ".$sql." built\n", 3, "./scrap.log");
-			error_log("inside POST case...", 3, "./scrap.log");
+			break;
 		case 'DELETE':
-			error_log("inside DELETE case...", 3, "./scrap.log");
-			$sql = "delete from `$table` where id=$key"; break;
+			$sql = "delete from `$table` where id=$key"; 
+			break;
 	}
 
 	// excecute SQL statement
@@ -76,7 +75,6 @@
 		if (!$key)
 			echo ']';
 	} elseif ($method == 'POST') {
-		echo "POST!!!!!!!!!<br/>";
 		echo '{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}';
 	} else {
 		echo mysqli_affected_rows($link);
