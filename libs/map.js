@@ -384,11 +384,6 @@ function geolocate() {
         navigator.geolocation.getCurrentPosition(function (position) {
 
             var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-
-            // Set marker position and visibility
-            marker.setPosition(pos);
-            marker.setVisible(true);
-            
             // Center map
             map.setCenter(pos);
         });
