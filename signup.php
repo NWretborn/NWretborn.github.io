@@ -32,7 +32,7 @@
 		
 		$.ajax({
 			type: "POST",
-			url: "../api.php",
+			url: path,
 			data: formData,
 			success: function(){alert("success?");},
 			dataType: "json",
