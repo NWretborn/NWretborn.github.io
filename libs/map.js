@@ -1,5 +1,3 @@
-var map;
-
 var customIcons = {
     open: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
@@ -305,6 +303,53 @@ function load() {
 //    		});
 //	}
 			
+			
+	function GeolocationControl(controlDiv, map) {
+
+    // Set CSS for the control button
+    var controlUI = document.createElement('div');
+    controlUI.style.backgroundColor = '#444';
+    controlUI.style.borderStyle = 'solid';
+    controlUI.style.borderWidth = '1px';
+    controlUI.style.borderColor = 'white';
+    controlUI.style.height = '28px';
+    controlUI.style.marginTop = '5px';
+    controlUI.style.cursor = 'pointer';
+    controlUI.style.textAlign = 'center';
+    controlUI.title = 'Click to center map on your location';
+    controlDiv.appendChild(controlUI);
+
+    // Set CSS for the control text
+    var controlText = document.createElement('div');
+    controlText.style.fontFamily = 'Arial,sans-serif';
+    controlText.style.fontSize = '10px';
+    controlText.style.color = 'white';
+    controlText.style.paddingLeft = '10px';
+    controlText.style.paddingRight = '10px';
+    controlText.style.marginTop = '8px';
+    controlText.innerHTML = 'Center map on your location';
+    controlUI.appendChild(controlText);
+
+    // Setup the click event listeners to geolocate user
+    google.maps.event.addDomListener(controlUI, 'click', geolocate);
+}
+
+function geolocate() {
+
+    if (navigator.geolocation) {
+
+        navigator.geolocation.getCurrentPosition(function (position) {
+
+            var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+            // Center map
+            map.setCenter(pos);
+        });
+    }
+}		
+			
+			
+			
 	// Listen for the event fired when the user selects a prediction and retrieve
 	// more details for that place.
 	searchBox.addListener('places_changed', function() {
@@ -349,50 +394,7 @@ function load() {
 
 }
 
-function GeolocationControl(controlDiv, map) {
 
-    // Set CSS for the control button
-    var controlUI = document.createElement('div');
-    controlUI.style.backgroundColor = '#444';
-    controlUI.style.borderStyle = 'solid';
-    controlUI.style.borderWidth = '1px';
-    controlUI.style.borderColor = 'white';
-    controlUI.style.height = '28px';
-    controlUI.style.marginTop = '5px';
-    controlUI.style.cursor = 'pointer';
-    controlUI.style.textAlign = 'center';
-    controlUI.title = 'Click to center map on your location';
-    controlDiv.appendChild(controlUI);
-
-    // Set CSS for the control text
-    var controlText = document.createElement('div');
-    controlText.style.fontFamily = 'Arial,sans-serif';
-    controlText.style.fontSize = '10px';
-    controlText.style.color = 'white';
-    controlText.style.paddingLeft = '10px';
-    controlText.style.paddingRight = '10px';
-    controlText.style.marginTop = '8px';
-    controlText.innerHTML = 'Center map on your location';
-    controlUI.appendChild(controlText);
-
-    // Setup the click event listeners to geolocate user
-    google.maps.event.addDomListener(controlUI, 'click', geolocate);
-}
-
-function geolocate() {
-
-    if (navigator.geolocation) {
-
-        navigator.geolocation.getCurrentPosition(function (position) {
-
-            var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-
-            // Center map
-	var map;
-            map.setCenter(pos);
-        });
-    }
-}
 
 	function bindInfoWindow(marker, map, infoWindow, html) {
 		google.maps.event.addListener(marker, 'click', function() {
