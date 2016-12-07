@@ -32,7 +32,7 @@
 		
 		$.ajax({
 			type: "POST",
-			url: "/usr/webhosting/WiFinder/"+path,
+			url: "/"+path,
 			data: formData,
 			success: function(){alert("success?");},
 			dataType: "json",
