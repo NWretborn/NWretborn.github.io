@@ -10,7 +10,7 @@
 </style>
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-	
+
 	// make json object from serialized array of html form
 	$.fn.serializeObject = function() {
 		var o = {};
@@ -27,29 +27,31 @@
 		});
 		return o;
 	};
-	
+
 	/*
 	function removeElement(array, name){
-	
+
 	}
 	*/
-	
+
 	function postForm(path, formID){
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
-		
+
 		var jsonOUT =$(formID).serializeObject();
 		var jsonSTR = JSON.stringify(jsonOUT);
-		
+
 		var pass = jsonOUT['password'];
 		var rep = jsonOUT['passwordrep'];
-		
+
 		//alert( "password: " + pass +"\n"+ "repeat: " +  rep );
-		
+
+		console.log(jsonOUT);
+
 		for(var i = 0; i < jsonOUT.length; i++) {
 			var obj = JSON.stringify(jsonOUT[i]);
-			alert("hej");
+
 		}
-		
+
 		/*
 		if( pass == rep){
 			jsonOUT = removeElement(jsonOUT, "passwordrep");
