@@ -35,7 +35,7 @@
 		
 		var jsonSTR = JSON.stringify(jsonOUT);
 		
-		if(jsonOUT['password'] === jsonOUT['password']){
+		if(JSON.stringify(jsonOUT['password']) === JSON.stringify(jsonOUT['password'])){
 			$.ajax({
 				type: "POST",
 				url: "./"+path,
