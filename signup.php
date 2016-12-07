@@ -49,7 +49,6 @@
 			});
 			alert("registration sent!");
 		}
-		*/
 	}
 </script>
 <head>
