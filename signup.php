@@ -147,7 +147,7 @@
 
 
 	<div class="center box">
-		<form onsubmit='postForm("signup.php", "#registerform")' id="registerform">
+		<form onsubmit='postForm("../api.php", "#registerform")' id="registerform">
 
 			<div style="top: 12%; left: 8%">
 				Username
