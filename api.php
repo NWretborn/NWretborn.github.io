@@ -7,8 +7,7 @@
 	// get the HTTP method, path and body of the request
 	$method = $_SERVER['REQUEST_METHOD'];
 	
-	error_log("api.php received request\n", 3, "./scrap.log");
-	error_log($method."\n", 3, "./scrap.log");
+	error_log("api.php received request".$method."\n", 3, "./scrap.log");
 
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	//echo "<br/>php://input: ".file_get_contents('php://input');
@@ -31,10 +30,13 @@
 	},array_values($input));
 	
 	// build the SET part of the SQL command
+	error_log("received following data:\n", 3, "./scrap.log");
 	$set = '';
 	for ($i=0;$i<count($columns);$i++) {
 		$set.=($i>0?',':'').'`'.$columns[$i].'`=';
 		$set.=($values[$i]===null?'NULL':'"'.$values[$i].'"');
+		error_log("\tcolumn: ".$columns[$i]."", 3, "./scrap.log");
+		error_log("\tvalue: ".$values[$i]."\n", 3, "./scrap.log");
 	}
 	
 	// create SQL based on HTTP method
