@@ -314,7 +314,7 @@ function geolocate() {
         animation: google.maps.Animation.DROP,
         visible: false,
         map: map
-
+	});
 	// Bias the SearchBox results towards current map's viewport.
 	map.addListener('bounds_changed', function() {
 		searchBox.setBounds(map.getBounds());
