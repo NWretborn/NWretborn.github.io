@@ -50,7 +50,7 @@
 
 		if( pass == rep){
 			console.log(jsonOUT);
-			consol.log(jsonOUT['passwordrep']);
+			console.log(jsonOUT['passwordrep']);
 			delete jsonOUT['passwordrep'];
 			console.log(jsonOUT);
 			$.ajax({
