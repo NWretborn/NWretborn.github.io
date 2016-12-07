@@ -7,7 +7,7 @@
 	// get the HTTP method, path and body of the request
 	$method = $_SERVER['REQUEST_METHOD'];
 	
-	error_log("api.php received request".$method."\n", 3, "./scrap.log");
+	error_log("api.php received ".$method." request\n", 3, "./scrap.log");
 
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	//echo "<br/>php://input: ".file_get_contents('php://input');
@@ -41,6 +41,7 @@
 	
 	// create SQL based on HTTP method
 	switch ($method) {
+		error_log("switch method", 3, "./scrap.log");
 		case 'GET':
 			$sql = "select * from `$table`".($key?" WHERE id=$key":''); break;echo $method;
 		case 'PUT':
