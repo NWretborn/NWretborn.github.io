@@ -50,8 +50,8 @@ body{
       }
 
 #pac-input {
-        background-color: #fff;
-        font-family: Roboto;
+        background-color: #10454e;
+        font-family: monospace;
         font-size: 15px;
         font-weight: 300;
         margin-left: 12px;
@@ -65,7 +65,7 @@ body{
       }
 
       .pac-container {
-        font-family: Monospace;
+        font-family: monospace;
       }
 
       #type-selector {
@@ -75,7 +75,7 @@ body{
       }
 
       #type-selector label {
-        font-family: Monospace;
+        font-family: monospace;
         font-size: 13px;
         font-weight: 300;
       }
