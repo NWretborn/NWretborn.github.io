@@ -19,7 +19,7 @@
 		var lookData = formData;
 		formData = JSON.stringify(formData);
 		
-		alert(window.location.pathname);
+		//alert(window.location.pathname);
 		//formData = $.parseJSON('[' + formData + ']');
 		
 		// alert(path + "\n" + formName + "\n" + formData);
