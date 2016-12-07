@@ -5,6 +5,9 @@ var customIcons = {
     closed: {
       icon: 'http://213.113.7.224/img/logo_blue50px.png'
     }
+	user: {
+		icon: 'http://213.113.7.224/img/user_icon.png'
+	}
   };
 
 function load() {
