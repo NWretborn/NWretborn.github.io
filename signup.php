@@ -11,7 +11,7 @@
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 	
-	// WE DON'T TAKE CREDIT FOR THIS FUNCTION
+	// make json object from serialized array of html form
 	$.fn.serializeObject = function() {
 		var o = {};
 		var a = this.serializeArray();
@@ -29,12 +29,11 @@
 	};
 	
 	// remove all elements of json-array with name
-	$.fn.removeelement = function(name){
-		var o = {}
-		$.each(this, function(){
-			alert(JSON.stringify(this) + "\n" + name);
-		});
-	}
+	function removeJsonAttrs(json,attrs){
+		return JSON.parse(JSON.stringify(json,function(k,v){
+			return attrs.indexOf(k)!==-1 ? undefined: v;
+		}
+	));}
 	
 	function postForm(path, formID){
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
@@ -46,10 +45,9 @@
 		var rep = jsonOUT['passwordrep'];
 		
 		//alert( "password: " + pass +"\n"+ "repeat: " +  rep );
-		
-		jsonOUT.removeelement("hello");
 			
 		if( pass == rep){
+			jsonOUT = removeJsonAttrs(jsonOUT, ['passwordrep']);
 			$.ajax({
 				type: "POST",
 				url: "./"+path,
