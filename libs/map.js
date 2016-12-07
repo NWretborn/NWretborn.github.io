@@ -388,6 +388,7 @@ function geolocate() {
             var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
             // Center map
+	var map;
             map.setCenter(pos);
         });
     }
