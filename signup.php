@@ -38,7 +38,7 @@
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
 
 		var jsonOUT =$(formID).serializeObject();
-		var jsonSTR = JSON.stringify(jsonOUT);
+
 
 		var pass = jsonOUT['password'];
 		var rep = jsonOUT['passwordrep'];
@@ -49,10 +49,8 @@
 
 
 		if( pass == rep){
-			console.log(jsonOUT);
-			console.log(jsonOUT['passwordrep']);
 			delete jsonOUT['passwordrep'];
-			console.log(jsonOUT);
+			var jsonSTR = JSON.stringify(jsonOUT);
 			$.ajax({
 				type: "POST",
 				url: "./"+path,
