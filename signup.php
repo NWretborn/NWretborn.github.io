@@ -45,7 +45,7 @@
 
 		//alert( "password: " + pass +"\n"+ "repeat: " +  rep );
 
-		console.log(jsonOUT);
+		console.log(jsonOUT.length);
 
 		for(var i = 0; i < jsonOUT.length; i++) {
 			var obj = JSON.stringify(jsonOUT[i]);
