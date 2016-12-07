@@ -12,7 +12,7 @@
 	//echo "<br/>php://input: ".file_get_contents('php://input');
 	$input = json_decode(file_get_contents('php://input'),true);
 	
-	error_log("input: ".$input, 3, "./scrap.log");
+	error_log("input: ".file_get_contents('php://input')."\n", 3, "./scrap.log");
 
 	// connect to the mysql database
 	$link = mysqli_connect($localhost, $username, $password, $database);
