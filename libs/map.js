@@ -259,6 +259,9 @@ function load() {
 		searchBox.setBounds(map.getBounds());
 	});
 
+	var infoWindow = new google.maps.InfoWindow;
+
+           
     // Change this depending on the name of your PHP file
     downloadUrl("phpsqlajax_genxml3.php", function(data) {
     
@@ -335,8 +338,6 @@ function load() {
 	bindInfoWindow(marker, map, infoWindow, html);
 }});}
 
-
-
 	function bindInfoWindow(marker, map, infoWindow, html) {
 		google.maps.event.addListener(marker, 'click', function() {
 		infoWindow.setContent(html);
@@ -359,6 +360,5 @@ function load() {
     request.open('GET', url, true);
     request.send(null);
   }
-
 
 function doNothing() {}
