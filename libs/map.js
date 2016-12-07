@@ -289,11 +289,10 @@ function load() {
 
 	function placeMarker(location) {
     		var marker = new google.maps.Marker({
-        	position: location, 
+        	position: location, //The variable 'location' contains the lat and lng values needed for the db
         	map: map,
 		icon: icon.icon
     		});
-		document.write(location);
 	}
 			
 	// Listen for the event fired when the user selects a prediction and retrieve
