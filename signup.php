@@ -32,10 +32,11 @@
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
 		
 		var jsonOUT =$(formID).serializeObject();
+		
 		var jsonSTR = JSON.stringify(jsonOUT);
 		
-		//alert($(formID) + "\n" + jsonOUT + "\n" + jsonSTR);
-
+		alert(JSON.stringify(jsonOUT['passwordrep']));
+		/*
 		$.ajax({
 			type: "POST",
 			url: "./"+path,			// "/" would refer to root, it seems
@@ -44,6 +45,7 @@
 			dataType: "json",
 			contentType : "application/json"
 		});
+		*/
 	}
 </script>
 <head>
