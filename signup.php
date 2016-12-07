@@ -29,10 +29,10 @@
 	};
 	
 	// remove all elements of json-array with name
-	$.fn.removeelement(name){
+	$.fn.removeelement = function(name){
 		var o = {}
 		$.each(this, function(){
-			alert(JSON.stringify(this));
+			alert(JSON.stringify(this) + "\n" + name);
 		}
 	}
 	
