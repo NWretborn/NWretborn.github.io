@@ -284,10 +284,14 @@ function geolocate() {
 
         navigator.geolocation.getCurrentPosition(function (position) {
 
-            var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+	var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
-            // Center map
-            map.setCenter(pos);
+	// Set marker position and visibility
+	marker.setPosition(pos);
+	marker.setVisible(true);	
+		
+	// Center map
+	map.setCenter(pos);
         });
     }
 }	
@@ -303,6 +307,13 @@ function geolocate() {
 	var input = document.getElementById('pac-input');
 	var searchBox = new google.maps.places.SearchBox(input);
 	map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+	
+	// Create an invisible marker to be used later
+    	marker = new google.maps.Marker({
+        position: new google.maps.LatLng(0, 0),
+        animation: google.maps.Animation.DROP,
+        visible: false,
+        map: map
 
 	// Bias the SearchBox results towards current map's viewport.
 	map.addListener('bounds_changed', function() {
