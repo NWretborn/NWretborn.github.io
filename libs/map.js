@@ -257,23 +257,15 @@ function load() {
     controlUI.style.borderWidth = '0px';
     controlUI.style.borderColor = 'white';
     controlUI.style.backgroundImage = "url(http://213.113.7.224/img/gps_icon.png)";
-    controlUI.style.height = '280px';
+    controlUI.style.height = '24px';
+    controlUI.style.width = '24px';
     controlUI.style.marginTop = '5px';
     controlUI.style.cursor = 'pointer';
     controlUI.style.textAlign = 'center';
     controlUI.title = 'Click to center map on your location';
     controlDiv.appendChild(controlUI);
 
-  // Set CSS for the control text
-    var controlText = document.createElement('div');
-    controlText.style.fontFamily = 'Arial,sans-serif';
-    controlText.style.fontSize = '10px';
-    controlText.style.color = 'white';
-    controlText.style.paddingLeft = '10px';
-    controlText.style.paddingRight = '10px';
-    controlText.style.marginTop = '8px';
-    //controlText.innerHTML = 'Center map on your location';
-    controlUI.appendChild(controlText);
+
 
   
 
