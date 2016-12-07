@@ -34,7 +34,7 @@
 			type: "POST",
 			url: "../api.php",
 			data: formData,
-			success: function(){},
+			success: function(){alert("success?");},
 			dataType: "json",
 			contentType : "application/json"
 		});
