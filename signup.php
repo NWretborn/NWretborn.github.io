@@ -35,7 +35,7 @@
 		
 		var jsonSTR = JSON.stringify(jsonOUT);
 		
-		alert( "password: " + JSON.stringify( jsonOUT['password'] )+"\n"+ "repeat: " +  JSON.stringify( jsonOUT['passwordrep'] ) ) )
+		alert( "password: " + JSON.stringify( jsonOUT['password'] )+"\n"+ "repeat: " +  JSON.stringify( jsonOUT['passwordrep'] ) );
 		
 		if(JSON.stringify(jsonOUT['password']) === JSON.stringify(jsonOUT['password'])){
 			$.ajax({
