@@ -1,7 +1,4 @@
 <?php
-	function log($message){
-		error_log($message, 3, "./scrap.log");
-	}
 	require("phpsqlajax_dbinfo.php");
 	#ini_set('display_errors', 1);
 	#ini_set('display_startup_errors', 1);
@@ -10,8 +7,8 @@
 	// get the HTTP method, path and body of the request
 	$method = $_SERVER['REQUEST_METHOD'];
 	
-	log("api.php logging...");
-	log($method);
+	error_log("api.php received request\n", 3, "./scrap.log");
+	error_log($method."\n", 3, "./scrap.log");
 
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	//echo "<br/>php://input: ".file_get_contents('php://input');
