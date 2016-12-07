@@ -46,8 +46,8 @@
 		//alert( "password: " + pass +"\n"+ "repeat: " +  rep );
 		
 		for(var i = 0; i < jsonOUT.length; i++) {
-			var obj = jsonOUT[i];
-			alert(obj.value);
+			var obj = JSON.stringify(jsonOUT[i]);
+			alert(obj);
 		}
 		
 		/*
