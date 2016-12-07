@@ -48,7 +48,6 @@
 		
 		
 		if( pass == rep){
-			jsonOUT = removeJsonAttrs(jsonOUT, ['passwordrep']);
 			$.ajax({
 				type: "POST",
 				url: "./"+path,
