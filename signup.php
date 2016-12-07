@@ -44,8 +44,7 @@
 		var rep = jsonOUT['passwordrep'];
 
 		//alert( "password: " + pass +"\n"+ "repeat: " +  rep );
-		jsonOUT = {jsonOUT.name, jsonOUT.password, jsonOUT.mail};
-
+		jsonOUT = {jsonOUT[0], jsonOUT[1], jsonOUT[2]};
 		console.log(jsonOUT);
 
 		/*
