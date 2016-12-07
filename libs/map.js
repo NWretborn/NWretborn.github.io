@@ -256,6 +256,7 @@ function load() {
     controlUI.style.borderStyle = 'solid';
     controlUI.style.borderWidth = '1px';
     controlUI.style.borderColor = 'white';
+    controlUI.style.backgroundImage = "url(http://213.113.7.224/img/gps_icon.png)";
     controlUI.style.height = '28px';
     controlUI.style.marginTop = '5px';
     controlUI.style.cursor = 'pointer';
