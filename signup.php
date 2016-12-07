@@ -33,7 +33,7 @@
 		var o = {}
 		$.each(this, function(){
 			alert(JSON.stringify(this) + "\n" + name);
-		}
+		});
 	}
 	
 	function postForm(path, formID){
