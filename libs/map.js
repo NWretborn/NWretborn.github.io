@@ -1,6 +1,3 @@
-var map;
-var marker;
-
 var customIcons = {
     open: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
@@ -12,7 +9,7 @@ var customIcons = {
 
 function load() {
      
-	var map = new google.maps.Map(document.getElementById("map"), mapOptions, {
+	var map = new google.maps.Map(document.getElementById("map"), {
 	center: new google.maps.LatLng(65.618080, 22.140047),
 	zoom: 10,
 	styles:
@@ -388,12 +385,9 @@ function geolocate() {
 
             var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
-            // Set marker position and visibility
-            marker.setPosition(pos);
-            marker.setVisible(true);
-            
             // Center map
-            map.setCenter(pos);
+	center: new google.maps.LatLng(65.618080, 22.140047),
+          //  map.setCenter(pos);
         });
     }
 }
