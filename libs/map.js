@@ -315,7 +315,7 @@ function geolocate() {
     	marker = new google.maps.Marker({
         position: new google.maps.LatLng(0, 0),
         animation: google.maps.Animation.DROP,
-	icon: icon.user,
+	icon: customIcon.user,
         visible: false,
         map: map
 	});
