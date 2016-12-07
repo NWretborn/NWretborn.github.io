@@ -10,7 +10,6 @@
 </style>
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-	
 	function postForm(path, formID){
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
 		
@@ -44,31 +43,6 @@
 			dataType: "json",
 			contentType : "application/json"
 		});
-	}
-	
-	function post(path, params, method) {
-		method = method || "post"; // Set method to post by default if not specified.
-
-		// The rest of this code assumes you are not using a library.
-		// It can be made less wordy if you use one.
-		var form = document.createElement("form");
-		form.setAttribute("method", method);
-		form.setAttribute("action", path);
-
-		for(var key in params) {
-			alert(key);
-			if(params.hasOwnProperty(key)) {
-				var hiddenField = document.createElement("input");
-				hiddenField.setAttribute("type", "hidden");
-				hiddenField.setAttribute("name", key);
-				hiddenField.setAttribute("value", params[key]);
-
-				form.appendChild(hiddenField);
-			}
-		}
-
-		document.body.appendChild(form);
-		form.submit();
 	}
 </script>
 <head>
@@ -143,7 +117,7 @@
 
 
 	<div class="center box">
-		<form onsubmit='postForm("../api.php", "#registerform"); return false' id="registerform">
+		<form onsubmit='postForm("../api.php/user", "#registerform"); return false' id="registerform">
 
 			<div style="top: 12%; left: 8%">
 				Username
