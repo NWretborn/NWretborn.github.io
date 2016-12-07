@@ -1,3 +1,6 @@
+var map;
+var marker;
+
 var customIcons = {
     open: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
@@ -384,6 +387,11 @@ function geolocate() {
         navigator.geolocation.getCurrentPosition(function (position) {
 
             var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+            // Set marker position and visibility
+            marker.setPosition(pos);
+            marker.setVisible(true);
+            
             // Center map
             map.setCenter(pos);
         });
