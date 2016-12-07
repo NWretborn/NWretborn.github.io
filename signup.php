@@ -35,16 +35,20 @@
 		
 		var jsonSTR = JSON.stringify(jsonOUT);
 		
-		alert(JSON.stringify(jsonOUT['passwordrep']));
-		/*
-		$.ajax({
-			type: "POST",
-			url: "./"+path,			// "/" would refer to root, it seems
-			data: jsonSTR,
-			success: function(){alert("success?");},
-			dataType: "json",
-			contentType : "application/json"
-		});
+		if(jsonOUT['password'] != jsonOUT['password']){
+			alert("password mismatch!");
+		}
+		else{
+			$.ajax({
+				type: "POST",
+				url: "./"+path,
+				data: jsonSTR,
+				success: function(){alert("success?");},
+				dataType: "json",
+				contentType : "application/json"
+			});
+			alert("registration sent!");
+		}
 		*/
 	}
 </script>
