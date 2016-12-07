@@ -19,15 +19,16 @@
 		var lookData = formData;
 		formData = JSON.stringify(formData);
 		
+		alert(window.location.pathname);
 		//formData = $.parseJSON('[' + formData + ']');
 		
 		// alert(path + "\n" + formName + "\n" + formData);
 		
-		var arr = [];
-		for(var i in lookData){
-			arr.push(lookData[i]);
-		}
-		alert(arr);
+		//var arr = [];
+		//for(var i in lookData){
+		//	arr.push(lookData[i]);
+		//}
+		//alert(arr);
 		
 		$.ajax({
 			type: "POST",
