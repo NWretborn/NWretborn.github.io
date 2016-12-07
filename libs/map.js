@@ -251,7 +251,7 @@ function load() {
 	function GeolocationControl(controlDiv, map) {
 
     // Set CSS for the control button
-    var controlUI = document.createElement('div');
+    var controlUI = document.createElement('div23');
     controlUI.style.backgroundColor = '#10454e';
     controlUI.style.borderStyle = 'solid';
     controlUI.style.borderWidth = '1px';
@@ -287,7 +287,7 @@ function geolocate() {
 	// Center map
 	map.setCenter(pos);
         });
-    }
+    }	
 }	
 	
 	
