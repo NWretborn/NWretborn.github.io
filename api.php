@@ -2,7 +2,7 @@
 	require("phpsqlajax_dbinfo.php");
 	#ini_set('display_errors', 1);
 	#ini_set('display_startup_errors', 1);
-	#error_reporting(E_ALL);
+	error_reporting(E_ALL, 3, "./scrap.log");
 
 	// get the HTTP method, path and body of the request
 	$method = $_SERVER['REQUEST_METHOD'];
