@@ -15,7 +15,7 @@
 	error_log("input: ".file_get_contents('php://input')."\n", 3, "./scrap.log");
 
 	// connect to the mysql database
-	$link = mysqli_connect($localhost, $username, $password, $database);
+	$link = mysqli_connect('localhost', $username, $password, $database);
 	mysqli_set_charset($link,'utf8');
 
 	// retrieve the table and key from the path
