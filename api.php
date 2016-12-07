@@ -62,6 +62,9 @@
 	// excecute SQL statement
 	$result = mysqli_query($link,$sql);
 
+	error_log("SQL result: ".$result, 3, "./scrap.log");
+
+
 	// die if SQL statement failed
 	if (!$result) {
 		http_response_code(404);
