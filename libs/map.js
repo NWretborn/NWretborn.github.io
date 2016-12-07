@@ -289,11 +289,11 @@ function load() {
 
 	function placeMarker(location) {
     		var marker = new google.maps.Marker({
-		document.write(location);
         	position: location, 
         	map: map,
 		icon: icon.icon
     		});
+		document.write(location);
 	}
 			
 	// Listen for the event fired when the user selects a prediction and retrieve
