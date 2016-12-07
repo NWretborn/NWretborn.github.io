@@ -18,13 +18,22 @@
 		
 		//formData = $.parseJSON('[' + formData + ']');
 		
-		alert(path + "\n" + formName + "\n" + formData);
+		// alert(path + "\n" + formName + "\n" + formData);
 		
 		var arr = [];
 		for(var i in formData){
 			arr.push(formData[i]);
 		}
 		alert(arr);
+		
+		$.ajax({
+			type: "POST",
+			url: "api.php",
+			data: formData,
+			success: function(){},
+			dataType: "json",
+			contentType : "application/json"
+		});
 		
 		//post(path, formData);
 		
