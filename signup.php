@@ -11,7 +11,7 @@
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 	
-	// WE TAKE NO CREDIT FOR THIS FUNCTION
+	// WE DON'T TAKE CREDIT FOR THIS FUNCTION
 	$.fn.serializeObject = function() {
 		var o = {};
 		var a = this.serializeArray();
@@ -28,11 +28,18 @@
 		return o;
 	};
 	
+	// remove all elements of json-array with name
+	$.fn.removeelement(name){
+		var o = {}
+		$.each(this, function(){
+			alert(JSON.stringify(this));
+		}
+	}
+	
 	function postForm(path, formID){
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
 		
 		var jsonOUT =$(formID).serializeObject();
-		
 		var jsonSTR = JSON.stringify(jsonOUT);
 		
 		var pass = jsonOUT['password'];
@@ -40,6 +47,8 @@
 		
 		//alert( "password: " + pass +"\n"+ "repeat: " +  rep );
 		
+		jsonOUT.removeelement("hello");
+			
 		if( pass == rep){
 			$.ajax({
 				type: "POST",
