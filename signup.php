@@ -15,21 +15,20 @@
 		//var formData = $.parseJSON( JSON.stringify( $(formName).serialize() ) );
 		
 		
-		var formData =$(formName).serialize();
-		var origData = formData;
-		formData = JSON.stringify(formData);
+		var origData =$(formName).serialize();
+		var formData = JSON.stringify(origData);
 		
 		//alert(window.location.pathname);
 		//formData = $.parseJSON('[' + formData + ']');
 		
 		// alert(path + "\n" + formName + "\n" + formData);
 		
-		var arr = [];
-		var showData = formData;
-		for(var i in showData){
-			arr.push(showData[i]);
-		}
-		alert(arr);
+		//var arr = [];
+		//var showData = formData;
+		//for(var i in showData){
+		//	arr.push(showData[i]);
+		//}
+		alert(origData);
 		
 		$.ajax({
 			type: "POST",
