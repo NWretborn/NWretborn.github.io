@@ -35,9 +35,12 @@
 		
 		var jsonSTR = JSON.stringify(jsonOUT);
 		
-		alert( "password: " + JSON.stringify( jsonOUT['password'] )+"\n"+ "repeat: " +  JSON.stringify( jsonOUT['passwordrep'] ) );
+		var pass = jsonOUT['password'];
+		var rep = jsonOUT['passwordrep'];
 		
-		if(JSON.stringify(jsonOUT['password']) === JSON.stringify(jsonOUT['password'])){
+		//alert( "password: " + pass +"\n"+ "repeat: " +  rep );
+		
+		if( pass == rep){
 			$.ajax({
 				type: "POST",
 				url: "./"+path,
