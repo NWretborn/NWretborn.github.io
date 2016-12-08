@@ -17,8 +17,8 @@
 	
 	
 	
-<!--	<div class="box left" style="width: 30%; height: 75%;"> -->
-	<!--	<div class="menu_box";> -->
+<div class="box left" style="width: 30%; height: 75%;">
+<div class="menu_box";>
 <div class="w3-container">
   <h2>Active Tabs</h2>
   <p>Click on the links below:</p>
@@ -63,7 +63,8 @@ function openCity(evt, cityName) {
 			
 		<!--</form>-->
 
-	
+	</div>
+	</div>
 	
 	
 	
