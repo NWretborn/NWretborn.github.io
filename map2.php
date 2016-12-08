@@ -16,7 +16,7 @@
 	
 	
 	
-	<div class="box left" style="width: 30%; height: 70%;">
+	<div class="box left" style="width: 30%; height: 75%;">
 		<div class="text_box">
 
 			
