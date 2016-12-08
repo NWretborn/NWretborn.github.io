@@ -41,12 +41,12 @@
 			<div>
 				Name of the network
 			</div>
-		  <br/>
 			<div style="top: 12%">
 				<input type="text" name="name" class="tb5" value="bread">
 
 			</div>
 			<br/>
+		  	<br/>
 			<div style="top: 40%; left: 8%;">
 				Physical adress of the network
 			</div>
