@@ -50,11 +50,11 @@
 			<div style="top: 40%; left: 8%;">
 				Physical adress of the network
 			</div>
-		  <br/>
 			<div style="top: 40%">
 				<input value="bird" type="password" name="password" class="tb5">
 			</div>
 			<br/>
+		  	<br/>
 			<div style="top: 52%; left: 8%;">
 				Percevied connectivity(1-5)
 			</div>
@@ -62,12 +62,15 @@
 				<input value="bird" type="password" name="passwordrep" class="tb5">
 			</div>
 			<br/>
+		  	<br/>
 			<div style="top: 72%; left: 8%;">
 				Latitude
 			</div>
 			<div  style="top: 72%">
 				<input value="bread@birdmail.com" type="text" name="mail" font="monospace" class="tb5">
 			</div>
+		  	<br/>
+		  	<br/>
 			<div style="top: 92%; left: 8%;">
 				Longitude
 			</div>
