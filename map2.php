@@ -38,23 +38,25 @@
 	  
 	  <form action="" method="get">
 
-			<div style="top: 12%; left: 8%" class="hCenter";>
-				Username
+			<div style="top: 12%; left: 8%">
+				Network Name
 			</div>
 			<div>
 				<input type="text" name="name" class="tb5" value="bread">
 
 			</div>
 			<br/>
-			<div style="top: 32%; left: 8%;">
-				
+			<div style="top: 32%; left: 8%">
+				Physical Address
 			</div>
-			<br/><br/>
-			<div class="center" style="top:91%">
+			<div>
+				<input type="text" name="name" class="tb5" value="bread">
 
+			</div>
+			<br/>
 				<input type="submit" value="Register" name="register" class="tb4">
 
-			</div>
+			
 </form>
 	  
 	  
