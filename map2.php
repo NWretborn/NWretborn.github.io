@@ -22,12 +22,13 @@
 	
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
 <div class="menu_box";>
+	<div class="menu_box";>
 <div class="w3-container">
   <ul class="w3-navbar w3-lightblue">
     <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork');">View Network</a></li>
     <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork');">Add Network</a></li>
   </ul>
-
+		</div>
   <div id="viewNetwork" class="w3-container w3-border tab">
     <h2>London</h2>
     <p>London is the capital city of England.</p>
