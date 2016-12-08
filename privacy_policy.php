@@ -12,7 +12,7 @@
 
 	<section id="privacy-information-we-collect">
 		<h3>What information do we collect?</h3>
-		<p>We collect information from you when you register on our site, place an order, subscribe to our newsletter, respond to a survey or fill out a form.</p>
+		<p>We collect information from you when you register on our site, fill out a form or when you explicitly upload data to our website.</p>
 		<p>When ordering or registering on our site, as appropriate, you may be asked to enter your: name, e-mail address, mailing address, phone number, credit card information or social security number. You may, however, visit our site anonymously.
 		Google, as a third party vendor, uses cookies to serve ads on your site. Google's use of the DART cookie enables it to serve ads to your users based on their visit to your sites and other sites on the Internet. Users may opt out of the use of the DART cookie by visiting the Google ad and content network privacy policy.</p>
 	</section>
@@ -81,7 +81,7 @@
 
 	<section id="privacy-changes">
 		<h3>Changes to our Privacy Policy</h3>
-		<p>If we decide to change our privacy policy, we will post those changes on this page, send an email notifying you of any changes, and/or update the Privacy Policy modification date below.</p>
+		<p>If we decide to change our privacy policy, we will post those changes on this page, send an email notifying you of changes concerning the handling the information you have uploaded to our website, and/or update the Privacy Policy modification date below.</p>
 	</section>
 
 	<section id="contact-us">
