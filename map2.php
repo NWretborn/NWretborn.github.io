@@ -27,7 +27,7 @@
 
 <div style="margin-left:130px">
 
-  <div id="London" class="w3-container city">
+  <div id="London">
     <p>Here you can view networks</p>
   </div>
 
