@@ -362,9 +362,8 @@ function geolocate() {
         	position: location, //The variable 'location' contains the lat and lng values needed for the db
         	map: map,
 		icon: icon.icon
-    		}
+    		});
 		$jsValue.innerHTML = location;
-						    );
 	}
 			
 	
