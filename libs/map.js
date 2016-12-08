@@ -355,6 +355,7 @@ function geolocate() {
        		markers = [];
 
    		placeMarker(event.latLng);
+		alert("Hello! I am an alert box!!");
 	});
 
 	function placeMarker(location) {
