@@ -270,6 +270,12 @@ function load() {
     // Setup the click event listeners to geolocate user
     google.maps.event.addDomListener(controlUI, 'click', geolocate);
 }
+	
+	function setMapOnAll(map) {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(map);
+        }
+      }
 
 function geolocate() {
 
@@ -357,11 +363,7 @@ function geolocate() {
     		});
 	}
 			
-	function setMapOnAll(map) {
-        for (var i = 0; i < markers.length; i++) {
-          markers[i].setMap(map);
-        }
-      }
+	
 	
 		
 			
