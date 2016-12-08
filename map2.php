@@ -46,10 +46,10 @@
 
 			</div>
 			<br/>
-			<div style="top: 32%; left: 8%;">
+			<div style="top: 35%; left: 8%;">
 				Physical adress of the network
 			</div>
-			<div style="top: 32%">
+			<div style="top: 35%">
 				<input value="bird" type="password" name="password" class="tb5">
 			</div>
 			<br/>
