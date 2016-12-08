@@ -363,6 +363,7 @@ function geolocate() {
         	map: map,
 		icon: icon.icon
     		});
+		document.getElementById("location").innerHTML=location;
 	}
 			
 	
