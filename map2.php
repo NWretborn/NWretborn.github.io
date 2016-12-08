@@ -17,6 +17,7 @@
 	
 	
 	<div class="box left" style="width: 30%; height: 75%;">
+		<div class="text_box";>
 	
 	
 <nav class="w3-sidenav w3-light-grey w3-card-2" style="width:130px">
@@ -69,6 +70,7 @@ function openCity(evt, cityName) {
 			
 		<!--</form>-->
 </div> 
+		</div> 
 
 	
 	
