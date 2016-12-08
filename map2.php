@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
 	<style>
-.city {display:none;}
+.tab {display:viewNetwork;}
 </style>
 	<script src="libs/map.js"></script>
 	<script src="libs/std.js"></script>
@@ -24,31 +24,25 @@
 <div class="menu_box";>
 <div class="w3-container">
   <ul class="w3-navbar w3-lightblue">
-    <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London');">London</a></li>
-    <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris');">Paris</a></li>
-    <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Tokyo');">Tokyo</a></li>
+    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork');">View Network</a></li>
+    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork');">Add Network</a></li>
   </ul>
 
-  <div id="London" class="w3-container w3-border city">
+  <div id="viewNetwork" class="w3-container w3-border tab">
     <h2>London</h2>
     <p>London is the capital city of England.</p>
   </div>
 
-  <div id="Paris" class="w3-container w3-border city">
+  <div id="addNetwork" class="w3-container w3-border tab">
     <h2>Paris</h2>
     <p>Paris is the capital of France.</p> 
-  </div>
-
-  <div id="Tokyo" class="w3-container w3-border city">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan.</p>
   </div>
 </div>
 
 <script>
-function openCity(evt, cityName) {
+function openTab(evt, tabName) {
   var i, x, tablinks;
-  x = document.getElementsByClassName("city");
+  x = document.getElementsByClassName("tab");
   for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
   }
