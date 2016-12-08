@@ -21,10 +21,7 @@
 	
 	
 <nav class="w3-sidenav w3-light-grey w3-card-2" style="width:130px">
-  <div class="w3-container">
-    <h5>Menu</h5>
-  </div>
-  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London')">London</a>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London')">Lonsdon</a>
   <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris')">Paris</a>
   <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Tokyo')">Tokyo</a>
 </nav>
