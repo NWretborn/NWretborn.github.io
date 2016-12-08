@@ -49,10 +49,9 @@
 			$sql = "update `$table` set $set where id=$key"; 
 			break;
 		case 'POST':
-			//echo "<br/>Table is:",$table;
-			//echo "<br/>Set is:",$set;
+			//$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+			error_log($set, 3, "./scrap.log");
 			$sql = "insert into `$table` set $set";
-			error_log("sql query: ".$sql."\n", 3, "./scrap.log");
 			break;
 		case 'DELETE':
 			$sql = "delete from `$table` where id=$key"; 
