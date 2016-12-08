@@ -351,21 +351,11 @@ function geolocate() {
 	//Eventlistener for adding marker to map on click
 	google.maps.event.addListener(map, 'click', function(event) {
 		//if SESSION
-		setMapOnAll(null);
-       		markers = [];
-		networkform();
+       		var markers = [];
    		placeMarker(event.latLng);
 		
 	});
-	
-	function networkform() {
-    	var network_name = prompt("Please enter the name of the network");
-	var network_address = prompt("", "Address");
-    
-    	if (network_name != null && network_address != null) {
-        alert("Network submitted")
-    }
-}		
+		
 			
 	function placeMarker(location) {
     		var markers = new google.maps.Marker({
