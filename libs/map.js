@@ -364,7 +364,9 @@ function geolocate() {
         	map: map,
 		icon: icon.icon
     		});
-		$jsValue.innerHTML = location;
+		$jsName.addEventListener('input', function(event){
+  $jsValue.innerHTML = location;
+}, false);
 	}
 			
 	
