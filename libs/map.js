@@ -341,17 +341,17 @@ function geolocate() {
 			//THIS CODE IS TO BE IMPLEMENTED WHEN YOU WANT TO ADD A NETWORK WITH ACCOUNT PRIV
 			
 	//Eventlistener for adding marker to map on click
-//	google.maps.event.addListener(map, 'click', function(event) {
-//   		placeMarker(event.latLng);
-//	});
-//
-//	function placeMarker(location) {
-//    		var marker = new google.maps.Marker({
-//        	position: location, //The variable 'location' contains the lat and lng values needed for the db
-//        	map: map,
-//		icon: icon.icon
-//    		});
-//	}
+	google.maps.event.addListener(map, 'click', function(event) {
+   		placeMarker(event.latLng);
+	});
+
+	function placeMarker(location) {
+    		var marker = new google.maps.Marker({
+        	position: location, //The variable 'location' contains the lat and lng values needed for the db
+        	map: map,
+		icon: icon.icon
+    		});
+	}
 			
 			
 		
