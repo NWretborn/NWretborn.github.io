@@ -1,3 +1,5 @@
+var markers = [];
+
 var customIcons = {
     open: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
