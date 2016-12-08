@@ -9,6 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
+	<style>
+.city {display:none;}
+</style>
 	<script src="libs/map.js"></script>
 	<script src="libs/std.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places"async defer></script>
