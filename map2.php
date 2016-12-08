@@ -38,7 +38,7 @@
 	  
 	  <form action="" method="get">
 
-			<div style="top: 12%; left: 8%" class="center";>
+			<div style="top: 12%; left: 8%" class="hCenter";>
 				Username
 			</div>
 			<div>
