@@ -41,6 +41,7 @@
 			<div style="top: 12%; left: 8%">
 				Name of the network
 			</div>
+		  <br/>
 			<div style="top: 12%">
 				<input type="text" name="name" class="tb5" value="bread">
 
@@ -49,6 +50,7 @@
 			<div style="top: 40%; left: 8%;">
 				Physical adress of the network
 			</div>
+		  <br/>
 			<div style="top: 40%">
 				<input value="bird" type="password" name="password" class="tb5">
 			</div>
