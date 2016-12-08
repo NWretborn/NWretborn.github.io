@@ -6,7 +6,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<title>WiFinder</title>
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
-
+	
+	<meta name="google-signin-client_id" content="919161926395-a0q30s78sal0c8vboi8bthul62r7evep.apps.googleusercontent.com">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
 <body>
@@ -37,6 +39,7 @@
 						style="top:calc(var(--FONT_HEIGHT)*6.5); left:35%; width:35%; min-width:calc(var(--FONT_HEIGHT)*15/2);">
 			</form>
 		</div>
+		
 
 		<!--<form action="signup.php" method="get">-->
 		<div onclick="location.href='signup.php'">
@@ -44,7 +47,7 @@
 		</div>
 		<!--</form>-->
 	</div>	
-	
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
 
 	<div id="logo" class="index" onclick="location.href='about.php'"> </div>
 	<div class="cache" style="background: url(img/logo_about_gray.png)"></div>
