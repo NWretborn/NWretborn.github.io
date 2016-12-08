@@ -47,14 +47,12 @@
 
 			</div>
 			<br/>
-		  	<br/>
 			<div style="top: 40%; left: 8%;">
 				Physical adress of the network
 			</div>
 			<div style="top: 40%">
 				<input value="Examplestreet 123" type="text" name="password" class="tb5">
 			</div>
-			<br/>
 		  	<br/>
 			<div style="top: 52%; left: 8%;">
 				Percevied connectivity(1-5)
@@ -62,7 +60,7 @@
 			<div  style="top: 52%">
 				<input value="1-5" type="text" name="passwordrep" class="tb5">
 			</div>
-		  	<br style="margin-top: 1px;"><br/>
+			<br/>
 			<div style="top: 92%; left: 8%;">
 				Type of network(open/closed)
 			</div>
