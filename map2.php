@@ -20,10 +20,7 @@
 <div class="box left" style="width: 30%; height: 75%;">
 <div class="menu_box";>
 <div class="w3-container">
-  <h2>Active Tabs</h2>
-  <p>Click on the links below:</p>
-
-  <ul class="w3-navbar w3-black">
+  <ul class="w3-navbar w3-lightblue">
     <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London');">London</a></li>
     <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris');">Paris</a></li>
     <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Tokyo');">Tokyo</a></li>
