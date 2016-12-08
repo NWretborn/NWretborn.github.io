@@ -22,7 +22,7 @@
 	$table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
 
 	$key = array_shift($request)+0;
-
+	error_log($input."\n", 3, "./scrap.log");
 	// escape the columns and values from the input object
 	$columns = preg_replace('/[^a-z0-9_]+/i','',array_keys($input));
 	$values = array_map(function ($value) use ($link) {
@@ -48,7 +48,7 @@
 			break;
 		case 'POST':
 			//$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-			error_log($set."\n", 3, "./scrap.log");
+			//error_log($set."\n", 3, "./scrap.log");
 			$sql = "insert into `$table` set $set";
 			break;
 		case 'DELETE':
