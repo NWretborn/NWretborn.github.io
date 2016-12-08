@@ -21,7 +21,7 @@
 	
 	
 <nav class="w3-sidenav w3-light-grey w3-card-2" style="width:100%">
-  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London')">View Network</a>
+  <a type="submit" href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London')">View Network</a>
   <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris')">Add Network</a>
 </nav>
 
