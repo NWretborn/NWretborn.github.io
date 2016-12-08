@@ -180,8 +180,8 @@ body{
 	font-size: var(--FONT_HEIGHT);
 	font-family: monospace;
 	width: 95%;
-	height: 95%;
-	top:5%;
+	height: 100%;
+	top:0%;
 	left:5%;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
