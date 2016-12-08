@@ -1,5 +1,5 @@
 var markers = [];
-$jsValue.innerHTML;
+var $jsValue = document.querySelector('.jsValue');
 
 var customIcons = {
     open: {
