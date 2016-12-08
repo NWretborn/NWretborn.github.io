@@ -39,22 +39,45 @@
 	  <form action="" method="get">
 
 			<div style="top: 12%; left: 8%">
-				Network Name
+				Name of the network
 			</div>
-			<div>
+			<div class="hCenter" style="top: 12%">
 				<input type="text" name="name" class="tb5" value="bread">
 
 			</div>
 			<br/>
-			<div style="top: 32%; left: 8%">
-				Physical Address
+			<div style="top: 32%; left: 8%;">
+				Physical adress of the network
 			</div>
-			<div>
-				<input type="text" name="name" class="tb5" value="bread">
-
+			<div class="hCenter" style="top: 32%">
+				<input value="bird" type="password" name="password" class="tb5">
 			</div>
 			<br/>
-				<input type="submit" value="Register" name="register" class="tb4">
+			<div style="top: 52%; left: 8%;">
+				Percevied connectivity(1-5)
+			</div>
+			<div class="hCenter" style="top: 52%">
+				<input value="bird" type="password" name="passwordrep" class="tb5">
+			</div>
+			<br/>
+			<div style="top: 72%; left: 8%;">
+				Latitude
+			</div>
+			<div class="hCenter" style="top: 72%">
+				<input value="bread@birdmail.com" type="text" name="mail" font="monospace" class="tb5">
+			</div>
+			<div style="top: 92%; left: 8%;">
+				Longitude
+			</div>
+			<div class="hCenter" style="top: 92%">
+				<input value="bread@birdmail.com" type="text" name="mail" font="monospace" class="tb5">
+			</div>
+			<br/><br/>
+			<div class="center" style="top:91%">
+
+				<input type="submit" value="Submit" name="register" class="tb4">
+
+</div>
 
 			
 </form>
