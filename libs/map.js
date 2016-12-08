@@ -1,6 +1,4 @@
 var markers = [];
-var $jsName = document.querySelector('.name');
-var $jsValue = document.querySelector('.jsValue');
 
 var customIcons = {
     open: {
@@ -365,9 +363,6 @@ function geolocate() {
         	map: map,
 		icon: icon.icon
     		});
-		$jsName.addEventListener('input', function(event){
-  $jsValue.innerHTML = location;
-}, false);
 	}
 			
 	
