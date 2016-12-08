@@ -25,7 +25,7 @@
   <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris')">Add Network</a>
 </nav>
 
-<div style="margin-left:130px">
+<div style="margin-left:30%">
 
   <div id="London" class="w3-container">
     <p>Here you can view networks</p>
