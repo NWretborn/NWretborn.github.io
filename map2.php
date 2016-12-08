@@ -28,13 +28,56 @@
     <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork');">Add Network</a></li>
   </ul>
   <div id="viewNetwork" class="w3-container w3-border tab">
-    <h2>London</h2>
-    <p>London is the capital city of England.</p>
+    <!-- VIEW NETWORK TAB -->
   </div>
 
   <div id="addNetwork" class="w3-container w3-border tab">
-    <h2>Paris</h2>
-    <p>Paris is the capital of France.</p> 
+    <!-- ADD NETWORK TAB -->
+	  
+	  
+	  
+	  <form action="" method="get">
+
+			<div style="top: 12%; left: 8%">
+				Username
+			</div>
+			<div class="hCenter" style="top: 12%">
+				<input type="text" name="name" class="tb5" value="bread">
+
+			</div>
+			<br/>
+			<div style="top: 32%; left: 8%;">
+				Password
+			</div>
+			<div class="hCenter" style="top: 32%">
+				<input value="bird" type="password" name="password" class="tb5">
+			</div>
+			<br/>
+			<div style="top: 52%; left: 8%;">
+				Repeat password
+			</div>
+			<div class="hCenter" style="top: 52%">
+				<input value="bird" type="password" name="passwordrep" class="tb5">
+			</div>
+			<br/>
+			<div style="top: 72%; left: 8%;">
+				E-mail
+			</div>
+			<div class="hCenter" style="top: 72%">
+				<input value="bread@birdmail.com" type="text" name="mail" font="monospace" class="tb5">
+			</div>
+			<br/><br/>
+			<div class="center" style="top:91%">
+
+				<input type="submit" value="Register" name="register" class="tb4">
+
+			</div>
+</form>
+	  
+	  
+	  
+	  
+	  
   </div>
 </div>
 
