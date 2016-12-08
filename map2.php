@@ -20,7 +20,7 @@
 	
 	
 	
-<div class="box left" style="width: 30%; height: 75%;">
+<div class="box left" style="width: 30%; height: 75%; top: 5%;">
 <div class="menu_box";>
 <div class="w3-container">
   <ul class="w3-navbar w3-lightblue">
