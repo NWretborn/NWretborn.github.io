@@ -19,20 +19,8 @@
 
 	<section id="privacy-information-use">
 		<h3>What do we use your information for?</h3>
-		<p>Any of the information we collect from you may be used in one of the following ways:</p>
-		<ul>
-		<li>To personalize your experience. Your information helps us to better respond to your individual needs.</li>
-		<li>To improve our website. We continually strive to improve our website offerings based on the information and feedback we receive from you.</li>
-		<li>To improve customer service. Your information helps us to more effectively respond to your customer service requests and support needs.</li>
-		<li>To process transactions</li>
-		</ul>
-
-		<p>Your information, whether public or private, will not be sold, exchanged, transferred, or given to any other company for any reason whatsoever, without your consent, other than for the express purpose of delivering the purchased product or service requested, to administer a contest, promotion, survey or other site feature or to send periodic emails.</p>
-
-		<p>The email address you provide for order processing, may be used to send you information and updates pertaining to your order, in addition to receiving occasional company news, updates, related product or service information, etc.</p>
-
-		<p><strong>Note:</strong> If at any time you would like to unsubscribe from receiving future emails, we include detailed unsubscribe instructions at the bottom of each email.</p>
-	</section>
+		<p>The information you upload to our website will be used for the purpose of the application and other users of the application. We may use all data uploaded to our website for testing purposes.</p>
+		</section>
 
 	<section id="privacy-protection">
 		<h3>How do we protect your information?</h3>
