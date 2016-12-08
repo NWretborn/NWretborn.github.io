@@ -65,7 +65,7 @@
 		  	<br/>
 		  	<br/>
 			<div style="top: 92%; left: 8%;">
-				Latitude & Longitude(click on map to set)
+				Latitude & Longitude<br/>(click on map to set)
 			</div>
 			<div  style="top: 92%">
 				<p id="location" href = test.html></p>
