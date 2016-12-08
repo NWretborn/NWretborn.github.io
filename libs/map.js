@@ -1,4 +1,5 @@
 var markers = [];
+var $jsName = document.querySelector('.name');
 var $jsValue = document.querySelector('.jsValue');
 
 var customIcons = {
