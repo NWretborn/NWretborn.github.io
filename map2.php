@@ -62,7 +62,7 @@
 			<div  style="top: 52%">
 				<input value="1-5" type="text" name="passwordrep" class="tb5">
 			</div>
-		  	<br style="line-height: 100px;"><br/>
+		  	<br style="line-height: 5px;"><br/>
 			<div style="top: 92%; left: 8%;">
 				Type of network(open/closed)
 			</div>
