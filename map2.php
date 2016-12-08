@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
 	<style>
-.tab {display:viewNetwork;}
+.tab {display:none;}
 </style>
 	<script src="libs/map.js"></script>
 	<script src="libs/std.js"></script>
