@@ -22,7 +22,7 @@
 	
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
 <div class="menu_box";>
-<div class="box left" style="width: 30%; height: 2%; top: 1%;">
+<div class="box left" style="width: 30%; height: 2 px; top: 1%;">
 <div class="w3-container">
   <ul class="w3-navbar w3-lightblue">
     <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork');">View Network</a></li>
