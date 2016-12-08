@@ -17,34 +17,22 @@
 	
 	
 	<div class="box left" style="width: 30%; height: 75%;">
-		<div class="text_box";>
+		<div class="menu_box";>
 	
 	
 <nav class="w3-sidenav w3-light-grey w3-card-2" style="width:130px">
-  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London')">Lonsdon</a>
-  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris')">Paris</a>
-  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Tokyo')">Tokyo</a>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London')">View Network</a>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris')">Add Network</a>
 </nav>
 
 <div style="margin-left:130px">
-  <div class="w3-padding">Vertical Tab Example (sidenav)</div>
 
   <div id="London" class="w3-container city">
-    <h2>London</h2>
-    <p>London is the capital city of England.</p>
-    <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Here you can view networks</p>
   </div>
 
   <div id="Paris" class="w3-container city">
-    <h2>Paris</h2>
-    <p>Paris is the capital of France.</p> 
-    <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
-  </div>
-
-  <div id="Tokyo" class="w3-container city">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan.</p>
-    <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+    <p>Here you can add networks</p>
   </div>
 
 </div>
