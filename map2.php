@@ -38,7 +38,7 @@
 	  
 	  <form action="" method="get">
 
-			<div style="top: 12%; left: 8%">
+			<div>
 				Name of the network
 			</div>
 		  <br/>
