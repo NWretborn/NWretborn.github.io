@@ -359,11 +359,11 @@ function geolocate() {
 	});
 	
 	function networkform() {
-    var person = prompt("Please enter your name", "Harry Potter");
+    	var network_name = prompt("Please enter the name of the network");
+	var network_address = prompt("", "Address");
     
-    if (person != null) {
-        document.getElementById("demo").innerHTML =
-        "Hello " + person + "! How are you today?";
+    	if (network_name != null && network_address != null) {
+        alert("Network submitted")
     }
 }		
 			
