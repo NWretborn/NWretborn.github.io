@@ -65,20 +65,19 @@
 		  	<br/>
 		  	<br/>
 			<div style="top: 92%; left: 8%;">
-				Latitude & Longitude<br/>(click on map to set)
-			</div>
-			<div  style="top: 92%">
-				<p id="location" href = test.html></p>
-			</div>
-		  	<br/>
-		  	<br/>
-			<div style="top: 92%; left: 8%;">
 				Type of network(open/closed)
 			</div>
 			<div  style="top: 92%">
 				<input value="open" type="text" name="mail" font="monospace" class="tb5">
 			</div>
-			<br/><br/>
+		  	<br/>
+			<div style="top: 92%; left: 8%;">
+				Latitude & Longitude<br/>(click on map to set)
+			</div>
+			<div  style="top: 92%">
+				<p id="location" href = test.html></p>
+			</div>
+			<br/>
 			<div style="top:91%">
 
 				<input type="submit" value="Submit" name="register" class="tb4">
