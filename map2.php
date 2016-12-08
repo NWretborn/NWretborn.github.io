@@ -38,7 +38,7 @@
 	  
 	  <form action="" method="get">
 
-			<div style="top: 12%; left: 8%">
+			<div style="top: 12%; left: 8%" class="center";>
 				Username
 			</div>
 			<div>
@@ -47,7 +47,7 @@
 			</div>
 			<br/>
 			<div style="top: 32%; left: 8%;">
-				Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>Password<br/>
+				
 			</div>
 			<br/><br/>
 			<div class="center" style="top:91%">
