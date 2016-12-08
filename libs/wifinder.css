@@ -179,10 +179,10 @@ body{
 	position:absolute;
 	font-size: var(--FONT_HEIGHT);
 	font-family: monospace;
-	width: 95%;
+	width: 50%;
 	height: 100%;
 	top:0%;
-	left:5%;
+	left:0%;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	overflow: auto;
