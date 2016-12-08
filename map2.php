@@ -12,6 +12,7 @@
 	<style>
 .tab {display:none;}
 </style>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 	<script src="libs/map.js"></script>
 	<script src="libs/std.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places"async defer></script>
@@ -75,7 +76,7 @@
 				Longitude
 			</div>
 			<div  style="top: 92%">
-				<input value="Long" type="text" name="mail" font="monospace" class="tb5">
+				<input value="Long" type="text" name="mail" font="monospace" class="tb5; jsValue">
 			</div>
 		  	<br/>
 		  	<br/>
