@@ -62,21 +62,13 @@
 			<div  style="top: 52%">
 				<input value="1-5" type="text" name="passwordrep" class="tb5">
 			</div>
-			<br/>
-		  	<br/>
-			<div style="top: 72%; left: 8%;">
-				Latitude
-			</div>
-			<div  style="top: 72%">
-				<input value="Lat" type="text" name="mail" font="monospace" class="tb5">
-			</div>
 		  	<br/>
 		  	<br/>
 			<div style="top: 92%; left: 8%;">
-				Longitude
+				Latitude & Longitude(click on map to set)
 			</div>
 			<div  style="top: 92%">
-				<a id="location" href = test.html></a>
+				<p id="location" href = test.html></p>
 			</div>
 		  	<br/>
 		  	<br/>
