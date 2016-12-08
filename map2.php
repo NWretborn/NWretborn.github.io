@@ -16,7 +16,7 @@
 	
 	
 	
-	<div class="box center">
+	<div class="box left">
 		<div class="text_box">
 
 			<div class="left text" style="top:calc(var(--FONT_HEIGHT)*1.4);">
