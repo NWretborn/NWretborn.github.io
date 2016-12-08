@@ -18,23 +18,30 @@
 	
 <!--	<div class="box left" style="width: 30%; height: 75%;"> -->
 	<!--	<div class="menu_box";> -->
-	
-	
-<nav class="w3-sidenav w3-light-grey w3-card-2" style="width:100%">
-  <a type="submit" href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London')">View Network</a>
-  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris')">Add Network</a>
-</nav>
+<div class="w3-container">
+  <h2>Active Tabs</h2>
+  <p>Click on the links below:</p>
 
-<div style="margin-left:30%">
+  <ul class="w3-navbar w3-black">
+    <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London');">London</a></li>
+    <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris');">Paris</a></li>
+    <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Tokyo');">Tokyo</a></li>
+  </ul>
 
-  <div id="London" class="w3-container">
-    <p>Here you can view networks</p>
+  <div id="London" class="w3-container w3-border city">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
   </div>
 
-  <div id="Paris" class="w3-container city">
-    <p>Here you can add networks</p>
+  <div id="Paris" class="w3-container w3-border city">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p> 
   </div>
 
+  <div id="Tokyo" class="w3-container w3-border city">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
 </div>
 
 <script>
