@@ -19,30 +19,51 @@
 	<div class="box left" style="width: 30%; height: 75%;">
 		<div class="text_box">
 	
-<ul class="w3-navbar w3-black">
-  <li><a href="javascript:void(0)" onclick="openCity('View Network')">View_network</a></li>
-  <li><a href="javascript:void(0)" onclick="openCity('Add Network')">Add_network</a></li>
-</ul>
+<nav class="w3-sidenav w3-light-grey w3-card-2" style="width:130px">
+  <div class="w3-container">
+    <h5>Menu</h5>
+  </div>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'London')">London</a>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris')">Paris</a>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Tokyo')">Tokyo</a>
+</nav>
 
-<div id="View_network" class="w3-container city">
-  <h2>VIEW</h2>
-  <p>MENY</p>
-</div>
+<div style="margin-left:130px">
+  <div class="w3-padding">Vertical Tab Example (sidenav)</div>
 
-<div id="Add_network" class="w3-container city">
-  <h2>ADD</h2>
-  <p>MENY</p> 
+  <div id="London" class="w3-container city">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+
+  <div id="Paris" class="w3-container city">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p> 
+    <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+  </div>
+
+  <div id="Tokyo" class="w3-container city">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+  </div>
+
 </div>
 
 <script>
-openTab("View_network")
-function openTab(tabName) {
-    var i;
-    var x = document.getElementsByClassName("tab");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    document.getElementById(tabName).style.display = "block";  
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
 }
 </script>
 			
