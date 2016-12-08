@@ -42,7 +42,7 @@
 				Name of the network
 			</div>
 			<div style="top: 12%">
-				<input type="text" name="name" class="tb5" value="bread">
+				<input type="text" name="name" class="tb5" value="ExampleNetwork">
 
 			</div>
 			<br/>
@@ -51,7 +51,7 @@
 				Physical adress of the network
 			</div>
 			<div style="top: 40%">
-				<input value="bird" type="password" name="password" class="tb5">
+				<input value="Examplestreet 123" type="text" name="password" class="tb5">
 			</div>
 			<br/>
 		  	<br/>
@@ -59,7 +59,7 @@
 				Percevied connectivity(1-5)
 			</div>
 			<div  style="top: 52%">
-				<input value="bird" type="password" name="passwordrep" class="tb5">
+				<input value="1-5" type="text" name="passwordrep" class="tb5">
 			</div>
 			<br/>
 		  	<br/>
@@ -67,7 +67,7 @@
 				Latitude
 			</div>
 			<div  style="top: 72%">
-				<input value="bread@birdmail.com" type="text" name="mail" font="monospace" class="tb5">
+				<input value="Lat" type="text" name="mail" font="monospace" class="tb5">
 			</div>
 		  	<br/>
 		  	<br/>
@@ -75,7 +75,15 @@
 				Longitude
 			</div>
 			<div  style="top: 92%">
-				<input value="bread@birdmail.com" type="text" name="mail" font="monospace" class="tb5">
+				<input value="Long" type="text" name="mail" font="monospace" class="tb5">
+			</div>
+		  	<br/>
+		  	<br/>
+			<div style="top: 92%; left: 8%;">
+				Type of network(open/closed)
+			</div>
+			<div  style="top: 92%">
+				<input value="open" type="text" name="mail" font="monospace" class="tb5">
 			</div>
 			<br/><br/>
 			<div style="top:91%">
