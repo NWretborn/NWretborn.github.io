@@ -355,7 +355,14 @@ function geolocate() {
        		markers = [];
 
    		placeMarker(event.latLng);
-		alert("Hello! I am an alert box!!");
+		function form() {
+    var person = prompt("Please enter your name", "Harry Potter");
+    
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+}
 	});
 
 	function placeMarker(location) {
