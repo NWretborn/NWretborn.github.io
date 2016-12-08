@@ -36,15 +36,12 @@
 
 	<section id="privacy-protection">
 		<h3>How do we protect your information?</h3>
-		<p>We implement a variety of security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your personal information.</p>
-		<p>We offer the use of a secure server. All supplied sensitive/credit information is transmitted via Secure Socket Layer (SSL) technology and then encrypted into our Database to be only accessed by those authorized with special access rights to our systems, and are required to?keep the information confidential.</p>
-		<p>After a transaction, your private information (credit cards, social security numbers, financials, etc.) will not be kept on file for more than 60 days.</p>
+		<p>We do our best at protecting your confidential information, but we do not guarantee that any information you upload to our website will be secured in any way.</p>
 	</section>
 
 	<section id="privacy-cookies">
 		<h3>Do we use cookies?</h3>
 		<p>Yes. Cookies are small files that a site or its service provider transfers to your computers hard drive through your Web browser (if you allow them) that enable the sites or service providers systems to recognize your browser and capture and remember certain information</p>
-		<p>We use cookies to help us remember and process the items in your shopping cart, understand and save your preferences for future visits, keep track of advertisements and compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future. We may contract with third-party service providers to assist us in better understanding our site visitors. These service providers are not permitted to use the information collected on our behalf except to help us conduct and improve our business.</p>
 		<p>If you prefer, you can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies via your browser settings. Like most websites, if you turn your cookies off, some of our services may not function properly. However, you can still place orders over the telephone or by contacting customer service.</p>
 	</section>
 
@@ -56,17 +53,6 @@
 	<section id="privacy-third-party-links">
 		<h3>Third party links</h3>
 		<p>Occasionally, at our discretion, we may include or offer third party products or services on our website. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.</p>
-	</section>
-
-	<section id="privacy-california">
-		<h3>California Online Privacy Protection Act Compliance</h3>
-		<p>Because we value your privacy we have taken the necessary precautions to be in compliance with the California Online Privacy Protection Act. We therefore will not distribute your personal information to outside parties without your consent.</p>
-		<p>As part of the California Online Privacy Protection Act, all users of our site may make any changes to their information at anytime by logging into their control panel and going to the 'Edit Profile' page.</p>
-	</section>
-
-	<section id="privacy-coppa-complicance">
-		<h3>Children's Online Privacy Protection Act Compliance</h3>
-		<p>We are in compliance with the requirements of COPPA (Childrens Online Privacy Protection Act), we do not collect any information from anyone under 13 years of age. Our website, products and services are all directed to people who are at least 13 years old or older.</p>
 	</section>
 
 	<section id="privacy-online">
@@ -81,14 +67,7 @@
 
 	<section id="privacy-changes">
 		<h3>Changes to our Privacy Policy</h3>
-		<p>If we decide to change our privacy policy, we will post those changes on this page, send an email notifying you of changes concerning the handling the information you have uploaded to our website, and/or update the Privacy Policy modification date below.</p>
-	</section>
-
-	<section id="contact-us">
-		<h3>Contacting Us</h3>
-		<p>If there are any questions regarding this privacy policy you may contact us using the information below.</p>
-		...
-		</address>
+		<p>If we decide to change our privacy policy, we will post those changes on this page. You are responsible for reading about changes to the privacy policy on this website.</p>
 	</section>
 	</span>
 	</div>
