@@ -353,18 +353,20 @@ function geolocate() {
 		//if SESSION
 		setMapOnAll(null);
        		markers = [];
-
+		networkform();
    		placeMarker(event.latLng);
-		function form() {
+		
+	});
+	
+	function networkform() {
     var person = prompt("Please enter your name", "Harry Potter");
     
     if (person != null) {
         document.getElementById("demo").innerHTML =
         "Hello " + person + "! How are you today?";
     }
-}
-	});
-
+}		
+			
 	function placeMarker(location) {
     		var markers = new google.maps.Marker({
         	position: location, //The variable 'location' contains the lat and lng values needed for the db
