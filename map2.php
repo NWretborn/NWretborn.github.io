@@ -7,6 +7,7 @@
 
 	<title>WiFinder</title>
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
 	<script src="libs/map.js"></script>
 	<script src="libs/std.js"></script>
