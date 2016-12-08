@@ -6,7 +6,7 @@
 </head>
 
 <body>
-	<div class="about_box center">
+	<div class="about_box center" style="height:70vh;">
 	<span class="text_box center">
 	<h1>Privacy Policy</h1>
 
