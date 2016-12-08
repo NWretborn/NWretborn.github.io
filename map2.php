@@ -76,7 +76,7 @@
 				Longitude
 			</div>
 			<div  style="top: 92%">
-				<input value="Long" type="text" name="mail" font="monospace" class="tb5; jsValue">
+				<input value="Long" type="text" name="mail" font="monospace" class="tb5" id="location">
 			</div>
 		  	<br/>
 		  	<br/>
