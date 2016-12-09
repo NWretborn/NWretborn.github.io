@@ -375,7 +375,7 @@ function geolocate() {
 		var test = String(location);
 		var locArr = String(test.split("("));
 		var locArr = String(locArr.split(")"));
-		document.getElementById("location").innerHTML=locArr[0];
+		document.getElementById("location").innerHTML=locArr[1];
 	}
 			
 	
