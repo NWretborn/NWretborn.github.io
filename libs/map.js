@@ -357,7 +357,7 @@ function geolocate() {
 		
 			
 	function placeMarker(location) {
-		var markers = [];
+		markers.pop(marker);
     		var markers = new google.maps.Marker({
         	position: location, //The variable 'location' contains the lat and lng values needed for the db
         	map: map,
