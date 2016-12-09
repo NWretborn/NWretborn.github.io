@@ -75,7 +75,7 @@
 				<p style="font-size: 20px;" id="location" href = test.html></p>
 			</div>
 			<br/>
-			<div style="font-size: 20px;">
+			<div style="font-size: 20px; margin-top: 5px;">
 
 				<input type="submit" value="Submit" name="register" class="tb4">
 
