@@ -1,17 +1,20 @@
 <!--
+	
+	--------------------------------------------------
 
-	HOW THE API WORKS:
-
+		HOW THE API WORKS:
+	
+	--------------------------------------------------
 	GET request with url = api.php/TABLE/ID will set table to "TABLE" and request the column 
 	with id "ID" from database
-
+	--------------------------------------------------
 	POST request will only use TABLE in the example url of previous description. It reads from
 	php://input and will make a SQL set-request to the table specified if the input is a string
 	of proper JSON format.
 
 	note: if POST request is made to a table named "user" with a column named "password" the
 	password will be hashed before insertion.
-
+	--------------------------------------------------
 -->
 
 <?php
