@@ -23,7 +23,7 @@
 
 	$key = array_shift($request)+0;
 
-
+	error_log($input['password']."\n", 3, "./scrap.log");
 	error_log(implode("|",$input)."\n", 3, "./scrap.log");
 
 
@@ -34,7 +34,7 @@
 		return mysqli_real_escape_string($link,(string)$value);
 	},array_values($input));
 
-	error_log("password: ".$columns['password'], 3, "./scrap.log");
+	error_log("password: ".$columns['password']."\n", 3, "./scrap.log");
 	
 	#if($method == "POST" && $columns['password']){
 	#	$password = $columns['password'];
