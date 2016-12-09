@@ -372,7 +372,7 @@ function geolocate() {
 		});
 			firstSet = true;
   		}
-		var test = location;
+		var test = String(location);
 		var locArr = test.split(" ");
 		document.getElementById("location").innerHTML=locArr[0];
 	}
