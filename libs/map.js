@@ -352,7 +352,7 @@ function geolocate() {
 	google.maps.event.addListener(map, 'click', function(event) {
 		//if SESSION
        		for (var i = 0; i < markers.length; i++) {
-          	markers[i].setMap(null);
+          	markers[i] = null;
         }
 
    		placeMarker(event.latLng);
