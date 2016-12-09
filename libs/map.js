@@ -373,8 +373,8 @@ function geolocate() {
 			firstSet = true;
   		}
 		var locArr = String(location);
-		var lat = String(locArr.slice(1,17));
-		var lon = String(locArr.slice(20,36));
+		var lat = String(locArr.slice(1,10));
+		var lon = String(locArr.slice(20,29));
 		document.getElementById("lat").innerHTML=lat;
 		document.getElementById("lon").innerHTML=lon;
 	}
