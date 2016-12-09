@@ -372,6 +372,7 @@ function geolocate() {
 		});
 			firstSet = true;
   		}
+		var locArr = String(location);
 		var locArr = String(location.split("("));
 		document.getElementById("location").innerHTML=locArr;
 	}
