@@ -1,5 +1,3 @@
-var markers = [];
-
 var customIcons = {
     open: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
@@ -357,6 +355,7 @@ function geolocate() {
 		
 			
 	function placeMarker(location) {
+		var markers = [];
 		markers.pop(marker);
     		var markers = new google.maps.Marker({
         	position: location, //The variable 'location' contains the lat and lng values needed for the db
