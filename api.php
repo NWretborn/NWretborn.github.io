@@ -26,7 +26,7 @@
 	error_log("input-password: ".$input['password']."\n", 3, "./scrap.log");
 	//error_log(implode("|",$input)."\n", 3, "./scrap.log");
 
-	if($method == "POST" && $input['password']){
+	if($method == "POST" && $table == "user" && $input['password']){
 		$password = $columns['password'];
 		$input['password'] = password_hash($password, PASSWORD_DEFAULT);
 		error_log("password after hash: ".$input['password']."\n", 3, "./scrap.log");
