@@ -39,10 +39,10 @@
 	  
 	  <form action="" method="get">
 
-			<div>
+			<div style="font-size: 15px;">
 				Name of the network
 			</div>
-			<div style="top: 12%; font-size: 5px;">
+			<div style="top: 12%; font-size: 15px;">
 				<input type="text" name="name" class="tb5" value="">
 
 			</div>
