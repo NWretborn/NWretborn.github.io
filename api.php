@@ -26,6 +26,11 @@
 	error_log("input-password: ".$input['password']."\n", 3, "./scrap.log");
 	//error_log(implode("|",$input)."\n", 3, "./scrap.log");
 
+	if($method == "POST" && $input['password']){
+		$password = $columns['password'];
+		$input['password'] = password_hash($password, PASSWORD_DEFAULT);
+		error_log("password after hash: ".$input['password']."\n", 3, "./scrap.log");
+	}
 
 	// escape the columns and values from the input object
 	$columns = preg_replace('/[^a-z0-9_]+/i','',array_keys($input));
@@ -37,10 +42,7 @@
 	//error_log("password: ".$columns['password']."\n", 3, "./scrap.log");
 	
 	
-	//if($method == "POST" && $columns['password']){
-	//	$password = $columns['password'];
-	//	$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-	//}
+	
 	
 	// build the SET part of the SQL command
 	//error_log("received following data:\n", 3, "./scrap.log");
