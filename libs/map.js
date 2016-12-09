@@ -373,7 +373,7 @@ function geolocate() {
 			firstSet = true;
   		}
 		var init = String(location);
-		var locArr = String(init.slice(1,3));
+		var locArr = String(init.slice(0,15));
 		document.getElementById("location").innerHTML=locArr;
 	}
 			
