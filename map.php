@@ -43,7 +43,7 @@
 				Name of the network
 			</div>
 			<div style="top: 12%">
-				<input type="text" name="name" class="tb5" value="ExampleNetwork">
+				<input type="text" name="name" class="tb5" value="">
 
 			</div>
 			<br/>
@@ -51,14 +51,14 @@
 				Physical adress of the network
 			</div>
 			<div style="top: 40%">
-				<input value="Examplestreet 123" type="text" name="password" class="tb5">
+				<input value="" type="text" name="password" class="tb5">
 			</div>
 		  	<br/>
 			<div style="top: 52%; left: 8%;">
-				Percevied connectivity(1-5)
+				Describe performance with one word(good, bad, etc)
 			</div>
 			<div  style="top: 52%">
-				<input value="1-5" type="text" name="passwordrep" class="tb5">
+				<input value="" type="text" name="passwordrep" class="tb5">
 			</div>
 			<br/>
 			<div style="top: 92%; left: 8%;">
