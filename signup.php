@@ -43,11 +43,10 @@
 				type: "POST",
 				url: "./"+path,
 				data: jsonSTR,
-				success: function(){alert("success?");},
+				success: function(){alert("registration sent!");},
 				dataType: "json",
 				contentType : "application/json"
 			});
-			alert("registration sent!");
 		}
 		else{
 			alert("password mismatch!");
