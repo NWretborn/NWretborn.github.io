@@ -359,7 +359,6 @@ function geolocate() {
 		var marker = new google.maps.Marker({
         position: new google.maps.LatLng(0, 0),
         animation: google.maps.Animation.DROP,
-        visible: false,
         map: map
 	});
 		if ( marker ) {
