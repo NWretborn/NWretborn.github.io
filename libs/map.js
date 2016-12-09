@@ -372,7 +372,8 @@ function geolocate() {
 		});
 			firstSet = true;
   		}
-		document.getElementById("location").innerHTML=location;
+		var locArr = location.split(" ");
+		document.getElementById("location").innerHTML=locArr[0];
 	}
 			
 	
