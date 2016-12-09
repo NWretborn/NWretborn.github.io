@@ -113,7 +113,10 @@
 				Latitude & Longitude(click on map to set)
 			</div>
 			<div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="location" href = test.html></p>
+				<p style="font-size: 20px;" id="lat" href = test.html></p>
+			</div>
+		  	<div  style="font-size: 20px; top: 92%">
+				<p style="font-size: 20px;" id="lon" href = test.html></p>
 			</div>
 			<br/>
 			<div style="font-size: 20px; margin-top: 5px;">
