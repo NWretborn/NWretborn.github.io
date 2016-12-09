@@ -42,7 +42,7 @@
 			<div style="font-size: 20px;">
 				Name of the network
 			</div>
-			<div style="top: 12%; font-size: 20x;">
+			<div style="top: 12%; font-size: 20px;">
 				<input type="text" name="name" class="tb5" value="">
 
 			</div>
@@ -72,7 +72,7 @@
 				Latitude & Longitude<br/>(click on map to set)
 			</div>
 			<div  style="font-size: 20px; top: 92%">
-				<p id="location" href = test.html></p>
+				<p style="font-size: 20px;" id="location" href = test.html></p>
 			</div>
 			<br/>
 			<div style="font-size: 20px; top:91%">
