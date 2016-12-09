@@ -247,6 +247,13 @@ function load() {
   }
 ]
 });
+	
+	
+	var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(0, 0),
+        animation: google.maps.Animation.DROP,
+        map: map
+	});
     
 	function GeolocationControl(controlDiv, map) {
 
@@ -356,11 +363,7 @@ function geolocate() {
 		
 			
 	function placeMarker(location) {
-		var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(0, 0),
-        animation: google.maps.Animation.DROP,
-        map: map
-	});
+		
 		if ( marker ) {
     			marker.setPosition(location);
  		 } 
