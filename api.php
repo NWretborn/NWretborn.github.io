@@ -31,6 +31,7 @@
 		$input['password'] = password_hash($password, PASSWORD_DEFAULT);
 		error_log("password after hash: ".$input['password']."\n", 3, "./scrap.log");
 	}
+	error_log("table: ".$table."\n", 3, "./scrap.log");
 
 	// escape the columns and values from the input object
 	$columns = preg_replace('/[^a-z0-9_]+/i','',array_keys($input));
