@@ -55,7 +55,7 @@
 			</div>
 		  	<br/>
 			<div style="top: 52%; left: 8%;">
-				Describe performance with one word(good, bad, etc)
+				Quality(good, bad, etc)
 			</div>
 			<div  style="top: 52%">
 				<input value="" type="text" name="passwordrep" class="tb5">
