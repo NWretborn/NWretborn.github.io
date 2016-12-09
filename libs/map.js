@@ -356,17 +356,17 @@ function geolocate() {
 		
 			
 	function placeMarker(location) {
-		var markers = new google.maps.Marker({
+		var marker = new google.maps.Marker({
         position: new google.maps.LatLng(0, 0),
         animation: google.maps.Animation.DROP,
         visible: false,
         map: map
 	});
-		if ( markers ) {
+		if ( marker ) {
     			marker.setPosition(location);
  		 } 
 		else {
-    			markers = new google.maps.Marker({
+    			marker = new google.maps.Marker({
       			position: location,
      			map: map,
 			icon: icon.icon
