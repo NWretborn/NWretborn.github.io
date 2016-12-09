@@ -42,7 +42,7 @@
 			<div>
 				Name of the network
 			</div>
-			<div style="top: 12%">
+			<div style="top: 12%; font-size: 5px;">
 				<input type="text" name="name" class="tb5" value="">
 
 			</div>
