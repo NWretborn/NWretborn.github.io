@@ -114,11 +114,11 @@
 			</div>
 			<div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px;" id="lat" href = test.html></p>
-				<input type="hidden" id="lan" value="" name="lan" />
+				<input type="hidden" id="lan" name="lan" />
 			</div>
 		  	<div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px;" id="lon" href = test.html></p>
-				<input type="hidden" id="lon" value="" name="lng"/>
+				<input type="hidden" id="lon" name="lng"/>
 			</div>
 			<br/>
 			<div style="font-size: 20px; margin-top: 5px;">
