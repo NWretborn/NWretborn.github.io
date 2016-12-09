@@ -358,7 +358,7 @@ function geolocate() {
 			
 	function placeMarker(location) {
 		if ( markers ) {
-    			markers.setPosition(location);
+    			marker.setPosition(location);
  		 } 
 		else {
     			markers = new google.maps.Marker({
