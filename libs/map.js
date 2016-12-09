@@ -351,7 +351,10 @@ function geolocate() {
 	//Eventlistener for adding marker to map on click
 	google.maps.event.addListener(map, 'click', function(event) {
 		//if SESSION
-       		setMapOnAll(null);
+       		for (var i = 0; i < markers.length; i++) {
+          	markers[i].setMap(null);
+        }
+
    		placeMarker(event.latLng);
 		
 	});
