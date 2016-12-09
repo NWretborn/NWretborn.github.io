@@ -78,7 +78,7 @@
 	  
 	  
 	  
-	  <form action="location.href='map.php'" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
+	  <form action="" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
@@ -123,7 +123,7 @@
 			<br/>
 			<div style="font-size: 20px; margin-top: 5px;">
 
-				<input style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
+				<input style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4" onClick="location.href='map.php'">
 
 </div>
 
