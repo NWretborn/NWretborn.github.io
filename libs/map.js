@@ -354,6 +354,7 @@ function geolocate() {
        		for (var i = 0; i < markers.length; i++) {
           	markers[i] = null;
         }
+		markers = [];
 
    		placeMarker(event.latLng);
 		
@@ -361,11 +362,11 @@ function geolocate() {
 		
 			
 	function placeMarker(location) {
-    		var markers = [new google.maps.Marker({
+    		var markers = new google.maps.Marker({
         	position: location, //The variable 'location' contains the lat and lng values needed for the db
         	map: map,
 		icon: icon.icon
-    		});]
+    		});
 		document.getElementById("location").innerHTML=location;
 	}
 			
