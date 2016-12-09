@@ -1,3 +1,4 @@
+var firstSet = false;
 var customIcons = {
     open: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
@@ -249,11 +250,7 @@ function load() {
 });
 	
 	
-	var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(0, 0),
-        animation: google.maps.Animation.DROP,
-        map: map
-	});
+	
     
 	function GeolocationControl(controlDiv, map) {
 
@@ -356,7 +353,6 @@ function geolocate() {
 	//Eventlistener for adding marker to map on click
 	google.maps.event.addListener(map, 'click', function(event) {
 		//if SESSION
-		var markers = null;
    		placeMarker(event.latLng);
 		
 	});
@@ -364,7 +360,7 @@ function geolocate() {
 			
 	function placeMarker(location) {
 		
-		if ( marker ) {
+		if ( firstSet ) {
     			marker.setPosition(location);
  		 } 
 		else {
@@ -373,6 +369,7 @@ function geolocate() {
      			map: map,
 			icon: icon.icon
 		});
+			firstSet = true;
   		}
 		document.getElementById("location").innerHTML=location;
 	}
