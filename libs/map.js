@@ -363,7 +363,7 @@ function geolocate() {
 		else {
     			markers = new google.maps.Marker({
       			position: location,
-     			map: map
+     			map: map,
 			icon: icon.icon
 		});
   		}
