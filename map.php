@@ -39,43 +39,43 @@
 	  
 	  <form action="" method="get">
 
-			<div style="font-size: 15px;">
+			<div style="font-size: 20px;">
 				Name of the network
 			</div>
-			<div style="top: 12%; font-size: 15px;">
+			<div style="top: 12%; font-size: 20x;">
 				<input type="text" name="name" class="tb5" value="">
 
 			</div>
 			<br/>
-			<div style="top: 40%; left: 8%;">
+			<div style="font-size: 20px; top: 40%; left: 8%;">
 				Physical adress of the network
 			</div>
-			<div style="top: 40%">
+			<div style="font-size: 20px; top: 40%">
 				<input value="" type="text" name="password" class="tb5">
 			</div>
 		  	<br/>
-			<div style="top: 52%; left: 8%;">
+			<div style="font-size: 20px; top: 52%; left: 8%;">
 				Quality(good, bad, etc)
 			</div>
-			<div  style="top: 52%">
+			<div  style="font-size: 20px; top: 52%">
 				<input value="" type="text" name="passwordrep" class="tb5">
 			</div>
 			<br/>
-			<div style="top: 92%; left: 8%;">
+			<div style="font-size: 20px; top: 92%; left: 8%;">
 				Type of network(open/closed)
 			</div>
-			<div  style="top: 92%">
+			<div  style="font-size: 20px; top: 92%">
 				<input value="open" type="text" name="mail" font="monospace" class="tb5">
 			</div>
 		  	<br/>
-			<div style="top: 92%; left: 8%;">
+			<div style="font-size: 20px; top: 92%; left: 8%;">
 				Latitude & Longitude<br/>(click on map to set)
 			</div>
-			<div  style="top: 92%">
+			<div  style="font-size: 20px; top: 92%">
 				<p id="location" href = test.html></p>
 			</div>
 			<br/>
-			<div style="top:91%">
+			<div style="font-size: 20px; top:91%">
 
 				<input type="submit" value="Submit" name="register" class="tb4">
 
