@@ -366,8 +366,9 @@ function geolocate() {
 		else {
     			marker = new google.maps.Marker({
       			position: location,
+			animation: google.maps.Animation.DROP,
      			map: map,
-			icon: icon.icon
+			icon: 'http://213.113.7.224/img/logo_gray50px.png'
 		});
 			firstSet = true;
   		}
