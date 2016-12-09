@@ -349,14 +349,14 @@ function geolocate() {
 	//Eventlistener for adding marker to map on click
 	google.maps.event.addListener(map, 'click', function(event) {
 		//if SESSION
+		var markers = null;
    		placeMarker(event.latLng);
 		
 	});
 		
 			
 	function placeMarker(location) {
-		var markers = [];
-		markers.pop(marker);
+		var markers = null;
     		var markers = new google.maps.Marker({
         	position: location, //The variable 'location' contains the lat and lng values needed for the db
         	map: map,
