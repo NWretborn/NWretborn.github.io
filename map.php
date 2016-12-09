@@ -123,7 +123,7 @@
 			<br/>
 			<div style="font-size: 20px; margin-top: 5px;">
 
-				<input style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4" onClick="location.href='map.php'">
+				<input style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
 
 </div>
 
