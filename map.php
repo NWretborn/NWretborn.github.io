@@ -69,13 +69,13 @@
 			</div>
 		  	<br/>
 			<div style="font-size: 20px; top: 92%; left: 8%;">
-				Latitude & Longitude<br/>(click on map to set)
+				Latitude & Longitude(click on map to set)
 			</div>
 			<div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px;" id="location" href = test.html></p>
 			</div>
 			<br/>
-			<div style="font-size: 20px; top:91%">
+			<div style="font-size: 20px; top:80%">
 
 				<input type="submit" value="Submit" name="register" class="tb4">
 
