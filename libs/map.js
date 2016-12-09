@@ -1,9 +1,3 @@
-var markers = new google.maps.Marker({
-        position: new google.maps.LatLng(0, 0),
-        animation: google.maps.Animation.DROP,
-        visible: false,
-        map: map
-	});
 var customIcons = {
     open: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
@@ -362,6 +356,12 @@ function geolocate() {
 		
 			
 	function placeMarker(location) {
+		var markers = new google.maps.Marker({
+        position: new google.maps.LatLng(0, 0),
+        animation: google.maps.Animation.DROP,
+        visible: false,
+        map: map
+	});
 		if ( markers ) {
     			marker.setPosition(location);
  		 } 
