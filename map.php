@@ -7,8 +7,8 @@
 	
 <head>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    	<meta charset="utf-8">
-
+    	<!--<meta charset="utf-8">-->
+	<meta http-equiv="content-type" content="text/html" charset="ISO-8859-1" />
 	<title>WiFinder</title>
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
@@ -59,9 +59,7 @@
 </script>
 <body onload="load()">
 	
-<style>
-.tab {display:viewNetwork;}
-</style>
+
 	
 	
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
@@ -72,6 +70,7 @@
     <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork');">Add Network</a></li>
   </ul>
   <div id="viewNetwork" class="w3-container w3-border tab">
+	  
    	<div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px;" id="htmlname" href = test.html></p>
 </div>
