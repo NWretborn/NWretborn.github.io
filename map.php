@@ -105,13 +105,17 @@
 			<div style="font-size: 20px; top: 92%; left: 8%;">
 				Customer only(yes/no)
 			</div>
-			<div  style="font-size: 20px; top: 92%">
-				<input value="open" type="text" name="type" font="monospace" class="tb5">
-			</div>
-		  	<br/>
-				<input type="hidden" id="latval" name="lat" />
-				<input type="hidden" id="lonval" name="lng"/>
-			<br/>
+			<div style="font-size: 20px; top: 92%; left: 8%;">
+-				Latitude & Longitude(click on map to set)
+-			</div>
+-			<div  style="font-size: 20px; top: 92%">
+-				<p style="font-size: 20px;" id="lat" href = test.html></p>
+ 				<input type="hidden" id="latval" name="lat" />
+-			</div>
+-		  	<div  style="font-size: 20px; top: 92%">
+-				<p style="font-size: 20px;" id="lon" href = test.html></p>
+ 				<input type="hidden" id="lonval" name="lng"/>
+-			</div>
 			<div style="font-size: 20px; margin-top: 5px;">
 
 				<input style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
