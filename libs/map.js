@@ -1,9 +1,9 @@
 var firstSet = false;
 var customIcons = {
-    open: {
+    yes: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
     },
-    closed: {
+    no: {
       icon: 'http://213.113.7.224/img/logo_blue50px.png'
     }
   };
