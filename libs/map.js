@@ -451,11 +451,11 @@ function geolocate() {
 		infoWindow.open(map, marker);
 		var htmldat = html.split(" ");
 		//document.getElementById("htmlname").innerHTML=htmlname;
-		//document.getElementById("htmladdress").innerHTML=htmladdress;
+		//document.getElementById("htmladdress").innerHTML=String(htmldat[1]);
 		//document.getElementById("htmltype").innerHTML=htmltype;
 		//document.getElementById("htmlquality").innerHTML=htmlquality;
 		//document.getElementById("htmlkarma").innerHTML=htmlkarma;
-		document.getElementById("htmluser").innerHTML=String(htmldat[1]); 
+		document.getElementById("htmluser").innerHTML=String(htmldat[2]); 
 	});
 }
 
