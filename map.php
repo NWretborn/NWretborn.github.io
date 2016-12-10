@@ -70,7 +70,24 @@
     <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork');">Add Network</a></li>
   </ul>
   <div id="viewNetwork" class="w3-container w3-border tab">
-    <!-- VIEW NETWORK TAB -->
+   	<div  style="font-size: 20px; top: 92%">
+				<p style="font-size: 20px;" id="htmlname" href = test.html></p>
+</div>
+	  <div  style="font-size: 20px; top: 92%">
+				<p style="font-size: 20px;" id="htmladdress" href = test.html></p>
+</div>
+	  <div  style="font-size: 20px; top: 92%">
+				<p style="font-size: 20px;" id="htmlquality" href = test.html></p>
+</div>
+	  <div  style="font-size: 20px; top: 92%">
+				<p style="font-size: 20px;" id="htmlkarma" href = test.html></p>
+</div>
+	  <div  style="font-size: 20px; top: 92%">
+				<p style="font-size: 20px;" id="htmltype" href = test.html></p>
+</div>
+	  <div  style="font-size: 20px; top: 92%">
+				<p style="font-size: 20px;" id="htmluser" href = test.html></p>
+</div>
  </div>
 
   <div id="addNetwork" class="w3-container w3-border tab">
