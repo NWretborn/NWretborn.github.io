@@ -448,7 +448,7 @@ function geolocate() {
 	function bindInfoWindow(marker, map, infoWindow, html) {
 		google.maps.event.addListener(marker, 'click', function() {
 		var htmldat = html.split(",");
-		document.getElementById("htmlname").innerHTML=String("Name:",htmldat[0]); 
+		document.getElementById("htmlname").innerHTML=String("Name:" + htmldat[0]); 
 		document.getElementById("htmladdress").innerHTML=String(htmldat[1]);
 		document.getElementById("htmlkarma").innerHTML=String(htmldat[2]); 
 		document.getElementById("htmlquality").innerHTML=String(htmldat[3]);
