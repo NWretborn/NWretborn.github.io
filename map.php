@@ -78,7 +78,7 @@
 	  
 	  
 	  
-	  <form action="" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
+	  <form action="" onsubmit='postForm("../api.php/markers", "#registerform"); return false; location.href="index.php"' id="registerform" method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
