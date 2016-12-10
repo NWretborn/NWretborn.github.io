@@ -344,7 +344,7 @@ function geolocate() {
             parseFloat(markers[i].getAttribute("lat")),
             parseFloat(markers[i].getAttribute("lng")));
 			//Popup window variable
-			var html = "<b>" + name + "</b>;
+			var html = "<b>" + name + "</b>";
 			document.getElementById("name").innerHTML=name;
 			document.getElementById("address").innerHTML=address;
 			document.getElementById("type").innerHTML=type;
