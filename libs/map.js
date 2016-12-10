@@ -478,7 +478,7 @@ function geolocate() {
 		//document.getElementById("htmltype").innerHTML=htmltype;
 		//document.getElementById("htmlquality").innerHTML=htmlquality;
 		//document.getElementById("htmlkarma").innerHTML=htmlkarma;
-		document.getElementById("htmluser").innerHTML=marker; 
+		document.getElementById("htmluser").innerHTML=String(marker); 
 	});
 }
 
