@@ -339,7 +339,7 @@ function geolocate() {
 			var address = markers[i].getAttribute("address");
 			var type = markers[i].getAttribute("type");
 			var quality = markers[i].getAttribute("quality");
-			var karma = markers[i].getAttribute("karma");
+			var karma = parseInt(markers[i].getAttribute("karma"));
 			var point = new google.maps.LatLng(
             parseFloat(markers[i].getAttribute("lat")),
             parseFloat(markers[i].getAttribute("lng")));
