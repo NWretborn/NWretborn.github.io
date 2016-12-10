@@ -59,7 +59,9 @@
 </script>
 <body onload="load()">
 	
-	
+<style>
+.tab {display:viewNetwork;}
+</style>
 	
 	
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
