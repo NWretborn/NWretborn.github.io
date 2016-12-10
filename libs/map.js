@@ -377,14 +377,14 @@ function geolocate() {
 			firstSet = true;
   		}
 		var locArr = String(location);
-		var lat = String(locArr.slice(1,10));
-		var lon = String(locArr.slice(18,27));
+		var lat = String(locArr.slice(1,12));
+		var lon = String(locArr.slice(18,29));
 		if (lon[0] == "," || lon[0] == " ") {
 			if (lon[0] == " ") {
-				var lon = String(locArr.slice(19,28));
+				var lon = String(locArr.slice(19,30));
 			}
 			else {
-			var lon = String(locArr.slice(20,29));
+			var lon = String(locArr.slice(20,31));
 			}
 		}
 		document.getElementById("lat").innerHTML=locArr;
