@@ -340,7 +340,8 @@ function geolocate() {
 			var point = new google.maps.LatLng(
             parseFloat(markers[i].getAttribute("lat")),
             parseFloat(markers[i].getAttribute("lng")));
-			var html = "<b>" + name + "</b> <br/>" + address"<b>" + type + "</b>;
+			//Popup window variable
+			var html = "<b>" + name + "</b> <br/>" + address"<b>" + type + "</b>";
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
 			map: map,
