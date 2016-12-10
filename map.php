@@ -66,12 +66,12 @@
 <div class="menu_box";>
 <div class="w3-container">
   <ul class="w3-navbar w3-lightblue">
-   <!-- <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork');">View Network</a></li> -->
+    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork');">View Network</a></li>
     <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork');">Add Network</a></li>
   </ul>
- <!-- <div id="viewNetwork" class="w3-container w3-border tab"> -->
+  <div id="viewNetwork" class="w3-container w3-border tab">
     <!-- VIEW NETWORK TAB -->
- <!-- </div> -->
+ </div>
 
   <div id="addNetwork" class="w3-container w3-border tab">
     <!-- ADD NETWORK TAB -->
