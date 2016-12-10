@@ -337,11 +337,14 @@ function geolocate() {
 			var name = markers[i].getAttribute("name");
 			var address = markers[i].getAttribute("address");
 			var type = markers[i].getAttribute("type");
+			var quality = markers[i].getAttribute("quality");
+			var karma = markers[i].getAttribute("karma");
+			var user = markers[i].getAttribute("user");
 			var point = new google.maps.LatLng(
             parseFloat(markers[i].getAttribute("lat")),
             parseFloat(markers[i].getAttribute("lng")));
 			//Popup window variable
-			var html = "<b>" + name + "</b> <br/>" + type;
+			var html = "<b>" + name + "</b> <br/>" + type + "<br/>" + type + "<br/>" + quality + "<br/>" + karma + "<br/>" + user;
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
 			map: map,
