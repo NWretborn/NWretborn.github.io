@@ -350,15 +350,14 @@ function geolocate() {
 			map: map,
 			position: point,
 			icon: icon.icon
-		}
+		});
+			
 			document.getElementById("name").innerHTML=name;
 			document.getElementById("address").innerHTML=address;
 			document.getElementById("type").innerHTML=type;
 			document.getElementById("quality").innerHTML=quality;
 			document.getElementById("karma").innerHTML=karma;
-			document.getElementById("user").innerHTML=user;					   
-		);
-			
+			document.getElementById("user").innerHTML=user;	
 			//THIS CODE IS TO BE IMPLEMENTED WHEN YOU WANT TO ADD A NETWORK WITH ACCOUNT PRIV
 			
 	//Eventlistener for adding marker to map on click
