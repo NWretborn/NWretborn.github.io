@@ -341,7 +341,7 @@ function geolocate() {
             parseFloat(markers[i].getAttribute("lat")),
             parseFloat(markers[i].getAttribute("lng")));
 			//Popup window variable
-			var html = "<b>" + name + "</b> <br/>" + address"<b>" + type + "</b>";
+			var html = "<b>" + name + "</b> <br/>" + type;
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
 			map: map,
