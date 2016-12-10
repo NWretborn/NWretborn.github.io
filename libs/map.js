@@ -345,12 +345,12 @@ function geolocate() {
             parseFloat(markers[i].getAttribute("lng")));
 			//Popup window variable
 			var html = "<b>" + name + "</b>";
-			document.getElementById("name").innerHTML=name;
-			document.getElementById("address").innerHTML=address;
-			document.getElementById("type").innerHTML=type;
-			document.getElementById("quality").innerHTML=quality;
-			document.getElementById("karma").innerHTML=karma;
-			document.getElementById("user").innerHTML=user;
+			//document.getElementById("name").innerHTML=name;
+			//document.getElementById("address").innerHTML=address;
+			//document.getElementById("type").innerHTML=type;
+			//document.getElementById("quality").innerHTML=quality;
+			//document.getElementById("karma").innerHTML=karma;
+			//document.getElementById("user").innerHTML=user;
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
 			map: map,
