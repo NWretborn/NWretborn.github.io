@@ -382,7 +382,6 @@ function geolocate() {
 		document.getElementById("lon").innerHTML=lon;
 		document.getElementById('latval').value = lat;
 		document.getElementById('lonval').value = lon;
-		//Splita bättre, olika längd på locArrvariablerna. Dela upp istället för att indexera
 	}
 			
 	
