@@ -78,7 +78,7 @@
 	  
 	  
 	  
-	  <form action="" onsubmit='postForm("../api.php/markers", "#registerform"); return false;' id="registerform" method="post">
+	  <form action="" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
@@ -105,11 +105,13 @@
 			<div style="font-size: 20px; top: 92%; left: 8%;">
 				Customer only(yes/no)
 			</div>
-		  	<div  style="font-size: 20px; top: 92%">
- 				<input value="open" type="text" name="type" font="monospace" class="tb5">
-		 	 </div>
- 				<input type="hidden" id="latval" name="lat" />
- 				<input type="hidden" id="lonval" name="lng"/>
+			<div  style="font-size: 20px; top: 92%">
+				<input value="" type="text" name="type" font="monospace" class="tb5">
+			</div>
+		  	<br/>
+				<input type="hidden" id="latval" name="lat" />
+				<input type="hidden" id="lonval" name="lng"/>
+			<br/>
 			<div style="font-size: 20px; margin-top: 5px;">
 
 				<input style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
