@@ -340,12 +340,12 @@ function geolocate() {
 			var quality = markers[i].getAttribute("quality");
 			var karma = markers[i].getAttribute("karma");
 			var user = markers[i].getAttribute("user");
-			document.getElementById("name").innerHTML=name;
-			document.getElementById("address").innerHTML=address;
-			document.getElementById("type").innerHTML=type;
-			document.getElementById("quality").innerHTML=quality;
-			document.getElementById("karma").innerHTML=karma;
-			document.getElementById("user").innerHTML=user;	
+			document.getElementById("name").innerHTML=String(name);
+			document.getElementById("address").innerHTML=String(address);
+			document.getElementById("type").innerHTML=String(type);
+			document.getElementById("quality").innerHTML=String(quality);
+			document.getElementById("karma").innerHTML=String(karma);
+			document.getElementById("user").innerHTML=String(user);	
 			var point = new google.maps.LatLng(
             parseFloat(markers[i].getAttribute("lat")),
             parseFloat(markers[i].getAttribute("lng")));
