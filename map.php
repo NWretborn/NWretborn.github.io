@@ -105,6 +105,9 @@
 			<div style="font-size: 20px; top: 92%; left: 8%;">
 				Customer only(yes/no)
 			</div>
+		  	<div  style="font-size: 20px; top: 92%">
+ 				<input value="open" type="text" name="type" font="monospace" class="tb5">
+		 	 </div>
  				<input type="hidden" id="latval" name="lat" />
  				<input type="hidden" id="lonval" name="lng"/>
 			<div style="font-size: 20px; margin-top: 5px;">
