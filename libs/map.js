@@ -387,8 +387,8 @@ function geolocate() {
 			var lon = String(locArr.slice(20,31));
 			}
 		}
-		document.getElementById("lat").innerHTML=lat;
-		document.getElementById("lon").innerHTML=lon;
+		//document.getElementById("lat").innerHTML=lat;
+		//document.getElementById("lon").innerHTML=lon;
 		document.getElementById('latval').value = lat;
 		document.getElementById('lonval').value = lon;
 	}
