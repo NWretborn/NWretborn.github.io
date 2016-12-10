@@ -340,18 +340,18 @@ function geolocate() {
 			var quality = markers[i].getAttribute("quality");
 			var karma = markers[i].getAttribute("karma");
 			var user = markers[i].getAttribute("user");
-			var htmlname = String(name);
-			var htmladdress = String(address);
-			var htmltype = String(type);
-			var htmlquality = String(quality);
-			var htmlkarma = String(karma);
-			var htmluser = String(user);
-			document.getElementById("htmlname").innerHTML=htmlname;
-			document.getElementById("htmladdress").innerHTML=htmladdress;
-			document.getElementById("htmltype").innerHTML=htmltype;
-			document.getElementById("htmlquality").innerHTML=htmlquality;
-			document.getElementById("htmlkarma").innerHTML=htmlkarma;
-			document.getElementById("htmluser").innerHTML=htmluser;	
+			//var htmlname = String(name);
+			//var htmladdress = String(address);
+			//var htmltype = String(type);
+			//var htmlquality = String(quality);
+			//var htmlkarma = String(karma);
+			//var htmluser = String(user);
+			//document.getElementById("htmlname").innerHTML=htmlname;
+			//document.getElementById("htmladdress").innerHTML=htmladdress;
+			//document.getElementById("htmltype").innerHTML=htmltype;
+			//document.getElementById("htmlquality").innerHTML=htmlquality;
+			//document.getElementById("htmlkarma").innerHTML=htmlkarma;
+			//document.getElementById("htmluser").innerHTML=htmluser;	
 			var point = new google.maps.LatLng(
             parseFloat(markers[i].getAttribute("lat")),
             parseFloat(markers[i].getAttribute("lng")));
@@ -461,7 +461,25 @@ function geolocate() {
 	function bindInfoWindow(marker, map, infoWindow, html) {
 		google.maps.event.addListener(marker, 'click', function() {
 		infoWindow.setContent(html);
-		infoWindow.open(map, marker); 
+		infoWindow.open(map, marker);
+		var name = marker.getAttribute("name");
+		var address = marker.getAttribute("address");
+		var type = marker.getAttribute("type");
+		var quality = marker.getAttribute("quality");
+		var karma = marker.getAttribute("karma");
+		var user = marker.getAttribute("user");
+		var htmlname = String(name);
+		var htmladdress = String(address);
+		var htmltype = String(type);
+		var htmlquality = String(quality);
+		var htmlkarma = String(karma);
+		var htmluser = String(user);
+		document.getElementById("htmlname").innerHTML=htmlname;
+		document.getElementById("htmladdress").innerHTML=htmladdress;
+		document.getElementById("htmltype").innerHTML=htmltype;
+		document.getElementById("htmlquality").innerHTML=htmlquality;
+		document.getElementById("htmlkarma").innerHTML=htmlkarma;
+		document.getElementById("htmluser").innerHTML=htmluser; 
 	});
 }
 
