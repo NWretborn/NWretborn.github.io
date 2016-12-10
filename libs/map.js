@@ -339,25 +339,12 @@ function geolocate() {
 			var type = markers[i].getAttribute("type");
 			var quality = markers[i].getAttribute("quality");
 			var karma = markers[i].getAttribute("karma");
-			var user = markers[i].getAttribute("user");
-			//var htmlname = String(name);
-			//var htmladdress = String(address);
-			//var htmltype = String(type);
-			//var htmlquality = String(quality);
-			//var htmlkarma = String(karma);
-			//var htmluser = String(user);
-			//document.getElementById("htmlname").innerHTML=htmlname;
-			//document.getElementById("htmladdress").innerHTML=htmladdress;
-			//document.getElementById("htmltype").innerHTML=htmltype;
-			//document.getElementById("htmlquality").innerHTML=htmlquality;
-			//document.getElementById("htmlkarma").innerHTML=htmlkarma;
-			//document.getElementById("htmluser").innerHTML=htmluser;	
+			var user = markers[i].getAttribute("user");	
 			var point = new google.maps.LatLng(
             parseFloat(markers[i].getAttribute("lat")),
             parseFloat(markers[i].getAttribute("lng")));
 			//Popup window variable
-			var html = "<b>" + name + "</b>";
-			var htmlvar = "<b>" + name + "</b>";
+			var html = "<b>" + name + address + "</b>";
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
 			map: map,
