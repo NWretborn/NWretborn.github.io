@@ -449,7 +449,7 @@ function geolocate() {
 		google.maps.event.addListener(marker, 'click', function() {
 		infoWindow.setContent(html);
 		infoWindow.open(map, marker);
-		var htmldat = String(html.split(" "));
+		var htmldat = html.split(" ");
 		//document.getElementById("htmlname").innerHTML=htmlname;
 		//document.getElementById("htmladdress").innerHTML=htmladdress;
 		//document.getElementById("htmltype").innerHTML=htmltype;
