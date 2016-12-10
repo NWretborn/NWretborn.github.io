@@ -41,7 +41,7 @@
 	function postForm(path, formID){
 		var jsonOUT =$(formID).serializeObject();
 		var type = jsonOUT['type'];
-		if( type == 'open' || type == 'closed'){
+		if( type == 'yes' || type == 'no'){
 			var jsonSTR = JSON.stringify(jsonOUT);
 			$.ajax({
 				type: "POST",
@@ -53,7 +53,7 @@
 			});
 		}
 		else{
-			alert("Network must be 'open' or 'closed'");
+			alert("Answer must be 'yes or 'no'");
 		}
 	}	
 </script>
@@ -103,7 +103,7 @@
 			</div>
 			<br/>
 			<div style="font-size: 20px; top: 92%; left: 8%;">
-				Type of network(open/closed)
+				Customer only(yes/no)
 			</div>
 			<div  style="font-size: 20px; top: 92%">
 				<input value="open" type="text" name="type" font="monospace" class="tb5">
