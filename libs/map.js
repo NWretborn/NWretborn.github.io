@@ -357,6 +357,7 @@ function geolocate() {
             parseFloat(markers[i].getAttribute("lng")));
 			//Popup window variable
 			var html = "<b>" + name + "</b>";
+			var htmlvar = name + address + type + quality + karma + user;
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
 			map: map,
@@ -457,7 +458,7 @@ function geolocate() {
 }
 
 
-	function bindInfoWindow(marker, map, infoWindow, html) {
+	function bindInfoWindow(marker, map, infoWindow, html, htmlvar) {
 		google.maps.event.addListener(marker, 'click', function() {
 		infoWindow.setContent(html);
 		infoWindow.open(map, marker);
@@ -478,7 +479,7 @@ function geolocate() {
 		//document.getElementById("htmltype").innerHTML=htmltype;
 		//document.getElementById("htmlquality").innerHTML=htmlquality;
 		//document.getElementById("htmlkarma").innerHTML=htmlkarma;
-		document.getElementById("htmluser").innerHTML=String(html); 
+		document.getElementById("htmluser").innerHTML=String(htmlvar); 
 	});
 }
 
