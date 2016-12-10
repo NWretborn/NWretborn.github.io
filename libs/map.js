@@ -334,17 +334,17 @@ function geolocate() {
 		var markers = xml.documentElement.getElementsByTagName("marker");
 		
 		for (var i = 0; i < markers.length; i++) {
+			var user = markers[i].getAttribute("user");	
 			var name = markers[i].getAttribute("name");
 			var address = markers[i].getAttribute("address");
 			var type = markers[i].getAttribute("type");
 			var quality = markers[i].getAttribute("quality");
 			var karma = markers[i].getAttribute("karma");
-			var user = markers[i].getAttribute("user");	
 			var point = new google.maps.LatLng(
             parseFloat(markers[i].getAttribute("lat")),
             parseFloat(markers[i].getAttribute("lng")));
 			//Popup window variable
-			var html = name + " " + address + " " + type + " " + quality + " " + karma + " " + user;
+			var html = user + " " + address + " " + type + " " + quality + " " + karma + " " + name;
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
 			map: map,
