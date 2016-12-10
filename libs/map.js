@@ -460,6 +460,7 @@ function geolocate() {
 
 	function bindInfoWindow(marker, map, infoWindow, html, htmlvar) {
 		google.maps.event.addListener(marker, 'click', function() {
+		infoWindow.setContent(htmlvar);
 		infoWindow.setContent(html);
 		infoWindow.open(map, marker);
 		//var name = marker.getAttribute("name");
@@ -479,7 +480,7 @@ function geolocate() {
 		//document.getElementById("htmltype").innerHTML=htmltype;
 		//document.getElementById("htmlquality").innerHTML=htmlquality;
 		//document.getElementById("htmlkarma").innerHTML=htmlkarma;
-		document.getElementById("htmluser").innerHTML=String(html); 
+		document.getElementById("htmluser").innerHTML=String(htmlvar); 
 	});
 }
 
