@@ -7,8 +7,7 @@
 	
 <head>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    	<!--<meta charset="utf-8">-->
-	<meta http-equiv="content-type" content="text/html" charset="ISO-8859-1" />
+    	<meta charset="utf-8">
 	<title>WiFinder</title>
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
