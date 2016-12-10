@@ -372,9 +372,10 @@ function geolocate() {
 		});
 			firstSet = true;
   		}
-		var locArr = String(location);
-		var lat = String(locArr.slice(1,10));
-		var lon = String(locArr.slice(20,29));
+		var locArr = Int(location);
+		//locArr = String(locArr.split(","));
+		var lat = locArr[0];
+		var lon = locArr[1];
 		document.getElementById("lat").innerHTML=lat;
 		document.getElementById("lon").innerHTML=lon;
 		document.getElementById('latval').value = lat;
