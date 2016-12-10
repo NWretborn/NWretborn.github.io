@@ -382,7 +382,7 @@ function geolocate() {
 		if (lon[0] == ",") {
 			var lon = String(locArr.slice(20,29));
 		}
-		document.getElementById("lat").innerHTML=lat;
+		document.getElementById("lat").innerHTML=locArr;
 		document.getElementById("lon").innerHTML=lon;
 		document.getElementById('latval').value = lat;
 		document.getElementById('lonval').value = lon;
