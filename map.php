@@ -3,7 +3,8 @@
 <!-- http://stackoverflow.com/questions/15792655/add-marker-to-google-map-on-click -->
 	
 	<script type="text/javascript">
-		document.getElementById("viewNetwork").click();
+		document.getElementById(viewNetwork).style.display = "block";
+  		evt.currentTarget.className += " w3-cyan";
 	</script>
 	
 	
