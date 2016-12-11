@@ -124,7 +124,7 @@
 				Customer only?(yes/no)
 			</div>
 			<div  style="font-size: 20px; top: 92%">
-				<input value="open" type="text" name="type" font="monospace" class="tb5">
+				<input value="yes" type="text" name="type" font="monospace" class="tb5">
 			</div>
 		  	<br/>
 			<div  style="font-size: 20px; top: 92%">
