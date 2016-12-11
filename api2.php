@@ -50,29 +50,18 @@
 	error_log("api2.php received ".$method." request\n", 3, "./scrap.log");
 
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-	//echo "<br/>php://input: ".file_get_contents('php://input');
 	$input = json_decode(file_get_contents('php://input'),true);
-
-	//error_log("input: ".file_get_contents('php://input')."\n", 3, "./scrap.log");
 
 	// connect to the mysql database
 	$link = mysqli_connect('localhost', $username, $password, $database);
 	mysqli_set_charset($link,'utf8');
 
 	errlog("path-info".$_SERVER['PATH_INFO']);
-	error_log("path-info: ".$_SERVER['PATH_INFO']."\n", 3, "./scrap.log");
-	error_log("trimmed path-info: ".trim($_SERVER['PATH_INFO'],'/')."\n", 3, "./scrap.log");
-	error_log("request: ".implode(" ", $request)."\n", 3, "./scrap.log");
 
 	// retrieve and remove table and key from the path
 	$table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
-
-
-
 	$key = array_shift($request)+0;
 
-	//error_log("input-password: ".$input['password']."\n", 3, "./scrap.log");
-	//error_log(implode("|",$input)."\n", 3, "./scrap.log");
 
 	if($method == "POST" && $table == "user" && $input['password']){
 		$password = $columns['password'];
@@ -88,13 +77,7 @@
 		return mysqli_real_escape_string($link,(string)$value);
 	},array_values($input));
 
-	//error_log("password: ".$columns['password']."\n", 3, "./scrap.log");
-
-
-
-
 	// build the SET part of the SQL command
-	//error_log("received following data:\n", 3, "./scrap.log");
 	$set = '';
 	for ($i=0;$i<count($columns);$i++) {
 		$set.=($i>0?',':'').'`'.$columns[$i].'`=';
@@ -110,8 +93,6 @@
 			$sql = "update `$table` set $set where id=$key";
 			break;
 		case 'POST':
-			//$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-			//error_log($set."\n", 3, "./scrap.log");
 			$sql = "insert into `$table` set $set";
 			break;
 		case 'DELETE':
@@ -121,6 +102,7 @@
 
 	// excecute SQL statement
 	$result = mysqli_query($link,$sql);
+	errlog("sql-request sent!");
 	$errors = mysqli_error($link);
 
 	if($errors){
