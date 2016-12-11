@@ -59,10 +59,6 @@
 <body onload="load()">
 	
 
-	
-	
-<div id="viewNetwork" class="w3-container w3-border tab">
-	  
    	<div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px;" id="htmlname" href = test.html></p>
 </div>
@@ -81,7 +77,7 @@
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px;" id="htmluser" href = test.html></p>
 </div>
- </div>
+
 
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
 <div class="menu_box";>
