@@ -49,10 +49,13 @@
 	$link = mysqli_connect('localhost', $username, $password, $database);
 	mysqli_set_charset($link,'utf8');
 
-	// retrieve the table and key from the path
-	$table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
 
 	error_log("request: ".implode(" ", $request)."\n", 3, "./scrap.log");
+
+	// retrieve and remove table and key from the path
+	$table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
+
+
 
 	$key = array_shift($request)+0;
 
