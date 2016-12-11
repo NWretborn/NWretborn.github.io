@@ -1,23 +1,23 @@
 <!--
-	
+
 	--------------------------------------------------
 
 		HOW THE API WORKS:
-	
+
 	--------------------------------------------------
-	
+
 
 	adduser
-	
+
 	addwifi
 
 	verifypassword
 
-	
+
 
 	--------------------------------------------------OLDSTUFF:
 
-	GET request with url = api.php/TABLE/ID will set table to "TABLE" and request the column 
+	GET request with url = api.php/TABLE/ID will set table to "TABLE" and request the column
 	with id "ID" from database
 	--------------------------------------------------
 	POST request will only use TABLE in the example url of previous description. It reads from
@@ -52,9 +52,11 @@
 	// retrieve the table and key from the path
 	$table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
 
+	error_log("request: ".$request."\n", 3, "./scrap.log");
+
 	$key = array_shift($request)+0;
 
-	error_log("input-password: ".$input['password']."\n", 3, "./scrap.log");
+	//error_log("input-password: ".$input['password']."\n", 3, "./scrap.log");
 	//error_log(implode("|",$input)."\n", 3, "./scrap.log");
 
 	if($method == "POST" && $table == "user" && $input['password']){
@@ -72,10 +74,10 @@
 	},array_values($input));
 
 	//error_log("password: ".$columns['password']."\n", 3, "./scrap.log");
-	
-	
-	
-	
+
+
+
+
 	// build the SET part of the SQL command
 	//error_log("received following data:\n", 3, "./scrap.log");
 	$set = '';
