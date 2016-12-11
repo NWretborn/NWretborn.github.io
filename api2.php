@@ -39,7 +39,8 @@
 
 
 <?php
-	errlog("--------------------------------------------------STARTLOG");
+	errlog("STARTLOG");
+	errlog("--------------------------------------------------");
 	require("phpsqlajax_dbinfo.php");
 	#ini_set('display_errors', 1);
 	#ini_set('display_startup_errors', 1);
@@ -134,5 +135,6 @@
 
 	// close mysql connection
 	mysqli_close($link);
-	errlog("--------------------------------------------------ENDLOG");
+	errlog("--------------------------------------------------");
+	errlog("ENDLOG");
 ?>
