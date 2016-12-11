@@ -152,7 +152,7 @@
 
 <script>
 function openTab(evt, tabName) {
-document.write(evt);
+document.write(String(evt));
   var i, x, tablinks;
   x = document.getElementsByClassName("tab");
   for (i = 0; i < x.length; i++) {
