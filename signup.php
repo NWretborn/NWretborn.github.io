@@ -11,7 +11,6 @@
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 
-	alert("hallo eller!");
 	// make json object from serialized array of html form
 	$.fn.serializeObject = function() {
 		var o = {};
