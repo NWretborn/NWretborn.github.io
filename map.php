@@ -1,3 +1,21 @@
+<?php 
+
+// filename: upload.form.php 
+
+// first let's set some variables 
+
+// make a note of the current working directory relative to root. 
+$directory_self = str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_SELF']); 
+
+// make a note of the location of the upload handler script 
+$uploadHandler = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.processor.php'; 
+
+// set a max file size for the html upload form 
+$max_file_size = 30000; // size in bytes 
+
+// now echo the html page 
+?>
+
 <!DOCTYPE html>
 <html>
 <!-- http://www.htmlgoodies.com/beyond/php/article.php/3877766/Web-Developer-How-To-Upload-Images-Using-PHP.htm -->
@@ -99,7 +117,7 @@
 	  
 	  
 	  
-	  <form action="http://213.113.7.224/map.php" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
+	  <form action="<?php echo $uploadHandler ?>" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
