@@ -135,8 +135,8 @@
         				</p> 
          
         				<div style="font-size: 20px; top: 72%"> 
-            					<label for="file">Picture:</label> 
-            					<input id="file" type="file" name="file"> 
+            					Picture(optional)<br/>
+            					<input id="file" type="file" name="file" font="monospace" class="tb5"> 
         				</div> 
      
    				</form> 
