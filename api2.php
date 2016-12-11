@@ -59,7 +59,7 @@
 
 	errlog("path-info".$_SERVER['PATH_INFO']);
 
-	// retrieve and remove table and key from the path
+	// retrieve table and key from the path remove from variable $request
 	$table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
 	$key = array_shift($request)+0;
 
@@ -103,7 +103,8 @@
 
 	// excecute SQL statement
 	$result = mysqli_query($link,$sql);
-	errlog("sql-request sent!");
+	errlog("sql-request: ".$sql);
+	errlog("sql-request: $sql");
 	errlog("sql result: ".$result);
 	$errors = mysqli_error($link);
 
