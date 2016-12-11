@@ -103,9 +103,6 @@
 
 	// excecute SQL statement
 	$result = mysqli_query($link,$sql);
-	errlog("sql-request: ".$sql);
-	errlog("sql-request: $sql");
-	errlog("sql result: ".$result);
 	$errors = mysqli_error($link);
 
 	if($errors){
@@ -114,9 +111,12 @@
 
 	// die if SQL statement failed
 	if (!$result) {
-		errlog("no result");
+		errlog("sql no result");
 		http_response_code(404);
 		die(mysqli_error());
+	}
+	else{
+		http_response_code(200);
 	}
 
 	// print results, insert id or affected row count
