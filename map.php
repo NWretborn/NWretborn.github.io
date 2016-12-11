@@ -117,7 +117,7 @@ $max_file_size = 30000; // size in bytes
 	  
 	  
 	  
-	  <form action="<?php echo $uploadHandler ?>" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
+	  <form action="" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
@@ -149,10 +149,10 @@ $max_file_size = 30000; // size in bytes
 			</div>
 		  	<br/>
 		  	<div style="font-size: 20px; top: 64%"> 
-		   		<!--<form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> -->
+		   		<form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post">
             					Picture(optional)<br/>
             					<input id="file" type="file" name="file" font="monospace" class="tb3"> 
-   				<!-- </form> -->
+   				</form>
 			</div> 
 		  	<br/>
 			<div  style="font-size: 20px; top: 92%">
