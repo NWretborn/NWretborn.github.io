@@ -54,7 +54,7 @@
 		else{
 			alert("Answer must be 'yes or 'no'");
 		}
-		window.location = "http://213.113.7.224/map.php";
+		
 	}	
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
@@ -97,7 +97,7 @@
 	  
 	  
 	  
-	  <form action="" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
+	  <form action="" onsubmit='postForm("../api.php/markers", "#registerform"); return false; window.location = "http://213.113.7.224/map.php";' id="registerform" method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
