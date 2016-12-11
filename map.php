@@ -69,6 +69,7 @@ $max_file_size = 30000; // size in bytes
 				contentType : "application/json"
 			});
 			window.alert("Network added!");
+			<?php echo $uploadHandler ?>;
 			window.location = "http://213.113.7.224/map.php";
 		}
 		else{
