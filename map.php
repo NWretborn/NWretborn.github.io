@@ -19,6 +19,9 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places"async defer></script>
 <script type="text/javascript">
 // make json object from serialized array of html form
+
+// Get the element with id="defaultOpen" and click on it
+	document.getElementById("viewNetwork").click();
 	$.fn.serializeObject = function() {
 		var o = {};
 		var a = this.serializeArray();
@@ -56,10 +59,7 @@
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
 	
-<script>
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("viewNetwork").click();
-</script>
+
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
 <div class="menu_box";>
 <div class="w3-container">
