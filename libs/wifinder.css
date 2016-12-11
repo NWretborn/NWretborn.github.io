@@ -87,8 +87,8 @@ body{
 	.tb3 {
 		background-color: #10454e;
 		border:0px solid #29afc4;
-		border-radius:1px;
-		font-size: 1.5vw;
+		border-radius:5px;
+		font-size: 20px;
 	}
 /* Default logo */
 #logo{
