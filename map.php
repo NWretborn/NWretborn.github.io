@@ -50,6 +50,7 @@
 				dataType: "json",
 				contentType : "application/json"
 			});
+			window.alert("Network added!");
 		}
 		else{
 			alert("Answer must be 'yes or 'no'");
