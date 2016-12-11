@@ -43,7 +43,8 @@
 				type: "POST",
 				url: "./"+path,
 				data: jsonSTR,
-				success: function(){alert("registration sent!");},
+				success: function(){cosole.log("success");},
+				complete: function(){console.log("complete");},
 				dataType: "json",
 				contentType : "application/json"
 			});
