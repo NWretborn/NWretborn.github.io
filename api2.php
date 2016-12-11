@@ -114,6 +114,7 @@
 
 	// die if SQL statement failed
 	if (!$result) {
+		errlog("no result");
 		http_response_code(404);
 		die(mysqli_error());
 	}
@@ -122,16 +123,16 @@
 	if ($method == 'GET') {
 		if (!$key) echo '[';
 		for ($i=0;$i<mysqli_num_rows($result);$i++) {
-			//error_log($i>0?',':'').json_encode(mysqli_fetch_object($result), 3, "./scrap.log");
+			errlog(($i>0?',':'').json_encode(mysqli_fetch_object($result)));
 			echo ($i>0?',':'').json_encode(mysqli_fetch_object($result));
 		}
 		if (!$key)
 			echo ']';
 	} elseif ($method == 'POST') {
-		//error_log('{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}', 3, "./scrap.log");
+		errlog('{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}');
 		echo '{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}';
 	} else {
-		//error_log("affected_rows:".mysqli_affected_rows($link), 3, "./scrap.log");
+		errlog( mysqli_affected_rows($link) );
 		echo mysqli_affected_rows($link);
 	}
 
