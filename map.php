@@ -205,7 +205,8 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " w3-cyan";
 }
 submitForms = function(){
-    document.getElementById("registerform").submit();
+postForm("../api.php/markers", "#registerform"); return false;
+    //document.getElementById("registerform").submit();
     document.getElementById("Upload").submit();
 }
 </script>
