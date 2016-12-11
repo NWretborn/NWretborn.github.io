@@ -129,17 +129,19 @@
 			<div  style="font-size: 20px; top: 92%">
 				<input value="yes" type="text" name="type" font="monospace" class="tb5">
 			</div>
+		  	<div style="font-size: 20px; top: 84%"> 
 		   		<form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> 
         				<p> 
             					<input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max_file_size ?>"> 
         				</p> 
          
-        				<div style="font-size: 20px; top: 84%"> 
+        				
             					Picture(optional)<br/>
             					<input id="file" type="file" name="file" font="monospace" class="tb5"> 
-        				</div> 
+        				
      
    				</form> 
+			</div> 
 		  	<br/>
 			<div  style="font-size: 20px; top: 92%">
 				<input type="hidden" id="latval" name="lat" />
