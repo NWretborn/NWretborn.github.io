@@ -97,7 +97,7 @@
 	  
 	  
 	  
-	  <form action="location.href='map.php'" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
+	  <form action="http://213.113.7.224/map.php" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
