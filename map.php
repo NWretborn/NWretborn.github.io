@@ -72,7 +72,7 @@
 	  
 	  
    	<div  style="font-size: 20px; top: 92%">
-				<p style="font-size: color: #29afc4;" id="htmlname" href = test.html></p>
+				<p style="color: #29afc4;" id="htmlname" href = test.html></p>
 </div>
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmladdress" href = test.html></p>
