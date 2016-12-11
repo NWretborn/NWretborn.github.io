@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
 	<style>
-.tab {display:none;}
+.tab {display:viewNetwork;}
 </style>
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 	<script src="libs/map.js"></script>
