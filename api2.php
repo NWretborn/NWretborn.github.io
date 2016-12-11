@@ -37,7 +37,7 @@
 	// get the HTTP method, path and body of the request
 	$method = $_SERVER['REQUEST_METHOD'];
 
-	error_log("api.php received ".$method." request\n", 3, "./scrap.log");
+	error_log("api2.php received ".$method." request\n", 3, "./scrap.log");
 
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	//echo "<br/>php://input: ".file_get_contents('php://input');
@@ -64,7 +64,7 @@
 		$input['password'] = password_hash($password, PASSWORD_DEFAULT);
 		error_log("password after hash: ".$input['password']."\n", 3, "./scrap.log");
 	}
-	error_log("table: ".$table."\n", 3, "./scrap.log");
+	error_log("table: ".implodet(" ", $table)."\n", 3, "./scrap.log");
 
 	// escape the columns and values from the input object
 	$columns = preg_replace('/[^a-z0-9_]+/i','',array_keys($input));
