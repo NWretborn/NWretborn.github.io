@@ -149,10 +149,9 @@ $max_file_size = 30000; // size in bytes
 			</div>
 		  	<br/>
 		  	<div style="font-size: 20px; top: 64%"> 
-		   		<form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post">
-            					Picture(optional)<br/>
-            					<input id="file" type="file" name="file" font="monospace" class="tb3"> 
-   				</form>
+			Picture(optional)<br/>
+			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
+   			
 			</div> 
 		  	<br/>
 			<div  style="font-size: 20px; top: 92%">
@@ -164,8 +163,8 @@ $max_file_size = 30000; // size in bytes
 			<br/>
 			<div style="font-size: 20px; margin-top: 5px;">
 
-				<input style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
-				<input type="button" value="Click Me!" onclick="submitForms()" />
+				<input onclick="<?php echo $uploadHandler ?>" style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
+
 
 </div>
 
@@ -204,11 +203,7 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-cyan";
 }
-submitForms = function(){
-postForm("../api.php/markers", "#registerform");
-    //document.getElementById("registerform").submit();
-    document.getElementById("Upload").submit();
-}
+
 </script>
 	
 	
