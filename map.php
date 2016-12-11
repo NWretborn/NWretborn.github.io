@@ -69,6 +69,10 @@
   </ul>
 	
   <div id="viewNetwork" class="w3-container w3-border tab">
+	  <script type="text/javascript">
+		document.getElementById('viewNetwork').style.display = "block";
+  		evt.currentTarget.className += " w3-cyan";
+	</script>
 	  
    	<div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px;" id="htmlname" href = test.html></p>
@@ -89,10 +93,7 @@
 				<p style="font-size: 20px;" id="htmluser" href = test.html></p>
 </div>
  </div>
-<script type="text/javascript">
-		document.getElementById(viewNetwork).style.display = "block";
-  		evt.currentTarget.className += " w3-cyan";
-	</script>
+
   <div id="addNetwork" class="w3-container w3-border tab">
     <!-- ADD NETWORK TAB -->
 	  
