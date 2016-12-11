@@ -2,7 +2,9 @@
 <html>
 <!-- http://stackoverflow.com/questions/15792655/add-marker-to-google-map-on-click -->
 	
-	
+	<script type="text/javascript">
+		document.getElementById("viewNetwork").click();
+	</script>
 	
 	
 <head>
@@ -21,7 +23,6 @@
 // make json object from serialized array of html form
 
 // Get the element with id="defaultOpen" and click on it
-	document.getElementById("viewNetwork").click();
 	$.fn.serializeObject = function() {
 		var o = {};
 		var a = this.serializeArray();
