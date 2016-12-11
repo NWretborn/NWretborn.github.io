@@ -137,9 +137,7 @@
         				</p> 
          
             					Picture(optional)<br/>
-					<p>
-            					<input id="file" type="file" name="file" font="monospace"> 
-					</p>
+            					<input id="file" type="file" name="file" font="monospace" class="tb4"> 
      
    				</form> 
 			</div> 
