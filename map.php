@@ -137,7 +137,7 @@
          
         				
             					Picture(optional)<br/>
-            					<input id="file" type="file" name="file" font="monospace" class="tb5"> 
+            					<input style="top: 114%" id="file" type="file" name="file" font="monospace" class="tb5"> 
         				
      
    				</form> 
