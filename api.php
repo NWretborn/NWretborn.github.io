@@ -5,6 +5,18 @@
 		HOW THE API WORKS:
 	
 	--------------------------------------------------
+	
+
+	adduser
+	
+	addwifi
+
+	verifypassword
+
+	
+
+	--------------------------------------------------OLDSTUFF:
+
 	GET request with url = api.php/TABLE/ID will set table to "TABLE" and request the column 
 	with id "ID" from database
 	--------------------------------------------------
