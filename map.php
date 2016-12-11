@@ -50,6 +50,7 @@
 				dataType: "json",
 				contentType : "application/json"
 			});
+			window.location = "http://213.113.7.224/map.php";
 		}
 		else{
 			alert("Answer must be 'yes or 'no'");
