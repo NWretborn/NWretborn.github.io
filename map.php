@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- http://stackoverflow.com/questions/15792655/add-marker-to-google-map-on-click -->
+<!-- http://www.htmlgoodies.com/beyond/php/article.php/3877766/Web-Developer-How-To-Upload-Images-Using-PHP.htm -->
 	
 	
 	
