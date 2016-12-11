@@ -134,7 +134,7 @@
             					<input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max_file_size ?>"> 
         				</p> 
          
-        				<div style="font-size: 20px; top: 72%"> 
+        				<div style="font-size: 20px; top: 84%"> 
             					Picture(optional)<br/>
             					<input id="file" type="file" name="file" font="monospace" class="tb5"> 
         				</div> 
