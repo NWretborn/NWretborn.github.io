@@ -12,9 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
-	<style>
-.tab {display:viewNetwork;}
-</style>
+	
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 	<script src="libs/map.js"></script>
 	<script src="libs/std.js"></script>
@@ -57,14 +55,20 @@
 	}	
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
-
+	
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("viewNetwork").click();
+</script>
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
 <div class="menu_box";>
 <div class="w3-container">
   <ul class="w3-navbar w3-lightblue">
     <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork');">View Network</a></li>
     <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork');">Add Network</a></li>
+	  
   </ul>
+	
   <div id="viewNetwork" class="w3-container w3-border tab">
 	  
    	<div  style="font-size: 20px; top: 92%">
