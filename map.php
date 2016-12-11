@@ -3,9 +3,7 @@
 <!-- http://stackoverflow.com/questions/15792655/add-marker-to-google-map-on-click -->
 	
 	
-	<script type="text/javascript">
-		openTab(event, 'viewNetwork');
-	</script>
+	
 	
 <head>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
@@ -166,6 +164,8 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-cyan";
 }
+	
+openTab(event, 'viewNetwork');
 </script>
 			
 		<!--</form>-->
