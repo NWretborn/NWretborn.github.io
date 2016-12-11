@@ -56,28 +56,7 @@
 		}
 	}	
 </script>
-<body onload="load()">
-	
-
-   	<div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="htmlname" href = test.html></p>
-</div>
-	  <div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="htmladdress" href = test.html></p>
-</div>
-	  <div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="htmlquality" href = test.html></p>
-</div>
-	  <div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="htmlkarma" href = test.html></p>
-</div>
-	  <div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="htmltype" href = test.html></p>
-</div>
-	  <div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="htmluser" href = test.html></p>
-</div>
-
+<body onload="load(); openTab(event, 'viewNetwork');">
 
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
 <div class="menu_box";>
