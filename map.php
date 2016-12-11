@@ -165,7 +165,7 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " w3-cyan";
 }
 	
-openTab(event, 'viewNetwork');
+openTab('viewNetwork');
 </script>
 			
 		<!--</form>-->
