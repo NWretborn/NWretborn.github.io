@@ -129,8 +129,8 @@
 		if (!$key)
 			echo ']';
 	} elseif ($method == 'POST') {
-		errlog('{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}');
 		echo '{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}';
+		errlog('{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}');
 	} else {
 		errlog( mysqli_affected_rows($link) );
 		echo mysqli_affected_rows($link);
