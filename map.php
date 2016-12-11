@@ -134,10 +134,10 @@
             					<input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max_file_size ?>"> 
         				</p> 
          
-        				<p> 
+        				<div style="font-size: 20px; top: 72%"> 
             					<label for="file">Picture:</label> 
             					<input id="file" type="file" name="file"> 
-        				</p> 
+        				</div> 
      
    				</form> 
 		  	<br/>
