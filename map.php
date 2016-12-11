@@ -175,8 +175,7 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-cyan";
 }
-	
-document.getElementById('viewNetwork').style.display = "block";
+
 </script>
 	
 	
