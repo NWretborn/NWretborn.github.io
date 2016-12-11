@@ -57,10 +57,7 @@
 	}	
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
-	<script type="text/javascript">
-		document.getElementById(viewNetwork).style.display = "block";
-  		evt.currentTarget.className += " w3-cyan";
-	</script>
+	
 
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
 <div class="menu_box";>
@@ -92,7 +89,10 @@
 				<p style="font-size: 20px;" id="htmluser" href = test.html></p>
 </div>
  </div>
-
+<script type="text/javascript">
+		document.getElementById(viewNetwork).style.display = "block";
+  		evt.currentTarget.className += " w3-cyan";
+	</script>
   <div id="addNetwork" class="w3-container w3-border tab">
     <!-- ADD NETWORK TAB -->
 	  
