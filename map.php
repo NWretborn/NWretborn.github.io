@@ -72,22 +72,22 @@
 	  
 	  
    	<div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="htmlname" href = test.html></p>
+				<p style="font-size: 20px; color: #29afc4;" id="htmlname" href = test.html></p>
 </div>
 	  <div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="htmladdress" href = test.html></p>
+				<p style="font-size: 20px; color: #29afc4;" id="htmladdress" href = test.html></p>
 </div>
 	  <div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="htmlquality" href = test.html></p>
+				<p style="font-size: 20px; color: #29afc4;" id="htmlquality" href = test.html></p>
 </div>
 	  <div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="htmlkarma" href = test.html></p>
+				<p style="font-size: 20px; color: #29afc4;" id="htmlkarma" href = test.html></p>
 </div>
 	  <div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="htmltype" href = test.html></p>
+				<p style="font-size: 20px; color: #29afc4;" id="htmltype" href = test.html></p>
 </div>
 	  <div  style="font-size: 20px; top: 92%">
-				<p style="font-size: 20px;" id="htmluser" href = test.html></p>
+				<p style="font-size: 20px; color: #29afc4;" id="htmluser" href = test.html></p>
 </div>
  </div>
 
