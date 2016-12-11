@@ -30,6 +30,15 @@
 -->
 
 <?php
+
+	function errlog($message){
+		error_log($message."\n", 3, "./scrap.log");
+	}
+
+?>
+
+
+<?php
 	require("phpsqlajax_dbinfo.php");
 	#ini_set('display_errors', 1);
 	#ini_set('display_startup_errors', 1);
@@ -49,6 +58,7 @@
 	$link = mysqli_connect('localhost', $username, $password, $database);
 	mysqli_set_charset($link,'utf8');
 
+	errlog("path-info".$_SERVER['PATH_INFO']);
 	error_log("path-info: ".$_SERVER['PATH_INFO']."\n", 3, "./scrap.log");
 	error_log("trimmed path-info: ".trim($_SERVER['PATH_INFO'],'/')."\n", 3, "./scrap.log");
 	error_log("request: ".implode(" ", $request)."\n", 3, "./scrap.log");
