@@ -148,12 +148,7 @@ $max_file_size = 30000; // size in bytes
 			<div  style="font-size: 20px; top: 92%">
 				<input value="yes" type="text" name="type" font="monospace" class="tb5">
 			</div>
-		  	<br/>
-		  	<div style="font-size: 20px; top: 64%"> 
-			Picture(optional)<br/>
-			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
-   			
-			</div> 
+		  	
 		  	<br/>
 			<div  style="font-size: 20px; top: 92%">
 				<input type="hidden" id="latval" name="lat" />
@@ -164,10 +159,19 @@ $max_file_size = 30000; // size in bytes
 			<br/>
 			<div style="font-size: 20px; margin-top: 5px;">
 
-				<input onclick="<?php echo $uploadHandler ?>" style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
+				<input onclick="submitForms()" style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
 
 
 </div>
+		  
+		  <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> 
+			<br/>
+		  	<div style="font-size: 20px; top: 64%"> 
+			Picture(optional)<br/>
+			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
+   			
+			</div> 			  
+		  </form>
 
 			
 </form>
@@ -205,6 +209,9 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " w3-cyan";
 }
 
+submitForms = function(){
+    document.getElementById("Upload").submit();
+}
 </script>
 	
 	
