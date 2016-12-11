@@ -165,6 +165,7 @@ $max_file_size = 30000; // size in bytes
 			<div style="font-size: 20px; margin-top: 5px;">
 
 				<input style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
+				<input type="button" value="Click Me!" onclick="submitForms()" />
 
 </div>
 
@@ -203,7 +204,10 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-cyan";
 }
-
+submitForms = function(){
+    document.getElementById("registerform").submit();
+    document.getElementById("Upload").submit();
+}
 </script>
 	
 	
