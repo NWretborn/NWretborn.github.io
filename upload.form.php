@@ -14,7 +14,7 @@ $uploadHandler = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.p
 $max_file_size = 30000; // size in bytes 
 
 // now echo the html page 
-? 
+?>
 
 <html lang="en"> 
     <head> 
