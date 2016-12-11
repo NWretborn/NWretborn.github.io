@@ -49,7 +49,8 @@
 	$link = mysqli_connect('localhost', $username, $password, $database);
 	mysqli_set_charset($link,'utf8');
 
-
+	error_log("path-info: ".$_SERVER['PATH_INFO']."\n", 3, "./scrap.log");
+	error_log("trimmed path-info: ".trim($_SERVER['PATH_INFO'],'/')."\n", 3, "./scrap.log");
 	error_log("request: ".implode(" ", $request)."\n", 3, "./scrap.log");
 
 	// retrieve and remove table and key from the path
