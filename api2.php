@@ -30,7 +30,7 @@
 -->
 
 <?php
-
+	// error-message written to a scrap log in same folder
 	function errlog($message){
 		error_log($message."\n", 3, "./scrap.log");
 	}
@@ -39,6 +39,7 @@
 
 
 <?php
+	errlog("--------------------------------------------------\nSTARTLOG");
 	require("phpsqlajax_dbinfo.php");
 	#ini_set('display_errors', 1);
 	#ini_set('display_startup_errors', 1);
@@ -151,5 +152,5 @@
 
 	// close mysql connection
 	mysqli_close($link);
-
+	errlog("\n--------------------------------------------------\n");
 ?>
