@@ -152,6 +152,7 @@
 
 <script>
 function openTab(evt, tabName) {
+document.write(evt);
   var i, x, tablinks;
   x = document.getElementsByClassName("tab");
   for (i = 0; i < x.length; i++) {
@@ -165,7 +166,7 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " w3-cyan";
 }
 	
-openTab('viewNetwork');
+//openTab('viewNetwork');
 </script>
 			
 		<!--</form>-->
