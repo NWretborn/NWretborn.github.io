@@ -104,10 +104,11 @@
 	// excecute SQL statement
 	$result = mysqli_query($link,$sql);
 	errlog("sql-request sent!");
+	errlog("sql result: ".$result);
 	$errors = mysqli_error($link);
 
 	if($errors){
-		error_log("SQL ERROR: ".$errors."\n", 3, "./scrap.log");
+		errlog("SQL ERROR: ".$errors);
 	}
 
 	// die if SQL statement failed
