@@ -2,10 +2,7 @@
 <html>
 <!-- http://stackoverflow.com/questions/15792655/add-marker-to-google-map-on-click -->
 	
-	<script type="text/javascript">
-		document.getElementById(viewNetwork).style.display = "block";
-  		evt.currentTarget.className += " w3-cyan";
-	</script>
+	
 	
 	
 <head>
@@ -60,7 +57,10 @@
 	}	
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
-	
+	<script type="text/javascript">
+		document.getElementById(viewNetwork).style.display = "block";
+  		evt.currentTarget.className += " w3-cyan";
+	</script>
 
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
 <div class="menu_box";>
