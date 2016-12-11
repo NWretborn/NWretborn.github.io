@@ -52,7 +52,7 @@
 	// retrieve the table and key from the path
 	$table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
 
-	error_log("request: ".$request."\n", 3, "./scrap.log");
+	error_log("request: ".implode(" ", $request)."\n", 3, "./scrap.log");
 
 	$key = array_shift($request)+0;
 
@@ -64,7 +64,7 @@
 		$input['password'] = password_hash($password, PASSWORD_DEFAULT);
 		error_log("password after hash: ".$input['password']."\n", 3, "./scrap.log");
 	}
-	error_log("table: ".implode(" ", $table)."\n", 3, "./scrap.log");
+	error_log("table: ".$table."\n", 3, "./scrap.log");
 
 	// escape the columns and values from the input object
 	$columns = preg_replace('/[^a-z0-9_]+/i','',array_keys($input));
