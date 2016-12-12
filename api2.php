@@ -123,7 +123,7 @@
 			break;
 	}
 
-	errlog("sql {".$sql."} sent);
+	errlog("sql {".$sql."} sent");
 	// excecute SQL statement
 	$result = mysqli_query($link,$sql);
 	$errors = mysqli_error($link);
