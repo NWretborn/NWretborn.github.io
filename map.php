@@ -70,7 +70,6 @@ $max_file_size = 30000; // size in bytes
 				contentType : "application/json"
 			});
 			window.alert("Network added!");
-    			document.getElementById("Upload").submit();
 			window.location = "http://213.113.7.224/map.php";
 		}
 		else{
@@ -160,7 +159,7 @@ $max_file_size = 30000; // size in bytes
 			<br/>
 			<div style="font-size: 20px; margin-top: 5px;">
 
-				<input onclick="submitForms()" style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
+				<input onclick="" style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
 
 			
 </div>
@@ -232,7 +231,9 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-cyan";
 }
-
+submitForms = function(){
+    document.getElementById("Upload").submit();
+}
 
 </script>
 	
