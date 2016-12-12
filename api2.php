@@ -46,7 +46,7 @@
 	// get the HTTP method, path and body of the request
 	$method = $_SERVER['REQUEST_METHOD'];
 
-	errlog(basename($_SERVER['PHP_SELF'])." received ".$method." request\n");
+	errlog(basename($_SERVER['PHP_SELF'])." received ".$method." request");
 
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	$input = json_decode(file_get_contents('php://input'),true);
@@ -60,9 +60,11 @@
 	// retrieve table and key from the path remove from variable $request
 	$apicall = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
 	$key1 = array_shift($request)+0;
+	
+	errlog("shift: ".$key1);
+
 	$key2 = array_shift($request)+0;
 
-	errlog("shift: ".$key1);
 	errlog("shift: ".$key2);
 
 	if($method == "POST" && $table == "user" && $input['password']){
@@ -70,7 +72,7 @@
 		$input['password'] = password_hash($password, PASSWORD_DEFAULT);
 		error_log("password after hash: ".$input['password']."\n", 3, "./scrap.log");
 	}
-	error_log("table: ".$table."\n", 3, "./scrap.log");
+	errlog("table: ".$table);
 
 	// escape the columns and values from the input object
 	$columns = preg_replace('/[^a-z0-9_]+/i','',array_keys($input));
