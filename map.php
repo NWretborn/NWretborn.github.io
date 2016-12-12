@@ -65,7 +65,7 @@ $max_file_size = 30000; // size in bytes
 				type: "POST",
 				url: "./"+path,
 				data: jsonSTR,
-				success: function(){alert("Network submitted!");},
+				success: function(){submitForms();},
 				dataType: "json",
 				contentType : "application/json"
 			});
