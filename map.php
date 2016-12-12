@@ -65,12 +65,12 @@ $max_file_size = 30000; // size in bytes
 				type: "POST",
 				url: "./"+path,
 				data: jsonSTR,
-				success: function(){submitForms();},
+				success: function(){alert("Network submitted!");},
 				dataType: "json",
 				contentType : "application/json"
 			});
 			window.alert("Network added!");
-			window.location = "http://213.113.7.224/upload.processor.php";
+			window.location = "http://213.113.7.224/upload.processor.php?method=POST";
 		}
 		else{
 			alert("Answer must be 'yes or 'no'");
