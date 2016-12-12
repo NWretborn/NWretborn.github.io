@@ -35,6 +35,14 @@
 		error_log($message."\n", 3, "./scrap2.log");
 	}
 
+	function hashpass($password){
+		return password_hash($password, PASSWORD_DEFAULT);
+	}
+	
+	function verifypass($password){
+		return password_verify($password, $hashed_password);
+	}
+
 ?>
 
 
@@ -67,6 +75,8 @@
 	switch($apicall){
 		case 'adduser':
 			$table='user';
+			if($input['password'])
+				$input['password'] = hashpass($input['password']);
 			break;
 		case 'addwifi':
 			$table='markers';
@@ -79,12 +89,6 @@
 			http_response_code(404);
 			die("not valid api-call");
 			break;
-	}
-
-	if($method == "POST" && $table == "user" && $input['password']){
-		$password = $columns['password'];
-		$input['password'] = password_hash($password, PASSWORD_DEFAULT);
-		error_log("password after hash: ".$input['password']."\n", 3, "./scrap.log");
 	}
 
 	// escape the columns and values from the input object
