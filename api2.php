@@ -31,7 +31,8 @@
 
 <?php
 
-	ini_set('display_errors', 3, "./error.log");
+	ini_set("log_errors", 1);
+	ini_set("error_log", "/tmp/php-error.log");
 
 	// error-message written to a scrap log in same folder
 	function errlog($message){
@@ -46,10 +47,6 @@
 		return password_verify($password, $hashed_password);
 	}
 
-?>
-
-
-<?php
 	errlog("STARTLOG");
 	errlog("--------------------------------------------------");
 	require("phpsqlajax_dbinfo.php");
