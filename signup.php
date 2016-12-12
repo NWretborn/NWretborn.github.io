@@ -45,6 +45,7 @@
 				data: jsonSTR,
 				success: function(){console.log("success");},
 				complete: function(){console.log("complete");},
+				error: function(jqXHR, textStatus, errorThrown){alert('error');}, 
 				dataType: "json",
 				contentType : "application/json"
 			});
