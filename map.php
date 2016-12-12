@@ -160,9 +160,9 @@ $max_file_size = 30000; // size in bytes
 			<br/>
 			<div style="font-size: 20px; margin-top: 5px;">
 
-				<input onclick="submitForms()" style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
+				<!--<input onclick="submitForms()" style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
 
-
+				-->
 </div>
 		  
 		  
