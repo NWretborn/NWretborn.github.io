@@ -11,7 +11,7 @@ $directory_self = str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_
 $uploadHandler = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.processor.php';
 
 // set a max file size for the html upload form
-$max_file_size = 30000; // size in bytes
+$max_file_size = 300000; // size in bytes
 
 // now echo the html page
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
@@ -136,13 +136,13 @@ $max_file_size = 30000; // size in bytes
     <!-- ADD NETWORK TAB -->
 	  
 	  
-	  <form id="registerform" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit='postForm("../api.php/markers", "#registerform"); return false' method="post">
+	  <form id="registerform" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit="<?php echo $uploadHandler ?>; 'postForm("../api.php/markers", "#registerform"); return false'" method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
 			</div>
 			<div style="top: 12%; font-size: 20px;">
-				<input type="text" name="na�me" class="tb5" value="">
+				<input type="text" name="name" class="tb5" value="">
 
 			</div>
 			<br/>
