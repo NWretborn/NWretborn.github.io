@@ -151,7 +151,12 @@ $max_file_size = 30000; // size in bytes
 			<div  style="font-size: 20px; top: 92%">
 				<input value="yes" type="text" name="type" font="monospace" class="tb5">
 			</div>
-		  	
+		  	<br/>
+		  	<div style="font-size: 20px; top: 64%"> 
+			Picture(optional)<br/>
+			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
+   			
+			</div>
 		  	<br/>
 			<div  style="font-size: 20px; top: 92%">
 				<input type="hidden" id="latval" name="lat" />
@@ -171,40 +176,13 @@ $max_file_size = 30000; // size in bytes
 		  
 		  
 		<!--  <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> 
-			<br/>
-		  	<div style="font-size: 20px; top: 64%"> 
-			Picture(optional)<br/>
-			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
-   			
-			</div> 			  
+			 			  
 		  </form> 
 		-->
 			
 </form>
 	  
-	  <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post">
-	
-		<h1>
-			Upload form
-		</h1>
-		
-		<p>
-			<input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max_file_size ?>">
-		</p>
-		
-		<p>
-			<label for="file">File to upload:</label>
-			<input id="file" type="file" name="file">
-		</p>
-				
-		<p>
-			<label for="submit">Press to...</label>
-			<input id="submit" type="submit" name="submit" value="Upload me!">
-		</p>
-	
-	</form>
-	  
-	  
+	 
 	  
   </div>
 </div>
