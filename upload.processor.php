@@ -49,7 +49,7 @@ isset($_POST['submit'])
 // make a unique filename for the uploaded file and check it is 
 // not taken... if it is keep trying until we find a vacant one
 
-while(file_exists($uploadFilename = $uploadsDirectory.$now.'-'.$_FILES[$fieldname]['']))
+while(file_exists($uploadFilename = $uploadsDirectory.$now.''.$_FILES[$fieldname]['']))
 {
 	echo 'Picture already added to this location';
 }
