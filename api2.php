@@ -67,8 +67,6 @@
 
 	// retrieve table and key from the path remove from variable $request
 	$apicall = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
-	
-	errlog("apicall: ".$apicall);
 	$key = array_shift($request)+0;
 
 	switch($apicall){
