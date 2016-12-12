@@ -119,7 +119,7 @@ $max_file_size = 30000; // size in bytes
 	  
 	  
 	  
-	  <form action="" onsubmit='submitForms(); postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
+	  <form action="" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
