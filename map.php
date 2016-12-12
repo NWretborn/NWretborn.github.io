@@ -57,6 +57,19 @@ $max_file_size = 30000; // size in bytes
 	};
 	// post the submission form to API via ajax in json format
 	function postForm(path, formID){
+		$.ajax({
+                		type: "POST",
+                		url: "upload.processor.php" ,
+                		data: { file: "file" },
+                		success : function() { 
+
+                    // here is the code that will run on client side after running clear.php on server
+
+                    // function below reloads current page
+                
+
+                }
+            });
 		var jsonOUT =$(formID).serializeObject();
 		var type = jsonOUT['type'];
 		var file = jsonOUT['file'];
@@ -73,19 +86,7 @@ $max_file_size = 30000; // size in bytes
 				dataType: "json",
 				contentType : "application/json"
 			});
-			$.ajax({
-                		type: "POST",
-                		url: "upload.processor.php" ,
-                		data: { file: "file" },
-                		success : function() { 
-
-                    // here is the code that will run on client side after running clear.php on server
-
-                    // function below reloads current page
-                
-
-                }
-            });
+			
 			window.alert("Network added!");
 			window.location = "http://213.113.7.224/map.php";
 		}
