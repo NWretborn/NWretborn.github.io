@@ -69,6 +69,7 @@ $max_file_size = 30000; // size in bytes
 				dataType: "json",
 				contentType : "application/json"
 			});
+			$.post($("Upload").attr("action"), $("Upload").serialize()
 			window.alert("Network added!");
 			window.location = "http://213.113.7.224/map.php";
 		}
@@ -149,11 +150,13 @@ $max_file_size = 30000; // size in bytes
 				<input value="yes" type="text" name="type" font="monospace" class="tb5">
 			</div>
 		  	<br/>
+		  	<form id="Upload" action="PostPage2.aspx" method="post">
 		  	<div style="font-size: 20px; top: 64%"> 
 			Picture(optional)<br/>
 			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
    			
 			</div>
+		  	</form>
 		  	<br/>
 			<div  style="font-size: 20px; top: 92%">
 				<input type="hidden" id="latval" name="lat" />
