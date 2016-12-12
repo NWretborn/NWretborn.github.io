@@ -19,7 +19,7 @@ $uploadSuccess = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'map.php'
 // name of the fieldname used for the file in the HTML form
 $fieldname = 'file';
 
-$now = 'lat';
+$now = $_POST["lat"];
 
 // Now let's deal with the upload
 
