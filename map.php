@@ -135,7 +135,7 @@ $max_file_size = 30000; // size in bytes
     <!-- ADD NETWORK TAB -->
 	  
 	  
-	  <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit='postForm("../api.php/markers", "#registerform"); return false' method="post"> 
+	  <form id="registerform" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit='postForm("../api.php/markers", "#registerform"); return false' method="post"> 
 	  <form action="<?php echo $uploadHandler ?>;" enctype="multipart/form-data" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
 
 			<div style="font-size: 20px;">
