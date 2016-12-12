@@ -57,9 +57,9 @@ $max_file_size = 300000; // size in bytes
 	};
 	// post the submission form to API via ajax in json format
 	function postForm(path, formID){
-		var jsonOUT =$(formID).serializeObject();
-		var picurl = jsonOUT['lat'];
+		var picurl = document.getElementById("lat").value;
    		document.getElementById("picurl").value = picurl;
+		var jsonOUT =$(formID).serializeObject();
 		var type = jsonOUT['type'];
 		if( type == 'yes' || type == 'no'){
 			var jsonSTR = JSON.stringify(jsonOUT);
