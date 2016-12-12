@@ -456,7 +456,7 @@ function geolocate() {
 		document.getElementById("htmlquality").innerHTML=String("Review: " + htmldat[3]);
 		document.getElementById("htmluser").innerHTML=String("Submitted by: " + htmldat[4]); 
 		document.getElementById("htmltype").innerHTML=String("Customer only: " + htmldat[5]);
-		document.getElementById("htmlpicurl").innerHTML=String("http://213.113.7.224/uploaded_files/"+htmldat[6]);
+		document.getElementById("htmlpicurl").src=String("http://213.113.7.224/uploaded_files/"+htmldat[6]);
 		infoWindow.setContent(htmldat[0]);
 		infoWindow.open(map, marker);
 	});
