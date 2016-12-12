@@ -162,7 +162,8 @@ var vm = new Vue({
 	 <div id="app">
   <div class="container-fluid">
     <ul class="list-group">
-      <post v-for="post in posts" :post="post"></post>a {
+      <post v-for="post in posts" :post="post"></post>
+	    .a {
   padding-left: 5px;
 }
 
