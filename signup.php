@@ -46,7 +46,7 @@
 				data: jsonSTR,
 				success: function(){console.log("success");},
 				complete: function(){console.log("complete");},
-				error: function(jqXHR, textStatus, errorThrown){console.log(errorThrown);}, 
+				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);}, 
 				dataType: "json",
 				contentType : "application/json"
 			});
@@ -128,7 +128,7 @@
 
 
 	<div class="center box">
-		<form action="" onsubmit='postForm("../api.php/user/id", "#registerform"); return false' id="registerform" method="post">
+		<form action="" onsubmit='postForm("../api2.php/adduser", "#registerform"); return false' id="registerform" method="post">
 
 			<div style="top: 12%; left: 8%">
 				Username
