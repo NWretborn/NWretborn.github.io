@@ -14,7 +14,7 @@ $uploadsDirectory = $_SERVER['DOCUMENT_ROOT'] . $directory_self . 'uploaded_file
 $uploadForm = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.form.php';
 
 // make a note of the location of the success page
-$uploadSuccess = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.success.php';
+$uploadSuccess = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'map.php';
 
 // name of the fieldname used for the file in the HTML form
 $fieldname = 'file';
