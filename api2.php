@@ -30,6 +30,10 @@
 -->
 
 <?php
+
+	ini_set("log_errors", 1);
+	ini_set("error_log", "./error.log");
+
 	// error-message written to a scrap log in same folder
 	function errlog($message){
 		error_log($message."\n", 3, "./scrap2.log");
@@ -47,9 +51,6 @@
 
 
 <?php
-
-	ini_set("log_errors", 1);
-	ini_set("error_log", "./error.log");
 	errlog("STARTLOG");
 	errlog("--------------------------------------------------");
 	require("phpsqlajax_dbinfo.php");
