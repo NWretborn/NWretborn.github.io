@@ -166,7 +166,7 @@ $max_file_size = 300000; // size in bytes
 				<input type="hidden" id="lonval" name="lng"/>
 			</div>
 			<div  style="font-size: 20px; top: 92%">
-				<input id="picurl" type="hidden" value=lat name="picurl"/>
+				<input id="picurl" type="hidden" value="" name="picurl"/>
 			</div>
 			<br/>
 			
