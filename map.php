@@ -170,9 +170,8 @@ $max_file_size = 2000000; // size in bytes
 			</div>
 			<br/>
 			
-		  <div style="font-size: 20px; margin-top: 8px;">
-			  <br/>
-<input style="color: #29afc4;" id="submit" type="submit" name="submit" value="Submit WiFI" class="tb5"> 
+		  <div style="font-size: 20px; top: 114%">
+<input style="color: #29afc4; margin-top: 10px;" id="submit" type="submit" name="submit" value="Submit WiFI" class="tb5"> 
 					
 </div>
 		  
