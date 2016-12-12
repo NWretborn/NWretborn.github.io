@@ -114,7 +114,6 @@ $max_file_size = 300000; // size in bytes
 				<p style="font-size: 20px; color: #10454e;" id="htmltype" href = test.html></p>
 </div>
 	  <?php
-header('Content-type: image/png');
 echo file_get_contents("http://213.113.7.224/uploaded_files/65.61862140.22.10191726.png");
 ?>
 	  <div  style="font-size: 20px; top: 92%">
