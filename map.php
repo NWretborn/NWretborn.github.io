@@ -59,7 +59,6 @@ $max_file_size = 300000; // size in bytes
 	function postForm(path, formID){
 		var jsonOUT =$(formID).serializeObject();
 		var type = jsonOUT['type'];
-		var picurl = jsonOUT['lat'];//+"."+jsonOUT['lng']+".png";
 		if( type == 'yes' || type == 'no'){
 			var jsonSTR = JSON.stringify(jsonOUT);
 			$.ajax({
@@ -165,7 +164,7 @@ $max_file_size = 300000; // size in bytes
 				<input type="hidden" id="lonval" name="lng"/>
 			</div>
 			<div  style="font-size: 20px; top: 92%">
-				<input type="hidden" value="hej" name="picurl"/>
+				<input type="hidden" value=lat name="picurl"/>
 			</div>
 			<br/>
 			
