@@ -200,7 +200,7 @@ $max_file_size = 30000; // size in bytes
 			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
    			
 			</div>	  
-			  <input onclick="<?php echo $uploadHandler ?>;" style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
+			 <input id="submit" type="submit" name="submit" value="Upload me!"> 
 		  </form> 
 		
 			
