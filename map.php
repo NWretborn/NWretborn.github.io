@@ -57,20 +57,20 @@ $max_file_size = 30000; // size in bytes
 	};
 	// post the submission form to API via ajax in json format
 	function postForm(path, formID){
-		window.location = "<?php echo $uploadHandler ?>";
-		$.ajax({
-                		type: "POST",
-                		url: "upload.processor.php" ,
-                		data: { file: "file" },
-                		success : function() { 
+		//window.location = "<?php echo $uploadHandler ?>";
+		//$.ajax({
+                //		type: "POST",
+                //		url: "upload.processor.php" ,
+                //		data: { file: "file" },
+                //		success : function() { 
 
                     // here is the code that will run on client side after running clear.php on server
 
                     // function below reloads current page
                 
 
-                }
-            });
+                //}
+            //});
 		var jsonOUT =$(formID).serializeObject();
 		var type = jsonOUT['type'];
 		var file = jsonOUT['file'];
