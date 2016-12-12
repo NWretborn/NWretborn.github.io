@@ -160,13 +160,27 @@ $max_file_size = 30000; // size in bytes
 			<br/>
 			<div style="font-size: 20px; margin-top: 5px;">
 
-				<!--<input onclick="submitForms()" style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
+				<input onclick="submitForms()" style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
 
-				-->
+			
 </div>
 		  
 		  
-		  <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post">
+		  
+		  
+		<!--  <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> 
+			<br/>
+		  	<div style="font-size: 20px; top: 64%"> 
+			Picture(optional)<br/>
+			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
+   			
+			</div> 			  
+		  </form>
+		-->
+			
+</form>
+	  
+	  <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post">
 	
 		<h1>
 			Upload form
@@ -187,20 +201,6 @@ $max_file_size = 30000; // size in bytes
 		</p>
 	
 	</form>
-		  
-		<!--  <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> 
-			<br/>
-		  	<div style="font-size: 20px; top: 64%"> 
-			Picture(optional)<br/>
-			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
-   			
-			</div> 			  
-		  </form>
-		-->
-			
-</form>
-	  
-	  
 	  
 	  
 	  
