@@ -107,6 +107,10 @@ $max_file_size = 2000000; // size in bytes
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmlquality" href = test.html></p>
 </div>
+	  <div class="vote">
+    		<img alt="^" title="vote up"   src="/img/upvote.png" />
+    		<img alt="v" title="vote down" src="/img/downvote.png" />
+		</div>
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #79969a;" id="htmlkarma" href = test.html></p>
 </div>
