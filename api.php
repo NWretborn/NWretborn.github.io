@@ -59,7 +59,7 @@
 
 	if($method == "POST" && $table == "user" && $input['password']){
 		$password = $columns['password'];
-		$input['password'] = password_hash($password, PASSWORD_DEFAULT);
+		#$input['password'] = password_hash($password, PASSWORD_DEFAULT);
 		error_log("password after hash: ".$input['password']."\n", 3, "./scrap.log");
 	}
 	error_log("table: ".$table."\n", 3, "./scrap.log");
