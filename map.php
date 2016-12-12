@@ -113,6 +113,7 @@ $max_file_size = 300000000000; // size in bytes
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmltype" href = test.html></p>
 </div>
+	  <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max_file_size ?>"> 
 	  <IMG id="htmlpicurl" SRC="htmlpicurl" ALT="" WIDTH=500 HEIGHT=180>
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmluser" href = test.html></p>
