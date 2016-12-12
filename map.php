@@ -11,7 +11,7 @@ $directory_self = str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_
 $uploadHandler = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.processor.php';
 
 // set a max file size for the html upload form
-$max_file_size = 300000000000; // size in bytes
+$max_file_size = 2000000; // size in bytes
 
 // now echo the html page
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
@@ -113,7 +113,6 @@ $max_file_size = 300000000000; // size in bytes
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmltype" href = test.html></p>
 </div>
-	  <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max_file_size ?>"> 
 	  <IMG id="htmlpicurl" SRC="htmlpicurl" ALT="" WIDTH=500 HEIGHT=180>
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmluser" href = test.html></p>
@@ -155,7 +154,7 @@ $max_file_size = 300000000000; // size in bytes
 			</div>
 		  	<br/>
 		  	<div style="font-size: 20px; top: 64%"> 
-			Picture(optional, max 3mb)<br/>
+			Picture(optional, max 2mb)<br/>
 			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
    			
 			</div>
