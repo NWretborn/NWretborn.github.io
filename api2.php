@@ -32,7 +32,7 @@
 <?php
 	// error-message written to a scrap log in same folder
 	function errlog($message){
-		error_log($message."\n", 3, "./scrap.log");
+		error_log($message."\n", 3, "./scrap2.log");
 	}
 
 ?>
@@ -59,6 +59,9 @@
 
 	// retrieve table and key from the path remove from variable $request
 	$apicall = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
+	
+	errlog("apicall: ".$apicall);
+
 	$key1 = array_shift($request)+0;
 	
 	errlog("shift: ".$key1);
