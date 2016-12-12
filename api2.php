@@ -14,10 +14,11 @@
 	}
 
 	function badcall($isbad, $message){
-		if($isbad)
+		if($isbad){
 			errlog($message);
 			http_response_code(404);
 			die($message);
+		}
 	}
 
 	function hashpass($password){
