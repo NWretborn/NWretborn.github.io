@@ -134,7 +134,7 @@
 
 
 	<div class="center box">
-		<form action="" onsubmit='postForm("../api2.php/adduser", "#registerform"); return false' id="registerform" method="get">
+		<form action="" onsubmit='postForm("../api2.php/adduser", "#registerform"); return false' id="registerform">
 
 			<div style="top: 12%; left: 8%">
 				Username
@@ -172,14 +172,6 @@
 			</div>
 		</form>
 	</div>
-
-	<?php
-		#if($_POST){
-		#	include("api.php");
-		#	echo 	'<script type="text/javascript">alert("yoyo");</script>';
-		#}
-	?>
-
 
 	<span class="logo2" onclick="location.href='index.php'"> </span>
 	<span class="cache" style="background: url(img/logo_blue.png)"></span>
