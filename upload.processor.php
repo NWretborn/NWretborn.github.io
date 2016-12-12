@@ -11,7 +11,7 @@ $directory_self = str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_
 $uploadsDirectory = $_SERVER['DOCUMENT_ROOT'] . $directory_self . 'uploaded_files/';
 
 // make a note of the location of the upload form in case we need it
-$uploadForm = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.form.php';
+$uploadForm = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'map.php';
 
 // make a note of the location of the success page
 $uploadSuccess = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'map.php';
@@ -63,7 +63,7 @@ while(file_exists($uploadFilename = $uploadsDirectory.$now.''.$_FILES[$fieldname
 header('Location: ' . $uploadSuccess);
 
 // make an error handler which will be used if the upload fails
-function error($error, $location = "http://213.113.7.224/map.php", $seconds = 5)
+function error($error, $location = "map.php", $seconds = 5)
 {
 	header("Refresh: $seconds; URL=\"$location\"");
 	echo '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"'."\n".
