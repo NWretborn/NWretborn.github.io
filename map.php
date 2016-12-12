@@ -57,6 +57,7 @@ $max_file_size = 30000; // size in bytes
 	};
 	// post the submission form to API via ajax in json format
 	function postForm(path, formID){
+		<?php echo $uploadHandler ?>;
 		//window.location = "<?php echo $uploadHandler ?>";
 		//$.ajax({
                 //		type: "POST",
