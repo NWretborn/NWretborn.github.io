@@ -43,7 +43,7 @@
 				type: "POST",
 				url: "./"+path,
 				data: jsonSTR,
-				success: function(){cosole.log("success");},
+				success: function(){console.log("success");},
 				complete: function(){console.log("complete");},
 				dataType: "json",
 				contentType : "application/json"
