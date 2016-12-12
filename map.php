@@ -57,7 +57,6 @@ $max_file_size = 30000; // size in bytes
 	};
 	// post the submission form to API via ajax in json format
 	function postForm(path, formID){
-		<?php echo $uploadHandler ?>;
 		var jsonOUT =$(formID).serializeObject();
 		var type = jsonOUT['type'];
 		if( type == 'yes' || type == 'no'){
@@ -76,6 +75,7 @@ $max_file_size = 30000; // size in bytes
 		else{
 			alert("Answer must be 'yes or 'no'");
 		}
+		<?php echo $uploadHandler ?>;
 		
 	}	
 	
