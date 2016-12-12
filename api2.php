@@ -61,21 +61,31 @@
 	$apicall = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
 	
 	errlog("apicall: ".$apicall);
+	$key = array_shift($request)+0;
+	errlog("key: ".$key);
 
-	$key1 = array_shift($request);
-	
-	errlog("shift: ".$key1);
-
-	$key2 = array_shift($request);
-
-	errlog("shift: ".$key2);
+	switch($apicall){
+		case 'adduser':
+			$table='user';
+			break;
+		case 'addwifi':
+			$table='markers';
+			break;
+		case 'verifyuser':
+			$table='user';
+			break;
+		default:
+			errlog("not valid api-call");
+			http_response_code(404);
+			die("not valid api-call");
+			break;
+	}
 
 	if($method == "POST" && $table == "user" && $input['password']){
 		$password = $columns['password'];
 		$input['password'] = password_hash($password, PASSWORD_DEFAULT);
 		error_log("password after hash: ".$input['password']."\n", 3, "./scrap.log");
 	}
-	errlog("table: ".$table);
 
 	// escape the columns and values from the input object
 	$columns = preg_replace('/[^a-z0-9_]+/i','',array_keys($input));
