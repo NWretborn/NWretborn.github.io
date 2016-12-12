@@ -159,10 +159,27 @@ var vm = new Vue({
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmlquality" href = test.html></p>
 </div>
-	  <div id="app">
+	 <div id="app">
   <div class="container-fluid">
     <ul class="list-group">
-      <post v-for="post in posts" :post="post"></post>
+      <post v-for="post in posts" :post="post"></post>a {
+  padding-left: 5px;
+}
+
+/* some simple transitions to make the upvote and downvote
+buttons fade in as a visual cue for the user */
+
+.glyphicon {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.glyphicon:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
     </ul>
   </div>
 </div>
