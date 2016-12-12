@@ -139,7 +139,7 @@ $max_file_size = 30000; // size in bytes
     <!-- ADD NETWORK TAB -->
 	  
 	  
-	  
+	  <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> 
 	  <form action="<?php echo $uploadHandler ?>;" enctype="multipart/form-data" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
 
 			<div style="font-size: 20px;">
@@ -198,15 +198,9 @@ $max_file_size = 30000; // size in bytes
 		
 			
 </form>
-	  
-	 <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> 
-			 		<div style="font-size: 20px; top: 64%"> 
-			Picture(optional)<br/>
-			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
-   			
-			</div>	  
-			 <input id="submit" type="submit" name="submit" value="Upload me!"> 
-		  </form> 
+	   </form> 
+	 
+		 
 	  
   </div>
 </div>
