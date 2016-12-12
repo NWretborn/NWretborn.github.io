@@ -154,7 +154,7 @@ $max_file_size = 30000; // size in bytes
 			</div>
 		  	<br/>
 			<div style="font-size: 20px; top: 52%; left: 8%;">
-				Quality(good, bad, etc)s
+				Quality(good, bad, etc)
 			</div>
 			<div  style="font-size: 20px; top: 52%">
 				<input value="" type="text" name="quality" class="tb5">
