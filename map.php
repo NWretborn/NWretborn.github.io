@@ -8,7 +8,7 @@
 $directory_self = str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_SELF']);
 
 // make a note of the location of the upload handler
-$uploadHandler = 'http://' . $_SERVER['method="post" enctype="multipart/form-data"'] . $directory_self . 'upload.processor.php';
+$uploadHandler = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.processor.php';
 
 // set a max file size for the html upload form
 $max_file_size = 30000; // size in bytes
