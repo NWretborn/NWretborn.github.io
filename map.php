@@ -57,21 +57,6 @@ $max_file_size = 300000; // size in bytes
 	};
 	// post the submission form to API via ajax in json format
 	function postForm(path, formID){
-		<?php echo $uploadHandler ?>;
-		//window.location = "<?php echo $uploadHandler ?>";
-		//$.ajax({
-                //		type: "POST",
-                //		url: "upload.processor.php" ,
-                //		data: { file: "file" },
-                //		success : function() { 
-
-                    // here is the code that will run on client side after running clear.php on server
-
-                    // function below reloads current page
-                
-
-                //}
-            //});
 		var jsonOUT =$(formID).serializeObject();
 		var type = jsonOUT['type'];
 		if( type == 'yes' || type == 'no'){
@@ -86,8 +71,7 @@ $max_file_size = 300000; // size in bytes
 			});
 			
 			window.alert("Network added!");
-			<?php echo $uploadHandler ?>
-			//window.location = "http://213.113.7.224/map.php";
+			window.location = "http://213.113.7.224/map.php";
 		}
 		else{
 			alert("Answer must be 'yes or 'no'");
@@ -136,7 +120,7 @@ $max_file_size = 300000; // size in bytes
     <!-- ADD NETWORK TAB -->
 	  
 	  
-	  <form id="registerform" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit='postForm("../api.php/markers", "#registerform"); return false' method="post">
+	  <form id="registerform" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit='postForm("../api.php/markers", "#registerform")' method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
