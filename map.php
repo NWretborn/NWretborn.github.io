@@ -37,6 +37,58 @@ $max_file_size = 2000000; // size in bytes
 	<script src="libs/std.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places"async defer></script>
 <script type="text/javascript">
+
+	
+// make json object from serialized array of html form
+
+// Get the element with id="defaultOpen" and click on it
+	$.fn.serializeObject = function() {
+		var o = {};
+		var a = this.serializeArray();
+		$.each(a, function() {
+			if (o[this.name]) {
+				if (!o[this.name].push) {
+					o[this.name] = [o[this.name]];
+				}
+				o[this.name].push(this.value || '');
+			} else {
+				o[this.name] = this.value || '';
+			}
+		});
+		return o;
+	};
+	// post the submission form to API via ajax in json format
+	function postForm(path, formID){
+		var picurl = document.getElementById("latval").value+"."+document.getElementById("lonval").value+".png";
+   		document.getElementById("picurl").value = picurl;
+		var jsonOUT =$(formID).serializeObject();
+		var type = jsonOUT['type'];
+		if( type == 'yes' || type == 'no'){
+			var jsonSTR = JSON.stringify(jsonOUT);
+			$.ajax({
+				type: "POST",
+				url: "./"+path,
+				data: jsonSTR,
+				success: function(){alert("Network submitted!");},
+				dataType: "json",
+				contentType : "application/json"
+			});
+			
+			window.alert("Network added!");
+			window.location = "http://213.113.7.224/map.php";
+		}
+		else{
+			alert("Answer must be 'yes or 'no'");
+		}
+		
+		
+	}	
+	
+</script>
+<body onload="load(); openTab(event, 'viewNetwork');">
+	
+<script>
+	<script type="text/javascript">
 	
 	Vue.component('post', {
   template: "#post-template",
@@ -87,56 +139,7 @@ var vm = new Vue({
 			}]
   }
 });
-	
-	
-// make json object from serialized array of html form
-
-// Get the element with id="defaultOpen" and click on it
-	$.fn.serializeObject = function() {
-		var o = {};
-		var a = this.serializeArray();
-		$.each(a, function() {
-			if (o[this.name]) {
-				if (!o[this.name].push) {
-					o[this.name] = [o[this.name]];
-				}
-				o[this.name].push(this.value || '');
-			} else {
-				o[this.name] = this.value || '';
-			}
-		});
-		return o;
-	};
-	// post the submission form to API via ajax in json format
-	function postForm(path, formID){
-		var picurl = document.getElementById("latval").value+"."+document.getElementById("lonval").value+".png";
-   		document.getElementById("picurl").value = picurl;
-		var jsonOUT =$(formID).serializeObject();
-		var type = jsonOUT['type'];
-		if( type == 'yes' || type == 'no'){
-			var jsonSTR = JSON.stringify(jsonOUT);
-			$.ajax({
-				type: "POST",
-				url: "./"+path,
-				data: jsonSTR,
-				success: function(){alert("Network submitted!");},
-				dataType: "json",
-				contentType : "application/json"
-			});
-			
-			window.alert("Network added!");
-			window.location = "http://213.113.7.224/map.php";
-		}
-		else{
-			alert("Answer must be 'yes or 'no'");
-		}
-		
-		
-	}	
-	
-</script>
-<body onload="load(); openTab(event, 'viewNetwork');">
-	
+	</script>
 
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
 <div class="menu_box";>
