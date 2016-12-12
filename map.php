@@ -185,9 +185,9 @@ $max_file_size = 30000; // size in bytes
 			</div>
 			<br/>
 			<div style="font-size: 20px; margin-top: 5px;">
-
-				<input onclick="<?php echo $uploadHandler ?>;" style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
-
+<input id="submit" type="submit" name="submit" value="Upload me!"> 
+				<!--<input onclick="<?php echo $uploadHandler ?>;" style="margin-top: 5px;" type="submit" value="Submit" name="register" class="tb4">
+-->
 			
 </div>
 		  
