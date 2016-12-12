@@ -49,7 +49,7 @@ isset($_POST['submit'])
 // make a unique filename for the uploaded file and check it is 
 // not taken... if it is keep trying until we find a vacant one
 //$now = time();
-$now = 'lat';
+$now = 'latval';
 while(file_exists($uploadFilename = $uploadsDirectory.$now.'-'.$_FILES[$fieldname]['name']))
 {
 	$now++;
