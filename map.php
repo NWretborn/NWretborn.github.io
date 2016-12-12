@@ -194,7 +194,12 @@ $max_file_size = 30000; // size in bytes
 		  
 		  
 		  
-		  <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> 
+		  
+		
+			
+</form>
+	  
+	 <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> 
 			 		<div style="font-size: 20px; top: 64%"> 
 			Picture(optional)<br/>
 			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
@@ -202,11 +207,6 @@ $max_file_size = 30000; // size in bytes
 			</div>	  
 			 <input id="submit" type="submit" name="submit" value="Upload me!"> 
 		  </form> 
-		
-			
-</form>
-	  
-	 
 	  
   </div>
 </div>
