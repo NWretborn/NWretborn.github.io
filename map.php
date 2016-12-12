@@ -216,6 +216,8 @@ submitForms = function(){
     document.getElementById("Upload").submit();
 }
 
+document.getElementById("picurl").src = htmlpicurl;
+
 </script>
 	
 	
