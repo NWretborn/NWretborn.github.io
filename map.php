@@ -175,12 +175,12 @@ $max_file_size = 30000; // size in bytes
 			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
    			
 			</div> 			  
-		  </form>
+		  </form> 
 		-->
 			
 </form>
 	  
-	  <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post">
+	  <form id="Upload" action="" enctype="multipart/form-data" method="post">
 	
 		<h1>
 			Upload form
