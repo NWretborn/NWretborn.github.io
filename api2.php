@@ -62,11 +62,11 @@
 	
 	errlog("apicall: ".$apicall);
 
-	$key1 = array_shift($request)+0;
+	$key1 = array_shift($request);
 	
 	errlog("shift: ".$key1);
 
-	$key2 = array_shift($request)+0;
+	$key2 = array_shift($request);
 
 	errlog("shift: ".$key2);
 
