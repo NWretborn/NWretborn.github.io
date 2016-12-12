@@ -56,7 +56,7 @@
 	// get the HTTP method, path and body of the request
 	$method = $_SERVER['REQUEST_METHOD'];
 
-	errlog(basename($_SERVER['PHP_SELF'])." received ".$method." request");
+	errlog($_SERVER['PHP_SELF']." received ".$method." request");
 
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	$input = json_decode(file_get_contents('php://input'),true);
@@ -65,14 +65,11 @@
 	$link = mysqli_connect('localhost', $username, $password, $database);
 	mysqli_set_charset($link,'utf8');
 
-	errlog("path-info".$_SERVER['PATH_INFO']);
-
 	// retrieve table and key from the path remove from variable $request
 	$apicall = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
 	
 	errlog("apicall: ".$apicall);
 	$key = array_shift($request)+0;
-	errlog("key: ".$key);
 
 	switch($apicall){
 		case 'adduser':
