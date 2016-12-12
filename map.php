@@ -70,7 +70,9 @@ $max_file_size = 30000; // size in bytes
 				contentType : "application/json"
 			});
 			window.alert("Network added!");
+			window.onload = function(){
 			submitForms();
+			}
 			window.location = "http://213.113.7.224/map.php";
 		}
 		else{
