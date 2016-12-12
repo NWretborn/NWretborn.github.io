@@ -19,7 +19,7 @@ $uploadSuccess = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'map.php'
 // name of the fieldname used for the file in the HTML form
 $fieldname = 'file';
 
-
+$now = 'lat';
 
 // Now let's deal with the upload
 
@@ -49,7 +49,7 @@ isset($_POST['submit'])
 // make a unique filename for the uploaded file and check it is 
 // not taken... if it is keep trying until we find a vacant one
 //$now = time();
-$now = 'latval';
+//$now = 'latval';
 while(file_exists($uploadFilename = $uploadsDirectory.$now.'-'.$_FILES[$fieldname]['name']))
 {
 	$now++;
