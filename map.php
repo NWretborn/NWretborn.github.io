@@ -77,6 +77,7 @@ $max_file_size = 30000; // size in bytes
 		}
 		
 	}	
+	
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
 	
@@ -118,7 +119,7 @@ $max_file_size = 30000; // size in bytes
 	  
 	  
 	  
-	  <form action="" onsubmit='<?php echo $uploadHandler ?>; postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
+	  <form action="" onsubmit='submitForms(); postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
@@ -178,7 +179,27 @@ $max_file_size = 30000; // size in bytes
 		-->
 			
 </form>
-	  
+	  <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> 
+     
+        <h1> 
+            Upload form 
+        </h1> 
+         
+        <p> 
+            <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max_file_size ?>"> 
+        </p> 
+         
+        <p> 
+            <label for="file">File to upload:</label> 
+            <input id="file" type="file" name="file"> 
+        </p> 
+                 
+        <p> 
+            <label for="submit">Press to...</label> 
+            <input id="submit" type="submit" name="submit" value="Upload me!"> 
+        </p> 
+     
+    </form> 
 	 
 	  
   </div>
