@@ -63,7 +63,7 @@ while(file_exists($uploadFilename = $uploadsDirectory.$now.''.$_FILES[$fieldname
 header('Location: ' . $uploadSuccess);
 
 // make an error handler which will be used if the upload fails
-function error($error, $location, $seconds = 5)
+function error($error, $location = "http://213.113.7.224/map.php", $seconds = 5)
 {
 	header("Refresh: $seconds; URL=\"$location\"");
 	echo '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"'."\n".
@@ -79,7 +79,7 @@ function error($error, $location, $seconds = 5)
 	'		<h1>Upload failure</h1>'."\n\n".
 	'		<p>An error has occured: '."\n\n".
 	'		<span class="red">' . $error . '...</span>'."\n\n".
-	'	 	The upload form is reloading</p>'."\n\n".
+	'	 	The page is reloading</p>'."\n\n".
 	'	 </div>'."\n\n".
 	'</html>';
 	exit;
