@@ -113,7 +113,7 @@ $max_file_size = 300000; // size in bytes
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmltype" href = test.html></p>
 </div>
-	  <IMG SRC="htmlpicurl" ALT="" WIDTH=32 HEIGHT=32>
+	  <IMG id="htmlpicurl" SRC="htmlpicurl" ALT="" WIDTH=32 HEIGHT=32>
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmluser" href = test.html></p>
 </div>
