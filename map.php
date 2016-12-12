@@ -69,7 +69,7 @@ $max_file_size = 30000; // size in bytes
 				dataType: "json",
 				contentType : "application/json"
 			});
-			$.post($("Upload").attr("action"), $("Upload").serialize();
+			$.post($("Upload").attr("action"), $("Upload").serialize());
 			window.alert("Network added!");
 			window.location = "http://213.113.7.224/map.php";
 		}
