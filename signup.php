@@ -39,6 +39,7 @@
 		if( pass == rep){
 			delete jsonOUT['passwordrep'];
 			var jsonSTR = JSON.stringify(jsonOUT);
+			console.log("jsonOUT: " + jsonSTR);
 			$.ajax({
 				type: "POST",
 				url: "./"+path,
