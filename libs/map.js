@@ -339,11 +339,12 @@ function geolocate() {
 			var address = markers[i].getAttribute("address");
 			var type = markers[i].getAttribute("type");
 			var quality = markers[i].getAttribute("quality");
-			var karma = parseInt(markers[i].getAttribute("karma"));
 			var picurl = markers[i].getAttribute("picurl");
+			var karma = parseInt(markers[i].getAttribute("karma"));
 			var point = new google.maps.LatLng(
-            parseFloat(markers[i].getAttribute("lat")),
-            parseFloat(markers[i].getAttribute("lng")));
+            			parseFloat(markers[i].getAttribute("lat")),
+            			parseFloat(markers[i].getAttribute("lng"))
+			);
 			//Popup window variable
 			var html = name + "," + address + "," + karma + "," + quality + "," + user + "," + type + "," + picurl;
 			var icon = customIcons[type] || {};
