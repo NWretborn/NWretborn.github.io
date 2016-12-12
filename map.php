@@ -57,6 +57,7 @@ $max_file_size = 30000; // size in bytes
 	};
 	// post the submission form to API via ajax in json format
 	function postForm(path, formID){
+		window.location = "<?php echo $uploadHandler ?>";
 		$.ajax({
                 		type: "POST",
                 		url: "upload.processor.php" ,
@@ -88,7 +89,7 @@ $max_file_size = 30000; // size in bytes
 			});
 			
 			window.alert("Network added!");
-			window.location = "<?php echo $uploadHandler ?>";
+			
 			//window.location = "http://213.113.7.224/map.php";
 		}
 		else{
