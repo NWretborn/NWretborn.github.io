@@ -10,7 +10,17 @@ body{
 	-moz-box-sizing:border-box;
 }
 
+.vote
+{
+    width: 15px;
+    float: left; clear: left;
+}
 
+.vote img
+{
+    display: block;
+    float: none; clear: both;
+}
 /* webkil-scrollbar acts globally here on any overflow with scroll */
 
 ::-webkit-scrollbar {
