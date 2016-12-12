@@ -87,7 +87,6 @@ $max_file_size = 2000000; // size in bytes
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
 	
-<script>
 	<script type="text/javascript">
 	
 	Vue.component('post', {
