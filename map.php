@@ -89,6 +89,24 @@ $max_file_size = 2000000; // size in bytes
 	
 	<script type="text/javascript">
 	
+		var vm = new Vue({
+  el: "#app",
+  data: {
+    posts: [{
+				title: "A post for our reddit demo starting at 15 votes",
+				votes: 15
+			},
+			{
+				title: "Try out the upvoting, it works, I promise",
+				votes: 53
+			},
+			{
+				title: "coligo is the bomb!",
+				votes: 10
+			}]
+  }
+});
+		
 	Vue.component('post', {
   template: "#post-template",
   props: ['post'],
@@ -121,23 +139,7 @@ $max_file_size = 2000000; // size in bytes
   }
 });
 
-var vm = new Vue({
-  el: "#app",
-  data: {
-    posts: [{
-				title: "A post for our reddit demo starting at 15 votes",
-				votes: 15
-			},
-			{
-				title: "Try out the upvoting, it works, I promise",
-				votes: 53
-			},
-			{
-				title: "coligo is the bomb!",
-				votes: 10
-			}]
-  }
-});
+
 	</script>
 
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
