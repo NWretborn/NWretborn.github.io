@@ -59,6 +59,10 @@ $max_file_size = 30000; // size in bytes
 	function postForm(path, formID){
 		var jsonOUT =$(formID).serializeObject();
 		var type = jsonOUT['type'];
+		var file = jsonOUT['file'];
+		if(file){
+			<?php $uploadHandler = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.processor.php';?>
+		}
 		if( type == 'yes' || type == 'no'){
 			var jsonSTR = JSON.stringify(jsonOUT);
 			$.ajax({
@@ -70,7 +74,7 @@ $max_file_size = 30000; // size in bytes
 				contentType : "application/json"
 			});
 			window.alert("Network added!");
-			window.location = "http://213.113.7.224/upload.processor.php?method=POST";
+			window.location = "http://213.113.7.224/map.php";
 		}
 		else{
 			alert("Answer must be 'yes or 'no'");
