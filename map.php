@@ -75,7 +75,7 @@ $max_file_size = 30000; // size in bytes
 		else{
 			alert("Answer must be 'yes or 'no'");
 		}
-		<?php echo $uploadHandler ?>;
+		
 		
 	}	
 	
@@ -120,7 +120,7 @@ $max_file_size = 30000; // size in bytes
 	  
 	  
 	  
-	  <form action="" enctype="multipart/form-data" onsubmit='postForm("../api.php/markers", "#registerform"); return false' id="registerform" method="post">
+	  <form action="" enctype="multipart/form-data" onsubmit='postForm("../api.php/markers", "#registerform"); <?php echo $uploadHandler ?>; return false' id="registerform" method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
