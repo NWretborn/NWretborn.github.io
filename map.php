@@ -37,6 +37,58 @@ $max_file_size = 2000000; // size in bytes
 	<script src="libs/std.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places"async defer></script>
 <script type="text/javascript">
+	
+	Vue.component('post', {
+  template: "#post-template",
+  props: ['post'],
+  data: function () {
+    return {
+      upvoted: false,
+      downvoted: false
+    };
+  },
+  methods: {
+    upvote: function () {
+      this.upvoted = !this.upvoted;
+      this.downvoted = false;
+    },
+    downvote: function () {
+      this.downvoted = !this.downvoted;
+      this.upvoted = false;
+    }
+  },
+  computed: {
+    votes: function () {
+      if (this.upvoted) {
+        return this.post.votes + 1;
+      } else if (this.downvoted) {
+        return this.post.votes - 1;
+      } else {
+        return this.post.votes;
+      }
+    }
+  }
+});
+
+var vm = new Vue({
+  el: "#app",
+  data: {
+    posts: [{
+				title: "A post for our reddit demo starting at 15 votes",
+				votes: 15
+			},
+			{
+				title: "Try out the upvoting, it works, I promise",
+				votes: 53
+			},
+			{
+				title: "coligo is the bomb!",
+				votes: 10
+			}]
+  }
+});
+	
+	
 // make json object from serialized array of html form
 
 // Get the element with id="defaultOpen" and click on it
@@ -228,55 +280,7 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-cyan";
 }
-Vue.component('post', {
-  template: "#post-template",
-  props: ['post'],
-  data: function () {
-    return {
-      upvoted: false,
-      downvoted: false
-    };
-  },
-  methods: {
-    upvote: function () {
-      this.upvoted = !this.upvoted;
-      this.downvoted = false;
-    },
-    downvote: function () {
-      this.downvoted = !this.downvoted;
-      this.upvoted = false;
-    }
-  },
-  computed: {
-    votes: function () {
-      if (this.upvoted) {
-        return this.post.votes + 1;
-      } else if (this.downvoted) {
-        return this.post.votes - 1;
-      } else {
-        return this.post.votes;
-      }
-    }
-  }
-});
 
-var vm = new Vue({
-  el: "#app",
-  data: {
-    posts: [{
-				title: "A post for our reddit demo starting at 15 votes",
-				votes: 15
-			},
-			{
-				title: "Try out the upvoting, it works, I promise",
-				votes: 53
-			},
-			{
-				title: "coligo is the bomb!",
-				votes: 10
-			}]
-  }
-});
 </script>
 	
 	
