@@ -164,9 +164,6 @@ $max_file_size = 300000; // size in bytes
 		  	<div  style="font-size: 20px; top: 92%">
 				<input type="hidden" id="lonval" name="lng"/>
 			</div>
-		  	<div  style="font-size: 20px; top: 92%">
-				<input type="hidden" id="lonval" name="lng"/>
-			</div>
 			<br/>
 			
 		  <div style="font-size: 20px; margin-top: 5px;">
