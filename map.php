@@ -73,10 +73,6 @@ $max_file_size = 30000; // size in bytes
             //});
 		var jsonOUT =$(formID).serializeObject();
 		var type = jsonOUT['type'];
-		var file = jsonOUT['file'];
-		if(file){
-			<?php $uploadHandler = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.processor.php';?>
-		}
 		if( type == 'yes' || type == 'no'){
 			var jsonSTR = JSON.stringify(jsonOUT);
 			$.ajax({
