@@ -42,13 +42,11 @@
 	errlog("STARTLOG");
 	errlog("--------------------------------------------------");
 	require("phpsqlajax_dbinfo.php");
-	#ini_set('display_errors', 1);
-	#ini_set('display_startup_errors', 1);
 
 	// get the HTTP method, path and body of the request
 	$method = $_SERVER['REQUEST_METHOD'];
 
-	error_log("api2.php received ".$method." request\n", 3, "./scrap.log");
+	errlog(basename($_SERVER['PHP_SELF'])." received ".$method." request\n");
 
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	$input = json_decode(file_get_contents('php://input'),true);
@@ -60,9 +58,12 @@
 	errlog("path-info".$_SERVER['PATH_INFO']);
 
 	// retrieve table and key from the path remove from variable $request
-	$table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
-	$key = array_shift($request)+0;
+	$apicall = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
+	$key1 = array_shift($request)+0;
+	$key2 = array_shift($request)+0;
 
+	errlog("shift: ".$key1);
+	errlog("shift: ".$key2);
 
 	if($method == "POST" && $table == "user" && $input['password']){
 		$password = $columns['password'];
