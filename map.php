@@ -215,8 +215,8 @@ function openTab(evt, tabName) {
 submitForms = function(){
     document.getElementById("Upload").submit();
 }
-
-document.getElementById("picurl").src = htmlpicurl;
+var picurl = document.getElementById("latval").value+"."+document.getElementById("lonval").value+".png";
+document.getElementById("picurl").src = picurl;
 
 </script>
 	
