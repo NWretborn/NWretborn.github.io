@@ -50,7 +50,7 @@ isset($_POST['submit'])
 // not taken... if it is keep trying until we find a vacant one
 //$now = time();
 //$now = 'latval';
-while(file_exists($uploadFilename = $uploadsDirectory.$now.'-'.$_FILES[$fieldname]['name']))
+while(file_exists($uploadFilename = $uploadsDirectory.$now.'-'.$_FILES[$fieldname]['']))
 {
 	$now++;
 }
