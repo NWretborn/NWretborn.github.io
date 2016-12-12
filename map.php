@@ -171,7 +171,7 @@ $max_file_size = 2000000; // size in bytes
 			<br/>
 			
 		  <div style="font-size: 20px; margin-top: 5px;">
-<input id="submit" type="submit" name="submit" value="Upload me!"> 
+<input id="submit" type="submit" name="submit" value="Submit WiFI" class="tb5"> 
 					
 </div>
 		  
