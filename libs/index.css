@@ -1,0 +1,18 @@
+:root{
+	--SCALE_FONT: 0.8;
+	--FONT_HEIGHT: calc( var(--SCALE_FONT)*(1.3vw + 0.7vh));
+}
+
+#tothemap{
+	position:absolute;
+	font-size:var(--FONT_HEIGHT);
+	margin-top: calc(0.3*var(--FONT_HEIGHT));	/* align vertically with text */
+	text-align: center;
+	background-color: #10454e;
+	padding: 0.5vh;
+	border-radius: calc(2vw + 2vh);
+	border: 0vh;								/* hide radius-border */
+
+	box-sizing:border-box;						/* correct width */
+    	-moz-box-sizing:border-box;					/* mozilla support */
+}
