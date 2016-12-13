@@ -62,7 +62,7 @@
 	}
 	
 	function logout(){
-		$.post( "api.php", { logout: "logoutplease"} ).done( function(){
+		$.post( "api.php/logout", { logout: "logoutplease"} ).done( function(){
 			location.reload();}	
 		);
 	}
