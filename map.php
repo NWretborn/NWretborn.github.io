@@ -172,7 +172,7 @@ $max_file_size = 2000000; // size in bytes
     </ul>
   </div>
 </div>
-
+<div>
 <template id="post-template">
 	<li class="list-group-item">
 		<i class="glyphicon glyphicon-chevron-up" @click="upvote"></i>
@@ -181,6 +181,7 @@ $max_file_size = 2000000; // size in bytes
 		<a>{{ post.title }}</a>
 	</li>
 </template>
+	  </div>
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #79969a;" id="htmlkarma" href = test.html></p>
 </div>
