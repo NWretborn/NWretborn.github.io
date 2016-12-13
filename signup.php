@@ -44,7 +44,7 @@
 				url: "./"+path,
 				data: jsonSTR,
 				success: function(){console.log("success");},
-				complete: function(){console.log("complete");},
+				complete: function(){console.log("complete"); document.location="index.php";},
 				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);}, 
 				dataType: "json",
 				contentType : "application/json"
