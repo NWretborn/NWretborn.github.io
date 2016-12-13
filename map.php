@@ -19,7 +19,7 @@ $max_file_size = 2000000; // size in bytes
 
 <!DOCTYPE html>
 <html>
-<!-- http://stackoverflow.com/questions/19542015/cant-get-jquery-upvote-to-work-jquery-plugin -->
+<!-- http://www.w3bees.com/2013/09/voting-system-with-jquery-php-and-mysql.html -->
 	
 	
 	
