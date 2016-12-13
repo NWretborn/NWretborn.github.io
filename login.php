@@ -15,9 +15,9 @@
 
 <style>
 	body{
-		background-color: black;
+		/* background-color: black;*/
 		/* background-image: url("index_background.png"); */
-		background-size:cover;
+		/*background-size:cover; */
 	}
 </style>
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
