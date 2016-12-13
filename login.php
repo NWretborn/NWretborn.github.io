@@ -12,14 +12,7 @@
 	ini_set("log_errors", 1);
 	ini_set("error_log", "./error.log");	
 ?>
-
-<style>
-	body{
-		background-color: white;
-		/* background-image: url("index_background.png"); */
-		background-size:cover;
-	}
-</style>
+	
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 	// make json object from serialized array of html form
