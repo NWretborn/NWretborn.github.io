@@ -65,7 +65,7 @@
 	
 <body>
 	<?php
-		if(isset( $_SESSION('username') ) ){
+		if(isset( $_SESSION['username'] ) ){
 			include("logged_in.php");
 		}
 		else{
