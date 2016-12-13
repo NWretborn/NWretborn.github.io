@@ -133,10 +133,11 @@
 
 	// print results, insert id or affected row count
 	if ($method == 'GET') {
+		$fetchedresult = array();
 		if (!$key) echo '[';
 		for ($i=0;$i<mysqli_num_rows($result);$i++) {
-			
-			echo ($i>0?',':'').json_encode(mysqli_fetch_object($result));
+			$fetchedresult[] = mysqli_fetch_object($result);
+			echo ($i>0?',':'').json_encode($fetchedresult[$i]);
 			//errlog("RESULT: ".($i>0?',':'').json_encode(mysqli_fetch_object($result)));
 			//errlog("RESULT2: ".mysqli_fetch_object($result));
 		}
