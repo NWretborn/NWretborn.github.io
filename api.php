@@ -62,7 +62,7 @@
 
 	// retrieve table and key from the path remove from variable $request
 	$apicall = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
-	$key = array_shift($request)+0;	// "array_shift($request)+0" before
+	$key = array_shift($request);	// "array_shift($request)+0" before
 
 	// initial modifications based on what call is made
 	switch($apicall){
@@ -103,7 +103,7 @@
 	// create SQL based on HTTP method
 	switch ($method) {
 		case 'GET':
-			$sql = "select * from `$table`".($key?" WHERE $id=$key[0]":'');
+			$sql = "select * from `$table`".($key?" WHERE $id=$key":'');
 			break;
 		case 'PUT':
 			$sql = "update `$table` set $set where $id=$key";
