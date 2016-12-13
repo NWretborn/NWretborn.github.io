@@ -177,7 +177,7 @@
 			errlog("password: ".$input['password']);
 			if(verifypass($_GET['password'], $obj->password)){
 				errlog("password ok!");
-				$_SESSION['username'] = $obj->username;
+				$_SESSION['username'] = $obj->name;
 				exit();
 			}
 			break;
