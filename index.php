@@ -64,11 +64,12 @@
 <body>
 	<?php
 		if(isset( $_SESSION('username') ) ){
-			include('logged_in.php');
+			include("logged_in.php");
 		}
 		else{
-			include('login_box.php');
+			include("login_box.php");
 		}
+		echo "hello php-world";
 	
 	?>
 	
