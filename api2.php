@@ -4,7 +4,7 @@
 
 <!--  
 	login:
-		url:	api.php/login/id
+		url:	api.php/login/name 	//where name is username
 		data: 	json string with a 'password' column with unhashed 
 			value of password.
 	adduser:
@@ -18,6 +18,9 @@
 	ini_set("error_log", "./error.log");
 	#ini_set('display_errors', 1);
 	#ini_set('display_startup_errors', 1);
+	
+	// default id to go through database
+	$id='id';
 
 	// error-message written to a scrap log in same folder
 	function errlog($message){
@@ -71,8 +74,9 @@
 			badcall($method!='POST', "use POST for addwifi");
 			break;
 		case 'login':
-			$table='user';
 			badcall($method!='GET', "use GET for login");
+			$table='user';
+			$id='name';
 			break;
 		default:
 			badcall(True, "not an api-function");
@@ -96,7 +100,7 @@
 	// create SQL based on HTTP method
 	switch ($method) {
 		case 'GET':
-			$sql = "select * from `$table`".($key?" WHERE id=$key":'');
+			$sql = "select * from `$table`".($key?" WHERE $id=$key":'');
 			break;
 		case 'PUT':
 			$sql = "update `$table` set $set where id=$key";
