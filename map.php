@@ -86,7 +86,7 @@ $max_file_size = 2000000; // size in bytes
 		if( type == 'yes' || type == 'no'){
 			$.ajax({
 				type: "POST",
-				url: "./"+path,
+				url: "./api.php/wifipic",
 				data: {picname: picurl},
 				success: function(){alert("Network submitted!");},
 				dataType: "json",
