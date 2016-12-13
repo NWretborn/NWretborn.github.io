@@ -148,9 +148,6 @@
 		http_response_code(404);
 		die(mysqli_error());
 	}
-	else{
-		http_response_code(200);
-	}
 
 	$resultarray = array();
 	// print results, insert id or affected row count
