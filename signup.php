@@ -67,67 +67,7 @@
 <meta http-equiv="Content-Language" content="sv">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <title>WiFinder - Signup</title>
-<style type="text/css">
-	#c{	text-align: center;	}
-	#l{	text-align: left;	}
-	#r{	text-align: right;	}
 
-	/* Rounded Corner */
-	.tb5 {
-		background-color: #10454e;
-		border:1px solid #10454e;
-		border-radius:20px;
-		font-size:1.5vw;
-		font-family: monospace;
-	}
-	.tb4 {
-
-		background-color: #10454e;
-		border:0px solid #29afc4;
-		border-radius:20px;
-		font-size: 1.5vw;
-	}
-	.center{
-
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-	}
-	.hCenter{
-		left: 50%;
-		transform: translate(-50%, 0);
-	}
-	div{
-		font-size:1.5vw;
-		position: fixed;
-	}
-	.box{
-		height: 35vh;
-		color: #79969a;
-		font-family: monospace;
-		background-color: black;
-		width: 40vw;
-		border: 2px solid #10454e;
-		border-radius:10px;
-		padding: 20px;
-	}
-	.tb4:hover{
-		border:2px solid #29afc4;
-		border-radius: 20px;
-	}
-	input:focus {
-		border: 2px solid #29afc4;
-		border-radius: 20px;
-		outline: none;
-	}
-	.logo{
-		position: fixed;
-		height:15vh;
-		left:8%;
-		bottom:8vw;
-		transform: translate(-50%, 50%);
-	}
-</style>
 </head>
 
 <body>
