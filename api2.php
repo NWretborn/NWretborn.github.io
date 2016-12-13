@@ -139,7 +139,7 @@
 			$obj = mysqli_fetch_object($result);	// append all results to array
 			errlog("result nr $i: ".$obj->password);
 			echo ($i>0?',':'').json_encode($obj);
-			//$resultarray += $obj;
+			$resultarray[$i] = $obj;
 		}
 		if (!$key)
 			echo ']';
