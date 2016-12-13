@@ -175,8 +175,11 @@
 			$obj = $resultarray[0];
 			errlog("hashed: ".$obj->password);
 			errlog("password: ".$input['password']);
-			if(verifypass($_GET['password'], $obj->password))
+			if(verifypass($_GET['password'], $obj->password)){
 				errlog("password ok!");
+				$_SESSION['username'] = $obj->username;
+				exit();
+			}
 			break;
 		default:
 			badcall(True, "not an api-function");
