@@ -40,6 +40,7 @@
 				type: "GET",
 				url: "./"+path,
 				data: jsonSTR,
+				processData: false,
 				success: function(){console.log("success");},
 				complete: function(){console.log("complete");},
 				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);}, 
