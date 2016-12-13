@@ -7,10 +7,17 @@
 		url:	api.php/login/name 	//where name is username, it will be added with quotation marks (works with ID)
 		data: 	password sent to $_GET['password']. Sending a json object with {password: "yourPassword"} works
 
+	logout:
+		url: 	api.php/logout
+
 	adduser:
 		url: 	api.php/adduser
 		data:	json string with columns 'name', 'email' and 
 			'password' with corresponding values.
+
+	addwifi:
+		url: 	api.php/addwifi
+		data: 	...add more info here...
 -->
 
 <?php
