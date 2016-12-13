@@ -22,7 +22,7 @@
 	wifipic:
 		method:	POST
 		url: 	api.php/wifipic
-		data:	send 
+		data:	send picname with $_POST['picname'] and picture with $_FILE['file']
 -->
 
 <?php
@@ -94,6 +94,9 @@
 			badcall($method!='POST', "use POST for addwifi");
 			break;
 		case 'wifipic':
+			errlog("POST picname: ".$_POST['picname']);
+			if(isset($_FILE['file']))
+				errlog("FILE is set!");
 			include('upload.processor.php');
 			exit();
 			break;
