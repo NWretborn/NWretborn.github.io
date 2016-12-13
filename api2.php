@@ -139,6 +139,7 @@
 			$obj = mysqli_fetch_object($result);	// append all results to array
 			errlog("result nr $i: ".$obj->password);
 			echo ($i>0?',':'').json_encode($obj);
+			$resultarray += $obj;
 			//errlog("RESULT: ".($i>0?',':'').json_encode(mysqli_fetch_object($result)));
 			//errlog("RESULT2: ".mysqli_fetch_object($result));
 		}
@@ -164,6 +165,7 @@
 			
 			break;
 		case 'login':
+			errlog("resultarray: ".$resultarray);
 			break;
 		default:
 			badcall(True, "not an api-function");
