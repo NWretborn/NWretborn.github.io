@@ -40,7 +40,7 @@
 			var jsonSTR = JSON.stringify(jsonOUT);
 			console.log("jsonOUT: " + jsonSTR);
 			$.ajax({
-				type: "GET",
+				type: "POST",
 				url: "./"+path,
 				data: jsonSTR,
 				success: function(){console.log("success");},
@@ -129,7 +129,7 @@
 
 
 	<div class="center box">
-		<form action="" onsubmit='postForm("../api.php/adduser", "#registerform"); return false' id="registerform">
+		<form onsubmit='postForm("../api.php/adduser", "#registerform"); return false' id="registerform">
 
 			<div style="top: 12%; left: 8%">
 				Username
