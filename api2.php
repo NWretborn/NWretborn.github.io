@@ -40,10 +40,12 @@
 		return password_hash($password, PASSWORD_DEFAULT);
 	}
 	
-	function verifypass($password){
+	function verifypass($password, $hashed_password){
 		return password_verify($password, $hashed_password);
 	}
+?>
 
+<?php
 	errlog("STARTLOG");
 	errlog("--------------------------------------------------");
 	require("phpsqlajax_dbinfo.php");
@@ -166,7 +168,10 @@
 			errlog("number of elements: ".count($resultarray));
 			badcall(count($resultarray) != 1, "wrong amount of users returned");
 			$obj = $resultarray[0];
-			errlog("resultarray: ".$obj->password);
+			errlog("hashed: ".$obj->password);
+			errlog("password: ".$input['password']);
+			if(verifypass($input['password'], $obj->password))
+				errlog("password ok!");
 			break;
 		default:
 			badcall(True, "not an api-function");
