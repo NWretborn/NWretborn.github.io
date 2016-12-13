@@ -59,8 +59,8 @@
 	$input = file_get_contents('php://input');
 	errlog("input: $input");
 	$input = json_decode($input,true);
-	errlog("get: $_POST");
-
+	errlog("get: $_GET");
+	errlog("getimplode: ".implode("|", $_GET));
 
 	// connect to the mysql database
 	$link = mysqli_connect('localhost', $username, $password, $database);
