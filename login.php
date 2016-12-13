@@ -65,6 +65,7 @@
 <body>
 
 <div class="center box">
+<div class="text_box">
 	<form action="" onsubmit='postForm("../api2.php/login", "#registerform"); return false' id="registerform">
 		<div style="top: 25%; left: 8%">
 			Username
@@ -80,6 +81,7 @@
 			<input value="bird" type="password" name="password" class="tb5">
 		</div>
 	</form>
+</div>
 </div>
 
 <span class="logo2" onclick="location.href='index.php'"> </span>
