@@ -18,6 +18,11 @@
 	addwifi:
 		url: 	api.php/addwifi
 		data: 	...add more info here...
+
+	wifipic:
+		method:	POST
+		url: 	api.php/wifipic
+		data:	send 
 -->
 
 <?php
@@ -88,6 +93,10 @@
 			$table='markers';
 			badcall($method!='POST', "use POST for addwifi");
 			break;
+		case 'wifipic':
+			include('upload.processor.php');
+			exit();
+			break;
 		case 'login':
 			badcall($method!='GET', "use GET for login");
 			$table='user';
@@ -97,7 +106,6 @@
 			errlog("logging out user: ".$_SESSION['username']);
 			unset($_SESSION['username']);
 			exit();
-			die();
 			break;
 		default:
 			badcall(True, "not an api-function");
