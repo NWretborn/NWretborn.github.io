@@ -27,6 +27,7 @@
 		error_log($message."\n", 3, "./scrap2.log");
 	}
 
+	// VERY brutal end-script function
 	function badcall($isbad, $message){
 		if($isbad){
 			errlog($message);
@@ -139,7 +140,6 @@
 			$obj = mysqli_fetch_object($result);	// append all results to array
 			errlog("result nr $i: ".$obj->password);
 			echo ($i>0?',':'').json_encode($obj);
-			$resultarray[$i] = $obj;
 		}
 		if (!$key)
 			echo ']';
@@ -163,6 +163,7 @@
 			
 			break;
 		case 'login':
+			badcall(count($resultarray) != 1, "wrong amount of users returned")
 			$obj = $resultarray[0];
 			errlog("resultarray: ".$obj->password);
 			break;
