@@ -30,8 +30,8 @@
 	
 	// post the submission form to API via ajax in json format
 	function loginForm(){
-		var user = document.getElementById("username");
-		var pass = document.getElementById("password");
+		var user = document.getElementById("username").serialize();
+		var pass = document.getElementById("password").serialize();
 		var path = "api.php/login/"+user;
 		var jsonSTR = "{password: \""+pass+"\"}";
 		if( user && pass ){
