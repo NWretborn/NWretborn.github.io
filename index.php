@@ -35,8 +35,6 @@
 		var path = "api.php/login/"+user;
 		var jsonSTR = "{password: \""+pass+"\"}";
 		if( user && pass ){
-			delete jsonOUT['passwordrep'];
-			var jsonSTR = JSON.stringify(jsonOUT);
 			console.log("jsonOUT: " + jsonSTR);
 			$.ajax({
 				type: "GET",
