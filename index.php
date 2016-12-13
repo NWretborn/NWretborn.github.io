@@ -83,9 +83,8 @@
 	?>
 	
 
-
+	
 	<div class="g-signin2" data-onsuccess="onSignIn"></div>
-
 	<div id="logo" class="index" onclick="location.href='about.php'"> </div>
 	<div class="cache" style="background: url(img/logo_about_gray.png)"></div>
 
