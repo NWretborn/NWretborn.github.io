@@ -138,7 +138,6 @@
 		if (!$key) echo '[';
 		for ($i=0;$i<mysqli_num_rows($result);$i++) {
 			$obj = mysqli_fetch_object($result);	// append all results to array
-			errlog("result nr $i: ".$obj->password);
 			echo ($i>0?',':'').json_encode($obj);
 		}
 		if (!$key)
@@ -164,7 +163,7 @@
 			break;
 		case 'login':
 			errlog("number of elements: ".count($resultarray));
-			badcall(count($resultarray) != 1, "wrong amount of users returned");
+			//badcall(count($resultarray) != 1, "wrong amount of users returned");
 			$obj = $resultarray[0];
 			errlog("resultarray: ".$obj->password);
 			break;
