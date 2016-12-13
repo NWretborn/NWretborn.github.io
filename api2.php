@@ -163,7 +163,8 @@
 			
 			break;
 		case 'login':
-			errlog("resultarray: ".($resultarray[0])->password);
+			$obj = $resultarray[0];
+			errlog("resultarray: ".$obj->password);
 			break;
 		default:
 			badcall(True, "not an api-function");
