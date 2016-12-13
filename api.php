@@ -86,6 +86,12 @@
 			$table='user';
 			$id='name';
 			break;
+		case 'logout':
+			errlog("logging out user: ".$_SESSION['username']);
+			unset($_SESSION['username']);
+			exit();
+			die()
+			break;
 		default:
 			badcall(True, "not an api-function");
 			break;
