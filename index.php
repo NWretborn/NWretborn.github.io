@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 
+<style>
+
+	#password{}
+	#username{}
+	
+</style>
+	
 <head>
 	<meta http-equiv="Content-Language" content="sv">
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
