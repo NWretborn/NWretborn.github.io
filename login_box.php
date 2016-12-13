@@ -22,7 +22,9 @@
 			<input 	type="submit" value="Continue as guest" name="register" 
 					style="top:calc(var(--FONT_HEIGHT)*6.5); left:35%; width:35%; min-width:calc(var(--FONT_HEIGHT)*15/2);">
 		</form>
+		<!--	GOOGLE SIGNOUT
 		<a href="#" onclick="signOut();">Sign out</a>
+		-->
 	</div>
 
 
