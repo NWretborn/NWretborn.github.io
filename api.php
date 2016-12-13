@@ -5,8 +5,8 @@
 <!--  
 	login:
 		url:	api.php/login/name 	//where name is username, it will be added with quotation marks (works with ID)
-		data: 	json string with a 'password' column with unhashed 
-			value of password.
+		data: 	password sent to $_GET['password']. Sending a json object with {password: "yourPassword"} works
+
 	adduser:
 		url: 	api.php/adduser
 		data:	json string with columns 'name', 'email' and 
@@ -57,9 +57,9 @@
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	
 	$input = file_get_contents('php://input');
-	errlog("input: $input");
+	//errlog("input: $input");
 	$input = json_decode($input,true);
-	errlog("get: ".$_GET['password']);
+	//errlog("get: ".$_GET['password']);
 
 	// connect to the mysql database
 	$link = mysqli_connect('localhost', $username, $password, $database);
@@ -175,7 +175,7 @@
 			$obj = $resultarray[0];
 			errlog("hashed: ".$obj->password);
 			errlog("password: ".$input['password']);
-			if(verifypass($input['password'], $obj->password))
+			if(verifypass($_GET['password'], $obj->password))
 				errlog("password ok!");
 			break;
 		default:
