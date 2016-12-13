@@ -103,7 +103,7 @@
 	// create SQL based on HTTP method
 	switch ($method) {
 		case 'GET':
-			$sql = "select * from `$table`".($key?" WHERE $id=$key":'');
+			$sql = "select * from `$table`".($key?" WHERE $id=$key[0]":'');
 			break;
 		case 'PUT':
 			$sql = "update `$table` set $set where $id=$key";
