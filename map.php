@@ -223,7 +223,7 @@ function openTab(evt, tabName) {
 	<span id="logo" class="about" onclick="location.href='index.php'"> </span>
 	<span class="cache" style="background: url(img/logo_blue.png)"></span>
 	<input id="pac-input" class="controls" type="text" placeholder="Search Box">
-	<div id="map" style="width: 70%; height: 950px; left:30%"></div>
+	<div id="map" style="width: 70%; height: 100%; left:30%"></div>		<?php #changed height 950px->100% ?>
 	
 	<span class="logo" class="about" onclick="location.href='index.php'"> </span>
 	<span class="cache" style="background: url(img/logo_blue.png)"></span>
