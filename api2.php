@@ -138,6 +138,7 @@
 		if (!$key) echo '[';
 		for ($i=0;$i<mysqli_num_rows($result);$i++) {
 			$obj = mysqli_fetch_object($result);	// append all results to array
+			$resultarray[$i] = $obj;
 			echo ($i>0?',':'').json_encode($obj);
 		}
 		if (!$key)
