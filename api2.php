@@ -131,14 +131,14 @@
 		http_response_code(200);
 	}
 
+	$resultarray = array();
 	// print results, insert id or affected row count
 	if ($method == 'GET') {
 		if (!$key) echo '[';
 		for ($i=0;$i<mysqli_num_rows($result);$i++) {
-			if($i=0)
-				$firstresult = mysqli_fetch_object($result);	// append all results to array
-			errlog("result nr $i: ".$firstresult->password);
-			echo ($i>0?',':'').json_encode($fetchedresult[$i]);
+			$resultarray[$i] = mysqli_fetch_object($result);	// append all results to array
+			errlog("result nr $i: ".$resultarray[$i]->password);
+			echo ($i>0?',':'').json_encode($resultarray[$i]);
 			//errlog("RESULT: ".($i>0?',':'').json_encode(mysqli_fetch_object($result)));
 			//errlog("RESULT2: ".mysqli_fetch_object($result));
 		}
