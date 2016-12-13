@@ -19,7 +19,7 @@ $max_file_size = 2000000; // size in bytes
 
 <!DOCTYPE html>
 <html>
-<!-- http://www.w3bees.com/2013/09/voting-system-with-jquery-php-and-mysql.html -->
+<!-- http://www.9lessons.info/2009/08/vote-with-jquery-ajax-and-php.html -->
 	
 	
 	
