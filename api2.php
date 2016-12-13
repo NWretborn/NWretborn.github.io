@@ -163,7 +163,7 @@
 			
 			break;
 		case 'login':
-			errlog("resultarray: ".$resultarray);
+			errlog("resultarray: ".$resultarray[0]);
 			break;
 		default:
 			badcall(True, "not an api-function");
