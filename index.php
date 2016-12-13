@@ -30,12 +30,12 @@
 	
 	// post the submission form to API via ajax in json format
 	function loginForm(){
-		var user = document.getElementById("username").serialize();
-		var pass = document.getElementById("password").serialize();
-		var path = "api.php/login/"+user;
-		var jsonSTR = "{password: \""+pass+"\"}";
+		var user = document.getElementById("username");
+		var pass = document.getElementById("password");
+		var path = "api.php/login/" + user.value;
+		var jsonSTR = "{password: \"" + pass.value + "\"}";
+		console.log("jsonOUT: " + jsonSTR);
 		if( user && pass ){
-			console.log("jsonOUT: " + jsonSTR);
 			$.ajax({
 				type: "GET",
 				url: "./"+path,
@@ -46,6 +46,8 @@
 				dataType: "json",
 				contentType : "application/json"
 			});
+			user.value="";
+			pass.value="";
 		}
 		else{
 			console.log("tried to log in without form filled in");
