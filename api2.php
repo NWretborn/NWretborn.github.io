@@ -163,7 +163,7 @@
 			
 			break;
 		case 'login':
-			errlog("resultarray: ".($resultarray[0])->password);
+			echo("resultarray: ".($resultarray[0])->password."\n");
 			break;
 		default:
 			badcall(True, "not an api-function");
