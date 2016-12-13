@@ -59,7 +59,7 @@
 	$input = file_get_contents('php://input');
 	errlog("input: $input");
 	$input = json_decode($input,true);
-	errlog("get: $_GET");
+	errlog("get: $_GET['password']");
 	errlog("getimplode: ".implode("|", $_GET));
 
 	// connect to the mysql database
