@@ -89,23 +89,7 @@ $max_file_size = 2000000; // size in bytes
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js">
 	
-		var vm = new Vue({
-  el: "#app",
-  data: {
-    posts: [{
-				title: "A post for our reddit demo starting at 15 votes",
-				votes: 15
-			},
-			{
-				title: "Try out the upvoting, it works, I promise",
-				votes: 53
-			},
-			{
-				title: "coligo is the bomb!",
-				votes: 10
-			}]
-  }
-});
+		
 		
 	Vue.component('post', {
   template: "#post-template",
@@ -139,6 +123,24 @@ $max_file_size = 2000000; // size in bytes
   }
 });
 
+		
+		var vm = new Vue({
+  el: "#app",
+  data: {
+    posts: [{
+				title: "A post for our reddit demo starting at 15 votes",
+				votes: 15
+			},
+			{
+				title: "Try out the upvoting, it works, I promise",
+				votes: 53
+			},
+			{
+				title: "coligo is the bomb!",
+				votes: 10
+			}]
+  }
+});
 
 	</script>
 
