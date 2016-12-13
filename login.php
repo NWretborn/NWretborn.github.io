@@ -70,14 +70,14 @@
 		<div style="top: 25%; left: 8%">
 			Username
 		</div>
-		<div class="hCenter" style="top: 25%">
+		<div class="center" style="top: 25%">
 			<input type="text" name="name" class="tb5" value="bread">
 		</div>
 		<br/>
 		<div style="top: 50%; left: 8%;">
 			Password
 		</div>
-		<div class="hCenter" style="top: 50%">
+		<div class="center" style="top: 50%">
 			<input value="bird" type="password" name="password" class="tb5">
 		</div>
 	</form>
