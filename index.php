@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-<style>
-
-	#password{}
-	#username{}
-	
-</style>
 	
 <head>
 	<meta http-equiv="Content-Language" content="sv">
@@ -70,10 +63,10 @@
 	<div class="box center">
 		<div class="text_box">
 
-			<div id="username" class="left text" style="top:calc(var(--FONT_HEIGHT)*1.4);">
+			<div class="left text" style="top:calc(var(--FONT_HEIGHT)*1.4);">
 				Username
 			</div>
-			<input type="text" name="username"
+			<input id="username" type="text" name="username"
 			style="top:calc(var(--FONT_HEIGHT)*1.4); width:65%; right:0.2vh;">
 
 			<div class="left text" style="top:calc(var(--FONT_HEIGHT)*3.7);">
