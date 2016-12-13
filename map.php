@@ -29,6 +29,7 @@ $max_file_size = 2000000; // size in bytes
     	<meta charset="utf-8">
 	<title>WiFinder</title>
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
+	<link rel="stylesheet" type="text/css" href="libs/map.css">
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
 	
@@ -38,6 +39,7 @@ $max_file_size = 2000000; // size in bytes
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places"async defer></script>
 <script type="text/javascript">
 
+	
 	
 // make json object from serialized array of html form
 
