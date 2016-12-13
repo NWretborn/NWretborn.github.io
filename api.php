@@ -14,6 +14,7 @@
 -->
 
 <?php
+	ini_set("allow_url_fopen", true);
 	ini_set("log_errors", 1);
 	ini_set("error_log", "./error.log");
 	#ini_set('display_errors', 1);
