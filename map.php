@@ -86,6 +86,14 @@ $max_file_size = 2000000; // size in bytes
 		
 	}	
 	
+	function uploadPicture(){
+		$.ajax({
+			type: "POST",
+			url: "./api.php/wifipic",
+			complete: function(){console.log("picuppload complete");},
+		});
+	}
+	
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
 	
@@ -126,7 +134,7 @@ $max_file_size = 2000000; // size in bytes
     <!-- ADD NETWORK TAB -->
 	  
 	  
-	  <form id="registerform" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit='postForm("../api.php/addwifi", "#registerform")' method="post">
+	  <form id="registerform" enctype="multipart/form-data" onsubmit='postForm("../api.php/addwifi", "#registerform"); uploadPicture(); return false;' method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
