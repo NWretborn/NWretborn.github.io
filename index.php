@@ -33,13 +33,13 @@
 		var user = document.getElementById("username");
 		var pass = document.getElementById("password");
 		var path = "api.php/login/" + user.value;
-		var jsonSTR = "{'name':'password','value':'" + pass.value + "'}";
+		var jsonSTR = { password: pass.value };
 		console.log("jsonOUT: " + jsonSTR);
 		if( user && pass ){
 			$.ajax({
 				type: "GET",
 				url: "./"+path,
-				data: "password=".pass,
+				data: jsonSTR,
 				success: function(){console.log("success");},
 				complete: function(){console.log("complete");},
 				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);}, 
