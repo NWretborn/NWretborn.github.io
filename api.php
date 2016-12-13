@@ -54,7 +54,10 @@
 	$method = $_SERVER['REQUEST_METHOD'];
 	errlog($_SERVER['PHP_SELF']." received ".$method." request");
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-	$input = json_decode(file_get_contents('php://input'),true);
+	
+	$input = file_get_contents('php://input');
+	errlog("input: $input");
+	$input = json_decode($input,true);
 
 	// connect to the mysql database
 	$link = mysqli_connect('localhost', $username, $password, $database);
