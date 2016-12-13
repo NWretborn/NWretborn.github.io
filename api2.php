@@ -2,6 +2,17 @@
 	session_start();
 ?>
 
+<!--  
+	login:
+		url:	api.php/login/id
+		data: 	json string with a 'password' column with unhashed 
+			value of password.
+	adduser:
+		url: 	api.php/adduser
+		data:	json string with columns 'name', 'email' and 
+			'password' with corresponding values.
+-->
+
 <?php
 	ini_set("log_errors", 1);
 	ini_set("error_log", "./error.log");
@@ -47,6 +58,7 @@
 	$apicall = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
 	$key = array_shift($request)+0;
 
+	// initial modifications based on what call is made
 	switch($apicall){
 		case 'adduser':
 			$table='user';
@@ -134,6 +146,23 @@
 	
 	// close mysql connection
 	mysqli_close($link);
+
+	// backend changes without SQL
+	switch($apicall){
+		case 'adduser':
+			
+			break;
+		case 'addwifi':
+			
+			break;
+		case 'login':
+			
+			break;
+		default:
+			badcall(True, "not an api-function");
+			break;
+	}
+
 	errlog("--------------------------------------------------");
 	errlog("ENDLOG");
 ?>
