@@ -164,7 +164,7 @@
 			break;
 		case 'login':
 			errlog("number of elements: ".count($resultarray));
-			//badcall(count($resultarray) != 1, "wrong amount of users returned");
+			badcall(count($resultarray) != 1, "wrong amount of users returned");
 			$obj = $resultarray[0];
 			errlog("resultarray: ".$obj->password);
 			break;
