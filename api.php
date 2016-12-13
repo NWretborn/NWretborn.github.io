@@ -195,7 +195,7 @@
 			}
 			break;
 		default:
-			badcall(True, "not an api-function");
+			badcall(True, "reached end without api-function");
 			break;
 	}
 
