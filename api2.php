@@ -130,7 +130,7 @@
 	else{
 		http_response_code(200);
 	}
-	
+	echo ($i>0?',':'').json_encode(mysqli_fetch_object($result));
 	// print results, insert id or affected row count
 	if ($method == 'GET') {
 		if (!$key) echo '[';
