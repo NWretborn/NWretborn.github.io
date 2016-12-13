@@ -60,6 +60,10 @@
 			console.log("tried to log in without form filled in");
 		}
 	}
+	
+	function logout(){
+		$.post( "api.php", { logout: "logoutplease"} );
+	}
 
 </script>
 	
