@@ -87,7 +87,7 @@ $max_file_size = 2000000; // size in bytes
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
 	
-	<script type="text/javascript">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js">
 	
 		var vm = new Vue({
   el: "#app",
