@@ -4,7 +4,7 @@
 
 <!--  
 	login:
-		url:	api.php/login/name 	//where name is username
+		url:	api.php/login/name 	//where name is username, it will be added with quotation marks (works with ID)
 		data: 	json string with a 'password' column with unhashed 
 			value of password.
 	adduser:
@@ -112,7 +112,7 @@
 			$sql = "insert into `$table` set $set";
 			break;
 		case 'DELETE':
-			$sql = "delete from `$table` where $id='$key'"; // all occurences of $key was without ' before
+			$sql = "delete from `$table` where $id='$key'";
 			break;
 	}
 	errlog("sql {".$sql."} sent");
