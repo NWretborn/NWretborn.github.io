@@ -1,5 +1,5 @@
-<span id="center" style="position:absolute;">
-	<a id="tothemap" href="map.php">
+<span id="center" style="position:fixed">
+	<div id="tothemap center" onclick="location.href='map.php'"> 
 		TO THE MAP!
 	</a>
 </span>
