@@ -6,11 +6,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<title>WiFinder</title>
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 	
 	<meta name="google-signin-client_id" content="919161926395-a0q30s78sal0c8vboi8bthul62r7evep.apps.googleusercontent.com">
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
-	
+
 <script>
 	function onSignIn(googleUser) {
 		var profile = googleUser.getBasicProfile();
@@ -26,6 +27,32 @@
 			console.log('User signed out.');
 		});
 	}
+	
+	// post the submission form to API via ajax in json format
+	function loginForm(){
+		var user = document.getElementById("username");
+		var pass = document.getElementById("password");
+		var path = "api.php/login/"+user;
+		var jsonSTR = "{password: \""+pass+"\"}";
+		if( user && pass ){
+			delete jsonOUT['passwordrep'];
+			var jsonSTR = JSON.stringify(jsonOUT);
+			console.log("jsonOUT: " + jsonSTR);
+			$.ajax({
+				type: "GET",
+				url: "./"+path,
+				data: jsonSTR,
+				success: function(){console.log("success");},
+				complete: function(){console.log("complete");},
+				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);}, 
+				dataType: "json",
+				contentType : "application/json"
+			});
+		}
+		else{
+			console.log("tried to log in without form filled in");
+		}
+	}
 
 </script>
 	
@@ -36,7 +63,7 @@
 	<div class="box center">
 		<div class="text_box">
 
-			<div class="left text" style="top:calc(var(--FONT_HEIGHT)*1.4);">
+			<div id="username" class="left text" style="top:calc(var(--FONT_HEIGHT)*1.4);">
 				Username
 			</div>
 			<input type="text" name="username"
@@ -45,10 +72,10 @@
 			<div class="left text" style="top:calc(var(--FONT_HEIGHT)*3.7);">
 				Password
 			</div>
-			<input type="password" name="password" 
+			<input id="password" type="password" name="password" 
 			style="top:calc(var(--FONT_HEIGHT)*3.7); width:65%; right:0.2vh;">
 			
-			<form action="map.php" method="get">
+			<form onsubmit="loginForm(); return false;" method="get">
 				<input type="submit" value="Log in" name="register" 
 				style="top:calc(var(--FONT_HEIGHT)*6.5); width:20%; right:0.2vh; ">
 			</form>
