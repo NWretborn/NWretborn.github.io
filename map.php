@@ -75,23 +75,27 @@ $max_file_size = 2000000; // size in bytes
 				dataType: "json",
 				contentType : "application/json"
 			});
-			
-			window.alert("Network added!");
-			window.location = "http://213.113.7.224/map.php";
 		}
 		else{
 			alert("Answer must be 'yes or 'no'");
 		}
-		
-		
-	}	
-	
-	function uploadPicture(){
-		$.ajax({
-			type: "POST",
-			url: "./api.php/wifipic",
-			complete: function(){console.log("picuppload complete");},
-		});
+	}
+	function wifipic(){
+		var picurl = document.getElementById("latval").value+"."+document.getElementById("lonval").value+".png";
+   		document.getElementById("picurl").value = picurl;
+		if( type == 'yes' || type == 'no'){
+			$.ajax({
+				type: "POST",
+				url: "./"+path,
+				data: {picname: picurl},
+				success: function(){alert("Network submitted!");},
+				dataType: "json",
+				contentType : "application/json"
+			});
+		}
+		else{
+			alert("Answer must be 'yes or 'no'");
+		}
 	}
 	
 </script>
@@ -134,7 +138,7 @@ $max_file_size = 2000000; // size in bytes
     <!-- ADD NETWORK TAB -->
 	  
 	  
-	  <form id="registerform" enctype="multipart/form-data" onsubmit='postForm("../api.php/addwifi", "#registerform"); uploadPicture(); return false;' method="post">
+	  <form id="registerform" enctype="multipart/form-data" onsubmit='postForm("../api.php/addwifi", "#registerform"); wifipic();window.alert("Network added!"); return false;' method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
