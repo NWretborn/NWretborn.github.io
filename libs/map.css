@@ -1,3 +1,32 @@
+
+/* some simple transitions to make the upvote and downvote
+buttons fade in as a visual cue for the user */
+
+.glyphicon {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.glyphicon:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+
+.vote
+{
+    width: 15px;
+    float: left; clear: left;
+}
+
+.vote img
+{
+    display: block;
+    float: none; clear: both;
+}
+
 #map {
         height: 100%;
       }
