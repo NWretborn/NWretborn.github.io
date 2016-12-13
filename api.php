@@ -90,7 +90,7 @@
 			errlog("logging out user: ".$_SESSION['username']);
 			unset($_SESSION['username']);
 			exit();
-			die()
+			die();
 			break;
 		default:
 			badcall(True, "not an api-function");
