@@ -135,16 +135,17 @@
 	if ($method == 'GET') {
 		if (!$key) echo '[';
 		for ($i=0;$i<mysqli_num_rows($result);$i++) {
-			errlog(($i>0?',':'').json_encode(mysqli_fetch_object($result)));
+			errlog("RESULT: ".($i>0?',':'').json_encode(mysqli_fetch_object($result)));
+			errlog("RESULT2: ".mysqli_fetch_object($result));
 			echo ($i>0?',':'').json_encode(mysqli_fetch_object($result));
 		}
 		if (!$key)
 			echo ']';
 	} elseif ($method == 'POST') {
 		echo '{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}';
-		errlog('{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}');
+		errlog('post info: '.'{ "success":true, "data":[ { "id":'.mysqli_insert_id($link).' }]}');
 	} else {
-		errlog( mysqli_affected_rows($link) );
+		errlog("affected rows: ".mysqli_affected_rows($link) );
 		echo mysqli_affected_rows($link);
 	}
 	
