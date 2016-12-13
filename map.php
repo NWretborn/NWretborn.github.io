@@ -19,7 +19,7 @@ $max_file_size = 2000000; // size in bytes
 
 <!DOCTYPE html>
 <html>
-<!-- http://www.htmlgoodies.com/beyond/php/article.php/3877766/Web-Developer-How-To-Upload-Images-Using-PHP.htm -->
+<!-- http://stackoverflow.com/questions/19542015/cant-get-jquery-upvote-to-work-jquery-plugin -->
 	
 	
 	
@@ -172,7 +172,6 @@ $max_file_size = 2000000; // size in bytes
     </ul>
   </div>
 </div>
-<div>
 <template id="post-template">
 	<li class="list-group-item">
 		<i class="glyphicon glyphicon-chevron-up" @click="upvote"></i>
@@ -181,7 +180,6 @@ $max_file_size = 2000000; // size in bytes
 		<a>{{ post.title }}</a>
 	</li>
 </template>
-	  </div>
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #79969a;" id="htmlkarma" href = test.html></p>
 </div>
