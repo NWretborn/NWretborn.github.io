@@ -12,6 +12,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<title>WiFinder</title>
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
+	<link rel="stylesheet" type="text/css" href="libs/index.css">
 	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 	
 	<meta name="google-signin-client_id" content="919161926395-a0q30s78sal0c8vboi8bthul62r7evep.apps.googleusercontent.com">
@@ -46,8 +47,8 @@
 				type: "GET",
 				url: "./"+path,
 				data: jsonSTR,
-				success: function(){console.log("success");},
-				complete: function(){console.log("complete");},
+				success: function(){console.log("success"); location.reload();},
+				complete: function(){console.log("complete"); location.reload();},
 				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);}, 
 				dataType: "json",
 				contentType : "application/json"
