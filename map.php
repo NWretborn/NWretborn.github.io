@@ -138,7 +138,7 @@ $max_file_size = 2000000; // size in bytes
     <!-- ADD NETWORK TAB -->
 	  
 	  
-	  <form id="registerform" enctype="multipart/form-data" onsubmit='postForm("../api.php/addwifi", "#registerform"); wifipic();window.alert("Network added!"); return false;' method="post">
+	  <form id="registerform" enctype="multipart/form-data" onsubmit='postForm("../api.php/addwifi", "#registerform"); wifipic(); window.alert("Network added!"); return false;' method="post">
 
 			<div style="font-size: 20px;">
 				Name of the network
