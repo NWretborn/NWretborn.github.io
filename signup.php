@@ -40,7 +40,7 @@
 			var jsonSTR = JSON.stringify(jsonOUT);
 			console.log("jsonOUT: " + jsonSTR);
 			$.ajax({
-				type: "POST",
+				type: "GET",
 				url: "./"+path,
 				data: jsonSTR,
 				success: function(){console.log("success");},
