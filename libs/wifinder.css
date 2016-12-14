@@ -1,6 +1,5 @@
 :root{
 	--SCALE_FONT: 0.8;
-	--FONT_HEIGHT: 18px;
 	--FONT_HEIGHT: calc( var(--SCALE_FONT)*(1.3vw + 0.7vh));
 }
 a {
