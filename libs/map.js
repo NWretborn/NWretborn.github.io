@@ -332,6 +332,7 @@ function geolocate() {
     
 		var xml = data.responseXML;
 		var markers = xml.documentElement.getElementsByTagName("marker");
+	    	var merkers = [];
 		for (var i = 0; i < markers.length; i++) {
 			var user = markers[i].getAttribute("user");	
 			var name = markers[i].getAttribute("name");
@@ -443,12 +444,12 @@ function geolocate() {
 });
           
           
-	markers.push(marker);
+	merkers.push(marker);
         bounds.extend(point);
 	bindInfoWindow(marker, map, infoWindow, html);
 }
     // Add a marker clusterer to manage the markers.
-	var markerCluster = new MarkerClusterer(map, markers,
+	var markerCluster = new MarkerClusterer(map, merkers,
 	{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
     });
 
