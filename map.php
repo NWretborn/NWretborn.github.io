@@ -34,13 +34,13 @@ $max_file_size = 2000000; // size in bytes
 </head>
 	
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-	<script src="libs/map.js"></script>
+	<script src="libs/map.js"> var addnetboolean = false; </script>
 	<script src="libs/std.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places"async defer></script>
 	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script type="text/javascript">
 
-  var addnetboolean = false; 
+ 
 	
 // make json object from serialized array of html form
 
