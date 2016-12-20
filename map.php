@@ -101,7 +101,7 @@ $max_file_size = 2000000; // size in bytes
   </ul>
 	
   <div id="viewNetwork" class="w3-container w3-border tab">
-	  
+	  <script>addnetboolean = false;</script>
 	  
    	<div  style="font-size: 20px; top: 92%">
 				<p style="color: #29afc4;" id="htmlname" href = test.html></p>
@@ -125,7 +125,7 @@ $max_file_size = 2000000; // size in bytes
  </div>
   <div id="addNetwork" class="w3-container w3-border tab">
     <!-- ADD NETWORK TAB -->
-	  
+	  <script>addnetboolean = true;</script>
 	  
 	  <form id="registerform" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit='postForm("../api.php/addwifi", "#registerform")' method="post">
 
