@@ -40,7 +40,7 @@ $max_file_size = 2000000; // size in bytes
 	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script type="text/javascript">
 
-	
+  var addnetboolean = false; 
 	
 // make json object from serialized array of html form
 
@@ -216,14 +216,11 @@ function openTab(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-cyan";
-	alert(holder);
-	 if(holder === 'addNetwork'){
+  if(holder === 'addNetwork'){
   addnetboolean = true;
-		 alert('add');
   }
   else{
   addnetboolean = false;
-	  alert('view');
   }
 }
 
