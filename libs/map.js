@@ -451,7 +451,7 @@ function geolocate() {
 }
     // Add a marker clusterer to manage the markers.
 	var markerCluster = new MarkerClusterer(map, merkers,
-	{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+	{imagePath: 'http://213.113.7.224/img/cluster.png'});
     });
 
 	geolocate();
