@@ -350,6 +350,7 @@ function geolocate() {
 			var marker = new google.maps.Marker({
 			map: map,
 			position: point,
+			position: location,
 			icon: icon.icon
 		});
 	
@@ -357,10 +358,10 @@ function geolocate() {
 	
       
 
-	alert(String(markers));
+
 	// Add a marker clusterer to manage the markers.
-	//var markerCluster = new MarkerClusterer(map, markers,
-	//{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+	var markerCluster = new MarkerClusterer(map, markers,
+	{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 			
 			
 	//THIS CODE IS TO BE IMPLEMENTED WHEN YOU WANT TO ADD A NETWORK WITH ACCOUNT PRIV
