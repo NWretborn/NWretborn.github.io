@@ -1,5 +1,5 @@
 var firstSet = false;
-var addnetboolean = false;
+var addnetboolean = true;
 var customIcons = {
     no: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
