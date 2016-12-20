@@ -203,6 +203,12 @@ $max_file_size = 2000000; // size in bytes
 	
 <script>
 function openTab(evt, tabName) {
+  if(tabName = addNetwork){
+  addnetboolean = true;
+  }
+  else{
+  addnetboolean = false;
+  }
   var i, x, tablinks;
   x = document.getElementsByClassName("tab");
   for (i = 0; i < x.length; i++) {
