@@ -332,9 +332,6 @@ function geolocate() {
     
 		var xml = data.responseXML;
 		var markers = xml.documentElement.getElementsByTagName("marker");
-		// Add a marker clusterer to manage the markers.
-       		var markerCluster = new MarkerClusterer(map, markers,
-            	{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 		for (var i = 0; i < markers.length; i++) {
 			var user = markers[i].getAttribute("user");	
 			var name = markers[i].getAttribute("name");
@@ -360,8 +357,10 @@ function geolocate() {
 	
       
 
-			
-			
+	alert(markers);
+	// Add a marker clusterer to manage the markers.
+	//var markerCluster = new MarkerClusterer(map, markers,
+	//{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 			
 			
 	//THIS CODE IS TO BE IMPLEMENTED WHEN YOU WANT TO ADD A NETWORK WITH ACCOUNT PRIV
