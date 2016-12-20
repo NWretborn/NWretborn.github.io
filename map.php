@@ -203,14 +203,7 @@ $max_file_size = 2000000; // size in bytes
 	
 <script>
 function openTab(evt, tabName) {
-  if(tabName = addNetwork){
-//  addnetboolean = true;
-	  alert(tabName);
-  }
-  else{
-//  addnetboolean = false;
-	  alert(tabName);
-  }
+ 
 	
   var i, x, tablinks;
   x = document.getElementsByClassName("tab");
@@ -223,6 +216,14 @@ function openTab(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-cyan";
+	 if(tabName = addNetwork){
+//  addnetboolean = true;
+	  alert(tabName);
+  }
+  else{
+//  addnetboolean = false;
+	  alert(tabName);
+  }
 }
 
 </script>
