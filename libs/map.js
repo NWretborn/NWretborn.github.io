@@ -349,8 +349,7 @@ function geolocate() {
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
 			map: map,
-			position: point,
-			position: location,
+			position: point, location,
 			icon: icon.icon
 		});
 	
