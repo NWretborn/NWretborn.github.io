@@ -353,8 +353,7 @@ function geolocate() {
 			icon: icon.icon
 		});
 	
-	marker.push(marker);
-        bounds.extend(point);
+
       
 
 
@@ -444,7 +443,8 @@ function geolocate() {
 });
           
           
-
+	markers.push(marker);
+        bounds.extend(point);
 	bindInfoWindow(marker, map, infoWindow, html);
 }
     // Add a marker clusterer to manage the markers.
