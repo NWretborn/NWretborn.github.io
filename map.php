@@ -90,7 +90,7 @@ $max_file_size = 2000000; // size in bytes
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
 	
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
 <div class="menu_box";>
 <div class="w3-container">
