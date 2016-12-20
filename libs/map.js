@@ -333,6 +333,7 @@ function geolocate() {
 		var xml = data.responseXML;
 		var markers = xml.documentElement.getElementsByTagName("marker");
 	    	var merkers = [];
+	    	var bounds = new google.maps.LatLngBounds();
 		for (var i = 0; i < markers.length; i++) {
 			var user = markers[i].getAttribute("user");	
 			var name = markers[i].getAttribute("name");
