@@ -358,9 +358,7 @@ function geolocate() {
       
 
 
-	// Add a marker clusterer to manage the markers.
-	var markerCluster = new MarkerClusterer(map, markers,
-	{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+	
 			
 			
 	//THIS CODE IS TO BE IMPLEMENTED WHEN YOU WANT TO ADD A NETWORK WITH ACCOUNT PRIV
@@ -448,7 +446,11 @@ function geolocate() {
           
 
 	bindInfoWindow(marker, map, infoWindow, html);
-}});
+}
+    // Add a marker clusterer to manage the markers.
+	var markerCluster = new MarkerClusterer(map, markers,
+	{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+    });
 
 	geolocate();
 
