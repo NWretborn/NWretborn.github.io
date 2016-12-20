@@ -217,7 +217,7 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-cyan";
 	alert(holder);
-	 if(holder = 'addNetwork'){
+	 if(holder = addNetwork){
   addnetboolean = true;
 		 alert('add');
   }
