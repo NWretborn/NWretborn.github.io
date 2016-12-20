@@ -218,10 +218,12 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " w3-cyan";
 	alert(holder);
 	 if(holder = 'addNetwork'){
-  addnetboolean = true;  
+  addnetboolean = true;
+		 alert('add');
   }
   else{
   addnetboolean = false;
+	  alert('view');
   }
 }
 
