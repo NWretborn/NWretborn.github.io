@@ -353,8 +353,8 @@ function geolocate() {
 			icon: icon.icon
 		});
 	
-
-	
+	markers.push(marker);
+        bounds.extend(point);
       
 
 
