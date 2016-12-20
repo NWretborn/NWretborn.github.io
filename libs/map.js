@@ -366,7 +366,7 @@ function geolocate() {
 	//THIS CODE IS TO BE IMPLEMENTED WHEN YOU WANT TO ADD A NETWORK WITH ACCOUNT PRIV
 			
 	//Eventlistener for adding marker to map on click
-	if(addnetboolean = true;){
+	if(addnetboolean = true){
 	google.maps.event.addListener(map, 'click', function(event) {
 		//if SESSION
    		placeMarker(event.latLng);
