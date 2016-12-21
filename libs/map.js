@@ -360,7 +360,6 @@ function geolocate() {
       
 
 	function netboolean(netboolean) {
-		alert("test!");
 		if (netboolean === true) {
 			addnetboolean = true;
 		}
