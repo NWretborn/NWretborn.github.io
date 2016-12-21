@@ -95,8 +95,8 @@ $max_file_size = 2000000; // size in bytes
 <div class="menu_box";>
 <div class="w3-container">
   <ul class="w3-navbar w3-lightblue">
-    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork');">View Network</a></li>
-    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork');">Add Network</a></li>
+    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork'); netboolean(false);">View Network</a></li>
+    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork'); netboolean(true);">Add Network</a></li>
 	  
   </ul>
 	
@@ -201,11 +201,11 @@ $max_file_size = 2000000; // size in bytes
 	
 	
 	
-<script src="libs/map.js"></script>
+
 	<script>
 function openTab(evt, tabName) {
  
-  var holder = String(tabName);
+ // var holder = String(tabName);
   var i, x, tablinks;
   x = document.getElementsByClassName("tab");
   for (i = 0; i < x.length; i++) {
@@ -217,12 +217,12 @@ function openTab(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-cyan";
-  if(holder === 'addNetwork'){
-  	netboolean(true);
-  }
-  else{
-  	netboolean(false);
-  }
+//  if(holder === 'addNetwork'){
+//  	netboolean(true);
+//  }
+ // else{
+ // 	netboolean(false);
+ // }
 }
 	
 </script>
