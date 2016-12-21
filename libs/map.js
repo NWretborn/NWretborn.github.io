@@ -359,7 +359,13 @@ function geolocate() {
 
       
 
-
+	function netboolean(netboolean) {
+		if (netboolean === true) {
+			addnetboolean = true;
+		}
+		if (netboolean === false) {
+			addnetboolean = false;
+		}};
 	
 			
 			
