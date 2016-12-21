@@ -101,7 +101,6 @@ $max_file_size = 2000000; // size in bytes
   </ul>
 	
   <div id="viewNetwork" class="w3-container w3-border tab">
-	  <script src="libs/map.js"> alert("TEST!"); netboolean(false); </script>
    	<div  style="font-size: 20px; top: 92%">
 				<p style="color: #29afc4;" id="htmlname" href = test.html></p>
 </div>
@@ -124,7 +123,6 @@ $max_file_size = 2000000; // size in bytes
  </div>
   <div id="addNetwork" class="w3-container w3-border tab">
     <!-- ADD NETWORK TAB -->
-	  <script src="libs/map.js">alert("TEST IGEN!"); netboolean(true); </script>
 	  <form id="registerform" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit='postForm("../api.php/addwifi", "#registerform")' method="post">
 		
 			<div style="font-size: 20px;">
@@ -205,7 +203,7 @@ $max_file_size = 2000000; // size in bytes
 	<script>
 function openTab(evt, tabName) {
  
- // var holder = String(tabName);
+  var holder = String(tabName);
   var i, x, tablinks;
   x = document.getElementsByClassName("tab");
   for (i = 0; i < x.length; i++) {
@@ -217,12 +215,12 @@ function openTab(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-cyan";
-//  if(holder === 'addNetwork'){
-//  	netboolean(true);
-//  }
- // else{
- // 	netboolean(false);
- // }
+  if(holder === 'addNetwork'){
+  	map.netboolean(true);
+  }
+  else{
+  	map.netboolean(false);
+  }
 }
 	
 </script>
