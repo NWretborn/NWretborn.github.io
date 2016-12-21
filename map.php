@@ -201,7 +201,7 @@ $max_file_size = 2000000; // size in bytes
 	
 	
 	
-<script>
+<script src="libs/map.js">
 function openTab(evt, tabName) {
  
   var holder = String(tabName);
