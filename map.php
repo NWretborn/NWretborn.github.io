@@ -216,10 +216,10 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-cyan";
   if(holder === 'addNetwork'){
-  	map.netboolean(true);
+  	netboolean(true);
   }
   else{
-  	map.netboolean(false);
+  	netboolean(false);
   }
 }
 	
