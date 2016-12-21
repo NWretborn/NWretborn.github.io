@@ -88,7 +88,7 @@ $max_file_size = 2000000; // size in bytes
 	}	
 	
 </script>
-<body onload="load(); openTab(javascript:void(0), 'viewNetwork');">
+<body onload="load(); openTab(tablink, 'viewNetwork');">
 	
 
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
