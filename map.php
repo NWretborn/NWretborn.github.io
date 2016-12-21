@@ -201,7 +201,8 @@ $max_file_size = 2000000; // size in bytes
 	
 	
 	
-<script src="libs/map.js">
+<script src="libs/map.js"></script>
+	<script>
 function openTab(evt, tabName) {
  
   var holder = String(tabName);
@@ -223,7 +224,7 @@ function openTab(evt, tabName) {
   	netboolean(false);
   }
 }
-
+	
 </script>
 	
 	
