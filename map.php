@@ -95,13 +95,13 @@ $max_file_size = 2000000; // size in bytes
 <div class="menu_box";>
 <div class="w3-container">
   <ul class="w3-navbar w3-lightblue">
-    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork'); netboolean(false);">View Network</a></li>
-    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork'); netboolean(true);">Add Network</a></li>
+    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork');">View Network</a></li>
+    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork');">Add Network</a></li>
 	  
   </ul>
 	
   <div id="viewNetwork" class="w3-container w3-border tab">
-	  
+	  <script src="libs/map.js"> netboolean(false) </script>
    	<div  style="font-size: 20px; top: 92%">
 				<p style="color: #29afc4;" id="htmlname" href = test.html></p>
 </div>
@@ -124,9 +124,9 @@ $max_file_size = 2000000; // size in bytes
  </div>
   <div id="addNetwork" class="w3-container w3-border tab">
     <!-- ADD NETWORK TAB -->
-	  
+	  <script src="libs/map.js"> netboolean(true) </script>
 	  <form id="registerform" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit='postForm("../api.php/addwifi", "#registerform")' method="post">
-
+		
 			<div style="font-size: 20px;">
 				Name of the network
 			</div>
