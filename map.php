@@ -88,7 +88,7 @@ $max_file_size = 2000000; // size in bytes
 	}	
 	
 </script>
-<body onload="load(); openTab(click, 'viewNetwork');">
+<body onload="load(); openTab(event, 'viewNetwork');">
 	
 
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
@@ -209,6 +209,7 @@ function openTab(evt, tabName) {
   x = document.getElementsByClassName("tab");
   for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
+	  tablinks[i].className = tablinks[i].className.replace(" w3-cyan", "");
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
