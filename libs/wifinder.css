@@ -47,14 +47,6 @@ body{
 	bottom:calc(5vh + 4vw);
 	transform: translate(-50%, 50%);
 }
-#logo.git{
-	position:fixed;
-	display: block;
-	width: 9vw;
-	min-width: 9vh;
-	height: 15vh;
-	min-height: 15vw;
-}
 #logo:hover{
 	height:18vh;
 	width: 10.8vw;
