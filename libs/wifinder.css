@@ -81,13 +81,13 @@ body{
 	background-size: contain;
 	width: 10%;
 	height: 10%;
-	left:20%;
+	left:10%;
 	bottom:30%;
 	transform: translate(-50%, 50%);
 }
 #logo.git:hover{
-	height:110%;
-	width: 110%;
+	height:10%;
+	width: 10%;
 }
 
 .box, .about_box{
