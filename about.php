@@ -24,6 +24,7 @@
 			Niclas Vretborn<br/>nicvre-3@student.ltu.se
 			</p>
 			<span id="logo" class="git" onclick="location.href='https://github.com/NWretborn/WiFinder'"> </span>
+			<span style="color: #29afc4;">Github Repository</span>
 		</span>
 		
 	</span>
