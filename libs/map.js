@@ -2,12 +2,15 @@ var firstSet = false;
 var addnetboolean = false;
 
 	function netboolean(status) {
-		window.alert(status);
 		if (status === true) {
+			window.alert(status);
 			addnetboolean = true;
+			window.alert(addnetboolean);
 		}
 		if (status === false) {
+			window.alert(status);
 			addnetboolean = false;
+			window.alert(addnetboolean);
 		}};
 var customIcons = {
     no: {
