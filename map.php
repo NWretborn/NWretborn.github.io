@@ -221,6 +221,7 @@ function openTab(evt, tabName) {
   else{
   	netboolean(false);
   }
+	location.reload(); 
 }
 	
 </script>
