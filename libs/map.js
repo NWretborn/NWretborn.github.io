@@ -4,7 +4,6 @@ var addnetboolean = false;
 	function netboolean(status) {
 		if (status === true) {
 			addnetboolean = true;
-			window.alert(addnetboolean);
 			load();
 		}
 		if (status === false) {
@@ -379,7 +378,7 @@ function geolocate() {
 			
 	//Eventlistener for adding marker to map on click
 	if(addnetboolean === true){
-		window.alert(addnetboolean);
+		window.alert('hej och hå');
 	google.maps.event.addListener(map, 'click', function(event) {
 		//if SESSION
    		placeMarker(event.latLng);
