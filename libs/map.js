@@ -1,11 +1,11 @@
 var firstSet = false;
 var addnetboolean = false;
 
-	function netboolean(addnetboolean) {
-		if (netboolean === true) {
+	function netboolean(status) {
+		if (status === true) {
 			addnetboolean = true;
 		}
-		if (netboolean === false) {
+		if (status === false) {
 			addnetboolean = false;
 		}};
 var customIcons = {
