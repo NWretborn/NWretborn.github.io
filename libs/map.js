@@ -8,6 +8,15 @@ var addnetboolean = false;
 		if (status === false) {
 			addnetboolean = false;
 		}};
+//Eventlistener for adding marker to map on click
+	if(addnetboolean === false){
+		window.alert(addnetboolean);
+	google.maps.event.addListener(map, 'click', function(event) {
+		//if SESSION
+   		placeMarker(event.latLng);
+		
+	});
+	}
 var customIcons = {
     no: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
@@ -372,15 +381,7 @@ function geolocate() {
 			
 	//THIS CODE IS TO BE IMPLEMENTED WHEN YOU WANT TO ADD A NETWORK WITH ACCOUNT PRIV
 			
-	//Eventlistener for adding marker to map on click
-	if(addnetboolean === false){
-		window.alert(addnetboolean);
-	google.maps.event.addListener(map, 'click', function(event) {
-		//if SESSION
-   		placeMarker(event.latLng);
-		
-	});
-	}
+	
 		
 			
 	function placeMarker(location) {
