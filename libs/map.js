@@ -3,14 +3,10 @@ var addnetboolean = false;
 
 	function netboolean(status) {
 		if (status === true) {
-			window.alert(status);
 			addnetboolean = true;
-			window.alert(addnetboolean);
 		}
 		if (status === false) {
-			window.alert(status);
 			addnetboolean = false;
-			window.alert(addnetboolean);
 		}};
 var customIcons = {
     no: {
@@ -378,6 +374,7 @@ function geolocate() {
 			
 	//Eventlistener for adding marker to map on click
 	if(addnetboolean === true){
+		window.alert(addnetboolean);
 	google.maps.event.addListener(map, 'click', function(event) {
 		//if SESSION
    		placeMarker(event.latLng);
