@@ -359,7 +359,7 @@ function geolocate() {
 
       
 
-	function netboolean(netboolean) {
+	function netboolean(addnetboolean) {
 		if (netboolean === true) {
 			addnetboolean = true;
 		}
