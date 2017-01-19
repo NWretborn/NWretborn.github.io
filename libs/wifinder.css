@@ -82,15 +82,12 @@ body{
 	width: 10%;
 	height: 10%;
 	left:10%;
-	bottom:0;
+	bottom:20%;
 	transform: translate(-50%, 50%);
 }
 #logo.git:hover{
-	background: url(../img/logo_git.png) no-repeat;
-	background-position: center;
-	background-size: contain;
-	width: 10%;
-	height: 10%;
+	height:18vh;
+	width: 10.8vw;
 }
 
 .box, .about_box{
