@@ -95,8 +95,8 @@ $max_file_size = 2000000; // size in bytes
 <div class="menu_box";>
 <div class="w3-container">
   <ul class="w3-navbar w3-lightblue">
-    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork');">View Network</a></li>
-    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork');">Add Network</a></li>
+    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork'); location.reload();">View Network</a></li>
+    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork'); location.reload();">Add Network</a></li>
 	  
   </ul>
 	
@@ -221,7 +221,6 @@ function openTab(evt, tabName) {
   else{
   	netboolean(false);
   }
-	location.reload(); 
 }
 	
 </script>
