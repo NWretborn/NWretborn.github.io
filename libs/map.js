@@ -5,12 +5,12 @@ var addnetboolean = false;
 		if (status === true) {
 			addnetboolean = true;
 			window.alert(addnetboolean);
-			load()
+			load();
 		}
 		if (status === false) {
 			addnetboolean = false;
 			window.alert(addnetboolean);
-			load()
+			load();
 		}};
 	
 var customIcons = {
@@ -378,7 +378,6 @@ function geolocate() {
 	//THIS CODE IS TO BE IMPLEMENTED WHEN YOU WANT TO ADD A NETWORK WITH ACCOUNT PRIV
 			
 	//Eventlistener for adding marker to map on click
-	function addNet(addnetboolean){
 	if(addnetboolean === true){
 		window.alert(addnetboolean);
 	google.maps.event.addListener(map, 'click', function(event) {
@@ -386,7 +385,7 @@ function geolocate() {
    		placeMarker(event.latLng);
 		
 	});
-	}};
+	}
 		
 			
 	function placeMarker(location) {
