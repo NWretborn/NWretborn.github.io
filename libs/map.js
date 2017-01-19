@@ -8,8 +8,8 @@ var addnetboolean = false;
 		if (status === false) {
 			addnetboolean = false;
 		}};
-//Eventlistener for adding marker to map on click
-	if(addnetboolean === false){
+	//Eventlistener for adding marker to map on click
+	if(addnetboolean === true){
 		window.alert(addnetboolean);
 	google.maps.event.addListener(map, 'click', function(event) {
 		//if SESSION
