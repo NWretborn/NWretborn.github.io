@@ -2,6 +2,7 @@ var firstSet = false;
 var addnetboolean = false;
 
 	function netboolean(status) {
+		window.alert("TEST!");
 		if (status === true) {
 			addnetboolean = true;
 		}
