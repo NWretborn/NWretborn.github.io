@@ -5,12 +5,12 @@ var addnetboolean = false;
 		if (status === true) {
 			addnetboolean = true;
 			window.alert(addnetboolean);
-			addNet(addnetboolean);
+			load()
 		}
 		if (status === false) {
 			addnetboolean = false;
 			window.alert(addnetboolean);
-			addNet(addnetboolean);
+			load()
 		}};
 	
 var customIcons = {
