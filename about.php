@@ -22,7 +22,7 @@
 			<p class="subtext">
 			Niclas Vretborn<br/>nicvre-3@student.ltu.se
 			</p>
-			<span class="git" onclick="location.href='https://github.com/NWretborn/WiFinder'"> </span>
+			<span id="logo.git" class="git" onclick="location.href='https://github.com/NWretborn/WiFinder'"> </span>
 			<br/><br/>
 		</span>
 		
