@@ -86,8 +86,8 @@ body{
 	transform: translate(-50%, 50%);
 }
 #logo.git:hover{
-	height:10%;
-	width: 10%;
+	height:20%;
+	width: 20%;
 }
 
 .box, .about_box{
