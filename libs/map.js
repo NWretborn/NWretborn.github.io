@@ -4,11 +4,9 @@ var addnetboolean = false;
 	function netboolean(status) {
 		if (status === true) {
 			addnetboolean = true;
-			location.reload(); 
 		}
 		if (status === false) {
 			addnetboolean = false;
-			location.reload(); 
 		}};
 var customIcons = {
     no: {
