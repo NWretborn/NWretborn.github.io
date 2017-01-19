@@ -217,7 +217,7 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " w3-cyan";
   if(holder === 'addNetwork'){
 	  window.alert(holder);
-  	netboolean(true);
+  	<script src="libs/map.js"> netboolean(true) </script>
   }
   else{
   	netboolean(false);
