@@ -21,8 +21,6 @@
 			Site created by
 			</p>
 			<p class="subtext">
-			Jakob Norell<br/>norjak-3@ltu.student.se
-			<br/><br/>
 			Niclas Vretborn<br/>nicvre-3@student.ltu.se
 			</p>
 			<span id="logo" class="git" onclick="location.href='https://github.com/NWretborn/WiFinder'"> </span>
