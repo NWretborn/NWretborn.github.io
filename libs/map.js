@@ -4,9 +4,11 @@ var addnetboolean = false;
 	function netboolean(status) {
 		if (status === true) {
 			addnetboolean = true;
+			window.alert(addnetboolean);
 		}
 		if (status === false) {
 			addnetboolean = false;
+			window.alert(addnetboolean);
 		}};
 	//Eventlistener for adding marker to map on click
 	if(addnetboolean === true){
