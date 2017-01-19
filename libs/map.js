@@ -1,5 +1,13 @@
 var firstSet = false;
 var addnetboolean = false;
+
+	function netboolean(addnetboolean) {
+		if (netboolean === true) {
+			addnetboolean = true;
+		}
+		if (netboolean === false) {
+			addnetboolean = false;
+		}};
 var customIcons = {
     no: {
       icon: 'http://213.113.7.224/img/logo_green50px.png'
@@ -359,13 +367,6 @@ function geolocate() {
 
       
 
-	function netboolean(addnetboolean) {
-		if (netboolean === true) {
-			addnetboolean = true;
-		}
-		if (netboolean === false) {
-			addnetboolean = false;
-		}};
 	
 			
 			
