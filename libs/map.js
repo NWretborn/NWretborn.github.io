@@ -4,12 +4,12 @@ var addnetboolean = false;
 	function netboolean(status) {
 		if (status === true) {
 			addnetboolean = true;
-			this.load();
+			load();
 		}
 		if (status === false) {
 			addnetboolean = false;
 			window.alert(addnetboolean);
-			this.load();
+			load();
 		}};
 	
 var customIcons = {
