@@ -3,6 +3,8 @@ session_start();
 		if(!isset( $_SESSION['username'] ) ){ #this triggers if session is not set
 			header("Location: http://213.113.7.224/index.php");
 		}
+
+#For LOGOUT do a /api.php/logout as get, do index as redirect
 		
 // filename: upload.form.php
 
