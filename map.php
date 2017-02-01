@@ -1,6 +1,6 @@
 <?php
 
-		if(isset( $_SESSION['username'] ) ){ #this triggers if session is set
+		if(isset( !$_SESSION['username'] ) ){ #this triggers if session is set
 			header("Location: http://213.113.7.224/index.php");
 			die();
 			#include("logged_in.php");
