@@ -1,5 +1,14 @@
 <?php
 
+		if(isset( $_SESSION['username'] ) ){
+			include("logged_in.php");
+		}
+		else{
+			header("Location: http://213.113.7.224/index.php");
+			die();
+		}
+		echo "hello php-world";
+
 // filename: upload.form.php
 
 // first let's set some variables
@@ -89,6 +98,7 @@ $max_file_size = 2000000; // size in bytes
 	
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
+	
 	
 
 <div class="box left" style="width: 30%; height: 75%; top: 1%;">
