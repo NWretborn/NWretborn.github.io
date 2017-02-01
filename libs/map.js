@@ -368,7 +368,9 @@ function geolocate() {
 	google.maps.event.addListener(map, 'click', function(event) {
 		//if SESSION
    		placeMarker(event.latLng);
-	)}
+		
+	});
+
 		
 			
 	function placeMarker(location) {
