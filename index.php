@@ -57,7 +57,7 @@
 			pass.value="";
 		}
 		else{
-			console.log("tried to log in without form filled in");
+			window.alert("incorrect login credentials");
 		}
 	}
 	
