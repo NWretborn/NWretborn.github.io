@@ -57,7 +57,7 @@
 			pass.value="";
 		}
 		else{
-			window.alert("incorrect login credentials");
+			alert("incorrect login credentials!");
 		}
 	}
 	
