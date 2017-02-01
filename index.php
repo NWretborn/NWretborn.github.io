@@ -59,7 +59,7 @@
 <body>
 	<?php
 		if(isset( $_SESSION['username'] ) ){
-			include("logged_in.php");
+			include("map.php");
 		}
 		else{
 			include("login_box.php");
