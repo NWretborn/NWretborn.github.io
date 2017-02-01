@@ -1,16 +1,4 @@
 var firstSet = false;
-var addnetboolean = false;
-
-	function netboolean(status) {
-		if (status === true) {
-			addnetboolean = true;
-			load();
-		}
-		if (status === false) {
-			addnetboolean = false;
-			window.alert(addnetboolean);
-			load();
-		}};
 	
 var customIcons = {
     no: {
@@ -377,8 +365,6 @@ function geolocate() {
 	//THIS CODE IS TO BE IMPLEMENTED WHEN YOU WANT TO ADD A NETWORK WITH ACCOUNT PRIV
 			
 	//Eventlistener for adding marker to map on click
-	if(addnetboolean === true){
-		window.alert('hej och hå');
 	google.maps.event.addListener(map, 'click', function(event) {
 		//if SESSION
    		placeMarker(event.latLng);
