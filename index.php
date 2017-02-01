@@ -43,7 +43,7 @@
 			pass.value="";
 		}
 		else{
-			alert("incorrect login credentials!");
+			alert("incorrect login credentials!"); //does nothing
 		}
 	}
 	
