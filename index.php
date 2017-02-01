@@ -15,18 +15,9 @@
 	<link rel="stylesheet" type="text/css" href="libs/index.css">
 	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 	
-	<meta name="google-signin-client_id" content="919161926395-a0q30s78sal0c8vboi8bthul62r7evep.apps.googleusercontent.com">
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
 <script>
-	function onSignIn(googleUser) {
-		var profile = googleUser.getBasicProfile();
-		console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-		console.log('Name: ' + profile.getName());
-		console.log('Image URL: ' + profile.getImageUrl());
-		console.log('Email: ' + profile.getEmail());
-	}
 
 	function signOut() {
 		var auth2 = gapi.auth2.getAuthInstance();
@@ -84,7 +75,6 @@
 	
 
 	
-	<div class="g-signin2" data-onsuccess="onSignIn"></div>
 	<div id="logo" class="index" onclick="location.href='about.php'"> </div>
 	<div class="cache" style="background: url(img/logo_about_gray.png)"></div>
 
