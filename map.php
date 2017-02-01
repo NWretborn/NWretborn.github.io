@@ -5,7 +5,7 @@ session_start();
 			#die();
 			#include("logged_in.php");
 		}
-
+		
 // filename: upload.form.php
 
 // first let's set some variables
@@ -44,7 +44,7 @@ $max_file_size = 2000000; // size in bytes
 	<script src="libs/std.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places"async defer></script>
 	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script type="text/javascript">
+	<script type="text/javascript">
 
  
 	
@@ -198,7 +198,6 @@ $max_file_size = 2000000; // size in bytes
 
 			
 
-	</div>
 	</div>
 	
 	
