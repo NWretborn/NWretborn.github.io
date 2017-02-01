@@ -1,5 +1,5 @@
 <?php
-session_start();
+#session_start();
 		if(!isset( $_SESSION ) ){ #this triggers if session is set
 			header("Location: http://213.113.7.224/index.php");
 			#die();
