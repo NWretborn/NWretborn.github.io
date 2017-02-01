@@ -1,7 +1,7 @@
 <?php
 
 		if(isset( $_SESSION['username'] ) ){
-			include("logged_in.php");
+			#include("logged_in.php");
 		}
 		else{
 			header("Location: http://213.113.7.224/index.php");
