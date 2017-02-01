@@ -127,7 +127,6 @@ $max_file_size = 2000000; // size in bytes
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmluser" href = test.html></p>
 </div>
- </div>
   <div id="addNetwork" class="w3-container w3-border tab">
     <!-- ADD NETWORK TAB -->
 	  <form id="registerform" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit='postForm("../api.php/addwifi", "#registerform")' method="post">
@@ -200,7 +199,7 @@ $max_file_size = 2000000; // size in bytes
 
 	</div>
 	
-	
+	</div>
 	
 	
 	
