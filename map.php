@@ -1,12 +1,10 @@
 <?php
 
-	#	if(isset( $_SESSION['username'] ) ){
+		if(isset( !$_SESSION['username'] ) ){
+			header("Location: http://213.113.7.224/index.php");
+			die();
 			#include("logged_in.php");
-	#	}
-	#	else{
-	#		header("Location: http://213.113.7.224/index.php");
-	#		die();
-	#	}
+		}
 
 // filename: upload.form.php
 
