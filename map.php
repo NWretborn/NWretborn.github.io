@@ -1,11 +1,11 @@
 <?php
 session_start();
-		if(isset( !$_SESSION ) ){ #this triggers if session is set
-			header("Location: http://213.113.7.224/index.php");
+		#if(isset( !$_SESSION ) ){ #this triggers if session is set
+		#	header("Location: http://213.113.7.224/index.php");
 			#die();
 			#include("logged_in.php");
-		}
-		
+		#}
+		#
 // filename: upload.form.php
 
 // first let's set some variables
