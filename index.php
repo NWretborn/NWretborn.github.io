@@ -59,7 +59,7 @@
 <body>
 	<?php
 		if(isset( $_SESSION['username'] ) ){
-			include("logged_in.php");
+			echo '<br /><a href="map.php?' . SID . '">page 2</a>';
 		}
 		else{
 			include("login_box.php");
