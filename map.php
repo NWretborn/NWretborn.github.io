@@ -176,6 +176,9 @@ $max_file_size = 2000000; // size in bytes
 			<div  style="font-size: 20px; top: 92%">
 				<input id="picurl" type="hidden" value="" name="picurl"/>
 			</div>
+		  	<div  style="font-size: 20px; top: 92%">
+				<input id="user" type="hidden" value="" name="user"/>
+			</div>
 			<br/>
 			
 		  <div style="font-size: 20px; top: 114%">
