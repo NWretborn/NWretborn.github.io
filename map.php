@@ -108,7 +108,7 @@ $max_file_size = 2000000; // size in bytes
 			});
 			
 			window.alert("Network Removed");
-			window.location = "http://213.113.7.224/map.php";
+			window.location = "http://213.113.7.224";
 		
 		
 		
