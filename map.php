@@ -226,7 +226,7 @@ function openTab(evt, tabName) {
 	
 	
 	<div style="font-size: 18px;" onclick="logout();">
-	<input type="submit" value ="Sign Out" name="register" style="color: #29afc4; position:fixed; left:23vw; bottom:20vh;" >
+	<input type="submit" value =" Sign Out " name="register" style="color: #29afc4; position:fixed; left:23vw; bottom:20vh;" >
 </div>
 	
 	<span id="logo" class="about" onclick="location.href='index.php'"> </span>
