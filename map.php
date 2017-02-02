@@ -92,6 +92,29 @@ $max_file_size = 2000000; // size in bytes
 		
 		
 	}	
+		
+	// post the submission form to API via ajax in json format
+	function deleteForm(path, formID){
+		var picurl = document.getElementById("latval").value+"."+document.getElementById("lonval").value+".png";
+   		document.getElementById("picurl").value = picurl;
+		var jsonOUT =$(formID).serializeObject();
+		var type = jsonOUT['type'];
+			var jsonSTR = JSON.stringify(jsonOUT);
+			$.ajax({
+				type: "POST",
+				url: "./"+path,
+				data: jsonSTR,
+				success: function(){alert("Network submitted!");},
+				dataType: "json",
+				contentType : "application/json"
+			});
+			
+			window.alert("Network Removed");
+			window.location = "http://213.113.7.224/map.php";
+		
+		
+		
+	}
 	
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
@@ -127,9 +150,9 @@ $max_file_size = 2000000; // size in bytes
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmluser" href = test.html></p>
 </div>
-		   <form id="deleteform" enctype="multipart/form-data" onsubmit='postForm("../api.php/deletewifi", "#deleteform")' method="post">
+		   <form id="deleteform" enctype="multipart/form-data" onsubmit='deleteForm("../api.php/deletewifi", "#deleteform")' method="post">
 		  <div style="font-size: 20px; top: 114%">
-<input style="color: #29afc4; margin-top: 10px;" id="submit" type="submit" name="submit" value="Delete WiFi" class="tb5"> 
+<input style="color: #29afc4; margin-top: 10px;" id="submit" type="submit" name="deletewifi" value="Delete WiFi" class="tb5"> 
 					
 </div>
 		  </form>
