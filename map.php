@@ -95,7 +95,7 @@ $max_file_size = 2000000; // size in bytes
 		
 	// post the submission form to API via ajax in json format
 	function deleteForm(path, formID){
-		var id = document.getElementById("id").value
+		var picurl = document.getElementById("latval").value+"."+document.getElementById("lonval").value+".png";
    		document.getElementById("picurl").value = picurl;
 		var jsonOUT =$(formID).serializeObject();
 			var jsonSTR = JSON.stringify(jsonOUT);
@@ -152,7 +152,7 @@ $max_file_size = 2000000; // size in bytes
 </div>
 		   <form id="deleteform" enctype="multipart/form-data" onsubmit='deleteForm("../api.php/deletewifi", "#deleteform")' method="post">
 			     <div  style="font-size: 20px; top: 92%">
-				<input type="hidden" id="id" name="id"/>
+				<input id="picurl" type="hidden" value="" name="picurl"/>
 			</div>
 		  <div style="font-size: 20px; top: 114%">
 <input style="color: #29afc4; margin-top: 10px;" id="submit" type="submit" name="deletewifi" value="Delete WiFi" class="tb5"> 
