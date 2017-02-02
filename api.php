@@ -148,7 +148,7 @@
 			$sql = "insert into `$table` set $set";
 			break;
 		case 'DELETE':
-			$sql = "delete from `$table` where $id='$key'"; #kolla upp hur man deletar egentligen
+			$sql = "delete from `$table` where picurl='65.61479450.22.10200738.png'"#$id='$key'"; #kolla upp hur man deletar egentligen
 			break;
 	}
 	errlog("sql {".$sql."} sent");
