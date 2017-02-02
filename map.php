@@ -131,6 +131,7 @@ $max_file_size = 2000000; // size in bytes
   </ul>
 	
   <div id="viewNetwork" class="w3-container w3-border tab">
+	
    	<div  style="font-size: 20px; top: 92%">
 				<p style="color: #29afc4;" id="htmlname" href = test.html></p>
 </div>
@@ -151,6 +152,9 @@ $max_file_size = 2000000; // size in bytes
 				<p style="font-size: 20px; color: #10454e;" id="htmluser" href = test.html></p>
 </div>
 		   <form id="deleteform" enctype="multipart/form-data" onsubmit='deleteForm("../api.php/deletewifi", "#deleteform")' method="post">
+			     <div  style="font-size: 20px; top: 92%">
+				<input type="hidden" id="id" name="id"/>
+			</div>
 		  <div style="font-size: 20px; top: 114%">
 <input style="color: #29afc4; margin-top: 10px;" id="submit" type="submit" name="deletewifi" value="Delete WiFi" class="tb5"> 
 					
