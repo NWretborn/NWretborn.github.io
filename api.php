@@ -95,7 +95,7 @@
 			break;
 		case 'deletewifi':
 			$table='markers';
-			$id='picurl';
+			$id= $input['picurl'];
 			badcall($method!='POST', "use POST for deletewifi");
 			$method = 'DELETE';
 			break;
