@@ -99,10 +99,10 @@ $max_file_size = 2000000; // size in bytes
 		var jsonOUT =$(formID).serializeObject();
 			var jsonSTR = JSON.stringify(jsonOUT);
 			$.ajax({
-				type: "POST",
+				type: "DELETE",
 				url: "./"+path,
 				data: jsonSTR,
-				success: function(){alert("Network submitted!");},
+				success: function(){alert("Network Removed!");},
 				dataType: "json",
 				contentType : "application/json"
 			});
