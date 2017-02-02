@@ -177,7 +177,7 @@ $max_file_size = 2000000; // size in bytes
 				<input id="picurl" type="hidden" value="" name="picurl"/>
 			</div>
 		  	<div  style="font-size: 20px; top: 92%">
-				<input id="user" type="hidden" value="" name="user"/>
+				<input id="user" type="hidden" value="<?php $_SESSION['username'] ?> " name="user"/>
 			</div>
 			<br/>
 			
