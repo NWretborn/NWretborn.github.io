@@ -147,7 +147,6 @@
 			$sql = "insert into `$table` set $set";
 			break;
 		case 'DELETE':
-			badcall(True, $id);
 			$sql = "delete from `$table` where $id='$key'";
 			break;
 	}
