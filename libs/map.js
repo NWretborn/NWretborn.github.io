@@ -342,7 +342,6 @@ function geolocate() {
 			var type = markers[i].getAttribute("type");
 			var quality = markers[i].getAttribute("quality");
 			var picurl = markers[i].getAttribute("picurl");
-			var id = markers[i].getAttribute("id");
 			var karma = parseInt(markers[i].getAttribute("karma"));
 			var point = new google.maps.LatLng(
             			parseFloat(markers[i].getAttribute("lat")),
@@ -471,7 +470,6 @@ function geolocate() {
 		document.getElementById("htmluser").innerHTML=String("Submitted by: " + htmldat[4]); 
 		document.getElementById("htmltype").innerHTML=String("Customer only: " + htmldat[5]);
 		document.getElementById("htmlpicurl").src=String("http://213.113.7.224/uploaded_files/"+htmldat[6]);
-		document.getElementById("htmlname").innerHTML=String(htmldat[7]);
 		infoWindow.setContent(htmldat[0]);
 		infoWindow.open(map, marker);
 	});
