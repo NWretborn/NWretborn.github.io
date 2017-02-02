@@ -93,6 +93,10 @@
 			$table='markers';
 			badcall($method!='POST', "use POST for addwifi");
 			break;
+		case 'deletewifi':
+			$table='markers';
+			badcall($method!='DELETE', "use DELETE for deletewifi");
+			break;
 		case 'wifipic':
 			errlog("POST picname: ".$_POST['picname']);
 			if(isset($_FILE['file']))
