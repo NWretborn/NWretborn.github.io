@@ -102,8 +102,8 @@ $max_file_size = 2000000; // size in bytes
 <div class="menu_box";>
 <div class="w3-container">
   <ul class="w3-navbar w3-lightblue">
-    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork'); netboolean(false);">View Network</a></li>
-    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork'); netboolean(true);">Add Network</a></li>
+    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'viewNetwork');">View Network</a></li>
+    <li><a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'addNetwork');">Add Network</a></li>
 	  
   </ul>
 	
@@ -127,7 +127,7 @@ $max_file_size = 2000000; // size in bytes
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmluser" href = test.html></p>
 </div>
-		   <form id="" enctype="multipart/form-data" onsubmit='postForm("../api.php/deletewifi", "#registerform")' method="post">
+		   <form id="deleteform" enctype="multipart/form-data" onsubmit='postForm("../api.php/deletewifi", "#deleteform")' method="post">
 		  <div style="font-size: 20px; top: 114%">
 <input style="color: #29afc4; margin-top: 10px;" id="submit" type="submit" name="submit" value="Delete WiFi" class="tb5"> 
 					
