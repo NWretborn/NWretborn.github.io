@@ -127,7 +127,7 @@ $max_file_size = 2000000; // size in bytes
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmluser" href = test.html></p>
 </div>
-		   <form id="registerform" enctype="multipart/form-data" onsubmit='postForm("../api.php/deletewifi", "#registerform")' method="DELETE">
+		   <form id="" enctype="multipart/form-data" onsubmit='postForm("../api.php/deletewifi", "#registerform")' method="post">
 		  <div style="font-size: 20px; top: 114%">
 <input style="color: #29afc4; margin-top: 10px;" id="submit" type="submit" name="submit" value="Delete WiFi" class="tb5"> 
 					
