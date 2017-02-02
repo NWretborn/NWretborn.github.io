@@ -147,7 +147,7 @@
 			$sql = "insert into `$table` set $set";
 			break;
 		case 'DELETE':
-			$sql = "delete from `$table` where $id=$id";
+			$sql = "delete from `$table` where $id='$key'"; #kolla upp hur man deletar egentligen
 			break;
 	}
 	errlog("sql {".$sql."} sent");
