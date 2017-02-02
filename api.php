@@ -95,8 +95,8 @@
 			break;
 		case 'deletewifi':
 			$table='markers';
-			badcall($method!='DELETE', "use DELETE for deletewifi");
 			$id='picurl';
+			badcall($method!='DELETE', "use DELETE for deletewifi");
 			break;
 		case 'wifipic':
 			errlog("POST picname: ".$_POST['picname']);
