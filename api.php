@@ -196,6 +196,10 @@
 		case 'addwifi':
 			
 			break;
+			
+		case 'deletewifi':
+			
+			break;
 		case 'login':
 			errlog("number of elements: ".count($resultarray));
 			badcall(count($resultarray) != 1, "wrong amount of users returned");
