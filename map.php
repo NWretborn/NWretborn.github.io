@@ -149,7 +149,7 @@ $max_file_size = 2000000; // size in bytes
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmluser" href = test.html></p>
 </div>
-		   <form id="deleteform" enctype="multipart/form-data" onsubmit='deleteForm("../api.php/deletewifi", "#registerform")' method="post">
+		   <form id="deleteform" enctype="multipart/form-data" onsubmit='deleteForm("../api.php/deletewifi", "#deleteform")' method="post">
 			     <div  style="font-size: 20px; top: 92%">
 				<input type ="hidden" style="font-size: 20px; color: #10454e;" name="picurl" id="htmlpicurldel" href = test.html>
 </div>
