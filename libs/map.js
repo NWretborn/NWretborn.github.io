@@ -342,13 +342,14 @@ function geolocate() {
 			var type = markers[i].getAttribute("type");
 			var quality = markers[i].getAttribute("quality");
 			var picurl = markers[i].getAttribute("picurl");
+			var id = markers[i].getAttribute("id");
 			var karma = parseInt(markers[i].getAttribute("karma"));
 			var point = new google.maps.LatLng(
             			parseFloat(markers[i].getAttribute("lat")),
             			parseFloat(markers[i].getAttribute("lng"))
 			);
 			//Popup window variable
-			var html = name + "," + address + "," + karma + "," + quality + "," + user + "," + type + "," + picurl;
+			var html = name + "," + address + "," + karma + "," + quality + "," + user + "," + type + "," + picurl + "," + id;
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
 			map: map,
@@ -470,6 +471,7 @@ function geolocate() {
 		document.getElementById("htmluser").innerHTML=String("Submitted by: " + htmldat[4]); 
 		document.getElementById("htmltype").innerHTML=String("Customer only: " + htmldat[5]);
 		document.getElementById("htmlpicurl").src=String("http://213.113.7.224/uploaded_files/"+htmldat[6]);
+		document.getElementById("htmlname").innerHTML=String(htmldat[7]);
 		infoWindow.setContent(htmldat[0]);
 		infoWindow.open(map, marker);
 	});
