@@ -95,7 +95,7 @@
 			break;
 		case 'deletewifi':
 			badcall($method!='POST', "use POST for deletewifi");
-			if(($_SESSION['username'] = $input['user']) or ($_SESSION['username'] = 'admin'))
+			if(($_SESSION['username'] == $input['user']) or ($_SESSION['username'] == 'admin'))
 				$table='markers';
 				$id='picurl';
 				$key= $input['picurl'];
