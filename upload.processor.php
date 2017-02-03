@@ -63,7 +63,7 @@ while(file_exists($uploadFilename = $uploadsDirectory.$now.''.$_FILES[$fieldname
 header('Location: ' . $uploadSuccess);
 
 // make an error handler which will be used if the upload fails
-function error($error, $location = "map.php", $seconds = 5)
+function error($error, $location = "index.php", $seconds = 0)
 {
 	header("Refresh: $seconds; URL=\"$location\"");
 	echo '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"'."\n".
