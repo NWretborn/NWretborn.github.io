@@ -104,6 +104,7 @@
 				break;
 			else
 				badcall(True, "Only your own networks can be removed");
+				break;
 		case 'wifipic':
 			errlog("POST picname: ".$_POST['picname']);
 			if(isset($_FILE['file']))
