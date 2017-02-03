@@ -96,7 +96,7 @@ $max_file_size = 2000000; // size in bytes
 	// post the submission form to API via ajax in json format
 	function deleteForm(path, formID){
    		document.getElementById("picurl").value = picurl;
-		document.getElementById("user").value = user;
+		//document.getElementById("user").value = user;
 		var jsonOUT =$(formID).serializeObject();
 			var jsonSTR = JSON.stringify(jsonOUT);
 			$.ajax({
