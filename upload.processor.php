@@ -11,7 +11,7 @@ $directory_self = str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_
 $uploadsDirectory = $_SERVER['DOCUMENT_ROOT'] . $directory_self . 'uploaded_files/';
 
 // make a note of the location of the upload form in case we need it
-$uploadForm = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'map.php';
+$uploadForm = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'index.php';
 
 // make a note of the location of the success page
 $uploadSuccess = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'index.php';
