@@ -94,17 +94,18 @@
 			badcall($method!='POST', "use POST for addwifi");
 			break;
 		case 'deletewifi':
-			//badcall($method!='POST', "use POST for deletewifi");
-			//badcall(True, "Du kommer hit");
-			//if(($_SESSION['username'] == $input['user']) or ($_SESSION['username'] == 'admin'))
+			badcall($method!='POST', "use POST for deletewifi");
+			if(($_SESSION['username'] == $input['user']) or ($_SESSION['username'] == 'admin')){
 				$table='markers';
 				$id='picurl';
 				$key= $input['picurl'];
 				$method = 'DELETE';
 				break;
-			//else
-			//	badcall(True, "Only your own networks can be removed");
-			//	break;
+			}
+			else{
+				badcall(True, "Only your own networks can be removed");
+				break;
+			}
 		case 'wifipic':
 			errlog("POST picname: ".$_POST['picname']);
 			if(isset($_FILE['file']))
