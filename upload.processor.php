@@ -63,26 +63,26 @@ while(file_exists($uploadFilename = $uploadsDirectory.$now.''.$_FILES[$fieldname
 header('Location: ' . $uploadSuccess);
 
 // make an error handler which will be used if the upload fails
-function error($error, $location = "index.php", $seconds = 0)
-{
-	header("Refresh: $seconds; URL=\"$location\"");
-	echo '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"'."\n".
-	'"http://www.w3.org/TR/html4/strict.dtd">'."\n\n".
-	'<html lang="en">'."\n".
-	'	<head>'."\n".
-	'		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">'."\n\n".
-	'		<link rel="stylesheet" type="text/css" href="stylesheet.css">'."\n\n".
-	'	<title>Upload error</title>'."\n\n".
-	'	</head>'."\n\n".
-	'	<body>'."\n\n".
-	'	<div id="Upload">'."\n\n".
-	'		<h1>Upload failure</h1>'."\n\n".
-	'		<p>An error has occured: '."\n\n".
-	'		<span class="red">' . $error . '...</span>'."\n\n".
-	'	 	The page is reloading</p>'."\n\n".
-	'	 </div>'."\n\n".
-	'</html>';
-	exit;
-} // end error handler
+//function error($error, $location = "index.php", $seconds = 0)
+//{
+//	header("Refresh: $seconds; URL=\"$location\"");
+//	echo '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"'."\n".
+//	'"http://www.w3.org/TR/html4/strict.dtd">'."\n\n".
+//	'<html lang="en">'."\n".
+//	'	<head>'."\n".
+//	'		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">'."\n\n".
+//	'		<link rel="stylesheet" type="text/css" href="stylesheet.css">'."\n\n".
+//	'	<title>Upload error</title>'."\n\n".
+//	'	</head>'."\n\n".
+//	'	<body>'."\n\n".
+//	'	<div id="Upload">'."\n\n".
+//	'		<h1>Upload failure</h1>'."\n\n".
+//	'		<p>An error has occured: '."\n\n".
+//	'		<span class="red">' . $error . '...</span>'."\n\n".
+//	'	 	The page is reloading</p>'."\n\n".
+//	'	 </div>'."\n\n".
+//	'</html>';
+//	exit;
+//} // end error handler
 
 ?>
