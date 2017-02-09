@@ -1,4 +1,4 @@
-var firstSet = true;
+var firstSet = false;
 	
 var customIcons = {
     no: {
