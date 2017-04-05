@@ -168,7 +168,7 @@ $max_file_size = 2000000; // size in bytes
 	  <form id="registerform" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit='postForm("../api.php/addwifi", "#registerform")' method="post">
 		
 			<div style="font-size: 20px;">
-				Namez of the network
+				Name of the network
 			</div>
 			<div style="top: 12%; font-size: 20px;">
 				<input type="text" name="name" class="tb5" value="">
