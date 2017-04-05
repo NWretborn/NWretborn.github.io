@@ -2,10 +2,10 @@ var firstSet = false;
 	
 var customIcons = {
     no: {
-      icon: 'http://213.113.7.224/img/logo_green50px.png'
+      icon: 'http://213.113.2.100/img/logo_green50px.png'
     },
     yes: {
-      icon: 'http://213.113.7.224/img/logo_blue50px.png'
+      icon: 'http://213.113.2.100/img/logo_blue50px.png'
     }
   };
 
@@ -261,7 +261,7 @@ function load() {
     controlUI.style.borderStyle = 'solid';
     controlUI.style.borderWidth = '1px';
     controlUI.style.borderColor = '#29afc4';
-    controlUI.style.backgroundImage = "url(http://213.113.7.224/img/gps_icon.png)";
+    controlUI.style.backgroundImage = "url(http://213.113.2.100/img/gps_icon.png)";
     controlUI.style.height = '26px';
     controlUI.style.width = '26px';
     controlUI.style.cursor = 'pointer';
@@ -316,7 +316,7 @@ function geolocate() {
     	marker = new google.maps.Marker({
         position: new google.maps.LatLng(0, 0),
         animation: google.maps.Animation.DROP,
-	icon: 'http://213.113.7.224/img/user_icon.png',
+	icon: 'http://213.113.2.100/img/user_icon.png',
         visible: false,
         map: map
 	});
@@ -383,7 +383,7 @@ function geolocate() {
       			position: location,
 			animation: google.maps.Animation.DROP,
      			map: map,
-			icon: 'http://213.113.7.224/img/logo_gray50px.png'
+			icon: 'http://213.113.2.100/img/logo_gray50px.png'
 		});
 			firstSet = true;
   		}
@@ -452,7 +452,7 @@ function geolocate() {
 }
     // Add a marker clusterer to manage the markers.
 	var markerCluster = new MarkerClusterer(map, merkers,
-	{imagePath: 'http://213.113.7.224/img/c'});
+	{imagePath: 'http://213.113.2.100/img/c'});
     });
 
 	geolocate();
@@ -469,7 +469,7 @@ function geolocate() {
 		document.getElementById("htmlquality").innerHTML=String("Review: " + htmldat[3]);
 		document.getElementById("htmluser").innerHTML=String("Submitted by: " + htmldat[4]); 
 		document.getElementById("htmltype").innerHTML=String("Customer only: " + htmldat[5]);
-		document.getElementById("htmlpicurl").src=String("http://213.113.7.224/uploaded_files/"+htmldat[6]);
+		document.getElementById("htmlpicurl").src=String("http://213.113.2.100/uploaded_files/"+htmldat[6]);
 		document.getElementById("htmluserdel").value=String(htmldat[4]);
 		document.getElementById("htmlpicurldel").value=String(htmldat[6]);
 		infoWindow.setContent(htmldat[0]);
