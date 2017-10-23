@@ -35,7 +35,8 @@
 				data: jsonSTR,
 				success: function(){console.log("success"); location.reload();},
 				complete: function(){console.log("complete"); location.reload();},
-				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);}, 
+				error: alert("incorrect login credentials!"); //does nothing
+				//error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);}, 
 				dataType: "json",
 				contentType : "application/json"
 			});
@@ -63,7 +64,6 @@
 		}
 		else{
 			include("login_box.php");
-			alert("incorrect login credentials!"); //does nothing
 		}
 		echo "hello php-world";
 	
