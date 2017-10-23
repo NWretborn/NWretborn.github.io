@@ -35,8 +35,7 @@
 				data: jsonSTR,
 				success: function(){console.log("success"); location.reload();},
 				complete: function(){console.log("complete"); location.reload();},
-				error: alert("incorrect login credentials!"); //does nothing
-				//error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);}, 
+				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);}, 
 				dataType: "json",
 				contentType : "application/json"
 			});
