@@ -14,7 +14,7 @@
 		style="top:calc(var(--FONT_HEIGHT)*3.7); width:65%; right:0.2vh;">
 
 		<form onsubmit="loginForm(); return false;" method="get">
-			<input type="submit" value="Log in" name="register" 
+			<input type="submit" value="Log in" name="register" id="login"
 			style="top:calc(var(--FONT_HEIGHT)*6.5); width:20%; right:0.2vh; ">
 			
 		</form>
@@ -30,3 +30,14 @@
 	</div>
 	<!--</form>-->
 </div>	
+<html>
+<script>
+	document.getElementById("password")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("login").click();
+    }
+});
+</script>
+</html>
