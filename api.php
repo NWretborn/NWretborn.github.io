@@ -218,6 +218,9 @@
 				$_SESSION['username'] = $obj->name;
 				exit();
 			}
+			else{
+				alert("incorrect login credentials!"); //does nothing
+			}
 			break;
 		default:
 			badcall(True, "reached end without api-function");
