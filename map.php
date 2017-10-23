@@ -2,7 +2,7 @@
 $realIP = file_get_contents("http://ipecho.net/plain");
 session_start();
 		if(!isset( $_SESSION['username'] ) ){ #this triggers if session is not set
-			header("Location: 213.113.7.240/index.php");
+			header("Location: /index.php");
 		}
 
 #For LOGOUT do a /api.php/logout as get, do index as redirect
