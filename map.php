@@ -181,7 +181,7 @@ $max_file_size = 2000000; // size in bytes
 			</div>
 			<br/>
 			<div style="font-size: 20px; top: 40%; left: 8%;">
-				Physical adress of the network
+				Location(E.g Joes Coffee shop)
 			</div>
 			<div style="font-size: 20px; top: 40%">
 				<input value="" type="text" name="address" class="tb5">
