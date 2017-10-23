@@ -4,7 +4,7 @@ var firstSet = false;
 	
 var customIcons = {
     no: {
-      icon: "location.href='img/logo_green50px.png'"
+      icon: "location.href='/img/logo_green50px.png'"
     },
     yes: {
       icon: 'http://213.113.7.240/img/logo_blue50px.png'
