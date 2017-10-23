@@ -63,6 +63,7 @@
 		}
 		else{
 			include("login_box.php");
+			alert("incorrect login credentials!"); //does nothing
 		}
 		echo "hello php-world";
 	
