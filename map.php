@@ -85,7 +85,7 @@ $max_file_size = 2000000; // size in bytes
 			});
 			
 			window.alert("Network added!");
-			window.location = "http://213.113.7.224/map.php";
+			window.location = "/map.php";
 		}
 		else{
 			alert("Answer must be 'yes or 'no'");
@@ -110,7 +110,7 @@ $max_file_size = 2000000; // size in bytes
 			});
 			
 			window.alert("Network Removed");
-			window.location = "http://213.113.7.224";
+			window.location = "/index.php;
 		
 		
 		
