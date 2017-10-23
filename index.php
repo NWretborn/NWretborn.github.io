@@ -62,6 +62,7 @@
 			include("map.php");
 		}
 		else{
+			alert("incorrect login credentials!"); //does nothing
 			include("login_box.php");
 		}
 		echo "hello php-world";
