@@ -170,7 +170,7 @@ $max_file_size = 2000000; // size in bytes
 			<div style="font-size: 16px;color: #29afc4">
 				To add a network, simply click on the map to set a marker for the desired location.
 				For increased precision, zoom in until you can clearly distinguish roads and buildings.
-				You can replace your marker by simply clicking on another spot on the map.
+				You can replace your marker by clicking on another spot on the map.
 			</div>
 			<div style="font-size: 20px;">
 				Name of the network
