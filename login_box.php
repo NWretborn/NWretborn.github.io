@@ -16,12 +16,7 @@
 		<form onsubmit="loginForm(); return false;" method="get">
 			<input type="submit" value="Log in" name="register" 
 			style="top:calc(var(--FONT_HEIGHT)*6.5); width:20%; right:0.2vh; ">
-			  <button id='render_button' class='btn btn-primary'
-            title='Построить фрактал'
-            type=submit
-            formaction='javascript:alert("Bingo!");'>
-      <span class='glyphicon glyphicon-send'> </span> Render
-    </button>
+			
 		</form>
 		<!--	GOOGLE SIGNOUT
 		<a href="#" onclick="signOut();">Sign out</a>
