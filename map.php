@@ -167,7 +167,11 @@ $max_file_size = 2000000; // size in bytes
   <div id="addNetwork" class="w3-container w3-border tab">
     <!-- ADD NETWORK TAB -->
 	  <form id="registerform" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" onsubmit='postForm("../api.php/addwifi", "#registerform")' method="post">
-		
+			<div style="font-size: 20px;">
+				To add a network, simply click on the map to set a marker for the desired location.
+				For increased precision, zoom in until you can clearly distinguish roads and buildings.
+				You can replace your marker by simply clicking on another spot on the map.
+			</div>
 			<div style="font-size: 20px;">
 				Name of the network
 			</div>
