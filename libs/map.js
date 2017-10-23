@@ -7,7 +7,7 @@ var customIcons = {
       icon: '/img/logo_green50px.png'
     },
     yes: {
-      icon: 'http://213.113.7.240/img/logo_blue50px.png'
+      icon: '/img/logo_blue50px.png'
     }
   };
 
@@ -263,7 +263,7 @@ function load() {
     controlUI.style.borderStyle = 'solid';
     controlUI.style.borderWidth = '1px';
     controlUI.style.borderColor = '#29afc4';
-    controlUI.style.backgroundImage = "url(http://213.113.7.240/img/gps_icon.png)";
+    controlUI.style.backgroundImage = "url(/img/gps_icon.png)";
     controlUI.style.height = '26px';
     controlUI.style.width = '26px';
     controlUI.style.cursor = 'pointer';
@@ -318,7 +318,7 @@ function geolocate() {
     	marker = new google.maps.Marker({
         position: new google.maps.LatLng(0, 0),
         animation: google.maps.Animation.DROP,
-	icon: 'http://213.113.7.240/img/user_icon.png',
+	icon: '/img/user_icon.png',
         visible: false,
         map: map
 	});
@@ -385,7 +385,7 @@ function geolocate() {
       			position: location,
 			animation: google.maps.Animation.DROP,
      			map: map,
-			icon: 'http://213.113.7.240/img/logo_gray50px.png'
+			icon: '/img/logo_gray50px.png'
 		});
 			firstSet = true;
   		}
@@ -454,7 +454,7 @@ function geolocate() {
 }
     // Add a marker clusterer to manage the markers.
 	var markerCluster = new MarkerClusterer(map, merkers,
-	{imagePath: 'http://213.113.7.240/img/c'});
+	{imagePath: '/img/c'});
     });
 
 	geolocate();
