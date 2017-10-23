@@ -268,7 +268,10 @@ function openTab(evt, tabName) {
 	<input type="submit" value =" Sign Out " name="register" style="color: #29afc4; position:fixed; left:23vw; bottom:20vh;" >
 </div>
 	
-	
+
+	<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+	<div id="map" style="width: 70%; height: 100vh; left:30%"></div>
+
 </body>
 
 </html>
