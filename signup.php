@@ -168,7 +168,8 @@
 		</form>
 	</div>
 
-	<span class="logo" onclick="location.href='index.php'"> </span>
+	
+	<span id="logo" class="about" onclick="location.href='index.php'"> </span>
 	<span class="cache" style="background: url(img/logo_blue.png)"></span>
 
 	</body>
