@@ -115,7 +115,7 @@
 <body>
 
 	<div class="center box">
-		<span style="color: #29afc4;">Thank you!</span> An activation mail has been sent to you 
+		<span style="color: #29afc4;">Thank you!</span> You may now log in!
 		
 	</div>
 
