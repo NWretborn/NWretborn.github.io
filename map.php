@@ -110,7 +110,7 @@ $max_file_size = 2000000; // size in bytes
 			});
 			
 			window.alert("Network Removed");
-			window.location = "/index.php;
+			window.location = "/index.php";
 		
 		
 		
