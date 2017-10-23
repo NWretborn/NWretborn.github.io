@@ -1,4 +1,4 @@
-var address = 'http://213.113.7.240';
+
 
 var firstSet = false;
 	
