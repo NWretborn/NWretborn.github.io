@@ -344,13 +344,12 @@ function geolocate() {
 			var type = markers[i].getAttribute("type");
 			var quality = markers[i].getAttribute("quality");
 			var picurl = markers[i].getAttribute("picurl");
-			var karma = parseInt(markers[i].getAttribute("karma"));
 			var point = new google.maps.LatLng(
             			parseFloat(markers[i].getAttribute("lat")),
             			parseFloat(markers[i].getAttribute("lng"))
 			);
 			//Popup window variable
-			var html = name + "," + address + "," + karma + "," + quality + "," + user + "," + type + "," + picurl;
+			var html = name + "," + address + "," + quality + "," + user + "," + type + "," + picurl;
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
 			map: map,
@@ -466,9 +465,8 @@ function geolocate() {
 		google.maps.event.addListener(marker, 'click', function() {
 		var htmldat = html.split(",");
 		document.getElementById("htmlname").innerHTML=String("Name: " + htmldat[0]); 
-		document.getElementById("htmladdress").innerHTML=String("Physical Address: " + htmldat[1]);
-		document.getElementById("htmlkarma").innerHTML=String("Rating: " + htmldat[2]); 
-		document.getElementById("htmlquality").innerHTML=String("Review: " + htmldat[3]);
+		document.getElementById("htmladdress").innerHTML=String("Location: " + htmldat[1]);
+		document.getElementById("htmlquality").innerHTML=String("Rating: " + htmldat[3]);
 		document.getElementById("htmluser").innerHTML=String("Submitted by: " + htmldat[4]); 
 		document.getElementById("htmltype").innerHTML=String("Customer only: " + htmldat[5]);
 		document.getElementById("htmlpicurl").src=String("http://213.113.7.240/uploaded_files/"+htmldat[6]);
