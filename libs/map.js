@@ -340,6 +340,7 @@ function geolocate() {
 		for (var i = 0; i < markers.length; i++) {
 			var user = markers[i].getAttribute("user");	
 			var name = markers[i].getAttribute("name");
+			var rating = markers[i].getAttribute("rating");
 			var address = markers[i].getAttribute("address");
 			var type = markers[i].getAttribute("type");
 			var quality = markers[i].getAttribute("quality");
@@ -469,7 +470,7 @@ function geolocate() {
 		document.getElementById("htmlquality").innerHTML=String("Rating: " + htmldat[3]);
 		document.getElementById("htmluser").innerHTML=String("Submitted by: " + htmldat[4]); 
 		document.getElementById("htmltype").innerHTML=String("Customer only: " + htmldat[5]);
-		document.getElementById("htmlpicurl").src=String("http://213.113.7.240/uploaded_files/"+htmldat[6]);
+		document.getElementById("htmlpicurl").src=String("/uploaded_files/"+htmldat[6]);
 		document.getElementById("htmluserdel").value=String(htmldat[4]);
 		document.getElementById("htmlpicurldel").value=String(htmldat[6]);
 		infoWindow.setContent(htmldat[0]);
