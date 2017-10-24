@@ -192,7 +192,7 @@ $max_file_size = 2000000; // size in bytes
 			</div>
 			<div  style="font-size: 20px; top: 52%">
 				
-  				<select name="rating">
+  				<select name="quality">
    				<option value="Slow">Slow</option>
     				<option value="Decent">Decent</option>
 				<option value="Great">Great</option>
@@ -205,8 +205,8 @@ $max_file_size = 2000000; // size in bytes
 			</div>
 			<div  style="font-size: 20px; top: 92%">
 				
-  				<select name="dontremember">
-   				<option value="Yes">yes</option>
+  				<select name="type">
+   				<option value="yes">Yes</option>
     				<option value="no">No</option>
   				</select>
 			
