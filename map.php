@@ -72,9 +72,6 @@
  		var picurl = document.getElementById("latval").value+"."+document.getElementById("lonval").value+".png";
     		document.getElementById("picurl").value = picurl;
  		var jsonOUT =$(formID).serializeObject();
- 		var type = jsonOUT['type'];
--		if( type == 'yes' || type == 'no'){
-+
  			var jsonSTR = JSON.stringify(jsonOUT);
  			$.ajax({
  				type: "POST",
@@ -86,14 +83,7 @@
  			});
  			
  			window.alert("Network added!");
- 			window.location = "/map.php";
--		}
--		else{
--			alert("Answer must be 'yes or 'no'");
--		}
-+		
-+		
- 		
+ 			window.location = "/map.php";	
  		
  	}	
  		
