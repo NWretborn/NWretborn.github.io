@@ -91,7 +91,7 @@ $max_file_size = 2000000; // size in bytes
 +		
  		
  		
- 	}	
+ 		
 		
 	// post the submission form to API via ajax in json format
 	function deleteForm(path, formID){
