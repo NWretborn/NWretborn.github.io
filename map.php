@@ -74,10 +74,7 @@ $max_file_size = 2000000; // size in bytes
 		var jsonOUT =$(formID).serializeObject();
 		var name = jsonOUT['name'];
 		var address = jsonOUT['address'];
-		if(name.length == 0 || address.length == 0){
--			alert("Please fill out all the information before submitting");
--		}
-		else{
+		
 			var jsonSTR = JSON.stringify(jsonOUT);
 			$.ajax({
 				type: "POST",
@@ -90,7 +87,7 @@ $max_file_size = 2000000; // size in bytes
 			
 			window.alert("Network added!");
 			window.location = "/map.php";
-		}
+		
 		
 		
 		
