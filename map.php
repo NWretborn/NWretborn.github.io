@@ -75,7 +75,7 @@
  			var jsonSTR = JSON.stringify(jsonOUT);
 			var name = jsonOUT['name'];
 			var address = jsonOUT['address'];
-			if( name != '' || address != '' ){
+			if( name != '' && address != '' ){
  			$.ajax({
  				type: "POST",
  				url: "./"+path,
@@ -89,7 +89,7 @@
  			window.location = "/map.php";	
 			}
 		else{
-			alert("Enter all information before submitting");
+			alert("Please enter all information before submitting");
 		}
  	}	
  		
