@@ -73,8 +73,6 @@ $max_file_size = 2000000; // size in bytes
     		document.getElementById("picurl").value = picurl;
  		var jsonOUT =$(formID).serializeObject();
  		var type = jsonOUT['type'];
--		if( type == 'yes' || type == 'no'){
-
  			var jsonSTR = JSON.stringify(jsonOUT);
  			$.ajax({
  				type: "POST",
@@ -87,10 +85,8 @@ $max_file_size = 2000000; // size in bytes
  			
  			window.alert("Network added!");
  			window.location = "/map.php";
--		}
--		else{
--			alert("Answer must be 'yes or 'no'");
--		}
+-		
+-		
 +		
 +		
  		
