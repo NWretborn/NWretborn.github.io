@@ -3,10 +3,10 @@
 var firstSet = false;
 	
 var customIcons = {
-    no: {
+    No: {
       icon: '/img/logo_green50px.png'
     },
-    yes: {
+    Yes: {
       icon: '/img/logo_blue50px.png'
     }
   };
