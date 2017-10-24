@@ -467,12 +467,12 @@ function geolocate() {
 		var htmldat = html.split(",");
 		document.getElementById("htmlname").innerHTML=String("Name: " + htmldat[0]); 
 		document.getElementById("htmladdress").innerHTML=String("Location: " + htmldat[1]);
-		document.getElementById("htmlquality").innerHTML=String("Rating: " + htmldat[3]);
-		document.getElementById("htmluser").innerHTML=String("Submitted by: " + htmldat[4]); 
-		document.getElementById("htmltype").innerHTML=String("Customer only: " + htmldat[5]);
-		document.getElementById("htmlpicurl").src=String("/uploaded_files/"+htmldat[6]);
-		document.getElementById("htmluserdel").value=String(htmldat[4]);
-		document.getElementById("htmlpicurldel").value=String(htmldat[6]);
+		document.getElementById("htmlquality").innerHTML=String("Rating: " + htmldat[2]);
+		document.getElementById("htmluser").innerHTML=String("Submitted by: " + htmldat[3]); 
+		document.getElementById("htmltype").innerHTML=String("Customer only: " + htmldat[4]);
+		document.getElementById("htmlpicurl").src=String("/uploaded_files/"+htmldat[5]);
+		document.getElementById("htmluserdel").value=String(htmldat[3]);
+		document.getElementById("htmlpicurldel").value=String(htmldat[5]);
 		infoWindow.setContent(htmldat[0]);
 		infoWindow.open(map, marker);
 	});
