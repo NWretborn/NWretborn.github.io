@@ -195,7 +195,6 @@
   				</select>
 			
 			</div>
-			<br/>
 			<div style="font-size: 20px; top: 64%; left: 8%;">
 				Customer only?(yes/no)
 			</div>
@@ -207,8 +206,7 @@
   				</select>
 			
 			</div>
-		  	<br/>
-		  	<div style="font-size: 20px; top: 64%"> 
+		  	<div style="font-size: 20px; top: 76%"> 
 				Picture(optional, max 2mb)<br/>
 			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
    			
