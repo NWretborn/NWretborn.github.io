@@ -99,8 +99,8 @@
  		document.getElementById("user").value = user;
 		var currentuser = <?php echo json_encode($_SESSION['username'])?>;
 		var jsonOUT =$(formID).serializeObject();
-		var htmluserdel = jsonOUT['htmluserdel'];
-		if( user == htmluserdel){
+		var htmluserdel = jsonOUT['user'];
+		if( currentuser == htmluserdel){
  		var jsonOUT =$(formID).serializeObject();
  			var jsonSTR = JSON.stringify(jsonOUT);
  			$.ajax({
