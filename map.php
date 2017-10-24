@@ -74,7 +74,7 @@ $max_file_size = 2000000; // size in bytes
 		var jsonOUT =$(formID).serializeObject();
 		var name = jsonOUT['name'];
 		var address = jsonOUT['address'];
-		if(name != '' || address != ''){
+		if(name != null || address != null){
 			var jsonSTR = JSON.stringify(jsonOUT);
 			$.ajax({
 				type: "POST",
