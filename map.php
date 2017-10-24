@@ -73,6 +73,9 @@
     		document.getElementById("picurl").value = picurl;
  		var jsonOUT =$(formID).serializeObject();
  			var jsonSTR = JSON.stringify(jsonOUT);
+			var name = jsonOUT['name'];
+			var address = jsonOUT['address'];
+			if( name != '' || address != '' ){
  			$.ajax({
  				type: "POST",
  				url: "./"+path,
@@ -84,7 +87,10 @@
  			
  			window.alert("Network added!");
  			window.location = "/map.php";	
- 		
+			}
+		else{
+			alert("Enter all information before submitting");
+		}
  	}	
  		
  	// post the submission form to API via ajax in json format
