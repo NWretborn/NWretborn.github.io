@@ -74,10 +74,7 @@ $max_file_size = 2000000; // size in bytes
 		var jsonOUT =$(formID).serializeObject();
 		var name = jsonOUT['name'];
 		var address = jsonOUT['address'];
-		if(name == '' || address == ''){
--			alert("Please fill out all the information before submitting");
--		}
-		else{
+		if(name != '' || address != ''){
 			var jsonSTR = JSON.stringify(jsonOUT);
 			$.ajax({
 				type: "POST",
@@ -92,6 +89,9 @@ $max_file_size = 2000000; // size in bytes
 			window.location = "/map.php";
 		
 		}
+		else{
+-			alert("Please fill out all the information before submitting");
+-		}
 		
 		
 		
