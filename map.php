@@ -97,6 +97,8 @@
  	function deleteForm(path, formID){
     		document.getElementById("picurl").value = picurl;
  		document.getElementById("user").value = user;
+		var user = jsonOUT['user'];
+		if( user == document.getElementById("user").value = user ){
  		var jsonOUT =$(formID).serializeObject();
  			var jsonSTR = JSON.stringify(jsonOUT);
  			$.ajax({
@@ -110,7 +112,7 @@
  			
  			window.alert("Network Removed");
  			window.location = "/index.php";
- 		
+		}
  		
  		
  	}
