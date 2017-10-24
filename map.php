@@ -198,20 +198,16 @@ $max_file_size = 2000000; // size in bytes
 				Customer only?(yes/no)
 			</div>
 			<div  style="font-size: 20px; top: 92%">
-				<form action="/action_page.php">
-  <select name="cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select>
-  <br><br>
-  <input type="submit">
-</form>
+				<form>
+  				<select name="Customer only">
+   				<option value="Yes">Yes</option>
+    				<option value="No">No</option>
+  				</select>
+				</form>
 			</div>
 		  	<br/>
 		  	<div style="font-size: 20px; top: 64%"> 
-			Picture(optional, max 2mb)<br/>
+				Picture(optional, max 2mb)<br/>
 			<input id="file" type="file" name="file" font="monospace" class="tb3"> 
    			
 			</div>
