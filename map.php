@@ -198,8 +198,8 @@ $max_file_size = 2000000; // size in bytes
 				Customer only?(yes/no)
 			</div>
 			<div  style="font-size: 20px; top: 92%">
-				<form class="tb5">
-  				<select name="Customer only">
+				<form class="tb5" font="monospace">
+  				<select name="type" font="monospace" class="tb5">
    				<option value="Yes">Yes</option>
     				<option value="No">No</option>
   				</select>
