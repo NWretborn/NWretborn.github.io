@@ -69,13 +69,12 @@ $max_file_size = 2000000; // size in bytes
 	};
 	// post the submission form to API via ajax in json format
 	function postForm(path, formID){
-		var picurl = document.getElementById("latval").value+"."+document.getElementById("lonval").value+".png";
-   		document.getElementById("picurl").value = picurl;
-		var jsonOUT =$(formID).serializeObject();
-		var type = jsonOUT['type'];
-		var address = jsonOUT['address'];
-		if( type == 'yes' || type == 'no'){
-+
+ 		var picurl = document.getElementById("latval").value+"."+document.getElementById("lonval").value+".png";
+    		document.getElementById("picurl").value = picurl;
+ 		var jsonOUT =$(formID).serializeObject();
+ 		var type = jsonOUT['type'];
+-		if( type == 'yes' || type == 'no'){
+
  			var jsonSTR = JSON.stringify(jsonOUT);
  			$.ajax({
  				type: "POST",
@@ -92,10 +91,11 @@ $max_file_size = 2000000; // size in bytes
 -		else{
 -			alert("Answer must be 'yes or 'no'");
 -		}
-		
-		
-		
-	}	
++		
++		
+ 		
+ 		
+ 	}	
 		
 	// post the submission form to API via ajax in json format
 	function deleteForm(path, formID){
