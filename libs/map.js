@@ -400,6 +400,14 @@ function geolocate() {
 			var lon = String(locArr.slice(20,31));
 			}
 		}
+		else if(lon[1] == "," || lon[1] == " ") {
+			if (lon[1] == " ") {
+				var lon = String(locArr.slice(21,30));
+			}
+			else {
+			var lon = String(locArr.slice(22,31));
+			}
+		}
 		//document.getElementById("lat").innerHTML=lat;
 		//document.getElementById("lon").innerHTML=lon;
 		document.getElementById('latval').value = lat;
