@@ -75,22 +75,22 @@ $max_file_size = 2000000; // size in bytes
 		var type = jsonOUT['type'];
 		var address = jsonOUT['address'];
 		if( type == 'yes' || type == 'no'){
-			var jsonSTR = JSON.stringify(jsonOUT);
-			$.ajax({
-				type: "POST",
-				url: "./"+path,
-				data: jsonSTR,
-				success: function(){alert("Network submitted!");},
-				dataType: "json",
-				contentType : "application/json"
-			});
-			
-			window.alert("Network added!");
-			window.location = "/map.php";
-		
-		}
-		else{
--			alert("Please fill out all the information before submitting");
++
+ 			var jsonSTR = JSON.stringify(jsonOUT);
+ 			$.ajax({
+ 				type: "POST",
+ 				url: "./"+path,
+ 				data: jsonSTR,
+ 				success: function(){alert("Network submitted!");},
+ 				dataType: "json",
+ 				contentType : "application/json"
+ 			});
+ 			
+ 			window.alert("Network added!");
+ 			window.location = "/map.php";
+-		}
+-		else{
+-			alert("Answer must be 'yes or 'no'");
 -		}
 		
 		
