@@ -97,7 +97,7 @@
  	function deleteForm(path, formID){
     		document.getElementById("picurl").value = picurl;
  		document.getElementById("user").value = user;
-		var user = jsonOUT['user'];
+		var user = <?php echo $_SESSION['username']?>;
 		var htmluser = jsonOUT['htmluser'];
 		if( user == htmluser){
  		var jsonOUT =$(formID).serializeObject();
