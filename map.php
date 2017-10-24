@@ -196,10 +196,10 @@
 			
 			</div>
 			<br/>
-			<div style="font-size: 20px; top: 92%; left: 8%;">
+			<div style="font-size: 20px; top: 64%; left: 8%;">
 				Customer only?(yes/no)
 			</div>
-			<div  style="font-size: 20px; top: 92%">
+			<div  style="font-size: 20px; top: 64%">
 				
   				<select name="type">
    				<option value="Yes">Yes</option>
