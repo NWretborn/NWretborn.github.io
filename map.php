@@ -72,9 +72,9 @@ $max_file_size = 2000000; // size in bytes
 		var picurl = document.getElementById("latval").value+"."+document.getElementById("lonval").value+".png";
    		document.getElementById("picurl").value = picurl;
 		var jsonOUT =$(formID).serializeObject();
-		var name = jsonOUT['name'];
+		var type = jsonOUT['type'];
 		var address = jsonOUT['address'];
-		if(name != null || address != null){
+		if( type == 'yes' || type == 'no'){
 			var jsonSTR = JSON.stringify(jsonOUT);
 			$.ajax({
 				type: "POST",
