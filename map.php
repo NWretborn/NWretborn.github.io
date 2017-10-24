@@ -192,7 +192,7 @@ $max_file_size = 2000000; // size in bytes
 			</div>
 			<div  style="font-size: 20px; top: 52%">
 				
-  				<input value="" type="text" name="rating" class="tb5">
+  				<select>
    				<option value="Slow">Slow</option>
     				<option value="Decent">Decent</option>
 				<option value="Great">Great</option>
