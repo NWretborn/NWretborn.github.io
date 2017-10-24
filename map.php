@@ -1,78 +1,80 @@
-<?php
-$realIP = file_get_contents("http://ipecho.net/plain");
-session_start();
-		if(!isset( $_SESSION['username'] ) ){ #this triggers if session is not set
-			header("Location: /index.php");
-		}
-
-#For LOGOUT do a /api.php/logout as get, do index as redirect
-		
-// filename: upload.form.php
-
-// first let's set some variables
-
-// make a note of the current working directory relative to root.
-$directory_self = str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_SELF']);
-
-// make a note of the location of the upload handler
-$uploadHandler = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.processor.php';
-
-// set a max file size for the html upload form
-$max_file_size = 2000000; // size in bytes
-
-// now echo the html page
-?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-
-<!DOCTYPE html>
-<html>
-<!-- http://www.9lessons.info/2009/08/vote-with-jquery-ajax-and-php.html -->
-	
-	
-	
-	
-<head>
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    	<meta charset="utf-8">
-	<title>WiFinder</title>
-	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
-	<link rel="stylesheet" type="text/css" href="libs/map.css">
-	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-</head>
-	
-	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-	<script src="libs/map.js"></script>
-	<script src="libs/std.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places"async defer></script>
-	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-	<script type="text/javascript">
-
+ <?php
+ $realIP = file_get_contents("http://ipecho.net/plain");
+ session_start();
+ 		if(!isset( $_SESSION['username'] ) ){ #this triggers if session is not set
+ 			header("Location: /index.php");
+ 		}
  
-	
-// make json object from serialized array of html form
-
-// Get the element with id="defaultOpen" and click on it
-	$.fn.serializeObject = function() {
-		var o = {};
-		var a = this.serializeArray();
-		$.each(a, function() {
-			if (o[this.name]) {
-				if (!o[this.name].push) {
-					o[this.name] = [o[this.name]];
-				}
-				o[this.name].push(this.value || '');
-			} else {
-				o[this.name] = this.value || '';
-			}
-		});
-		return o;
-	};
-	// post the submission form to API via ajax in json format
-	function postForm(path, formID){
+ #For LOGOUT do a /api.php/logout as get, do index as redirect
+ 		
+ // filename: upload.form.php
+ 
+ // first let's set some variables
+ 
+ // make a note of the current working directory relative to root.
+ $directory_self = str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_SELF']);
+ 
+ // make a note of the location of the upload handler
+ $uploadHandler = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.processor.php';
+ 
+ // set a max file size for the html upload form
+ $max_file_size = 2000000; // size in bytes
+ 
+ // now echo the html page
+ ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+ 
+ <!DOCTYPE html>
+ <html>
+ <!-- http://www.9lessons.info/2009/08/vote-with-jquery-ajax-and-php.html -->
+ 	
+ 	
+ 	
+ 	
+ <head>
+ 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+     	<meta charset="utf-8">
+ 	<title>WiFinder</title>
+ 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
+ 	<link rel="stylesheet" type="text/css" href="libs/map.css">
+ 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+ </head>
+ 	
+ 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+ 	<script src="libs/map.js"></script>
+ 	<script src="libs/std.js"></script>
+ 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJR14TQYMP-yBtsSpULmOe0hM7bHPWasQ&libraries=places"async defer></script>
+ 	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+ 	<script type="text/javascript">
+ 
+  
+ 	
+ // make json object from serialized array of html form
+ 
+ // Get the element with id="defaultOpen" and click on it
+ 	$.fn.serializeObject = function() {
+ 		var o = {};
+ 		var a = this.serializeArray();
+ 		$.each(a, function() {
+ 			if (o[this.name]) {
+ 				if (!o[this.name].push) {
+ 					o[this.name] = [o[this.name]];
+ 				}
+ 				o[this.name].push(this.value || '');
+ 			} else {
+ 				o[this.name] = this.value || '';
+ 			}
+ 		});
+ 		return o;
+ 	};
+ 	// post the submission form to API via ajax in json format
+ 	function postForm(path, formID){
  		var picurl = document.getElementById("latval").value+"."+document.getElementById("lonval").value+".png";
     		document.getElementById("picurl").value = picurl;
  		var jsonOUT =$(formID).serializeObject();
  		var type = jsonOUT['type'];
+-		if( type == 'yes' || type == 'no'){
++
  			var jsonSTR = JSON.stringify(jsonOUT);
  			$.ajax({
  				type: "POST",
@@ -85,36 +87,38 @@ $max_file_size = 2000000; // size in bytes
  			
  			window.alert("Network added!");
  			window.location = "/map.php";
--		
--		
+-		}
+-		else{
+-			alert("Answer must be 'yes or 'no'");
+-		}
 +		
 +		
  		
  		
+ 	}	
  		
-		
-	// post the submission form to API via ajax in json format
-	function deleteForm(path, formID){
-   		document.getElementById("picurl").value = picurl;
-		document.getElementById("user").value = user;
-		var jsonOUT =$(formID).serializeObject();
-			var jsonSTR = JSON.stringify(jsonOUT);
-			$.ajax({
-				type: "POST",
-				url: "./"+path,
-				data: jsonSTR,
-				success: function(){alert("Network Removed!");},
-				dataType: "json",
-				contentType : "application/json"
-			});
-			
-			window.alert("Network Removed");
-			window.location = "/index.php";
-		
-		
-		
-	}
-	
+ 	// post the submission form to API via ajax in json format
+ 	function deleteForm(path, formID){
+    		document.getElementById("picurl").value = picurl;
+ 		document.getElementById("user").value = user;
+ 		var jsonOUT =$(formID).serializeObject();
+ 			var jsonSTR = JSON.stringify(jsonOUT);
+ 			$.ajax({
+ 				type: "POST",
+ 				url: "./"+path,
+ 				data: jsonSTR,
+ 				success: function(){alert("Network Removed!");},
+ 				dataType: "json",
+ 				contentType : "application/json"
+ 			});
+ 			
+ 			window.alert("Network Removed");
+ 			window.location = "/index.php";
+ 		
+ 		
+ 		
+ 	}
+ 	
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
 	
