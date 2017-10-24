@@ -395,7 +395,6 @@ function geolocate() {
 		if (lon[0] == "," || lon[0] == " ") {
 			if (lon[0] == " ") {
 				var lon = String(locArr.slice(18,29));
-				break;
 			}
 			else {
 			var lon = String(locArr.slice(19,30));
