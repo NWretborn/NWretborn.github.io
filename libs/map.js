@@ -391,21 +391,21 @@ function geolocate() {
   		}
 		var locArr = String(location);
 		var lat = String(locArr.slice(1,12));
-		var lon = String(locArr.slice(17,28));
+		var lon = String(locArr.slice(19,31));
 		if (lon[0] == "," || lon[0] == " ") {
 			if (lon[0] == " ") {
-				var lon = String(locArr.slice(18,29));
+				var lon = String(locArr.slice(20,32));
 			}
 			else {
-			var lon = String(locArr.slice(19,30));
+			var lon = String(locArr.slice(21,33));
 			}
 		}
 		else if(lon[1] == "," || lon[1] == " ") {
 			if (lon[1] == " ") {
-				var lon = String(locArr.slice(20,31));
+				var lon = String(locArr.slice(22,34));
 			}
 			else {
-			var lon = String(locArr.slice(21,32));
+			var lon = String(locArr.slice(23,35));
 			}
 		}
 		//document.getElementById("lat").innerHTML=lat;
