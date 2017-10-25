@@ -1,5 +1,5 @@
  <?php
- $realIP = file_get_contents("http://ipecho.net/plain");
+
  session_start();
  		if(!isset( $_SESSION['username'] ) ){ #this triggers if session is not set
  			header("Location: /index.php");
@@ -117,7 +117,7 @@
  			window.location = "/index.php";
 		}
  		else{
-			alert("You may only delete the networks that you have submitted");
+			alert("Please click on a network you have submitted before deleting");
 		}
  		
  	}
