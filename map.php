@@ -75,6 +75,7 @@
  			var jsonSTR = JSON.stringify(jsonOUT);
 			var name = jsonOUT['name'];
 			var address = jsonOUT['address'];
+		//Check name and address for special characters, alert accordingly
 			if( name != '' && address != '' ){
  			$.ajax({
  				type: "POST",
