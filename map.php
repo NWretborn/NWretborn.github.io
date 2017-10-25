@@ -149,7 +149,7 @@
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmltype" href = test.html></p>
 </div>
-	  <IMG id="htmlpicurl" SRC="htmlpicurl" ALT="" WIDTH=500 HEIGHT=180>
+	  <IMG id="htmlpicurl" SRC="htmlpicurl" ALT="" WIDTH=200 HEIGHT=200>
 	  <div  style="font-size: 20px; top: 92%">
 				<p style="font-size: 20px; color: #10454e;" id="htmluser" href = test.html></p>
 </div>
