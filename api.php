@@ -86,7 +86,9 @@
 	switch($apicall){
 		case 'adduser':
 			$table='user';
-			if($input['password'])
+			if($input['user'] in $table)
+				badcall(True, "Username already taken");
+			else if($input['password'])
 				$input['password'] = hashpass($input['password']);
 			badcall($method!='POST', "use POST for adduser"); //NOT SURE IF BADCALL IS GOOD METHOD
 			break;
