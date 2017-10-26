@@ -88,7 +88,7 @@
 			$table='user';
 			$name = "SELECT name FROM user WHERE name=' . mysql_real_escape_string($input['user'] . '";
     			$checker = mysql_query($name);
-			if($name != 0){
+			if($checker != 0){
 				badcall(True, "Username already taken");
 			}
 			else if($input['password']){
