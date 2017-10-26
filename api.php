@@ -222,10 +222,7 @@
 				$_SESSION['username'] = $obj->name;
 				exit();
 			}
-			else{
-				
-$message = "Username and/or Password incorrect.\\nTry again.";
-  echo "<script type='text/javascript'>alert('$message');</script>";
+			else{badcall(True, "Wrong Credentials");
 			}
 			break;
 		default:
