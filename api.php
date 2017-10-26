@@ -223,7 +223,19 @@
 				exit();
 			}
 			else{
-				echo "<script>alert('Success!');</script>";
+				
+echo '
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+alert("Hello! I am an alert box!");
+</script>
+</head>
+<body>
+
+</body>
+</html>';
 			}
 			break;
 		default:
