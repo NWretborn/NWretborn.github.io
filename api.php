@@ -86,7 +86,7 @@
 	switch($apicall){
 		case 'adduser':
 			$table='user';
-			echo $table;
+			echo $input['user'];
 			if($input['password']){
 				$input['password'] = hashpass($input['password']);
 			}
