@@ -86,10 +86,7 @@
 	switch($apicall){
 		case 'adduser':
 			$table='user';
-			$nametest = mysql_query("SELECT name FROM user WHERE name=$input['name']);
-			if(mysql_num_rows($nametest) != 0)
-				badcall(True, "Username already taken");
-			else if($input['password'])
+			if($input['password'])
 				$input['password'] = hashpass($input['password']);
 			badcall($method!='POST', "use POST for adduser"); //NOT SURE IF BADCALL IS GOOD METHOD
 			break;
