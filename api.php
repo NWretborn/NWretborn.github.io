@@ -210,7 +210,7 @@
 			break;
 		case 'login':
 			errlog("number of elements: ".count($resultarray));
-			badcall(count($resultarray) != 1, "wrong amount of users returned");
+			
 			$obj = $resultarray[0];
 			errlog("hashed: ".$obj->password);
 			errlog("password: ".$input['password']);
