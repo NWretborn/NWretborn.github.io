@@ -223,8 +223,7 @@
 				exit();
 			}
 			else{
-				<?php echo '<script>myfunction()</script>'; ?>
-				echo "<script type='text/javascript'>alert('$message');</script>";
+				echo "<script>alert('Success!');</script>";
 			}
 			break;
 		default:
@@ -235,10 +234,3 @@
 	errlog("--------------------------------------------------");
 	errlog("ENDLOG");
 ?>
-
-<script>
-function myFunction()
-{
-alert("I am an alert box!"); // this is the message in ""
-}
-</script>
