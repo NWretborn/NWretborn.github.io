@@ -224,18 +224,8 @@
 			}
 			else{
 				
-echo '
-<!DOCTYPE html>
-<html>
-<head>
-<script>
-alert("Hello! I am an alert box!");
-</script>
-</head>
-<body>
-
-</body>
-</html>';
+$message = "Username and/or Password incorrect.\\nTry again.";
+  echo "<script type='text/javascript'>alert('$message');</script>";
 			}
 			break;
 		default:
