@@ -86,7 +86,7 @@
 	switch($apicall){
 		case 'adduser':
 			$table='user';
-			$name = "SELECT name FROM user WHERE name=' . mysql_real_escape_string($input['user'] . '";
+			$name = "SELECT name FROM user WHERE name=' . mysql_real_escape_string($input['user']) . '";
 			echo $name;
 			if($input['password']){
 				$input['password'] = hashpass($input['password']);
