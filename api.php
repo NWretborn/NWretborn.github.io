@@ -87,7 +87,7 @@
 		case 'adduser':
 			$table='user';
 			$nametest = mysql_query("SELECT username FROM User WHERE username='".$input['name']."'");
-			if($nametest == $input['name'])
+			if(mysql_num_rows($nametest) != 0)
 				badcall(True, "Username already taken");
 			else if($input['password'])
 				$input['password'] = hashpass($input['password']);
