@@ -86,7 +86,7 @@
 	switch($apicall){
 		case 'adduser':
 			$table='user';
-			if($input['user'] in $table='user')
+			if($input['name'] in $table='user')
 				badcall(True, "Username already taken");
 			if($input['password'])
 				$input['password'] = hashpass($input['password']);
