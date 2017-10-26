@@ -223,7 +223,7 @@
 				exit();
 			}
 			else{
-				$message = "wrong credentials";
+				badcall(True, "Wrong credentials!");
 				echo "<script type='text/javascript'>alert('$message');</script>";
 			}
 			break;
