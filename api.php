@@ -223,7 +223,7 @@
 				exit();
 			}
 			else{
-				badcall(True, "Wrong credentials!");
+				<?php echo '<script>myfunction()</script>'; ?>
 				echo "<script type='text/javascript'>alert('$message');</script>";
 			}
 			break;
@@ -235,3 +235,10 @@
 	errlog("--------------------------------------------------");
 	errlog("ENDLOG");
 ?>
+
+<script>
+function myFunction()
+{
+alert("I am an alert box!"); // this is the message in ""
+}
+</script>
