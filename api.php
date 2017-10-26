@@ -86,7 +86,7 @@
 	switch($apicall){
 		case 'adduser':
 			$table='user';
-			$nametest = mysql_query("SELECT * FROM `user` WHERE name='wretborn');
+			$nametest = mysql_query("SELECT name FROM user WHERE name=$input['name']);
 			if(mysql_num_rows($nametest) != 0)
 				badcall(True, "Username already taken");
 			else if($input['password'])
