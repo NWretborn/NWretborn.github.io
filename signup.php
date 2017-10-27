@@ -50,7 +50,7 @@
 					console.log("success"); 
 					console.log(data);
 				},
-				complete: function(){console.log("complete");},
+				complete: function(data){console.log("complete");console.log(data);},
 				dataType: "json",
 				contentType : "application/json"
 			});
