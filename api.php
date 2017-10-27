@@ -127,6 +127,9 @@
 			unset($_SESSION['username']);
 			exit();
 			break;
+		case 'user':
+			echo "Bajs";
+			break;
 		default:
 			badcall(True, "not an api-function");
 			break;
@@ -170,8 +173,7 @@
 		errlog("SQL ERROR: ".$errors);
 		if (strpos($errors, $curuser) !== false) {
    			echo "HEJS";
-			header("Location: introduction.html");
-       exit();  // stop any other processing !important!
+			$apicall = 'user';
 	}
 	}
 	
