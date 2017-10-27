@@ -143,7 +143,7 @@
 
 
 	<div class="center box">
-  Username already taken!
+  	<span style="color: #29afc4; font-size: 12px">WiFinder</span>
 		<form onsubmit='postForm("../api.php/adduser", "#registerform"); return false' id="registerform">
 
 			<div style="top: 12%; left: 8%">
