@@ -171,6 +171,10 @@
 		if (strpos($errors, $curuser) !== false) {
    			echo "HEJS";
 			badcall(True, "Wrong Credentials");
+			while (session_get_status()) 
+{
+    session_end_clean();
+}
 			header( "Location: https://google.se" );
 	}
 	}
