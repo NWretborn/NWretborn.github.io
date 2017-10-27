@@ -115,7 +115,7 @@
 <body>
 
 	<div class="center box">
-		<span style="color: #29afc4;">Thank you!</span> You may now <span style="color: #29afc4;"><a href="/index.php">Log in!</a></span>
+		<span style="color: #29afc4; top: 40%;">Thank you!</span> You may now <span style="color: #29afc4;"><a href="/index.php">Log in!</a></span>
 		
 	</div>
 
