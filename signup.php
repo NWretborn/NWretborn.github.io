@@ -47,6 +47,7 @@
 				data: jsonSTR,
 				success: function(){console.log("success"); document.location="confirmed.php";},
 				complete: function(){console.log("complete"); document.location="about.php";},
+				error: function(){console.log("success"); document.location="confirmed.php";},
 				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown); document.location="about.php";}, 
 				dataType: "json",
 				contentType : "application/json"
