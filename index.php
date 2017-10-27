@@ -33,9 +33,17 @@
 				type: "GET",
 				url: "./"+path,
 				data: jsonSTR,
-				success: function(){console.log("success"); location.reload();},
-				complete: function(){console.log("complete"); location.reload();},
-				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);}, 
+				success: function(){console.log("success");},
+				complete: function(){console.log("complete");},
+				error: function(jqXHR, textStatus, errorThrown){
+					console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);
+					if(jqXHR.status==404) {
+        					window.location.href="signuperror.php";
+    					}
+					else{
+						location.reload();
+					}
+				},
 				dataType: "json",
 				contentType : "application/json"
 			});
