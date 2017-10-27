@@ -175,6 +175,9 @@
 	$errors = mysqli_error($link);
 	if($errors){
 		errlog("SQL ERROR: ".$errors);
+		if($curuser in $errors){
+			echo "Hej";
+		}
 	}
 	
 	// die if SQL statement failed
