@@ -87,8 +87,10 @@
 		case 'adduser':
 			$table='user';
 			$curuser =  $input['name'];
-			$test = "SELECT name FROM 'user' WHERE name=' . mysql_real_escape_string($curuser) . '";
+			$test = "SELECT name FROM user WHERE name=' . mysql_real_escape_string($curuser) . '";
 			$usertester = mysql_query($test);
+			echo $test;
+			echo $usertester;
 			 if(mysql_num_rows($usertester) > 0) {
         			badcall(True, "Wrong Credentials");
 			} else {
