@@ -170,6 +170,9 @@
 		errlog("SQL ERROR: ".$errors);
 		if (strpos($errors, $curuser) !== false) {
    			echo "HEJS";
+			<script>
+window.location = 'http://example.com/some/url';
+</script>
 	}
 	}
 	
@@ -236,7 +239,4 @@
 
 	errlog("--------------------------------------------------");
 	errlog("ENDLOG");
-if (strpos($errors, $curuser) !== false) {
-   			echo "HEJS";
-	}
 ?>
