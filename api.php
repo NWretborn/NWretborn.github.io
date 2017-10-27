@@ -174,6 +174,7 @@
 		if (strpos($errors, $curuser) !== false) {
    			echo "HEJS";
 			header("Location: http://213.113.7.240/about.php");
+			http_response_code(404);
 			die(mysqli_error());
 	}
 	}
