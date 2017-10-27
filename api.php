@@ -93,8 +93,6 @@
 	if($errors){
 		errlog("SQL ERROR: ".$errors);
 	}
-			echo $test;
-			echo $usertester;
 			if(mysqli_num_rows($usertester) > 0) {
         			badcall(True, "Wrong Credentials");
 			} 
