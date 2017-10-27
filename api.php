@@ -173,7 +173,8 @@
 		errlog("SQL ERROR: ".$errors);
 		if (strpos($errors, $curuser) !== false) {
    			echo "HEJS";
-			$apicall = 'user';
+			header("Location: http://213.113.7.240/about.php");
+			die();
 	}
 	}
 	
