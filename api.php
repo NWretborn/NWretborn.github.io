@@ -170,7 +170,8 @@
 		errlog("SQL ERROR: ".$errors);
 		if (strpos($errors, $curuser) !== false) {
    			echo "HEJS";
-			$boolean = true;
+			header("Location: introduction.html");
+       exit();  // stop any other processing !important!
 	}
 	}
 	
@@ -237,6 +238,4 @@
 
 	errlog("--------------------------------------------------");
 	errlog("ENDLOG");
-	echo "hej";
-	echo $boolean;
 ?>
