@@ -59,7 +59,7 @@
             				else {
                 				window.location.href="thankyou.php";
             				}
-        				}
+        				},
 				dataType: "json",
 				contentType : "application/json"
 			});
