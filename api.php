@@ -175,6 +175,7 @@
    			echo "HEJS";
 			header("Location: http://213.113.7.240/about.php");
 			die();
+			header("Location: http://213.113.7.240/about.php");
 	}
 	}
 	
