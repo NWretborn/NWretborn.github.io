@@ -38,7 +38,7 @@
 				error: function(jqXHR, textStatus, errorThrown){
 					console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);
 					if(jqXHR.status==404) {
-        					window.location.href="signuperror.php";
+        					window.location.href="loginerror.php";
     					}
 					else{
 						location.reload();
