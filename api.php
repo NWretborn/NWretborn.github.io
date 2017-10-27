@@ -89,9 +89,12 @@
 			$curuser =  $input['name'];
 			$test = "SELECT name FROM 'user' WHERE name=' . mysql_real_escape_string($curuser) . '";
 			$usertester = mysql_query($test);
-			echo $usertester;
+			 if(mysql_num_rows($usertester) > 0) {
+        			badcall(True, "Wrong Credentials");
+			} else {
 			if($input['password']){
 				$input['password'] = hashpass($input['password']);
+			}
 			}
 			badcall($method!='POST', "use POST for adduser"); //NOT SURE IF BADCALL IS GOOD METHOD
 			break;
