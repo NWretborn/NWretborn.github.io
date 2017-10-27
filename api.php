@@ -89,11 +89,8 @@
 			$curuser =  $input['name'];
 			$test = "SELECT name FROM user WHERE name=' . mysql_real_escape_string($curuser) . '";
 			$usertester = mysqli_query($link,$test);
-			$errors = mysqli_error($link);
-	if($errors){
-		errlog("ADDUSERERROR: ".$errors);
-	}
 			if(mysqli_num_rows($usertester) > 0) {
+				echo "Hej";
         			badcall(True, "Wrong Credentials");
 			} 
 			else {
