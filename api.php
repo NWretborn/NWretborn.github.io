@@ -26,7 +26,6 @@
 -->
 
 <?php
-	ob_start();
 	mysql_set_charset("UTF8");
 	ini_set("allow_url_fopen", true);
 	ini_set("log_errors", 1);
@@ -171,12 +170,6 @@
 		errlog("SQL ERROR: ".$errors);
 		if (strpos($errors, $curuser) !== false) {
    			echo "HEJS";
-			badcall(True, "Wrong Credentials");
-			while (ob_get_status()) 
-{
-    ob_end_clean();
-}
-			header( "Location: https://google.se" );
 	}
 	}
 	
@@ -243,4 +236,7 @@
 
 	errlog("--------------------------------------------------");
 	errlog("ENDLOG");
+if (strpos($errors, $curuser) !== false) {
+   			echo "HEJS";
+	}
 ?>
