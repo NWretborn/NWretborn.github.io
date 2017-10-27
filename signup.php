@@ -45,8 +45,16 @@
 				type: "POST",
 				url: "./"+path,
 				data: jsonSTR,
-				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown); window.location.replace("http:/error.com");},
-				success: function(){console.log("success"); window.location.replace("http:/success.com");},
+				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);},
+				success: function(data){
+					console.log("success"); 
+					if (data === 'Invalid data') {
+                 				 window.location.href="error.php";                
+            				}
+            				else {
+                				window.location.href="thankyou.php";
+            			}
+				},
 				complete: function(){console.log("complete");},
 				dataType: "json",
 				contentType : "application/json"
