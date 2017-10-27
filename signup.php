@@ -45,8 +45,8 @@
 				type: "POST",
 				url: "./"+path,
 				data: jsonSTR,
-				success: function(){console.log("success");},
-				complete: function(){console.log("complete"); document.location="confirmed.php";},
+				success: function(){console.log("success"); document.location="confirmed.php";},
+				complete: function(){console.log("complete");},
 				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown); document.location="about.php";}, 
 				dataType: "json",
 				contentType : "application/json"
