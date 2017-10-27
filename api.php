@@ -88,7 +88,7 @@
 			$table='user';
 			echo $input['name'];
 			$test = "hej!";
-			echo test;
+			echo $test;
 			if($input['password']){
 				$input['password'] = hashpass($input['password']);
 			}
