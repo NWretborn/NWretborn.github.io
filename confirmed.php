@@ -115,12 +115,14 @@
 <body>
 
 	<div class="center box">
-		<span style="color: #29afc4;">Thank you!</span> You may now log in!
+		<span style="color: #29afc4;">Thank you!</span> You may now <span style="color: #29afc4;"><a href="/index.php">Log in!</a></span>
 		
 	</div>
 
-	<span class="logo2" onclick="location.href='index.php'"> </span>
+	
+	<span id="logo" class="about" onclick="location.href='index.php'"> </span>
 	<span class="cache" style="background: url(img/logo_blue.png)"></span>
+
 
 </body>
 </html>
