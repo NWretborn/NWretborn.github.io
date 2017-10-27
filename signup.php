@@ -45,12 +45,21 @@
 				type: "POST",
 				url: "./"+path,
 				data: jsonSTR,
-				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);},
+				error: function(jqXHR, textStatus, errorThrown){
+					console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);
+				},
 				success: function(data){
 					console.log("success"); 
-					console.log(data);
 				},
-				complete: function(data){console.log("complete");console.log(data);},
+				complete: function(data){
+					console.log("complete");
+					if (data === 'Invalid data') {
+                 				window.location.href="thankyou2.php";                  
+            				}
+            				else {
+                				window.location.href="thankyou.php";
+            				}
+        				}
 				dataType: "json",
 				contentType : "application/json"
 			});
