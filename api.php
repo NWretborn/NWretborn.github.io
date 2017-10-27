@@ -86,18 +86,10 @@
 	switch($apicall){
 		case 'adduser':
 			$table='user';
-			$curuser =  $input['name'];
-			$test = "select * from `user` WHERE name=' . mysql_real_escape_string($curuser) . '";
-			$usertester = mysqli_query($link,$test);
-			if(mysqli_num_rows($usertester)) {
-				echo "Hej";
-        			badcall(True, "Wrong Credentials");
-			} 
-			else {
 			if($input['password']){
 				$input['password'] = hashpass($input['password']);
 			}
-			}
+			
 			badcall($method!='POST', "use POST for adduser"); //NOT SURE IF BADCALL IS GOOD METHOD
 			break;
 		case 'addwifi':
@@ -176,7 +168,7 @@
 	if($errors){
 		errlog("SQL ERROR: ".$errors);
 		if (strpos($errors, $curuser) !== false) {
-   		 echo 'true';
+   			badcall(True, "Wrong Credentials");
 	}
 	}
 	
