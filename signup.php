@@ -45,9 +45,9 @@
 				type: "POST",
 				url: "./"+path,
 				data: jsonSTR,
-				success: function(){console.log("success"); window.location.replace("/index.php");},
 				complete: function(){console.log("complete");},
-				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown); window.location.replace("http://stackoverflow.com");}, 
+				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown); window.location.replace("http://stackoverflow.com");},
+				success: function(){console.log("success"); window.location.replace("/index.php");},
 				dataType: "json",
 				contentType : "application/json"
 			});
