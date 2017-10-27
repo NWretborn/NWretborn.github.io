@@ -45,10 +45,9 @@
 				type: "POST",
 				url: "./"+path,
 				data: jsonSTR,
-				success: function(){console.log("success"); document.location="confirmed.php";},
-				complete: function(){console.log("complete"); document.location="about.php";},
-				error: function(){console.log("success"); document.location="confirmed.php";},
-				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown); document.location="about.php";}, 
+				success: function(){console.log("success");},
+				complete: function(){console.log("complete"); document.location="index.php";},
+				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);}, 
 				dataType: "json",
 				contentType : "application/json"
 			});
