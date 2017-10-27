@@ -53,7 +53,7 @@
 				},
 				complete: function(data){
 					console.log("complete");
-					if (data.search("200") > -1) {
+					if (data.parse("404") {
  window.location.href="thankyou2.php";
 }
             				else {
