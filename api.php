@@ -91,7 +91,7 @@
 			$usertester = mysqli_query($link,$test);
 			$errors = mysqli_error($link);
 	if($errors){
-		errlog("SQL ERROR: ".$errors);
+		errlog("ADDUSERERROR: ".$errors);
 	}
 			if(mysqli_num_rows($usertester) > 0) {
         			badcall(True, "Wrong Credentials");
