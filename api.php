@@ -88,7 +88,7 @@
 			$table='user';
 			$curuser =  $input['name'];
 			$test = "SELECT name FROM 'user' WHERE name=mysql_real_escape_string($curuser)";
-			$usertester = mysql_query($link,$test) or die(mysql_error());
+			$usertester = mysql_query($link,$test);
 			echo $test;
 			echo $usertester;
 			 if(mysql_num_rows($usertester) > 0) {
