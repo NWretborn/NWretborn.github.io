@@ -45,8 +45,8 @@
 				type: "POST",
 				url: "./"+path,
 				data: jsonSTR,
-				success: function(){console.log("success");},
-				complete: function(){console.log("complete"); document.location="index.php";},
+				success: function(){console.log("success"); window.location.replace("/index.php");},
+				complete: function(){console.log("complete");},
 				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown); window.location.replace("http://stackoverflow.com");}, 
 				dataType: "json",
 				contentType : "application/json"
