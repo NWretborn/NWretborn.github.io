@@ -53,7 +53,7 @@
 				},
 				complete: function(data){
 					console.log("complete");
-					if (data.indexOf("Submission was successful") > -1) {
+					if (data.search("200") > -1) {
  window.location.href="thankyou2.php";
 }
             				else {
