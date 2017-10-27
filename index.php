@@ -8,7 +8,7 @@
 <html>
 	
 <head>
-	<meta name="google-signin-client_id" content="608078643029-d690aqehavkkf285rkv30plgdjq3uh0u.apps.googleusercontent.com">
+	<meta name="google-signin-client_id" content="608078643029-c8jt4vdjbfd778hb9le72c8efcar81fk.apps.googleusercontent.com">
 	<meta http-equiv="Content-Language" content="sv">
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<title>WiFinder</title>
