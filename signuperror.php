@@ -143,7 +143,7 @@
 
 
 	<div class="center box">
-  	<div style="color: #29afc4; font-size: 16px; top: 6%; left: 8%">That username is already taken</div>
+  	<div style="color: #29afc4; font-size: 16px; top: 6%; left: 200vw;">That username is already taken</div>
 		<form onsubmit='postForm("../api.php/adduser", "#registerform"); return false' id="registerform">
 
 			<div style="top: 12%; left: 8%">
