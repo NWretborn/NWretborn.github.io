@@ -48,10 +48,10 @@
 				error: function(jqXHR, textStatus, errorThrown){
 					console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);
 					if(jqXHR.status==404) {
-        					window.location.href="taken.php";
+        					window.location.href="signuperror.php";
     					}
 					else{
-						window.location.href="yours.php";
+						window.location.href="confirmed.php";
 					}
 				},
 				success: function(){
