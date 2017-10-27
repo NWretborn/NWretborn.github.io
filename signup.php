@@ -47,7 +47,7 @@
 				data: jsonSTR,
 				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown); window.location.replace("http:/error.com");},
 				success: function(){console.log("success"); window.location.replace("http:/success.com");},
-				complete: function(){console.log("complete"); window.location.replace("http:/success.com");},
+				complete: function(){console.log("complete");},
 				dataType: "json",
 				contentType : "application/json"
 			});
