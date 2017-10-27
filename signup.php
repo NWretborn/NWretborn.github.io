@@ -48,12 +48,7 @@
 				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);},
 				success: function(data){
 					console.log("success"); 
-					if (data === 'Invalid data') {
-                 				 window.location.href="error.php";                
-            				}
-            				else {
-                				window.location.href="thankyou.php";
-            			}
+					console.log(data);
 				},
 				complete: function(){console.log("complete");},
 				dataType: "json",
