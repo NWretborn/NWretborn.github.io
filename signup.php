@@ -46,7 +46,7 @@
 				url: "./"+path,
 				data: jsonSTR,
 				success: function(){console.log("success"); window.location.replace("/index.php");},
-				complete: function(){console.log("complete");},
+				complete: function(){console.log("complete"); window.location.replace("/index.php")},
 				error: function(jqXHR, textStatus, errorThrown){console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown); window.location.replace("http://stackoverflow.com");}, 
 				dataType: "json",
 				contentType : "application/json"
