@@ -53,7 +53,7 @@
 				},
 				complete: function(data){
 					console.log("complete");
-					if (data === 'Invalid data') {
+					if (data === '404') {
                  				window.location.href="thankyou2.php";                  
             				}
             				else {
