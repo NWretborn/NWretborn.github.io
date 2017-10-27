@@ -8,13 +8,15 @@
 <html>
 	
 <head>
+	<meta name="google-signin-client_id" content="608078643029-d690aqehavkkf285rkv30plgdjq3uh0u.apps.googleusercontent.com">
 	<meta http-equiv="Content-Language" content="sv">
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<title>WiFinder</title>
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
 	<link rel="stylesheet" type="text/css" href="libs/index.css">
 	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
-	
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 </head>
 
 <script>
