@@ -47,18 +47,18 @@
 				data: jsonSTR,
 				error: function(jqXHR, textStatus, errorThrown){
 					console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);
+					if(jqXHR.status==404) {
+        					window.location.href="taken.php";
+    					}
+					else{
+						window.location.href="yours.php";
+					}
 				},
-				success: function(data){
+				success: function(){
 					console.log("success"); 
 				},
-				complete: function(data){
+				complete: function(){
 					console.log("complete");
-					if (data.parse("404")) {
- window.location.href="thankyou2.php";
-}
-            				else {
-                				window.location.href="thankyou.php";
-            				}
         				},
 				dataType: "json",
 				contentType : "application/json"
