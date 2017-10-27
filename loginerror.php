@@ -62,7 +62,7 @@
 	
 	
 <body>
-<div style="color: #29afc4; font-size: 16px; top-padding: 30%; left-padding: 15%">Wrong credentials</div>
+<div style="color: #29afc4; font-size: 16px; left: 200vw;>Wrong credentials</div>
 	<?php
 		if(isset( $_SESSION['username'] ) ){
 			include("map.php");
