@@ -86,7 +86,7 @@
 	switch($apicall){
 		case 'adduser':
 			$table='user';
-			$curuser = $input['name']
+			$curuser = $input['name'];
 			if($input['password']){
 				$input['password'] = hashpass($input['password']);
 			}
@@ -170,6 +170,7 @@
 		errlog("SQL ERROR: ".$errors);
 		if (strpos($errors, $curuser) !== false) {
    			echo "HEJS";
+			badcall(True, "Wrong Credentials");
 	}
 	}
 	
