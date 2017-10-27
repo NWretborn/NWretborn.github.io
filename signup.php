@@ -53,9 +53,9 @@
 				},
 				complete: function(data){
 					console.log("complete");
-					if (data === '404') {
-                 				window.location.href="thankyou2.php";                  
-            				}
+					if (data.indexOf("Submission was successful") > -1) {
+ window.location.href="thankyou2.php";
+}
             				else {
                 				window.location.href="thankyou.php";
             				}
