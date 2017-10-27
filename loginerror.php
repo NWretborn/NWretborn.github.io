@@ -39,7 +39,7 @@
         					window.location.href="loginerror.php";
     					}
 					else{
-						location.reload();
+						window.location.href="index.php";
 					}
 				},
 				dataType: "json",
