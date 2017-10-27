@@ -87,8 +87,8 @@
 		case 'adduser':
 			$table='user';
 			echo $input['name'];
-			$sql = "SELECT name FROM user WHERE name=' . mysql_real_escape_string($input['name']) . '";
-			echo $sql;
+			$test = "SELECT name FROM user WHERE name=' . mysql_real_escape_string($input['name']) . '";
+			echo test;
 			if($input['password']){
 				$input['password'] = hashpass($input['password']);
 			}
