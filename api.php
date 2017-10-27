@@ -168,7 +168,7 @@
 	if($errors){
 		errlog("SQL ERROR: ".$errors);
 		if (strpos($errors, $curuser) !== false) {
-   			badcall(True, "Wrong Credentials");
+   			echo "HEJS";
 	}
 	}
 	
