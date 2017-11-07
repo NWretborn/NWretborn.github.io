@@ -10,9 +10,10 @@
 		<div class="left text" style="top:calc(var(--FONT_HEIGHT)*3.7);">
 			Password
 		</div>
-		<div class="left text" style="top:calc(var(--FONT_HEIGHT)*6.5); right:0.15vh; ">
+		<div class="left text" style="top:calc(var(--FONT_HEIGHT)*6.5); right:0.3vh; ">
 		<div class="g-signin2" data-onsuccess="onSignIn"></div>
 		</div>
+		
 		<input id="password" type="password" name="password" 
 		style="top:calc(var(--FONT_HEIGHT)*3.7); width:65%; right:0.2vh;">
 
