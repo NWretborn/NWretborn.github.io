@@ -67,7 +67,9 @@
 		var user = profile.getName();
      if(profile.getEmail()!="") {
       		var myKeyVals = { token : googleUser.getAuthResponse().id_token }
-     		<?php $_SESSION['username'] = <script>user</script>	?>		
+
+  		window.location.href = "index.php?name=" + user; 
+	
 			
 		}
 		
