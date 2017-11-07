@@ -62,16 +62,39 @@
 			location.reload();}	
 		);
 	}
-	
 	function onSignIn(googleUser) {
-  		var profile = googleUser.getBasicProfile();
-  		console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  		console.log('Name: ' + profile.getName());
-  		console.log('Image URL: ' + profile.getImageUrl());
-  		console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-		//window.location.replace("map.php");
-	}
-	
+    var profile = googleUser.getBasicProfile();
+		var user = profile.getName();
+		var path = "api.php/login/" + user.value;
+     if(profile.getEmail()!="") {
+      var myKeyVals = { token : googleUser.getAuthResponse().id_token }
+     				$.ajax({
+				type: "GET",
+				url: "./"+path,
+				data: jsonSTR,
+				success: function(){console.log("success");},
+				complete: function(){console.log("complete");},
+				error: function(jqXHR, textStatus, errorThrown){
+					console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);
+					if(jqXHR.status==404) {
+        					window.location.href="loginerror.php";
+    					}
+					else{
+						location.reload();
+					}
+				},
+				dataType: "json",
+				contentType : "application/json"
+			});
+			user.value="";
+			pass.value="";
+		}
+		else{
+			alert("incorrect login credentials!"); //does nothing
+		}
+    }
+  }
+
 	
 
 </script>
