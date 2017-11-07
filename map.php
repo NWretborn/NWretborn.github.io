@@ -32,7 +32,7 @@
  	
  	
  <head>
-	
+	<meta name="google-signin-client_id" content="608078643029-d690aqehavkkf285rkv30plgdjq3uh0u.apps.googleusercontent.com">
  	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
      	<meta charset="utf-8">
  	<title>WiFinder</title>
