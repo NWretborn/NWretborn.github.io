@@ -25,6 +25,7 @@
 	
 	
 	<!--<form action="signup.php" method="get">-->
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
 	<div onclick="location.href='signup.php'">
 		<input type="submit" value ="Sign up" name="register" class="hCenter centerpoint" style="position:absolute; top:98%;" >
 	</div>
