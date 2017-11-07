@@ -84,7 +84,7 @@
 	
 <body>
 	
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
 
 <a href="index.php" onclick="signOut();">Sign out</a>
 	
