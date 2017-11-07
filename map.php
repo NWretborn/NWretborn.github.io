@@ -32,7 +32,7 @@
  	
  	
  <head>
-	<meta name="google-signin-client_id" content="608078643029-d690aqehavkkf285rkv30plgdjq3uh0u.apps.googleusercontent.com">
+	
  	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
      	<meta charset="utf-8">
  	<title>WiFinder</title>
@@ -40,7 +40,7 @@
  	<link rel="stylesheet" type="text/css" href="libs/map.css">
  	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
  </head>
- 	<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+ 	
  	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
  	<script src="libs/map.js"></script>
  	<script src="libs/std.js"></script>
@@ -123,18 +123,6 @@
  		
  	}
 		
-	function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-    });
-  }
-
-			 function onLoad() {
-      gapi.load('auth2', function() {
-        gapi.auth2.init();
-      });
-    }
  	
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
@@ -294,7 +282,7 @@ function openTab(evt, tabName) {
 </script>
 	
 	
-	<div style="font-size: 18px;" onclick="signOut(); logout();">
+	<div style="font-size: 18px;" onclick="signOut();">
 	<input type="submit" value =" Sign Out " name="register" style="color: #29afc4; position:fixed; left:23vw; bottom:20vh;" >
 </div>
 	
