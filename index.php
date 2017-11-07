@@ -65,37 +65,12 @@
 	function onSignIn(googleUser) {
     		var profile = googleUser.getBasicProfile();
 		var user = profile.getName();
-		console.log(profile);
-		console.log(user);
-		var pass = "";
-		var path = "api.php/login/" + user.value;
-		var jsonSTR = { password: pass.value };
      if(profile.getEmail()!="") {
-      var myKeyVals = { token : googleUser.getAuthResponse().id_token }
-     				$.ajax({
-				type: "GET",
-				url: "./"+path,
-				data: jsonSTR,
-				success: function(){console.log("success");},
-				complete: function(){console.log("complete");},
-				error: function(jqXHR, textStatus, errorThrown){
-					console.log(jqXHR + "\n" + textStatus + "\n" + errorThrown);
-					if(jqXHR.status==404) {
-        					window.location.href="loginerror.php";
-    					}
-					else{
-						location.reload();
-					}
-				},
-				dataType: "json",
-				contentType : "application/json"
-			});
-			user.value="";
-			pass.value="";
+      		var myKeyVals = { token : googleUser.getAuthResponse().id_token }
+     		<?php $_SESSION['username'] = <script>user</script>	?>		
+			
 		}
-		else{
-			alert("incorrect login credentials!"); //does nothing
-		}
+		
     
   }
 
