@@ -97,7 +97,6 @@
 		$GUser = $_GET['name'];
 		if($GUser != ""){
 			$_SESSION['username'] = $GUser;
-			include("map.php");
 		}
 		if(isset( $_SESSION['username'] ) ){
 			include("map.php");
@@ -105,7 +104,7 @@
 		else{
 			include("login_box.php");
 		}
-		echo "hello php-world";
+		
 	
 	?>
 	
