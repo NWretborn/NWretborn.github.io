@@ -25,7 +25,7 @@
 	
 	
 	<!--<form action="signup.php" method="get">-->
-	<div class="g-signin2" data-onsuccess="onSignIn" style="top:calc(var(--FONT_HEIGHT)*6.5); width:20%; right:0.2vh; "></div>
+	<div class="g-signin2" data-onsuccess="onSignIn" style="top: 50%; left: 50%"></div>
 	<div onclick="location.href='signup.php'">
 		<input type="submit" value ="Sign up" name="register" class="hCenter centerpoint" style="position:absolute; top:98%;" >
 	</div>
