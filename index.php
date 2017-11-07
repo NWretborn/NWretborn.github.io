@@ -92,7 +92,7 @@
 		else{
 			alert("incorrect login credentials!"); //does nothing
 		}
-    }
+    
   }
 
 	
