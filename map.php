@@ -40,7 +40,7 @@
  	<link rel="stylesheet" type="text/css" href="libs/map.css">
  	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
  </head>
- 	
+ 	<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
  	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
  	<script src="libs/map.js"></script>
  	<script src="libs/std.js"></script>
@@ -130,6 +130,11 @@
     });
   }
 
+			 function onLoad() {
+      gapi.load('auth2', function() {
+        gapi.auth2.init();
+      });
+    }
  	
 </script>
 <body onload="load(); openTab(event, 'viewNetwork');">
