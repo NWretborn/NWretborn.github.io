@@ -10,7 +10,7 @@
 		<div class="left text" style="top:calc(var(--FONT_HEIGHT)*3.7);">
 			Password
 		</div>
-		<div data-width="300" data-height="200" class="g-signin2" data-onsuccess="onSignIn"></div>
+		<div data-top="300" data-height="200" class="g-signin2" data-onsuccess="onSignIn"></div>
 		<input id="password" type="password" name="password" 
 		style="top:calc(var(--FONT_HEIGHT)*3.7); width:65%; right:0.2vh;">
 
