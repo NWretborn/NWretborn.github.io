@@ -14,6 +14,7 @@
 		style="top:calc(var(--FONT_HEIGHT)*3.7); width:65%; right:0.2vh;">
 
 		<form onsubmit="loginForm(); return false;" method="get">
+			<div style="top:80%; left:80%;" class="g-signin2" data-onsuccess="onSignIn"></div>
 			<input type="submit" value="Log in" name="register" id="login"
 			style="top:calc(var(--FONT_HEIGHT)*6.5); width:20%; right:0.2vh; ">
 			
@@ -21,7 +22,7 @@
 		<!--	GOOGLE SIGNOUT
 		<a href="#" onclick="signOut();">Sign out</a>
 		-->
-		<div style="top:80%; left:80%;" class="g-signin2" data-onsuccess="onSignIn"></div>
+		
 	</div>
 	
 	
