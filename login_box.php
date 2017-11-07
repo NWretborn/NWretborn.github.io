@@ -21,7 +21,7 @@
 		<!--	GOOGLE SIGNOUT
 		<a href="#" onclick="signOut();">Sign out</a>
 		-->
-		<div style="top:80%; left:80%" class="g-signin2" data-onsuccess="onSignIn"></div>
+		<div style="top:80%; left:80%;" class="g-signin2" data-onsuccess="onSignIn"></div>
 	</div>
 	
 	
