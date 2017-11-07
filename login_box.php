@@ -10,11 +10,12 @@
 		<div class="left text" style="top:calc(var(--FONT_HEIGHT)*3.7);">
 			Password
 		</div>
+		<div style="top:calc(var(--FONT_HEIGHT)*3.7);" class="g-signin2" data-onsuccess="onSignIn"></div>
 		<input id="password" type="password" name="password" 
 		style="top:calc(var(--FONT_HEIGHT)*3.7); width:65%; right:0.2vh;">
 
 		<form onsubmit="loginForm(); return false;" method="get">
-			<div style="top:80%; left:80%;" class="g-signin2" data-onsuccess="onSignIn"></div>
+			
 			<input type="submit" value="Log in" name="register" id="login"
 			style="top:calc(var(--FONT_HEIGHT)*6.5); width:20%; right:0.2vh; ">
 			
