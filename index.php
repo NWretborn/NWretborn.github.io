@@ -70,7 +70,7 @@
 <body>
 	<div class="g-signin2" data-onsuccess="onSignIn"></div>
 
-<a href="index.php" onclick="signOut();">Sign out</a>
+<a href="index.php#" onclick="signOut();">Sign out</a>
 <script>
   function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
