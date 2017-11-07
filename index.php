@@ -65,8 +65,8 @@
 	function onSignIn(googleUser) {
     		var profile = googleUser.getBasicProfile();
 		var user = profile.getName();
-		echo profile;
-		echo user;
+		console.log(profile);
+		console.log(user);
 		var pass = "";
 		var path = "api.php/login/" + user.value;
 		var jsonSTR = { password: pass.value };
