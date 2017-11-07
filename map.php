@@ -282,7 +282,7 @@ function openTab(evt, tabName) {
 </script>
 	
 	
-	<div style="font-size: 18px;" onclick="signOut();">
+	<div style="font-size: 18px;" onclick="logout();">
 	<input type="submit" value =" Sign Out " name="register" style="color: #29afc4; position:fixed; left:23vw; bottom:20vh;" >
 </div>
 	
