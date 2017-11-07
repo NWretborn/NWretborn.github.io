@@ -59,7 +59,7 @@
 	
 	function logout(){
 		
-		GoogleAuth.signOut();
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		
 		var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
