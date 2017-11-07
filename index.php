@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
 	<link rel="stylesheet" type="text/css" href="libs/index.css">
 	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
-	<script src="https://apis.google.com/js/client.js" async defer></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </head>
 
