@@ -65,7 +65,9 @@
 	function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
 		var user = profile.getName();
+		var pass = "";
 		var path = "api.php/login/" + user.value;
+		var jsonSTR = { password: pass.value };
      if(profile.getEmail()!="") {
       var myKeyVals = { token : googleUser.getAuthResponse().id_token }
      				$.ajax({
