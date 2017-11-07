@@ -39,6 +39,7 @@
  	<link rel="stylesheet" type="text/css" href="libs/wifinder.css">
  	<link rel="stylesheet" type="text/css" href="libs/map.css">
  	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	 <script src="https://apis.google.com/js/client.js" async defer></script>
  </head>
  	
  	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
