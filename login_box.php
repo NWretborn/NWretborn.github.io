@@ -21,11 +21,12 @@
 		<!--	GOOGLE SIGNOUT
 		<a href="#" onclick="signOut();">Sign out</a>
 		-->
+		<div class="g-signin2" data-onsuccess="onSignIn" style="top: 50%; left: 50%"></div>
 	</div>
 	
 	
 	<!--<form action="signup.php" method="get">-->
-	<div class="g-signin2" data-onsuccess="onSignIn" style="top: 50%; left: 50%"></div>
+	
 	<div onclick="location.href='signup.php'">
 		<input type="submit" value ="Sign up" name="register" class="hCenter centerpoint" style="position:absolute; top:98%;" >
 	</div>
