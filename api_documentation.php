@@ -17,13 +17,13 @@
 		<p>POST</p>
 		<h5>Sample Call</h5>
 		<p> $.ajax({
-    url: "api.php/adduser",
-    dataType: "json",
-    type : "POST",
-    success : function(r) {
-      console.log(r);
-    }
-  });</p>
+		</br>url: "api.php/adduser",
+		</br>dataType: "json",
+		</br>type : "POST",
+		</br>success : function(r) {
+		</br>console.log(r);
+		</br>}
+		</br>});</p>
 	</section>
 	<hr>
 	<section id="addwifi">
