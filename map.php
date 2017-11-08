@@ -126,7 +126,7 @@
 		
  	
 </script>
-<body onload="load(); openTab(event, 'viewNetwork');">
+<body onload="load(); openTab(event, 'viewNetwork'); onLoad();">
 	
 	
 
