@@ -36,7 +36,7 @@
 		var rep = jsonOUT['passwordrep'];
 		var mail = jsonOUT['mail'];
 		var name = jsonOUT['name'];
-//Check mail and name for special characters, give alert according
+		//Check mail and name for special characters, give alert according
 		if( pass == rep){
 			delete jsonOUT['passwordrep'];
 			var jsonSTR = JSON.stringify(jsonOUT);
