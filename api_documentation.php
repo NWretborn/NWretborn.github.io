@@ -14,9 +14,16 @@
 		<h2>adduser</h2>
 		<p>Adds a user via a json object</p>
 		<h5>Method</h5>
-		<p>GET</p>
+		<p>POST</p>
 		<h5>Sample Call</h5>
-		<p>GET</p>
+		<p> $.ajax({
+    url: "api.php/adduser",
+    dataType: "json",
+    type : "POST",
+    success : function(r) {
+      console.log(r);
+    }
+  });</p>
 	</section>
 	<hr>
 	<section id="addwifi">
