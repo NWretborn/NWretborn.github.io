@@ -127,9 +127,6 @@
 			unset($_SESSION['username']);
 			exit();
 			break;
-		case 'user':
-			echo "Bajs";
-			break;
 		default:
 			badcall(True, "not an api-function");
 			break;
