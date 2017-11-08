@@ -21,7 +21,11 @@
 
 <script>
 
-
+	function onLoad() {
+      gapi.load('auth2', function() {
+        gapi.auth2.init();
+      });
+    }
 	
 	// post the submission form to API via ajax in json format
 	function loginForm(){
