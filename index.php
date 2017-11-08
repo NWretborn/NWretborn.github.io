@@ -107,6 +107,7 @@
 		$GUser = $_GET['name'];
 		if($GUser != ""){
 			$_SESSION['username'] = $GUser;
+			header("Location: /index.php");
 		}
 		if(isset( $_SESSION['username'] ) ){
 			include("map.php");
