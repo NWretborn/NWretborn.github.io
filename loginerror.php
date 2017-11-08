@@ -113,7 +113,7 @@
 			include("map.php");
 		}
 		else{
-			include("login_box.php");
+			include("login_box_error.php");
 		}
 		
 	
