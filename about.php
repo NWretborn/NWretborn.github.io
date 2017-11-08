@@ -23,9 +23,9 @@
 			<p class="subtext">
 			Niclas Vretborn<br/>Luleå Tekniska Universitet
 			</p>
-			<div style="height: 30%">
-			<span id="logo" class="git" onclick="location.href='https://github.com/NWretborn/WiFinder'"> </span>
-			</div>
+			
+			<span style="height: 80%;" id="logo" class="git" onclick="location.href='https://github.com/NWretborn/WiFinder'"> </span>
+			
 			<br/><br/>
 		</span>
 		
