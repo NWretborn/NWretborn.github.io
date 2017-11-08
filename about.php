@@ -23,6 +23,7 @@
 			<p class="subtext">
 			Niclas Vretborn<br/>Luleå Tekniska Universitet
 			</p>
+			</br>
 			<span id="logo" class="git" onclick="location.href='https://github.com/NWretborn/WiFinder'"> </span>
 			<br/><br/>
 		</span>
