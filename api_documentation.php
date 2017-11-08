@@ -13,7 +13,7 @@
 	<section id="adduser">
 		<h3>adduser</h3>
 		<p>Adds a user via a json object</p>
-		<h2>Method</h2>
+		<h5>Method</h5>
 		<p>GET</p>
 	</section>
 
