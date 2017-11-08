@@ -28,47 +28,66 @@
 	<hr>
 	<section id="addwifi">
 		<h2>addwifi</h2>
-		<p>Adds a user via a json object</p>
+		<p>Adds a wifi via a json object</p>
 		<h5>Method</h5>
-		<p>GET</p>
+		<p>POST</p>
 		<h5>Sample Call</h5>
-		<p>GET</p>
+		<p> $.ajax({
+		</br>url: "api.php/addwifi",
+		</br>dataType: "json",
+		</br>type : "POST",
+		</br>success : function(r) {
+		</br>console.log(r);
+		</br>}
+		</br>});</p>
 		</section>
 	<hr>
 	<section id="deletewifi">
 		<h2>deletewifi</h2>
-		<p>Adds a user via a json object</p>
+		<p>Allows user to delete wifi locations they added. The user named "Admin" can delete all wifi locations</p>
 		<h5>Method</h5>
-		<p>GET</p>
+		<p>POST</p>
 		<h5>Sample Call</h5>
-		<p>GET</p>
-	</section>
-	<hr>
-	<section id="wifipic">
-		<h2>wifipic</h2>
-		<p>Adds a user via a json object</p>
-		<h5>Method</h5>
-		<p>GET</p>
-		<h5>Sample Call</h5>
-		<p>GET</p>
+		<p> $.ajax({
+		</br>url: "api.php/deletewifi",
+		</br>dataType: "json",
+		</br>type : "POST",
+		</br>success : function(r) {
+		</br>console.log(r);
+		</br>}
+		</br>});</p>
 	</section>
 	<hr>
 	<section id="login">
 		<h2>login</h2>
-		<p>Adds a user via a json object</p>
+		<p>Logs in a user</p>
 		<h5>Method</h5>
 		<p>GET</p>
 		<h5>Sample Call</h5>
-		<p>GET</p>
+		<p> $.ajax({
+		</br>url: "api.php/login",
+		</br>dataType: "json",
+		</br>type : "GET",
+		</br>success : function(r) {
+		</br>console.log(r);
+		</br>}
+		</br>});</p>
 	</section>
 	<hr>
 	<section id="logout">
 		<h2>logout</h2>
-		<p>Adds a user via a json object</p>
+		<p>Logs out the current user</p>
 		<h5>Method</h5>
-		<p>GET</p>
+		<p>POST</p>
 		<h5>Sample Call</h5>
-		<p>GET</p>
+		<p> $.ajax({
+		</br>url: "api.php/logout",
+		</br>dataType: "json",
+		</br>type : "POST",
+		</br>success : function(r) {
+		</br>console.log(r);
+		</br>}
+		</br>});</p>
 	</section>
 	</span>
 	</div>
