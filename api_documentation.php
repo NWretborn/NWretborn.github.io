@@ -12,7 +12,9 @@
 
 	<section id="adduser">
 		<h3>adduser</h3>
-		<p>We collect information from you when you register on our site, fill out a form or when you explicitly upload data to our website. We might collect and store data without you knowing about it.</p>
+		<p>Adds a user via a json object</p>
+		<h2>Method</h2>
+		<p>GET</p>
 	</section>
 
 	<section id="addwifi">
