@@ -286,10 +286,12 @@ function openTab(evt, tabName) {
     function action(path, formID) {
 	 var currentuser = <?php echo json_encode($_SESSION['username'])?>;
 	document.getElementById("user").value = user;
+	    var jsonOUT =$(formID).serializeObject();
+		var htmluserdel = jsonOUT['user'];
 	 //var htmluserdel = jsonOUT['user'];
 	        console.log(currentuser);
-	    console.log(user);
-        if(currentuser == user) {
+	    console.log(htmluserdel);
+        if(currentuser == htmluserdel) {
             document.getElementById('delwifi').style.visibility = 'visible';
         } else {
             document.getElementById('delwifi').style.visibility = 'hidden';
