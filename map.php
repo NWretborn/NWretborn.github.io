@@ -284,6 +284,7 @@ function openTab(evt, tabName) {
   	evt.currentTarget.className += " w3-cyan";
 }
     function action() {
+	 var currentuser = <?php echo json_encode($_SESSION['username'])?>;
         if(currentuser == htmluserdel) {
             document.getElementById('delwifi').style.visibility = 'visible';
         } else {
