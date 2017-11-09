@@ -128,13 +128,10 @@
 		 function action(user) {
 	 var currentuser = <?php echo json_encode($_SESSION['username'])?>;
 		var htmluserdel = user;
-	 //var htmluserdel = jsonOUT['user'];
-	        console.log(currentuser);
-	    console.log(htmluserdel);
-        if(currentuser == htmluserdel) {
-            document.getElementById('delwifi').style.visibility = 'visible';
-        } else {
-            document.getElementById('delwifi').style.visibility = 'hidden';
+        		if(currentuser == htmluserdel) {
+            			document.getElementById('delwifi').style.visibility = 'visible';
+        	} else {
+            		document.getElementById('delwifi').style.visibility = 'hidden';
         }
     }
  	
