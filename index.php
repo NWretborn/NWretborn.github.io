@@ -99,7 +99,7 @@
 	
 <body>
 	
-	<p style="font-size: var(--FONT_HEIGHT); font-family: monospace;">WiFinder</p>
+	<p style="font-size: 40p; font-family: monospace; color: #10454e;">WiFinder</p>
  
 	
 
