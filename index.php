@@ -100,7 +100,7 @@
 <body>
 	
 	<p style="font-size: 3vw; font-family: monospace; color: #29afc4;">WiFinder</p>
-	<p style="font-size: 1.5vw; font-family: monospace; color: #10454e;">A WiFi Locating Tool</p>
+	<p style="font-size: 1.5vw; font-family: monospace; color: #79969a;">A WiFi Locating Tool</p>
  
 	
 
