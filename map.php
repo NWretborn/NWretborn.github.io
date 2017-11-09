@@ -78,7 +78,7 @@
 			var name = jsonOUT['name'];
 			var address = jsonOUT['address'];
 		//Check name and address for special characters, alert accordingly
-			if( name != '' && address != '' ){
+			if( name != '' && address != '' && picurl != '..png'){
  			$.ajax({
  				type: "POST",
  				url: "./"+path,
@@ -91,8 +91,9 @@
  			window.alert("Network added!");
  			window.location = "/map.php";	
 			}
+		
 		else{
-			alert("Please enter all information before submitting");
+			alert("Click on the map to drop a marker and enter the name and address of the network before submitting");
 		}
  	}	
  		
