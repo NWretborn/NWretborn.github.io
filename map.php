@@ -125,11 +125,9 @@
  		
  	}
 		
-		 function action(path, formID) {
+		 function action(user) {
 	 var currentuser = <?php echo json_encode($_SESSION['username'])?>;
-	document.getElementById("user").value = user;
-	    var jsonOUT =$(formID).serializeObject();
-		var htmluserdel = jsonOUT['user'];
+		var htmluserdel = user;
 	 //var htmluserdel = jsonOUT['user'];
 	        console.log(currentuser);
 	    console.log(htmluserdel);
