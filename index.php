@@ -99,8 +99,8 @@
 	
 <body>
 	
-
-
+	<p style="font-size: var(--FONT_HEIGHT); font-family: monospace;">WiFinder</p>
+ 
 	
 
 	<?php
