@@ -484,7 +484,7 @@ function geolocate() {
 		document.getElementById("htmlpicurldel").value=String(htmldat[5]);
 		infoWindow.setContent(htmldat[0]);
 		infoWindow.open(map, marker);
-		action();
+		action(htmldat[3]);
 	});
 }
 
