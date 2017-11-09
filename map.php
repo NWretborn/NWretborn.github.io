@@ -285,6 +285,7 @@ function openTab(evt, tabName) {
 }
     function action() {
 	 var currentuser = <?php echo json_encode($_SESSION['username'])?>;
+	 var htmluserdel = jsonOUT['user'];
         if(currentuser == htmluserdel) {
             document.getElementById('delwifi').style.visibility = 'visible';
         } else {
