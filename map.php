@@ -284,8 +284,8 @@ function openTab(evt, tabName) {
   	evt.currentTarget.className += " w3-cyan";
 }
     function action(path, formID) {
-	 var jsonOUT =$(formID).serializeObject();
 	 var currentuser = <?php echo json_encode($_SESSION['username'])?>;
+	 	 var jsonOUT =$(formID).serializeObject();
 	 var htmluserdel = jsonOUT['user'];
 	        console.log(currentuser);
 	    console.log(htmluserdel);
