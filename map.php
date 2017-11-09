@@ -55,7 +55,6 @@
  
  // Get the element with id="defaultOpen" and click on it
  	$.fn.serializeObject = function() {
-		action();
  		var o = {};
  		var a = this.serializeArray();
  		$.each(a, function() {
