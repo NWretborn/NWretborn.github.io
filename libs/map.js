@@ -369,6 +369,7 @@ function geolocate() {
 	//Eventlistener for adding marker to map on click
 	google.maps.event.addListener(map, 'click', function(event) {
 		//if SESSION
+		
    		placeMarker(event.latLng);
 		
 	});
@@ -469,7 +470,7 @@ function geolocate() {
 
 }
 
-
+	//Lyssnar på markerclick, lägg hide button här i
 	function bindInfoWindow(marker, map, infoWindow, html) {
 		google.maps.event.addListener(marker, 'click', function() {
 		var htmldat = html.split(",");
@@ -483,6 +484,7 @@ function geolocate() {
 		document.getElementById("htmlpicurldel").value=String(htmldat[5]);
 		infoWindow.setContent(htmldat[0]);
 		infoWindow.open(map, marker);
+		action();
 	});
 }
 
