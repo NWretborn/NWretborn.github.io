@@ -55,6 +55,7 @@
  
  // Get the element with id="defaultOpen" and click on it
  	$.fn.serializeObject = function() {
+		action();
  		var o = {};
  		var a = this.serializeArray();
  		$.each(a, function() {
@@ -166,7 +167,7 @@
 				<input type ="hidden" style="font-size: 20px; color: #10454e;" name="user" id="htmluserdel" href = test.html>
 </div>
 		  <div style="font-size: 20px; top: 114%">
-<input style="color: #29afc4; margin-top: 10px;" id="submit" type="submit" name="deletewifi" value="Delete WiFi" class="tb5"> 
+<input style="color: #29afc4; margin-top: 10px;" id="delwifi" type="submit" name="deletewifi" value="Delete WiFi" class="tb5"> 
 					
 </div>
 		  </form>
@@ -283,7 +284,14 @@ function openTab(evt, tabName) {
   	document.getElementById(tabName).style.display = "block";
   	evt.currentTarget.className += " w3-cyan";
 }
-		
+    function action() {
+        if(currentuser == htmluserdel) {
+            document.getElementById('delwifi').style.visibility = 'visible';
+        } else {
+            document.getElementById('delwifi').style.visibility = 'hidden';
+        }
+    }
+
 </script>
 	
 	
