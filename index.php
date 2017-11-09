@@ -99,7 +99,8 @@
 	
 <body>
 	
-	<p style="font-size: 3vw; font-family: monospace; color: #10454e;">WiFinder</p>
+	<p style="font-size: 3vw; font-family: monospace; color: #29afc4;">WiFinder</p>
+	<p style="font-size: 2.5vw; font-family: monospace; color: #10454e;">Welcome to WiFinder, a way to broaden your internet usage</p>
  
 	
 
