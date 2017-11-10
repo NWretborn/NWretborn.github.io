@@ -103,8 +103,9 @@
 	
 
 	<?php
-		$GUser = $_GET['name'];
-		if($GUser != ""){
+		//$GUser = $_GET['name'];
+		if($_GET['name'] != ""){
+			$GUser = $_GET['name'];
 			$_SESSION['username'] = $GUser;
 			header("Location: /index.php");
 		}
