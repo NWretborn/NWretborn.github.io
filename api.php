@@ -24,20 +24,19 @@
 -->
 
 <?php
+	#Sets the charset to UTF8, this speciefies how characters are to be used within the API.
+	#It also starts an error log that saves any errors recorded in a .txt file on the server.
 	mysql_set_charset("UTF8");
 	ini_set("allow_url_fopen", true);
 	ini_set("log_errors", 1);
 	ini_set("error_log", "./error.log");
-	#ini_set('display_errors', 1);
-	#ini_set('display_startup_errors', 1);
-	
-	// default id to go through database
+	#Default id to go through database
 	$id='id';
-	// error-message written to a scrap log in same folder
+	#Function for writing errors to error log
 	function errlog($message){
 		error_log($message."\n", 3, "./scrap2.log");
 	}
-	// VERY brutal end-script function
+	#Badcall function, returns a 404 http response code(not found), if wrong method is used.
 	function badcall($isbad, $message){
 		if($isbad){
 			errlog($message);
@@ -45,10 +44,12 @@
 			die($message);
 		}
 	}
+	
+	#Function for hashing(encrypting) the users password
 	function hashpass($password){
 		return password_hash($password, PASSWORD_DEFAULT);
 	}
-	
+	#Function for verifying password when signing in	
 	function verifypass($password, $hashed_password){
 		return password_verify($password, $hashed_password);
 	}
