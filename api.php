@@ -188,28 +188,31 @@
 			$sql = "delete from `$table` where $id='$key'";
 			break;
 	}
+	
+	#Logs the method used
 	errlog("sql {".$sql."} sent");
 	
-	// excecute SQL statement
+	#Here, the API finalizes the call and sends the request to the database, it also
+	#writes errors to the errorlog and 
 	$result = mysqli_query($link,$sql);
 	$errors = mysqli_error($link);
 	if($errors){
 		errlog("SQL ERROR: ".$errors);
 		if (strpos($errors, $curuser) !== false) {
-   			echo "HEJS";
 			http_response_code(404);
 			die(mysqli_error());
 	}
 	}
 	
-	// die if SQL statement failed
+	#If the SQL statement fails, kills the connection
 	if (!$result) {
 		errlog("sql no result");
 		http_response_code(404);
 		die(mysqli_error());
 	}
+	#This code is for documentation only. If SQL statement is succesful, returns a text with
+	#succesful data input. If not, writes it to error log.
 	$resultarray = array();
-	// print results, insert id or affected row count
 	if ($method == 'GET') {
 		if (!$key) echo '[';
 		for ($i=0;$i<mysqli_num_rows($result);$i++) {
@@ -227,9 +230,10 @@
 		errlog("affected rows: ".mysqli_affected_rows($link) );
 	}
 	
-	// close mysql connection
+	#The API is done and closes the link
 	mysqli_close($link);
-	// backend changes without SQL
+	#This switch case is for changes to backend without the need for a SQL statement.
+	#An example of this is the login function, it just sets the session, no need for SQL!
 	switch($apicall){
 		case 'adduser':
 			
