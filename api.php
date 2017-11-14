@@ -138,21 +138,24 @@
 			
 	}
 
-	// escape the columns and values from the input object
+	#This function is used to create a legal SQL string. The given string is encoded to 
+	#an escaped SQL string, taking into account the current character set of the connection.
+	#This prevents SQL-injection attacks from potential hackers.
 	$columns = preg_replace('/[^a-z0-9_]+/i','',array_keys($input));
 	$values = array_map(function ($value) use ($link) {
 		if ($value===null) return null;
 		return mysqli_real_escape_string($link,(string)$value);
 	},array_values($input));
 	
-	// build the SET part of the SQL command
+	#The 'set' variable is used when updating and inserting into the database. It contains
+	#all the information from the JSON object, e.g. username, password, e-mail etc.
 	$set = '';
 	for ($i=0;$i<count($columns);$i++) {
 		$set.=($i>0?',':'').'`'.$columns[$i].'`=';
 		$set.=($values[$i]===null?'NULL':'"'.$values[$i].'"');
 	}
 	
-	// create SQL based on HTTP method
+	#Depending on the http method used, this switch forms the apropriate SQL statement
 	switch ($method) {
 		case 'GET':
 			$sql = "select * from `$table`".($key?" WHERE $id='$key'":'');
@@ -167,28 +170,30 @@
 			$sql = "delete from `$table` where $id='$key'";
 			break;
 	}
+	#Logs the method used
 	errlog("sql {".$sql."} sent");
 	
-	// excecute SQL statement
+	#Here, the API finalizes the call and sends the request to the database, it also
+	#writes errors to the errorlog and 
 	$result = mysqli_query($link,$sql);
 	$errors = mysqli_error($link);
 	if($errors){
 		errlog("SQL ERROR: ".$errors);
 		if (strpos($errors, $curuser) !== false) {
-   			echo "HEJS";
 			http_response_code(404);
 			die(mysqli_error());
 	}
 	}
 	
-	// die if SQL statement failed
+	#If the SQL statement fails, kills the connection
 	if (!$result) {
 		errlog("sql no result");
 		http_response_code(404);
 		die(mysqli_error());
 	}
+	#This code is for documentation only. If SQL statement is succesful, returns a text with
+	#succesful data input. If not, writes it to error log.
 	$resultarray = array();
-	// print results, insert id or affected row count
 	if ($method == 'GET') {
 		if (!$key) echo '[';
 		for ($i=0;$i<mysqli_num_rows($result);$i++) {
@@ -206,9 +211,10 @@
 		errlog("affected rows: ".mysqli_affected_rows($link) );
 	}
 	
-	// close mysql connection
+	#The API is done and closes the link
 	mysqli_close($link);
-	// backend changes without SQL
+	#This switch case is for changes to backend without the need for a SQL statement.
+	#An example of this is the login function, it just sets the session, no need for SQL!
 	switch($apicall){
 		case 'adduser':
 			
