@@ -235,6 +235,15 @@
 	#This switch case is for changes to backend without the need for a SQL statement.
 	#An example of this is the login function, it just sets the session, no need for SQL!
 	switch($apicall){
+			
+		case 'adduser':
+-			break;
+			
+-		case 'addwifi':
+-			break;
+-			
+-		case 'deletewifi':
+-			break;
 		
 		case 'login':
 			errlog("number of elements: ".count($resultarray));
