@@ -78,21 +78,35 @@
 	$key = array_shift($request);
 	#Uses apicall to determine witch function was called.
 	switch($apicall){
+		
+		#This function is for adding a user. It checks for the correct method, sets the table
+		#to user and hashes the password.
 		case 'adduser':
+			
+			badcall($method!='POST', "use POST for adduser");
 			$table='user';
 			$curuser = $input['name'];
+			
 			if($input['password']){
 				$input['password'] = hashpass($input['password']);
 			}
-			
-			badcall($method!='POST', "use POST for adduser"); //NOT SURE IF BADCALL IS GOOD METHOD
 			break;
+		
+		#This function is for adding wifi networks. It checks for the correct method and 
+		#sets the table to markers
 		case 'addwifi':
-			$table='markers';
+			
 			badcall($method!='POST', "use POST for addwifi");
+			$table='markers';
 			break;
+			
+		#This function is for deleting a wifi network. It sets the table to markers and the id to the picurl.
+		#Wifi networks are distinguished by their key, which is a combination of the latitude and longitude coordinates
+		#saved in a string. It then sets the method to delete.
 		case 'deletewifi':
+			
 			badcall($method!='POST', "use POST for deletewifi");
+			
 			if(($_SESSION['username'] == $input['user']) or ($_SESSION['username'] == 'admin')){
 				$table='markers';
 				$id='picurl';
@@ -100,30 +114,47 @@
 				$method = 'DELETE';
 				break;
 			}
+			
 			else{
 				badcall(True, "Only your own networks can be removed");
 				break;
 			}
+			
+		#This functions adds a picture to a wifi network. It includes the upload.processor.php
+		#used to upload files to the server.
 		case 'wifipic':
+			
 			errlog("POST picname: ".$_POST['picname']);
+			
 			if(isset($_FILE['file']))
 				errlog("FILE is set!");
+			
 			include('upload.processor.php');
 			exit();
 			break;
+			
+		#This function is for logging in, it checks for the correct method and
+		#sets the table to the user table and the ID for the user name
 		case 'login':
+			
 			badcall($method!='GET', "use GET for login");
 			$table='user';
 			$id='name';
 			break;
+		
+		#This function is for logging out, it finalizes here and destroys the client session.
 		case 'logout':
+			
 			errlog("logging out user: ".$_SESSION['username']);
 			unset($_SESSION['username']);
 			exit();
 			break;
+		
+		#If the call is not one of the switch cases, the api returns a bad call.
 		default:
 			badcall(True, "not an api-function");
 			break;
+			
 	}
 	// escape the columns and values from the input object
 	$columns = preg_replace('/[^a-z0-9_]+/i','',array_keys($input));
