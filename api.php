@@ -234,17 +234,17 @@
 	mysqli_close($link);
 	#This switch case is for changes to backend without the need for a SQL statement.
 	#An example of this is the login function, it just sets the session, no need for SQL!
-	switch($apicall){
+		switch($apicall){
+			
 		case 'adduser':
+-			break;
 			
-			break;
-		case 'addwifi':
-			
-			break;
-			
-		case 'deletewifi':
-			
-			break;
+-		case 'addwifi':
+-			break;
+-			
+-		case 'deletewifi':
+-			break;
+		
 		case 'login':
 			errlog("number of elements: ".count($resultarray));
 			
@@ -259,11 +259,16 @@
 			else{
 				badcall(True, "Wrong Credentials");
 			}
+			
 			break;
+			
 		default:
+			
 			badcall(True, "reached end without api-function");
 			break;
+			
 	}
+	#Ends error log segment
 	errlog("--------------------------------------------------");
 	errlog("ENDLOG");
 ?>
