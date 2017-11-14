@@ -179,7 +179,9 @@
 			$sql = "update `$table` set $set where $id='$key'";
 			break;
 		case 'POST':
+			echo '----';
 			echo $set;
+			echo '----';
 			$sql = "insert into `$table` set $set";
 			break;
 		case 'DELETE':
