@@ -156,21 +156,24 @@
 			break;
 			
 	}
-	// escape the columns and values from the input object
+	#This function is used to create a legal SQL string. The given string is encoded to 
+	#an escaped SQL string, taking into account the current character set of the connection.
+	#This prevents SQL-injection attacks from potential hackers.
 	$columns = preg_replace('/[^a-z0-9_]+/i','',array_keys($input));
 	$values = array_map(function ($value) use ($link) {
 		if ($value===null) return null;
 		return mysqli_real_escape_string($link,(string)$value);
 	},array_values($input));
 	
-	// build the SET part of the SQL command
+	#The 'set' variable is used when updating and inserting into the database. It contains
+	#all the information from the JSON object, e.g. username, password, e-mail etc.
 	$set = '';
 	for ($i=0;$i<count($columns);$i++) {
 		$set.=($i>0?',':'').'`'.$columns[$i].'`=';
 		$set.=($values[$i]===null?'NULL':'"'.$values[$i].'"');
 	}
 	
-	// create SQL based on HTTP method
+	#Depending on the http method used, this switch forms the apropriate SQL statement
 	switch ($method) {
 		case 'GET':
 			$sql = "select * from `$table`".($key?" WHERE $id='$key'":'');
