@@ -56,25 +56,27 @@
 ?>
 
 <?php
+	#Writes to the errorlog and includes the database information file
 	errlog("STARTLOG");
 	errlog("--------------------------------------------------");
 	require("phpsqlajax_dbinfo.php");
-	// get the HTTP method, path and body of the request
+	#Get the HTTP method(POST, GET, PUT or DELETE)
 	$method = $_SERVER['REQUEST_METHOD'];
+	#Post information to errorlog
 	errlog($_SERVER['PHP_SELF']." received ".$method." request");
+	#Sets the path to a variable, e.g. adduser, addwifi etc
 	$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	
+	#Assigns the JSON object to a php-variable and decodes it into the right format.
 	$input = file_get_contents('php://input');
-	//errlog("input: $input");
 	$input = json_decode($input,true);
-	//errlog("get: ".$_GET['password']);
-	// connect to the mysql database
+	#Creates a conenction to the database using variables found in the phpsqlajax_dbinfo.php file
 	$link = mysqli_connect('localhost', $username, $password, $database);
 	mysqli_set_charset($link,'utf8');
-	// retrieve table and key from the path remove from variable $request
+	#Retrieve table and key from the path remove from variable $request
 	$apicall = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));
-	$key = array_shift($request);	// "array_shift($request)+0" before
-	// initial modifications based on what call is made
+	$key = array_shift($request);
+	#Uses apicall to determine witch function was called.
 	switch($apicall){
 		case 'adduser':
 			$table='user';
