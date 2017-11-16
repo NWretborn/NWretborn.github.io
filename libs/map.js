@@ -4,7 +4,7 @@ var firstSet = false;
 	
 var customIcons = {
     No: {
-      icon: 'WiFinder/img/logo_green50px.png'
+      icon: '/img/logo_green50px.png'
     },
     Yes: {
       icon: '/img/logo_blue50px.png'
